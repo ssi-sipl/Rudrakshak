@@ -258,7 +258,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RudrakshakBuild/iccs-command-center-backend/generated/prisma",
+      "value": "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RudrakshakBuild/Rudrakshak/iccs-command-center-backend/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -272,11 +272,11 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RudrakshakBuild/iccs-command-center-backend/prisma/schema.prisma",
+    "sourceFilePath": "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RudrakshakBuild/Rudrakshak/iccs-command-center-backend/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../.env",
+    "rootEnvPath": null,
     "schemaEnvPath": "../../.env"
   },
   "relativePath": "../../prisma",
