@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/middleware.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\nimport type { NextRequest } from \"next/server\";\n\nexport function middleware(req: NextRequest) {\n  const token = req.cookies.get(\"access_token\");\n\n  const isAuthPage = req.nextUrl.pathname.startsWith(\"/login\");\n\n  if (!token && !isAuthPage) {\n    return NextResponse.redirect(new URL(\"/login\", req.url));\n  }\n\n  return NextResponse.next();\n}\n\nexport const config = {\n  matcher: [\"/((?!_next|favicon.ico|login).*)\"],\n};\n"],"names":[],"mappings":";;;;;;AAAA;AAAA;;AAGO,SAAS,WAAW,GAAgB;IACzC,MAAM,QAAQ,IAAI,OAAO,CAAC,GAAG,CAAC;IAE9B,MAAM,aAAa,IAAI,OAAO,CAAC,QAAQ,CAAC,UAAU,CAAC;IAEnD,IAAI,CAAC,SAAS,CAAC,YAAY;QACzB,OAAO,gMAAY,CAAC,QAAQ,CAAC,IAAI,IAAI,UAAU,IAAI,GAAG;IACxD;IAEA,OAAO,gMAAY,CAAC,IAAI;AAC1B;AAEO,MAAM,SAAS;IACpB,SAAS;QAAC;KAAmC;AAC/C"}}]
+}
