@@ -99,7 +99,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RudrakshakBuild/iccs-command-center",
+    "outputFileTracingRoot": "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RudrakshakV1/frontend",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -289,11 +289,11 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RudrakshakBuild/iccs-command-center"
+      "root": "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RudrakshakV1/frontend"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RudrakshakBuild/iccs-command-center",
+  "appDir": "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RudrakshakV1/frontend",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
