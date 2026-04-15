@@ -6,3 +6,5 @@ node_modules
 /public/
 
 /generated/prisma
+
+/prisma/schema.prisma
