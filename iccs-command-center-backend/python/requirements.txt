@@ -1,0 +1,2 @@
+rknn-toolkit-lite2
+opencv-python
