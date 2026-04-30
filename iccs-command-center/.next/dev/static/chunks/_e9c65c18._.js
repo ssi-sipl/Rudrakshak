@@ -1826,6 +1826,8 @@ __turbopack_context__.s([
     ()=>dronePatrol,
     "dropPayload",
     ()=>dropPayload,
+    "manualControl",
+    ()=>manualControl,
     "recallDrone",
     ()=>recallDrone,
     "sendDrone",
@@ -1901,6 +1903,16 @@ async function dronePatrol(payload) {
         return {
             success: false,
             error: error instanceof Error ? error.message : "Failed to start patrol"
+        };
+    }
+}
+async function manualControl(payload) {
+    try {
+        return await postJson(`${API_BASE_URL}/api/drone-command/manual`, payload);
+    } catch (error) {
+        return {
+            success: false,
+            error: error instanceof Error ? error.message : "Failed manual control"
         };
     }
 }

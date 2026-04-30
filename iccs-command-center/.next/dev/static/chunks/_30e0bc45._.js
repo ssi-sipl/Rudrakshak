@@ -1712,7 +1712,7 @@ function getDroneStatusInfo(status) {
             };
     }
 }
-function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }) {
+function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall, onToggleController, isControllerOpen }) {
     _s();
     const [recallConfirmOpen, setRecallConfirmOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [recallLoading, setRecallLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -1795,6 +1795,16 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
             console.error("Video open error:", err);
         }
     };
+    const send = async (command)=>{
+        if (!telemetry?.droneDbId) return;
+        // if (telemetry?.status === "ground") {
+        //   return; // don’t allow movement
+        // }
+        await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2f$droneCommand$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["manualControl"])({
+            droneDbId: telemetry.droneDbId,
+            command
+        });
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "fixed bottom-2 right-2 sm:bottom-4 sm:right-4 w-[calc(100vw-1rem)] sm:w-[380px] md:w-[420px] lg:w-[26rem] rounded-lg border border-[#333] bg-[#111] shadow-2xl z-[900]",
         children: [
@@ -1808,13 +1818,13 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                 className: `h-2 w-2 rounded-full animate-pulse flex-shrink-0 ${telemetry.status === "on_air" ? "bg-blue-500" : telemetry.status === "ground" ? "bg-gray-500" : telemetry.status === "reached" ? "bg-green-500" : "bg-yellow-500"}`
                             }, void 0, false, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 191,
+                                lineNumber: 212,
                                 columnNumber: 13
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "h-2 w-2 rounded-full bg-gray-500 flex-shrink-0"
                             }, void 0, false, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 203,
+                                lineNumber: 224,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1825,7 +1835,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                         children: telemetry?.droneId ?? `Drone (Offline)`
                                     }, void 0, false, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 206,
+                                        lineNumber: 227,
                                         columnNumber: 13
                                     }, this),
                                     telemetry?.status && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1837,19 +1847,19 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 210,
+                                        lineNumber: 231,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 205,
+                                lineNumber: 226,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/telemetry-window.tsx",
-                        lineNumber: 189,
+                        lineNumber: 210,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1863,18 +1873,18 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     className: "h-3 w-3 sm:h-4 sm:w-4 text-gray-400"
                                 }, void 0, false, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 228,
+                                    lineNumber: 249,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                                     className: "h-3 w-3 sm:h-4 sm:w-4 text-gray-400"
                                 }, void 0, false, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 230,
+                                    lineNumber: 251,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 222,
+                                lineNumber: 243,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1885,24 +1895,24 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     className: "h-3 w-3 sm:h-4 sm:w-4 text-red-400"
                                 }, void 0, false, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 238,
+                                    lineNumber: 259,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 233,
+                                lineNumber: 254,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/telemetry-window.tsx",
-                        lineNumber: 221,
+                        lineNumber: 242,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/telemetry-window.tsx",
-                lineNumber: 188,
+                lineNumber: 209,
                 columnNumber: 7
             }, this),
             !isMinimized && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1916,7 +1926,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                 children: "Location"
                             }, void 0, false, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 248,
+                                lineNumber: 269,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1930,7 +1940,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 children: "Latitude:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 253,
+                                                lineNumber: 274,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1938,13 +1948,13 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 children: toNumber(telemetry?.lat)?.toFixed(6) ?? "N/A"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 254,
+                                                lineNumber: 275,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 252,
+                                        lineNumber: 273,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1955,7 +1965,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 children: "Longitude:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 259,
+                                                lineNumber: 280,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1963,19 +1973,19 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 children: toNumber(telemetry?.lng)?.toFixed(6) ?? "N/A"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 260,
+                                                lineNumber: 281,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 258,
+                                        lineNumber: 279,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 251,
+                                lineNumber: 272,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1988,7 +1998,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 children: "Altitude:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 268,
+                                                lineNumber: 289,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1999,13 +2009,13 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 271,
+                                                lineNumber: 292,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 267,
+                                        lineNumber: 288,
                                         columnNumber: 17
                                     }, this),
                                     telemetry?.targetDistance !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2015,7 +2025,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 children: "To Target:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 278,
+                                                lineNumber: 299,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2026,25 +2036,25 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 279,
+                                                lineNumber: 300,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 277,
+                                        lineNumber: 298,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 265,
+                                lineNumber: 286,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/telemetry-window.tsx",
-                        lineNumber: 247,
+                        lineNumber: 268,
                         columnNumber: 11
                     }, this),
                     telemetry?.status && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2055,7 +2065,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                 children: "Drone Status"
                             }, void 0, false, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 294,
+                                lineNumber: 315,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2066,7 +2076,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                         children: getDroneStatusInfo(telemetry.status).emoji
                                     }, void 0, false, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 298,
+                                        lineNumber: 319,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2077,7 +2087,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 children: getDroneStatusInfo(telemetry.status).label
                                             }, void 0, false, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 302,
+                                                lineNumber: 323,
                                                 columnNumber: 19
                                             }, this),
                                             telemetry.status === "reached" && telemetry.targetDistance !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2089,7 +2099,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 311,
+                                                lineNumber: 332,
                                                 columnNumber: 23
                                             }, this),
                                             telemetry.status === "on_air" && telemetry.alt !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2101,25 +2111,25 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 316,
+                                                lineNumber: 337,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 301,
+                                        lineNumber: 322,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 297,
+                                lineNumber: 318,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/telemetry-window.tsx",
-                        lineNumber: 289,
+                        lineNumber: 310,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2130,7 +2140,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                 children: "Status"
                             }, void 0, false, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 327,
+                                lineNumber: 348,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2143,7 +2153,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 children: "Battery:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 333,
+                                                lineNumber: 354,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2157,13 +2167,13 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 334,
+                                                lineNumber: 355,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 332,
+                                        lineNumber: 353,
                                         columnNumber: 17
                                     }, this),
                                     telemetry?.speed !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2173,7 +2183,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 children: "Speed:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 349,
+                                                lineNumber: 370,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2184,19 +2194,19 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 350,
+                                                lineNumber: 371,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 348,
+                                        lineNumber: 369,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 330,
+                                lineNumber: 351,
                                 columnNumber: 13
                             }, this),
                             telemetry?.mode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2206,7 +2216,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                         children: "Mode:"
                                     }, void 0, false, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 358,
+                                        lineNumber: 379,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2214,19 +2224,19 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                         children: telemetry?.mode
                                     }, void 0, false, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 361,
+                                        lineNumber: 382,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 357,
+                                lineNumber: 378,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/telemetry-window.tsx",
-                        lineNumber: 326,
+                        lineNumber: 347,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2237,7 +2247,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                 children: "GPS"
                             }, void 0, false, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 370,
+                                lineNumber: 391,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2250,7 +2260,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 children: "Fix:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 376,
+                                                lineNumber: 397,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2258,13 +2268,13 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 children: telemetry?.gpsFix
                                             }, void 0, false, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 377,
+                                                lineNumber: 398,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 375,
+                                        lineNumber: 396,
                                         columnNumber: 17
                                     }, this),
                                     telemetry?.satellites !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2274,7 +2284,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 children: "Satellites:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 384,
+                                                lineNumber: 405,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2282,25 +2292,25 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 children: toNumber(telemetry?.satellites) ?? "N/A"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/telemetry-window.tsx",
-                                                lineNumber: 385,
+                                                lineNumber: 406,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 383,
+                                        lineNumber: 404,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 373,
+                                lineNumber: 394,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/telemetry-window.tsx",
-                        lineNumber: 369,
+                        lineNumber: 390,
                         columnNumber: 11
                     }, this),
                     (telemetry?.windSpeed !== null || telemetry?.targetDistance !== null) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2311,7 +2321,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                 children: "Environment"
                             }, void 0, false, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 397,
+                                lineNumber: 418,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2323,7 +2333,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                             children: "Wind:"
                                         }, void 0, false, {
                                             fileName: "[project]/components/telemetry-window.tsx",
-                                            lineNumber: 403,
+                                            lineNumber: 424,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2334,24 +2344,24 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/telemetry-window.tsx",
-                                            lineNumber: 404,
+                                            lineNumber: 425,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 402,
+                                    lineNumber: 423,
                                     columnNumber: 19
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 400,
+                                lineNumber: 421,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/telemetry-window.tsx",
-                        lineNumber: 396,
+                        lineNumber: 417,
                         columnNumber: 13
                     }, this),
                     telemetry?.videoLink && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2362,7 +2372,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                 children: "Video Feed"
                             }, void 0, false, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 416,
+                                lineNumber: 437,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -2373,14 +2383,25 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                 children: "Open Live Video"
                             }, void 0, false, {
                                 fileName: "[project]/components/telemetry-window.tsx",
-                                lineNumber: 420,
+                                lineNumber: 441,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/telemetry-window.tsx",
-                        lineNumber: 415,
+                        lineNumber: 436,
                         columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                        size: "sm",
+                        variant: "outline",
+                        onClick: onToggleController,
+                        className: "flex-1 border-purple-700 text-purple-400 hover:bg-purple-900/30",
+                        children: isControllerOpen ? "Close Controller" : "Open Controller 🎮"
+                    }, void 0, false, {
+                        fileName: "[project]/components/telemetry-window.tsx",
+                        lineNumber: 451,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "text-[8px] sm:text-[10px] text-gray-500 text-center pt-1",
@@ -2390,13 +2411,13 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/telemetry-window.tsx",
-                        lineNumber: 432,
+                        lineNumber: 461,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/telemetry-window.tsx",
-                lineNumber: 245,
+                lineNumber: 266,
                 columnNumber: 9
             }, this),
             !isMinimized && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2411,7 +2432,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                         children: dropDisabled ? `Cooldown ${Math.ceil(dropCooldownRemaining / 1000)}s` : "Drop Payload (पेलोड गिराओ)"
                     }, void 0, false, {
                         fileName: "[project]/components/telemetry-window.tsx",
-                        lineNumber: 441,
+                        lineNumber: 470,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -2426,13 +2447,13 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                         children: recallDisabled ? `Cooldown ${Math.ceil(recallCooldownRemaining / 1000)}s` : "Recall (वापस बुलाओ)"
                     }, void 0, false, {
                         fileName: "[project]/components/telemetry-window.tsx",
-                        lineNumber: 453,
+                        lineNumber: 482,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/telemetry-window.tsx",
-                lineNumber: 440,
+                lineNumber: 469,
                 columnNumber: 9
             }, this),
             recallConfirmOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2445,7 +2466,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                             children: recallSuccess ? "Recall Initiated" : "Confirm Recall"
                         }, void 0, false, {
                             fileName: "[project]/components/telemetry-window.tsx",
-                            lineNumber: 472,
+                            lineNumber: 501,
                             columnNumber: 13
                         }, this),
                         !recallSuccess ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -2456,14 +2477,14 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                         "The drone will immediately return to its home location.",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/components/telemetry-window.tsx",
-                                            lineNumber: 480,
+                                            lineNumber: 509,
                                             columnNumber: 19
                                         }, this),
                                         "Ensure airspace is clear."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 478,
+                                    lineNumber: 507,
                                     columnNumber: 17
                                 }, this),
                                 recallError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2471,7 +2492,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     children: recallError
                                 }, void 0, false, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 485,
+                                    lineNumber: 514,
                                     columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2486,7 +2507,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                             children: "Cancel"
                                         }, void 0, false, {
                                             fileName: "[project]/components/telemetry-window.tsx",
-                                            lineNumber: 489,
+                                            lineNumber: 518,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -2517,13 +2538,13 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                             children: recallLoading ? "Recalling..." : "Confirm Recall"
                                         }, void 0, false, {
                                             fileName: "[project]/components/telemetry-window.tsx",
-                                            lineNumber: 499,
+                                            lineNumber: 528,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 488,
+                                    lineNumber: 517,
                                     columnNumber: 17
                                 }, this)
                             ]
@@ -2535,7 +2556,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     children: "🔄"
                                 }, void 0, false, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 536,
+                                    lineNumber: 565,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2543,7 +2564,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     children: "Recall command sent"
                                 }, void 0, false, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 538,
+                                    lineNumber: 567,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2554,7 +2575,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 542,
+                                    lineNumber: 571,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2567,29 +2588,29 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                         children: "Close"
                                     }, void 0, false, {
                                         fileName: "[project]/components/telemetry-window.tsx",
-                                        lineNumber: 548,
+                                        lineNumber: 577,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 547,
+                                    lineNumber: 576,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/telemetry-window.tsx",
-                            lineNumber: 535,
+                            lineNumber: 564,
                             columnNumber: 15
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/telemetry-window.tsx",
-                    lineNumber: 471,
+                    lineNumber: 500,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/telemetry-window.tsx",
-                lineNumber: 470,
+                lineNumber: 499,
                 columnNumber: 9
             }, this),
             dropConfirmOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2602,7 +2623,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                             children: dropSuccess ? "Payload Dropped" : "Confirm Payload Drop"
                         }, void 0, false, {
                             fileName: "[project]/components/telemetry-window.tsx",
-                            lineNumber: 566,
+                            lineNumber: 595,
                             columnNumber: 13
                         }, this),
                         !dropSuccess ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -2617,20 +2638,20 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                             children: "critical action"
                                         }, void 0, false, {
                                             fileName: "[project]/components/telemetry-window.tsx",
-                                            lineNumber: 574,
+                                            lineNumber: 603,
                                             columnNumber: 19
                                         }, this),
                                         ".",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/components/telemetry-window.tsx",
-                                            lineNumber: 578,
+                                            lineNumber: 607,
                                             columnNumber: 19
                                         }, this),
                                         "Enter PIN to proceed."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 572,
+                                    lineNumber: 601,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2644,7 +2665,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     className: "mb-2 w-full rounded-md border border-[#333] bg-[#181818] px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-red-600"
                                 }, void 0, false, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 582,
+                                    lineNumber: 611,
                                     columnNumber: 17
                                 }, this),
                                 dropPinError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2652,7 +2673,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     children: dropPinError
                                 }, void 0, false, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 594,
+                                    lineNumber: 623,
                                     columnNumber: 19
                                 }, this)
                             ]
@@ -2664,7 +2685,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     children: "✅"
                                 }, void 0, false, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 599,
+                                    lineNumber: 628,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2672,7 +2693,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     children: "Payload successfully dropped"
                                 }, void 0, false, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 600,
+                                    lineNumber: 629,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2683,13 +2704,13 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 603,
+                                    lineNumber: 632,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/telemetry-window.tsx",
-                            lineNumber: 598,
+                            lineNumber: 627,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2708,7 +2729,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 610,
+                                    lineNumber: 639,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -2746,30 +2767,30 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     children: dropLoading ? "Dropping..." : "Confirm Drop"
                                 }, void 0, false, {
                                     fileName: "[project]/components/telemetry-window.tsx",
-                                    lineNumber: 624,
+                                    lineNumber: 653,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/telemetry-window.tsx",
-                            lineNumber: 609,
+                            lineNumber: 638,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/telemetry-window.tsx",
-                    lineNumber: 565,
+                    lineNumber: 594,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/telemetry-window.tsx",
-                lineNumber: 564,
+                lineNumber: 593,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/telemetry-window.tsx",
-        lineNumber: 186,
+        lineNumber: 207,
         columnNumber: 5
     }, this);
 }
@@ -2885,6 +2906,7 @@ function MapView() {
     const [autoDispatchBlocked, setAutoDispatchBlocked] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const sensorsRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])([]);
     const dronesRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])([]);
+    const [showController, setShowController] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     // const liveTelemetry = selectedDroneIdForTelemetry
     //   ? (droneTelemetryData[selectedDroneIdForTelemetry] ?? null)
     //   : null;
@@ -3534,6 +3556,7 @@ function MapView() {
     function closeTelemetryWindow() {
         setTelemetryWindowOpen(false);
         setSelectedDroneIdForTelemetry(null);
+        setShowController(false);
     }
     async function handleDropPayload() {
         if (!selectedDroneIdForTelemetry) return;
@@ -3771,12 +3794,12 @@ function MapView() {
                 children: "Loading map..."
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1062,
+                lineNumber: 1065,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/map-view.tsx",
-            lineNumber: 1061,
+            lineNumber: 1064,
             columnNumber: 7
         }, this);
     }
@@ -3788,12 +3811,12 @@ function MapView() {
                 children: error
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1070,
+                lineNumber: 1073,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/map-view.tsx",
-            lineNumber: 1069,
+            lineNumber: 1072,
             columnNumber: 7
         }, this);
     }
@@ -3810,19 +3833,19 @@ function MapView() {
                         children: "/maps/manage"
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1080,
+                        lineNumber: 1083,
                         columnNumber: 11
                     }, this),
                     " and create / activate one."
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1078,
+                lineNumber: 1081,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/map-view.tsx",
-            lineNumber: 1077,
+            lineNumber: 1080,
             columnNumber: 7
         }, this);
     }
@@ -3846,7 +3869,7 @@ function MapView() {
                                     children: "🚫 Auto-dispatch blocked"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1101,
+                                    lineNumber: 1104,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3854,7 +3877,7 @@ function MapView() {
                                     children: autoDispatchBlocked.reason
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1105,
+                                    lineNumber: 1108,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3868,7 +3891,7 @@ function MapView() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1109,
+                                    lineNumber: 1112,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3879,13 +3902,13 @@ function MapView() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1114,
+                                    lineNumber: 1117,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1100,
+                            lineNumber: 1103,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -3896,18 +3919,18 @@ function MapView() {
                             children: "Acknowledge"
                         }, void 0, false, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1119,
+                            lineNumber: 1122,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/map-view.tsx",
-                    lineNumber: 1099,
+                    lineNumber: 1102,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1098,
+                lineNumber: 1101,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3928,7 +3951,7 @@ function MapView() {
                         className: "w-full rounded-md border border-[#333] bg-black/80 px-3 py-2 text-xs text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 backdrop-blur"
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1132,
+                        lineNumber: 1135,
                         columnNumber: 9
                     }, this),
                     sensorSearchResults.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3946,7 +3969,7 @@ function MapView() {
                                         children: sensor.name
                                     }, void 0, false, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1165,
+                                        lineNumber: 1168,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3958,24 +3981,24 @@ function MapView() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1166,
+                                        lineNumber: 1169,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, sensor.id, true, {
                                 fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1156,
+                                lineNumber: 1159,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1154,
+                        lineNumber: 1157,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1131,
+                lineNumber: 1134,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$map$2d$renderer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -3995,7 +4018,7 @@ function MapView() {
                 focusedSensorId: focusedSensorId
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1175,
+                lineNumber: 1178,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -4016,7 +4039,7 @@ function MapView() {
                                     children: selectedSensor ? selectedSensor.name : "Sensor"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1202,
+                                    lineNumber: 1205,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4032,7 +4055,7 @@ function MapView() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1209,
+                                            lineNumber: 1212,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -4040,19 +4063,19 @@ function MapView() {
                                             children: selectedSensor?.addedBy || "N/A"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1213,
+                                            lineNumber: 1216,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1208,
+                                    lineNumber: 1211,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1201,
+                            lineNumber: 1204,
                             columnNumber: 11
                         }, this),
                         autoDispatchBlocked && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4063,7 +4086,7 @@ function MapView() {
                                     children: "🚫 Auto-dispatch blocked"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1227,
+                                    lineNumber: 1230,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4071,7 +4094,7 @@ function MapView() {
                                     children: autoDispatchBlocked.reason
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1231,
+                                    lineNumber: 1234,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4085,7 +4108,7 @@ function MapView() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1235,
+                                    lineNumber: 1238,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4096,13 +4119,13 @@ function MapView() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1240,
+                                    lineNumber: 1243,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1226,
+                            lineNumber: 1229,
                             columnNumber: 13
                         }, this),
                         autoDispatchCountdown !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4118,7 +4141,7 @@ function MapView() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1249,
+                                    lineNumber: 1252,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4131,18 +4154,18 @@ function MapView() {
                                         children: "Cancel Auto Send"
                                     }, void 0, false, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1251,
+                                        lineNumber: 1254,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1250,
+                                    lineNumber: 1253,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1247,
+                            lineNumber: 1250,
                             columnNumber: 13
                         }, this),
                         selectedSensor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4164,7 +4187,7 @@ function MapView() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1267,
+                                                    lineNumber: 1270,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4174,13 +4197,13 @@ function MapView() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1271,
+                                                    lineNumber: 1274,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1266,
+                                            lineNumber: 1269,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4191,13 +4214,13 @@ function MapView() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1273,
+                                            lineNumber: 1276,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1265,
+                                    lineNumber: 1268,
                                     columnNumber: 15
                                 }, this),
                                 selectedAlert ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4208,7 +4231,7 @@ function MapView() {
                                             children: "Active Alert"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1280,
+                                            lineNumber: 1283,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4216,7 +4239,7 @@ function MapView() {
                                             children: selectedAlert.message
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1283,
+                                            lineNumber: 1286,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4228,13 +4251,13 @@ function MapView() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1286,
+                                            lineNumber: 1289,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1279,
+                                    lineNumber: 1282,
                                     columnNumber: 17
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "rounded-md border border-[#333] bg-[#18181b] p-3 text-xs text-gray-300",
@@ -4242,14 +4265,14 @@ function MapView() {
                                         "No active alert on this sensor.",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1294,
+                                            lineNumber: 1297,
                                             columnNumber: 19
                                         }, this),
                                         "You can still manually dispatch a drone from here."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1292,
+                                    lineNumber: 1295,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4260,7 +4283,7 @@ function MapView() {
                                             children: "Select Drone to Dispatch:"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1300,
+                                            lineNumber: 1303,
                                             columnNumber: 17
                                         }, this),
                                         loadingDrones ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4270,27 +4293,27 @@ function MapView() {
                                                     className: "h-3 w-3 animate-spin"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1306,
+                                                    lineNumber: 1309,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "Loading drones..."
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1307,
+                                                    lineNumber: 1310,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1305,
+                                            lineNumber: 1308,
                                             columnNumber: 19
                                         }, this) : dronesInSameArea.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "rounded-md border border-amber-700 bg-amber-950/40 p-3 text-xs text-amber-200",
                                             children: "No drones available in this sensor's area."
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1310,
+                                            lineNumber: 1313,
                                             columnNumber: 19
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "space-y-2",
@@ -4309,7 +4332,7 @@ function MapView() {
                                                             children: "Select a drone"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 1323,
+                                                            lineNumber: 1326,
                                                             columnNumber: 23
                                                         }, this),
                                                         dronesInSameArea.map((drone)=>{
@@ -4341,14 +4364,14 @@ function MapView() {
                                                                 ]
                                                             }, drone.id, true, {
                                                                 fileName: "[project]/components/map-view.tsx",
-                                                                lineNumber: 1345,
+                                                                lineNumber: 1348,
                                                                 columnNumber: 27
                                                             }, this);
                                                         })
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1315,
+                                                    lineNumber: 1318,
                                                     columnNumber: 21
                                                 }, this),
                                                 selectedDroneId && isDroneBusy(selectedDroneId) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4358,38 +4381,38 @@ function MapView() {
                                                             children: "⚠️"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 1360,
+                                                            lineNumber: 1363,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: droneTelemetryData[selectedDroneId]?.status === "on_air" ? "This drone is currently in the air. Please wait for it to land." : "This drone is executing another mission."
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 1361,
+                                                            lineNumber: 1364,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1359,
+                                                    lineNumber: 1362,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1314,
+                                            lineNumber: 1317,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1299,
+                                    lineNumber: 1302,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1264,
+                            lineNumber: 1267,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -4404,7 +4427,7 @@ function MapView() {
                                     children: "Neutralise Alert"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1377,
+                                    lineNumber: 1380,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -4419,7 +4442,7 @@ function MapView() {
                                                 className: "mr-2 h-4 w-4 animate-spin"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/map-view.tsx",
-                                                lineNumber: 1402,
+                                                lineNumber: 1405,
                                                 columnNumber: 19
                                             }, this),
                                             "Launching..."
@@ -4427,7 +4450,7 @@ function MapView() {
                                     }, void 0, true) : "Video Feed"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1388,
+                                    lineNumber: 1391,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -4438,24 +4461,24 @@ function MapView() {
                                     children: selectedAlert ? "Send Drone (ड्रोन भेजिए)" : "Send Drone (ड्रोन भेजिए)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1410,
+                                    lineNumber: 1413,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1375,
+                            lineNumber: 1378,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/map-view.tsx",
-                    lineNumber: 1200,
+                    lineNumber: 1203,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1192,
+                lineNumber: 1195,
                 columnNumber: 7
             }, this),
             telemetryWindowOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$telemetry$2d$window$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TelemetryWindow"], {
@@ -4463,16 +4486,25 @@ function MapView() {
                 isOpen: telemetryWindowOpen,
                 onClose: closeTelemetryWindow,
                 onDropPayload: handleDropPayload,
-                onRecall: handleRecall
+                onRecall: handleRecall,
+                onToggleController: ()=>setShowController((prev)=>!prev),
+                isControllerOpen: showController
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1431,
+                lineNumber: 1434,
+                columnNumber: 9
+            }, this),
+            selectedDroneIdForTelemetry && showController && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DroneController, {
+                droneId: selectedDroneIdForTelemetry
+            }, void 0, false, {
+                fileName: "[project]/components/map-view.tsx",
+                lineNumber: 1445,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true);
 }
-_s(MapView, "eJtH7WJLiebjjOMbkc7iFV7/w4w=", false, function() {
+_s(MapView, "awzskLeco7/wKH0srCnSFdUmFzo=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
