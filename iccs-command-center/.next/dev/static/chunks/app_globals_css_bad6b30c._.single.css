@@ -3966,12 +3966,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:cursor-crosshair:hover {
-      cursor: crosshair;
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:cursor-pointer:hover {
       cursor: pointer;
     }

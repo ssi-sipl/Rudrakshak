@@ -2,8 +2,8 @@
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
   "static/chunks/node_modules_leaflet_dist_leaflet_ef5f0413.css",
-  "static/chunks/node_modules_react-leaflet_lib_index_52376af8.js",
-  "static/chunks/_9512a288._.js",
+  "static/chunks/node_modules_react-leaflet_lib_index_95fe6af5.js",
+  "static/chunks/_11bc5a19._.js",
   "static/chunks/node_modules_leaflet_dist_leaflet-src_8608e1e4.js",
   "static/chunks/node_modules_motion-dom_dist_es_8b3c32ce._.js",
   "static/chunks/node_modules_framer-motion_dist_es_edfcb671._.js",
