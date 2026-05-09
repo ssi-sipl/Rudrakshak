@@ -1810,8 +1810,6 @@ __turbopack_context__.s([
     ()=>dronePatrol,
     "dropPayload",
     ()=>dropPayload,
-    "manualControl",
-    ()=>manualControl,
     "recallDrone",
     ()=>recallDrone,
     "sendDrone",
@@ -1886,16 +1884,6 @@ async function dronePatrol(payload) {
         return {
             success: false,
             error: error instanceof Error ? error.message : "Failed to start patrol"
-        };
-    }
-}
-async function manualControl(payload) {
-    try {
-        return await postJson(`${API_BASE_URL}/api/drone-command/manual`, payload);
-    } catch (error) {
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed manual control"
         };
     }
 }
@@ -2668,7 +2656,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                 className: "text-[11px] text-gray-500",
-                                                                children: new Date(alert.createdAt).toLocaleString() ?? ""
+                                                                children: alert.time
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/dashboard-sidebar.tsx",
                                                                 lineNumber: 674,

@@ -2,12 +2,9 @@
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
   "static/chunks/node_modules_leaflet_dist_leaflet_ef5f0413.css",
-  "static/chunks/node_modules_react-leaflet_lib_index_95fe6af5.js",
-  "static/chunks/_11bc5a19._.js",
-  "static/chunks/node_modules_leaflet_dist_leaflet-src_8608e1e4.js",
-  "static/chunks/node_modules_motion-dom_dist_es_8b3c32ce._.js",
-  "static/chunks/node_modules_framer-motion_dist_es_edfcb671._.js",
-  "static/chunks/node_modules_042de553._.js"
+  "static/chunks/node_modules_react-leaflet_lib_index_24aaceb7.js",
+  "static/chunks/_30e0bc45._.js",
+  "static/chunks/node_modules_ba2d4461._.js"
 ],
     source: "dynamic"
 });
