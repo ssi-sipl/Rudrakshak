@@ -34,7 +34,7 @@ __turbopack_context__.s([
     "logout",
     ()=>logout
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
 async function login(email, password) {
     const res = await fetch(`${API_BASE_URL}/api/auth/login`, {
         method: "POST",

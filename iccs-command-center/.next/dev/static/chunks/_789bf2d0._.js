@@ -83,7 +83,7 @@ __turbopack_context__.s([
     ()=>updateSensor
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
 async function getAllSensors(params) {
     try {
         const queryParams = new URLSearchParams();
@@ -274,7 +274,7 @@ __turbopack_context__.s([
     ()=>updateArea
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
 async function getAllAreas(params) {
     try {
         const queryParams = new URLSearchParams();
@@ -421,7 +421,7 @@ __turbopack_context__.s([
     ()=>updateAlarm
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
 async function getAllAlarms(params) {
     try {
         const queryParams = new URLSearchParams();
@@ -803,7 +803,7 @@ function AddSensorPage() {
                 battery: formData.battery.trim() || undefined,
                 status: formData.status,
                 sendDrone: formData.sendDrone,
-                activeShuruMode: formData.activeShuruMode,
+                activeShuruMode: formData?.activeShuruMode || "Active",
                 areaId: formData.areaId || undefined,
                 alarmId: formData.alarmId || undefined,
                 addedBy: formData.addedBy.trim()
@@ -1436,14 +1436,14 @@ function AddSensorPage() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
                                             className: "text-gray-300",
                                             children: [
-                                                "Choose Status:",
+                                                "Status:",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-red-500",
                                                     children: "*"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
                                                     lineNumber: 512,
-                                                    columnNumber: 31
+                                                    columnNumber: 24
                                                 }, this)
                                             ]
                                         }, void 0, true, {
@@ -1498,6 +1498,14 @@ function AddSensorPage() {
                                             fileName: "[project]/app/(protected)/sensors/add/page.tsx",
                                             lineNumber: 534,
                                             columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-gray-500",
+                                            children: "Active sensors are monitored in real-time. Inactive sensors are stored but not tracked and displayed in the UI"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/(protected)/sensors/add/page.tsx",
+                                            lineNumber: 538,
+                                            columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
@@ -1517,13 +1525,13 @@ function AddSensorPage() {
                                                     children: "*"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                                    lineNumber: 544,
+                                                    lineNumber: 548,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                            lineNumber: 542,
+                                            lineNumber: 546,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
@@ -1536,12 +1544,12 @@ function AddSensorPage() {
                                                         placeholder: "Auto-launch drone?"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                                        lineNumber: 551,
+                                                        lineNumber: 555,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                                    lineNumber: 550,
+                                                    lineNumber: 554,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -1552,24 +1560,24 @@ function AddSensorPage() {
                                                             children: option
                                                         }, option, false, {
                                                             fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                                            lineNumber: 555,
+                                                            lineNumber: 559,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                                    lineNumber: 553,
+                                                    lineNumber: 557,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                            lineNumber: 546,
+                                            lineNumber: 550,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                    lineNumber: 541,
+                                    lineNumber: 545,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1578,19 +1586,19 @@ function AddSensorPage() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
                                             className: "text-gray-300",
                                             children: [
-                                                "Active / Shuru:",
+                                                "Connection Status:",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-red-500",
                                                     children: "*"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                                    lineNumber: 570,
-                                                    columnNumber: 32
+                                                    lineNumber: 574,
+                                                    columnNumber: 35
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                            lineNumber: 569,
+                                            lineNumber: 573,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
@@ -1603,12 +1611,12 @@ function AddSensorPage() {
                                                         placeholder: "Select Sensor State"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                                        lineNumber: 579,
+                                                        lineNumber: 583,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                                    lineNumber: 578,
+                                                    lineNumber: 582,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -1619,18 +1627,18 @@ function AddSensorPage() {
                                                             children: option
                                                         }, option, false, {
                                                             fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                                            lineNumber: 583,
+                                                            lineNumber: 587,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                                    lineNumber: 581,
+                                                    lineNumber: 585,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                            lineNumber: 572,
+                                            lineNumber: 576,
                                             columnNumber: 15
                                         }, this),
                                         validationErrors.activeShuruMode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1638,13 +1646,21 @@ function AddSensorPage() {
                                             children: validationErrors.activeShuruMode
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                            lineNumber: 594,
+                                            lineNumber: 598,
                                             columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-gray-500",
+                                            children: "Whether the sensor is live in the network or not."
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/(protected)/sensors/add/page.tsx",
+                                            lineNumber: 602,
+                                            columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                    lineNumber: 568,
+                                    lineNumber: 572,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1660,13 +1676,13 @@ function AddSensorPage() {
                                                     children: "*"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                                    lineNumber: 602,
+                                                    lineNumber: 609,
                                                     columnNumber: 26
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                            lineNumber: 601,
+                                            lineNumber: 608,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -1678,7 +1694,7 @@ function AddSensorPage() {
                                             className: "border-[#444] bg-[#2a2a2a] text-white placeholder:text-gray-500 focus:border-[#4A9FD4] focus:ring-[#4A9FD4]"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                            lineNumber: 604,
+                                            lineNumber: 611,
                                             columnNumber: 15
                                         }, this),
                                         validationErrors.addedBy && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1686,13 +1702,13 @@ function AddSensorPage() {
                                             children: validationErrors.addedBy
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                            lineNumber: 613,
+                                            lineNumber: 620,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                    lineNumber: 600,
+                                    lineNumber: 607,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -1714,12 +1730,12 @@ function AddSensorPage() {
                                         children: "Cancel"
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                        lineNumber: 623,
+                                        lineNumber: 630,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                    lineNumber: 622,
+                                    lineNumber: 629,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1732,7 +1748,7 @@ function AddSensorPage() {
                                                 className: "mr-2 h-4 w-4 animate-spin"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                                lineNumber: 639,
+                                                lineNumber: 646,
                                                 columnNumber: 19
                                             }, this),
                                             "Submitting..."
@@ -1740,13 +1756,13 @@ function AddSensorPage() {
                                     }, void 0, true) : "SUBMIT"
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                                    lineNumber: 632,
+                                    lineNumber: 639,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/sensors/add/page.tsx",
-                            lineNumber: 621,
+                            lineNumber: 628,
                             columnNumber: 11
                         }, this)
                     ]

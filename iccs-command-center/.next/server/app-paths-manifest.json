@@ -11,6 +11,7 @@
   "/(protected)/drones/[id]/page": "app/(protected)/drones/[id]/page.js",
   "/(protected)/drones/add/page": "app/(protected)/drones/add/page.js",
   "/(protected)/drones/page": "app/(protected)/drones/page.js",
+  "/(protected)/health/page": "app/(protected)/health/page.js",
   "/(protected)/maps/manage/page": "app/(protected)/maps/manage/page.js",
   "/(protected)/page": "app/(protected)/page.js",
   "/(protected)/report/page": "app/(protected)/report/page.js",

@@ -99,7 +99,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RudrakshakV1/frontend",
+    "outputFileTracingRoot": "/Users/parikshitgole/Desktop/iccs-command-center",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -157,7 +157,7 @@
       "proxyPrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 3,
+      "cpus": 7,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -289,11 +289,11 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RudrakshakV1/frontend"
+      "root": "/Users/parikshitgole/Desktop/iccs-command-center"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RudrakshakV1/frontend",
+  "appDir": "/Users/parikshitgole/Desktop/iccs-command-center",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
