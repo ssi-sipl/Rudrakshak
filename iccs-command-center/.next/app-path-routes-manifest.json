@@ -11,7 +11,6 @@
   "/(protected)/drones/[id]/page": "/drones/[id]",
   "/(protected)/drones/add/page": "/drones/add",
   "/(protected)/drones/page": "/drones",
-  "/(protected)/health/page": "/health",
   "/(protected)/maps/manage/page": "/maps/manage",
   "/(protected)/page": "/",
   "/(protected)/report/page": "/report",
