@@ -2575,6 +2575,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
         // ---------- ALERTS ----------
         socket.on("alert_active", (alert)=>{
             setAlerts((prev)=>{
+                console.log(prev);
                 const existingIndex = prev.findIndex((a)=>a.sensorId === alert.sensorId);
                 if (existingIndex !== -1) {
                     const updated = [

@@ -921,7 +921,7 @@ function ViewSmartMeterPage() {
                                                             className: "text-gray-400",
                                                             children: [
                                                                 'Are you sure you want to delete "',
-                                                                smartMeters.id,
+                                                                smartMeters.smartMeterId,
                                                                 '"? This action cannot be undone.'
                                                             ]
                                                         }, void 0, true, {

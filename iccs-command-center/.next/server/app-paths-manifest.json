@@ -11,6 +11,7 @@
   "/(protected)/drones/[id]/page": "app/(protected)/drones/[id]/page.js",
   "/(protected)/drones/add/page": "app/(protected)/drones/add/page.js",
   "/(protected)/drones/page": "app/(protected)/drones/page.js",
+  "/(protected)/health/page": "app/(protected)/health/page.js",
   "/(protected)/maps/manage/page": "app/(protected)/maps/manage/page.js",
   "/(protected)/page": "app/(protected)/page.js",
   "/(protected)/report/page": "app/(protected)/report/page.js",
@@ -18,6 +19,10 @@
   "/(protected)/sensors/[id]/page": "app/(protected)/sensors/[id]/page.js",
   "/(protected)/sensors/add/page": "app/(protected)/sensors/add/page.js",
   "/(protected)/sensors/page": "app/(protected)/sensors/page.js",
+  "/(protected)/smartmeter/[id]/edit/page": "app/(protected)/smartmeter/[id]/edit/page.js",
+  "/(protected)/smartmeter/[id]/page": "app/(protected)/smartmeter/[id]/page.js",
+  "/(protected)/smartmeter/add/page": "app/(protected)/smartmeter/add/page.js",
+  "/(protected)/smartmeter/page": "app/(protected)/smartmeter/page.js",
   "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/login/page": "app/login/page.js"

@@ -2681,6 +2681,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                 "DashboardSidebar.useEffect": (alert)=>{
                     setAlerts({
                         "DashboardSidebar.useEffect": (prev)=>{
+                            console.log(prev);
                             const existingIndex = prev.findIndex({
                                 "DashboardSidebar.useEffect.existingIndex": (a)=>a.sensorId === alert.sensorId
                             }["DashboardSidebar.useEffect.existingIndex"]);
