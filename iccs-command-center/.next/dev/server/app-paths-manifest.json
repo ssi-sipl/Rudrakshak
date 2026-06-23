@@ -1,17 +1,4 @@
 {
-  "/(protected)/area/[id]/edit/page": "app/(protected)/area/[id]/edit/page.js",
-  "/(protected)/area/[id]/page": "app/(protected)/area/[id]/page.js",
-  "/(protected)/area/add/page": "app/(protected)/area/add/page.js",
-  "/(protected)/area/page": "app/(protected)/area/page.js",
-  "/(protected)/drones/page": "app/(protected)/drones/page.js",
   "/(protected)/health/page": "app/(protected)/health/page.js",
-  "/(protected)/maps/manage/page": "app/(protected)/maps/manage/page.js",
-  "/(protected)/page": "app/(protected)/page.js",
-  "/(protected)/sensors/[id]/edit/page": "app/(protected)/sensors/[id]/edit/page.js",
-  "/(protected)/sensors/[id]/page": "app/(protected)/sensors/[id]/page.js",
-  "/(protected)/sensors/add/page": "app/(protected)/sensors/add/page.js",
-  "/(protected)/sensors/page": "app/(protected)/sensors/page.js",
-  "/(protected)/smartmeter/[id]/edit/page": "app/(protected)/smartmeter/[id]/edit/page.js",
-  "/(protected)/smartmeter/[id]/page": "app/(protected)/smartmeter/[id]/page.js",
-  "/(protected)/smartmeter/page": "app/(protected)/smartmeter/page.js"
+  "/(protected)/smartmeter/[id]/page": "app/(protected)/smartmeter/[id]/page.js"
 }
