@@ -1,10 +1,79 @@
-[00:00:00.614] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:00.694] Server  LOG      ✓ Ready in 450ms
-[00:00:03.576] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:03.576] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:04.033] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:04.033] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/health","route":"/health"}
-[00:00:04.033] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/health color: rgb(120, 120, 120) color: inherit {"dp":"/health","o":"http://localhost:3000/health","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782206969697} /_vercel/insights/view
-[00:00:04.033] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:04.033] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/smartmeter/1c945b1e-daab-491f-9314-483adfe06938","route":"/smartmeter/[id]"}
-[00:00:04.033] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/smartmeter/1c945b1e-daab-491f-9314-483adfe06938 color: rgb(120, 120, 120) color: inherit {"dp":"/smartmeter/[id]","o":"http://localhost:3000/smartmeter/1c945b1e-daab-491f-9314-483adfe06938","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782206969611} /_vercel/insights/view
+[00:00:00.507] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:00.574] Server  LOG      ✓ Ready in 380ms
+[00:00:02.393] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.680] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+      <DashboardLayout params={Promise}>
+        <div className="flex h-scr...">
+          <DashboardHeader>
+            <header className="flex h-14 ...">
+              <LinkComponent>
+              ...
+                <MenuAnchor asChild={true} __scopeMenu={{Menu:[...], ...}}>
+                  <PopperAnchor __scopePopper={{Menu:[...], ...}} asChild={true} ref={null}>
+                    <Primitive.div asChild={true} ref={function}>
+                      <Slot ref={function}>
+                        <SlotClone ref={function}>
+                          <Primitive.button type="button" id="radix-_R_i..." aria-haspopup="menu" aria-expanded={false} ...>
+                            <Slot type="button" id="radix-_R_i..." aria-haspopup="menu" aria-expanded={false} ...>
+                              <SlotClone type="button" id="radix-_R_i..." aria-haspopup="menu" aria-expanded={false} ...>
+                                <Button variant="ghost" size="sm" className={"\n    ga..."} type="button" ...>
+                                  <button
+                                    data-slot="dropdown-menu-trigger"
+                                    className={"inline-flex items-center justify-center whitespace-nowrap font-medium..."}
+                                    type="button"
++                                   id="radix-_R_icndlb_"
+-                                   id="radix-_R_29kndlb_"
+                                    aria-haspopup="menu"
+                                    aria-expanded={false}
+                                    aria-controls={undefined}
+                                    data-state="closed"
+                                    data-disabled={undefined}
+                                    disabled={false}
+                                    onPointerDown={function handleEvent}
+                                    onKeyDown={function handleEvent}
+                                    ref={function}
+                                  >
+              <div>
+              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_4..." ...>
+                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
+                                <button
+                                  data-slot="sheet-trigger"
+                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+                                  type="button"
+                                  aria-haspopup="dialog"
+                                  aria-expanded={false}
++                                 aria-controls="radix-_R_4cndlb_"
+-                                 aria-controls="radix-_R_hkndlb_"
+                                  data-state="closed"
+                                  onClick={function handleEvent}
+                                  ref={function}
+                                >
+                    ...
+          ...
+
+[00:00:02.680] Browser ERROR   Error fetching drone OS: {}
+[00:00:02.680] Browser ERROR   Error fetching active alerts: {}
+[00:00:02.680] Browser ERROR   Error fetching sensors: {}
+[00:00:02.680] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:02.680] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors","route":"/sensors"}
+[00:00:02.680] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782208894491} /_vercel/insights/view

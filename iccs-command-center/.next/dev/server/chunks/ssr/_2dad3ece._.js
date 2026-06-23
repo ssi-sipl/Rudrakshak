@@ -200,7 +200,7 @@ __turbopack_context__.s([
     "updateSensor",
     ()=>updateSensor
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllSensors(params) {
     try {
         const queryParams = new URLSearchParams();
@@ -389,7 +389,7 @@ __turbopack_context__.s([
     "setMapActive",
     ()=>setMapActive
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllMaps() {
     try {
         const res = await fetch(`${API_BASE_URL}/api/maps`, {
@@ -524,7 +524,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 ;
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 const REACH_RADIUS_METERS = 6;
 const MapContainer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(async ()=>{}, {
     loadableGenerated: {
@@ -2893,7 +2893,7 @@ __turbopack_context__.s([
     "updateSmartMeter",
     ()=>updateSmartMeter
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllSmartMeters(params) {
     try {
         const queryParams = new URLSearchParams();
@@ -3062,13 +3062,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2f$smartmeter$2e$
 ;
 ;
 ;
-const SOCKET_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const SOCKET_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 const REACH_RADIUS_METERS = 6;
 const DRONE_LOCATION_TIMEOUT_MS = 5000;
 const STALE_DATA_THRESHOLD_MS = 10000;
 const CRITICAL_LOSS_THRESHOLD_MS = 12000;
 const DRONE_STATUS_REFRESH_MS = 5000;
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 const ZOOM_SCALE_CONFIG = {
     minZoom: 10,
     maxZoom: 40,
@@ -3309,7 +3309,7 @@ function MapView({ mode = "operations" }) {
     const handleScanSensors = async ()=>{
         try {
             setScanning(true);
-            const response = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5001")}/api/camera/status/activeShuruMode`, {
+            const response = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5000")}/api/camera/status/activeShuruMode`, {
                 method: "GET"
             });
             const data = await response.json();

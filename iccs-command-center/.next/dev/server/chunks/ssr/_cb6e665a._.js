@@ -171,7 +171,7 @@ __turbopack_context__.s([
     "setMapActive",
     ()=>setMapActive
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllMaps() {
     try {
         const res = await fetch(`${API_BASE_URL}/api/maps`, {
