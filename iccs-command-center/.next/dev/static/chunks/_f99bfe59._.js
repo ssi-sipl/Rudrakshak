@@ -502,7 +502,7 @@ function EditSmartMeterPage() {
             if (response.success) {
                 toast({
                     title: "Success",
-                    description: `SmartMeter "${formData.smartMeterId}" created successfully`
+                    description: `SmartMeter "${formData.smartMeterId}" updated successfully`
                 });
                 router.push(`/smartmeter/${params.id}`);
                 router.refresh();

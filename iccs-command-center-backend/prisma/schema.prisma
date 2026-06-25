@@ -12,7 +12,7 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
-}
+} 
 
 enum Role {
   SUPER_ADMIN
@@ -71,9 +71,9 @@ model Sensor {
   status     String // Sensor status (Active/Inactive)
 
   // Drone control fields
-  sendDrone       String   @default("No") // Auto-launch drone? Yes/No
-  activeShuruMode String   // Active/Shuru Camera Network Status (Active/Inactive)
-  
+  sendDrone       String @default("No") // Auto-launch drone? Yes/No
+  activeShuruMode String // Active/Shuru Camera Network Status (Active/Inactive)
+
   // Relations
   areaId String?
   area   Area?   @relation(fields: [areaId], references: [id], onDelete: Cascade)
@@ -250,62 +250,63 @@ model OfflineMap {
 }
 
 model MediaConverters {
-  id               Int      @id @default(autoincrement())
+  id Int @id @default(autoincrement())
 
-  mediaConverterId String   @unique
-
+  mediaConverterId String @unique
 
   //relations
   smartMeterId String?
   smartMeter   SmartMeter? @relation(fields: [smartMeterId], references: [id], onDelete: Cascade)
 
-  fx               Boolean
-  tx               Boolean
-  link             Boolean
-  pwr              Boolean
-  act              Boolean
-  fdx              Boolean
+  fx   Boolean
+  tx   Boolean
+  link Boolean
+  pwr  Boolean
+  act  Boolean
+  fdx  Boolean
 
-  lastUpdatedAt    DateTime @updatedAt
-  createdAt        DateTime @default(now())
+  lastUpdatedAt DateTime @updatedAt
+  createdAt     DateTime @default(now())
+
+  logs MediaConverterLogs[]
 
   @@map("media_converters")
-
-  logs             MediaConverterLogs[]
 }
 
 model MediaConverterLogs {
-  id               Int      @id @default(autoincrement())
+  id Int @id @default(autoincrement())
 
   mediaConverterId String
   date             String
 
-  requestCount     Int      @default(0)
-  expected         Int
+  requestCount Int @default(0)
+  expected     Int
 
-  mediaConverter   MediaConverters @relation( fields: [mediaConverterId],references: [mediaConverterId])
+  mediaConverter MediaConverters @relation(fields: [mediaConverterId], references: [mediaConverterId], onDelete: Cascade)
 
   @@unique([mediaConverterId, date], name: "mediaConverterId_date")
   @@map("media_converter_logs")
-
 }
-model SmartMeter {
-  id           String @id @default(uuid())
 
-  smartMeterId String @unique
+model SmartMeter {
+  id String @id @default(uuid())
+
+  smartMeterId String  @unique
   location     String?
 
-  ipAddress    String?
+  ipAddress String?
 
-  latitude     Float?
-  longitude    Float?
+  NetworkStatus String @default("OFFLINE")
 
-  status       String @default("Active")
+  latitude  Float?
+  longitude Float?
 
-  addedBy      String @default("")
+  status String @default("Active")
 
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  addedBy String @default("")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   // Relations
   mediaConverters MediaConverters[]

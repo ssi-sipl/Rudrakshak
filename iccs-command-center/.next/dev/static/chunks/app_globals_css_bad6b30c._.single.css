@@ -6366,6 +6366,12 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:grid-cols-5 {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:grid-cols-\[1\.4fr\,1fr\] {
       grid-template-columns: 1.4fr, 1fr;
     }
