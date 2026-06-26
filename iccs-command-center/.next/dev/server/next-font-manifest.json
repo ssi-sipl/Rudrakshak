@@ -4,11 +4,11 @@
       "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
       "static/media/797e433ab948586e-s.p.29207c2f.woff2"
     ],
-    "[project]/app/(protected)/drones/add/page": [
+    "[project]/app/(protected)/drones/page": [
       "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
       "static/media/797e433ab948586e-s.p.29207c2f.woff2"
     ],
-    "[project]/app/(protected)/drones/page": [
+    "[project]/app/(protected)/health/page": [
       "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
       "static/media/797e433ab948586e-s.p.29207c2f.woff2"
     ],
@@ -25,10 +25,6 @@
       "static/media/797e433ab948586e-s.p.29207c2f.woff2"
     ],
     "[project]/app/(protected)/sensors/page": [
-      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
-      "static/media/797e433ab948586e-s.p.29207c2f.woff2"
-    ],
-    "[project]/app/login/page": [
       "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
       "static/media/797e433ab948586e-s.p.29207c2f.woff2"
     ]

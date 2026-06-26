@@ -83,6 +83,22 @@
         "nxtPid": "nxtPid"
       },
       "namedRegex": "^/sensors/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    },
+    {
+      "page": "/smartmeter/[id]",
+      "regex": "^/smartmeter/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/smartmeter/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/smartmeter/[id]/edit",
+      "regex": "^/smartmeter/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/smartmeter/(?<nxtPid>[^/]+?)/edit(?:/)?$"
     }
   ],
   "staticRoutes": [
@@ -141,6 +157,12 @@
       "namedRegex": "^/drones/add(?:/)?$"
     },
     {
+      "page": "/health",
+      "regex": "^/health(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/health(?:/)?$"
+    },
+    {
       "page": "/login",
       "regex": "^/login(?:/)?$",
       "routeKeys": {},
@@ -169,6 +191,18 @@
       "regex": "^/sensors/add(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/sensors/add(?:/)?$"
+    },
+    {
+      "page": "/smartmeter",
+      "regex": "^/smartmeter(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/smartmeter(?:/)?$"
+    },
+    {
+      "page": "/smartmeter/add",
+      "regex": "^/smartmeter/add(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/smartmeter/add(?:/)?$"
     }
   ],
   "dataRoutes": [],
