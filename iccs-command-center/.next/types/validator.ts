@@ -144,15 +144,6 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
-// Validate ../../app/(protected)/health/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/health">> = Specific
-  const handler = {} as typeof import("../../app/(protected)/health/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
 // Validate ../../app/(protected)/maps/manage/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/maps/manage">> = Specific
@@ -211,42 +202,6 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 {
   type __IsExpected<Specific extends AppPageConfig<"/sensors">> = Specific
   const handler = {} as typeof import("../../app/(protected)/sensors/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
-// Validate ../../app/(protected)/smartmeter/[id]/edit/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/smartmeter/[id]/edit">> = Specific
-  const handler = {} as typeof import("../../app/(protected)/smartmeter/[id]/edit/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
-// Validate ../../app/(protected)/smartmeter/[id]/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/smartmeter/[id]">> = Specific
-  const handler = {} as typeof import("../../app/(protected)/smartmeter/[id]/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
-// Validate ../../app/(protected)/smartmeter/add/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/smartmeter/add">> = Specific
-  const handler = {} as typeof import("../../app/(protected)/smartmeter/add/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
-// Validate ../../app/(protected)/smartmeter/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/smartmeter">> = Specific
-  const handler = {} as typeof import("../../app/(protected)/smartmeter/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
