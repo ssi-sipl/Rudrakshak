@@ -1,29 +1,7 @@
-[00:00:00.506] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:00.566] Server  LOG      ✓ Ready in 373ms
-[00:00:08.024] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.183] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:08.183] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors","route":"/sensors"}
-[00:00:08.183] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898925646} /_vercel/insights/view
-[00:00:10.124] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/drones color: rgb(120, 120, 120) color: inherit {"dp":"/drones","o":"http://localhost:3000/drones","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898927584} /_vercel/insights/view
-[00:00:10.615] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898928076} /_vercel/insights/view
-[00:00:12.424] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898929885} /_vercel/insights/view
-[00:00:12.787] Browser LOG     {"activeShuruMode":"Active","addedBy":"asdfadsfsf","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T08:54:24.235Z","id":"34381415-fdfc-455d-a72c-e3747a51eba1","ipAddress":null,"latitude":13.92,"longitude":77.08,"name":"Yash Chakrawarti","rtspUrl":null,"sendDrone":"No","sensorId":"02werwr","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Active","updatedAt":"2026-07-01T09:35:57.216Z"}
-[00:00:12.787] Browser LOG     {"activeShuruMode":"Active","addedBy":"asdfadsfsf","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T08:54:24.235Z","id":"34381415-fdfc-455d-a72c-e3747a51eba1","ipAddress":null,"latitude":13.92,"longitude":77.08,"name":"Yash Chakrawarti","rtspUrl":null,"sendDrone":"No","sensorId":"02werwr","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Active","updatedAt":"2026-07-01T09:35:57.216Z"}
-[00:00:18.223] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1 color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]","o":"http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898935685} /_vercel/insights/view
-[00:00:25.255] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898942675} /_vercel/insights/view
-[00:00:25.255] Browser LOG     {"activeShuruMode":"Active","addedBy":"asdfadsfsf","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T08:54:24.235Z","id":"34381415-fdfc-455d-a72c-e3747a51eba1","ipAddress":null,"latitude":13.921,"longitude":77.08,"name":"Yash Chakrawarti","rtspUrl":null,"sendDrone":"No","sensorId":"02werwr","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Active","updatedAt":"2026-07-01T09:42:15.217Z"}
-[00:00:25.255] Browser LOG     {"activeShuruMode":"Active","addedBy":"asdfadsfsf","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T08:54:24.235Z","id":"34381415-fdfc-455d-a72c-e3747a51eba1","ipAddress":null,"latitude":13.921,"longitude":77.08,"name":"Yash Chakrawarti","rtspUrl":null,"sendDrone":"No","sensorId":"02werwr","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Active","updatedAt":"2026-07-01T09:42:15.217Z"}
-[00:00:27.113] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1 color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]","o":"http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898944574} /_vercel/insights/view
-[00:00:28.213] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898945674} /_vercel/insights/view
-[00:00:29.777] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:29.910] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:29.910] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors","route":"/sensors"}
-[00:00:29.910] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898947372} /_vercel/insights/view
-[00:00:31.132] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898948592} /_vercel/insights/view
-[00:00:31.494] Browser LOG     {"activeShuruMode":"Active","addedBy":"Parikshit","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T09:01:37.968Z","id":"1f8d63ee-978e-4915-8747-b90512ce63c3","ipAddress":null,"latitude":13.92,"longitude":77.08,"name":"Parikshit Gole","rtspUrl":null,"sendDrone":"No","sensorId":"nkn","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Inactive","updatedAt":"2026-07-01T09:37:25.621Z"}
-[00:00:31.494] Browser LOG     {"activeShuruMode":"Active","addedBy":"Parikshit","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T09:01:37.968Z","id":"1f8d63ee-978e-4915-8747-b90512ce63c3","ipAddress":null,"latitude":13.92,"longitude":77.08,"name":"Parikshit Gole","rtspUrl":null,"sendDrone":"No","sensorId":"nkn","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Inactive","updatedAt":"2026-07-01T09:37:25.621Z"}
-[00:00:32.219] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:32.441] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:00.494] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:00.548] Server  LOG      ✓ Ready in 430ms
+[00:00:46.670] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:46.808] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -68,26 +46,23 @@ It can also happen if the client has a browser extension installed which messes 
                     ...
           ...
 
-[00:00:32.441] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:32.441] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit","route":"/sensors/[id]/edit"}
-[00:00:32.441] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898949857} /_vercel/insights/view
-[00:00:32.441] Browser LOG     {"activeShuruMode":"Active","addedBy":"Parikshit","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T09:01:37.968Z","id":"1f8d63ee-978e-4915-8747-b90512ce63c3","ipAddress":null,"latitude":13.92,"longitude":77.08,"name":"Parikshit Gole","rtspUrl":null,"sendDrone":"No","sensorId":"nkn","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Inactive","updatedAt":"2026-07-01T09:37:25.621Z"}
-[00:00:33.391] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:33.541] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:33.541] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit","route":"/sensors/[id]/edit"}
-[00:00:33.541] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898950994} /_vercel/insights/view
-[00:00:33.541] Browser LOG     {"activeShuruMode":"Active","addedBy":"Parikshit","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T09:01:37.968Z","id":"1f8d63ee-978e-4915-8747-b90512ce63c3","ipAddress":null,"latitude":13.92,"longitude":77.08,"name":"Parikshit Gole","rtspUrl":null,"sendDrone":"No","sensorId":"nkn","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Inactive","updatedAt":"2026-07-01T09:37:25.621Z"}
-[00:00:34.286] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3 color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]","o":"http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898951748} /_vercel/insights/view
-[00:00:37.105] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898954567} /_vercel/insights/view
-[00:00:38.933] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898956354} /_vercel/insights/view
-[00:00:38.933] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
-[00:00:38.933] Browser LOG     Fetched alarms: []
-[00:00:38.933] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
-[00:00:38.933] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
-[00:00:38.933] Browser LOG     Fetched alarms: []
-[00:00:38.933] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
-[00:00:39.991] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:40.144] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:46.808] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:46.808] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors","route":"/sensors"}
+[00:00:46.808] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782899788484} /_vercel/insights/view
+[00:00:51.567] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782899793203} /_vercel/insights/view
+[00:00:51.567] Browser LOG     Fetched areas: [{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"}]
+[00:00:51.567] Browser LOG     Fetched alarms: []
+[00:00:51.567] Browser LOG     Fetched smartmeters: []
+[00:00:51.567] Browser LOG     Fetched areas: [{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"}]
+[00:00:51.567] Browser LOG     Fetched alarms: []
+[00:00:51.567] Browser LOG     Fetched smartmeters: []
+[00:01:09.071] Browser ERROR   Error creating sensor: {}
+[00:01:09.770] Browser ERROR   Error creating sensor: {}
+[00:01:09.943] Browser ERROR   Error creating sensor: {}
+[00:01:10.091] Browser ERROR   Error creating sensor: {}
+[00:03:38.631] Server  LOG      ✓ Compiled in 35ms
+[00:03:42.596] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:42.727] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -132,14 +107,22 @@ It can also happen if the client has a browser extension installed which messes 
                     ...
           ...
 
-[00:00:40.144] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:40.144] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/add","route":"/sensors/add"}
-[00:00:40.144] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898957577} /_vercel/insights/view
-[00:00:40.144] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
-[00:00:40.144] Browser LOG     Fetched alarms: []
-[00:00:40.144] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
-[00:00:40.748] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:40.933] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:03:42.727] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:03:42.727] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/add","route":"/sensors/add"}
+[00:03:42.727] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782899964399} /_vercel/insights/view
+[00:03:42.727] Browser LOG     Fetched areas: [{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"}]
+[00:03:42.727] Browser LOG     Fetched alarms: []
+[00:03:42.727] Browser LOG     Fetched smartmeters: []
+[00:03:43.571] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:43.689] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:03:43.689] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/add","route":"/sensors/add"}
+[00:03:43.689] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782899965362} /_vercel/insights/view
+[00:03:43.689] Browser LOG     Fetched areas: [{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"}]
+[00:03:43.689] Browser LOG     Fetched alarms: []
+[00:03:43.689] Browser LOG     Fetched smartmeters: []
+[00:03:55.063] Browser ERROR   Error creating sensor: {}
+[00:04:55.293] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:55.551] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -184,127 +167,41 @@ It can also happen if the client has a browser extension installed which messes 
                     ...
           ...
 
-[00:00:40.933] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:40.933] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/add","route":"/sensors/add"}
-[00:00:40.933] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898958384} /_vercel/insights/view
-[00:00:40.933] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
-[00:00:40.933] Browser LOG     Fetched alarms: []
-[00:00:40.933] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
-[00:00:41.421] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:41.571] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:41.571] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/add","route":"/sensors/add"}
-[00:00:41.571] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898959011} /_vercel/insights/view
-[00:00:41.571] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
-[00:00:41.571] Browser LOG     Fetched alarms: []
-[00:00:41.571] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
-[00:00:43.323] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/area color: rgb(120, 120, 120) color: inherit {"dp":"/area","o":"http://localhost:3000/area","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898960784} /_vercel/insights/view
-[00:00:43.756] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898961217} /_vercel/insights/view
-[00:00:44.456] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:44.627] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
-      <DashboardLayout params={Promise}>
-        <div className="flex h-scr...">
-          <DashboardHeader>
-            <header className="flex h-14 ...">
-              <LinkComponent>
-              <nav>
-              <div>
-              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
-                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
-                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
-                    <SheetTrigger asChild={true}>
-                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
-                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_4..." ...>
-                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
-                                <button
-                                  data-slot="sheet-trigger"
-                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
-                                  type="button"
-                                  aria-haspopup="dialog"
-                                  aria-expanded={false}
-+                                 aria-controls="radix-_R_4cndlb_"
--                                 aria-controls="radix-_R_hkndlb_"
-                                  data-state="closed"
-                                  onClick={function handleEvent}
-                                  ref={function}
-                                >
-                    ...
-          ...
-
-[00:00:44.627] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:44.627] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors","route":"/sensors"}
-[00:00:44.627] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898962090} /_vercel/insights/view
-[00:00:45.226] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898962687} /_vercel/insights/view
-[00:00:45.573] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
-[00:00:45.573] Browser LOG     Fetched alarms: []
-[00:00:45.573] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
-[00:00:45.573] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
-[00:00:45.573] Browser LOG     Fetched alarms: []
-[00:00:45.573] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
-[00:00:46.294] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:46.470] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
-      <DashboardLayout params={Promise}>
-        <div className="flex h-scr...">
-          <DashboardHeader>
-            <header className="flex h-14 ...">
-              <LinkComponent>
-              <nav>
-              <div>
-              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
-                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
-                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
-                    <SheetTrigger asChild={true}>
-                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
-                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_4..." ...>
-                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
-                                <button
-                                  data-slot="sheet-trigger"
-                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
-                                  type="button"
-                                  aria-haspopup="dialog"
-                                  aria-expanded={false}
-+                                 aria-controls="radix-_R_4cndlb_"
--                                 aria-controls="radix-_R_hkndlb_"
-                                  data-state="closed"
-                                  onClick={function handleEvent}
-                                  ref={function}
-                                >
-                    ...
-          ...
-
-[00:00:46.470] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:46.470] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/add","route":"/sensors/add"}
-[00:00:46.470] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898963923} /_vercel/insights/view
-[00:00:46.470] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
-[00:00:46.470] Browser LOG     Fetched alarms: []
-[00:00:46.470] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
-[00:00:47.742] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/area color: rgb(120, 120, 120) color: inherit {"dp":"/area","o":"http://localhost:3000/area","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898965204} /_vercel/insights/view
+[00:04:55.551] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:04:55.551] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/add","route":"/sensors/add"}
+[00:04:55.551] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900037172} /_vercel/insights/view
+[00:04:55.551] Browser LOG     Fetched areas: [{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"}]
+[00:04:55.551] Browser LOG     Fetched alarms: []
+[00:04:55.552] Browser LOG     Fetched smartmeters: []
+[00:05:14.000] Browser ERROR   Error creating sensor: {}
+[00:06:28.014] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900129688} /_vercel/insights/view
+[00:06:35.247] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:35.387] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:06:35.387] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors","route":"/sensors"}
+[00:06:35.387] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900137056} /_vercel/insights/view
+[00:06:59.391] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/fba1d8f5-347d-4e5f-ab43-2c8b6797c67f/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/fba1d8f5-347d-4e5f-ab43-2c8b6797c67f/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900161065} /_vercel/insights/view
+[00:07:01.162] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/fba1d8f5-347d-4e5f-ab43-2c8b6797c67f color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]","o":"http://localhost:3000/sensors/fba1d8f5-347d-4e5f-ab43-2c8b6797c67f","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900162837} /_vercel/insights/view
+[00:07:02.746] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900164420} /_vercel/insights/view
+[00:07:03.984] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/fba1d8f5-347d-4e5f-ab43-2c8b6797c67f color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]","o":"http://localhost:3000/sensors/fba1d8f5-347d-4e5f-ab43-2c8b6797c67f","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900165658} /_vercel/insights/view
+[00:07:08.448] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900170122} /_vercel/insights/view
+[00:07:38.605] Server  LOG      ✓ Compiled in 31ms
+[00:10:00.478] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:00.598] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:10:00.598] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors","route":"/sensors"}
+[00:10:00.598] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900342268} /_vercel/insights/view
+[00:10:04.228] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/fba1d8f5-347d-4e5f-ab43-2c8b6797c67f/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/fba1d8f5-347d-4e5f-ab43-2c8b6797c67f/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900345897} /_vercel/insights/view
+[00:10:11.747] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/fba1d8f5-347d-4e5f-ab43-2c8b6797c67f color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]","o":"http://localhost:3000/sensors/fba1d8f5-347d-4e5f-ab43-2c8b6797c67f","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900353420} /_vercel/insights/view
+[00:10:18.163] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900359836} /_vercel/insights/view
+[00:10:18.975] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900360650} /_vercel/insights/view
+[00:10:19.314] Browser LOG     Fetched areas: [{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"}]
+[00:10:19.314] Browser LOG     Fetched alarms: []
+[00:10:19.314] Browser LOG     Fetched smartmeters: []
+[00:10:19.314] Browser LOG     Fetched areas: [{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"}]
+[00:10:19.314] Browser LOG     Fetched alarms: []
+[00:10:19.314] Browser LOG     Fetched smartmeters: []
+[00:10:42.898] Browser ERROR   Error creating sensor: {}
+[00:10:47.074] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900388758} /_vercel/insights/view
+[00:10:50.768] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/cc5937a2-f509-42f3-a3e8-250acd13be32/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/cc5937a2-f509-42f3-a3e8-250acd13be32/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900392451} /_vercel/insights/view
+[00:10:55.009] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/cc5937a2-f509-42f3-a3e8-250acd13be32 color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]","o":"http://localhost:3000/sensors/cc5937a2-f509-42f3-a3e8-250acd13be32","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900396694} /_vercel/insights/view
+[00:10:59.489] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/cc5937a2-f509-42f3-a3e8-250acd13be32/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/cc5937a2-f509-42f3-a3e8-250acd13be32/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900401173} /_vercel/insights/view
+[00:11:04.875] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/cc5937a2-f509-42f3-a3e8-250acd13be32 color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]","o":"http://localhost:3000/sensors/cc5937a2-f509-42f3-a3e8-250acd13be32","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782900406560} /_vercel/insights/view

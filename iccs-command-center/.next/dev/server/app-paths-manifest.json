@@ -1,6 +1,4 @@
 {
-  "/(protected)/area/page": "app/(protected)/area/page.js",
-  "/(protected)/drones/page": "app/(protected)/drones/page.js",
   "/(protected)/sensors/[id]/edit/page": "app/(protected)/sensors/[id]/edit/page.js",
   "/(protected)/sensors/[id]/page": "app/(protected)/sensors/[id]/page.js",
   "/(protected)/sensors/add/page": "app/(protected)/sensors/add/page.js",

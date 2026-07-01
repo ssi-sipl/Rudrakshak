@@ -70,7 +70,7 @@ __turbopack_context__.s([
     "updateSensor",
     ()=>updateSensor
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllSensors(params) {
     try {
         const queryParams = new URLSearchParams();
@@ -257,7 +257,7 @@ __turbopack_context__.s([
     "updateArea",
     ()=>updateArea
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllAreas(params) {
     try {
         const queryParams = new URLSearchParams();
@@ -400,7 +400,7 @@ __turbopack_context__.s([
     "updateAlarm",
     ()=>updateAlarm
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllAlarms(params) {
     try {
         const queryParams = new URLSearchParams();
@@ -583,7 +583,7 @@ __turbopack_context__.s([
     "updateSmartMeter",
     ()=>updateSmartMeter
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllSmartMeters(params) {
     try {
         const queryParams = new URLSearchParams();
@@ -925,8 +925,7 @@ function AddSensorPage() {
                 activeShuruMode: formData?.activeShuruMode || "Active",
                 areaId: formData.areaId || undefined,
                 alarmId: formData.alarmId || undefined,
-                addedBy: formData.addedBy.trim(),
-                smartMeterId: formData.smartMeterId.trim()
+                addedBy: formData.addedBy.trim()
             });
             if (response.success) {
                 toast({
@@ -1203,7 +1202,7 @@ function AddSensorPage() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Select"], {
-                                            value: formData?.smartMeterId || "none",
+                                            value: formData.smartMeterId || "none",
                                             onValueChange: (value)=>handleChange("smartMeterId", value === "none" ? "" : value),
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectTrigger"], {
@@ -1257,7 +1256,7 @@ function AddSensorPage() {
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/sensors/add/page.tsx",
                                     lineNumber: 366,
-                                    columnNumber: 16
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "space-y-2",

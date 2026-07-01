@@ -332,7 +332,7 @@ __turbopack_context__.s([
     "updateSmartMeter",
     ()=>updateSmartMeter
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllSmartMeters(params) {
     try {
         const queryParams = new URLSearchParams();

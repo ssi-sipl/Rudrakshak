@@ -520,7 +520,7 @@ __turbopack_context__.s([
     "updateFlightHistory",
     ()=>updateFlightHistory
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllFlightHistory(params) {
     try {
         const queryParams = new URLSearchParams();
