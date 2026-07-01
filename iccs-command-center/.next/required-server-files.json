@@ -99,7 +99,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/abhinnvyas/Projects/NotyCircuitsPvtLtd/Rudrakshak/Development/iccs-command-center",
+    "outputFileTracingRoot": "/Users/parikshitgole/Rayonix/iccs-command-center",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -157,7 +157,7 @@
       "proxyPrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 9,
+      "cpus": 7,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -289,11 +289,11 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "/Users/abhinnvyas/Projects/NotyCircuitsPvtLtd/Rudrakshak/Development/iccs-command-center"
+      "root": "/Users/parikshitgole/Rayonix/iccs-command-center"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "/Users/abhinnvyas/Projects/NotyCircuitsPvtLtd/Rudrakshak/Development/iccs-command-center",
+  "appDir": "/Users/parikshitgole/Rayonix/iccs-command-center",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",

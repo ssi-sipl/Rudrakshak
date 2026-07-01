@@ -1,69 +1,310 @@
-[00:00:00.543] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:00.602] Server  LOG      ✓ Ready in 454ms
-[00:00:22.524] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:22.659] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:22.659] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:22.659] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712403002} /_vercel/insights/view
-[00:00:30.718] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/area color: rgb(120, 120, 120) color: inherit {"dp":"/area","o":"http://localhost:3000/area","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712411063} /_vercel/insights/view
-[00:00:31.308] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712411653} /_vercel/insights/view
-[00:00:31.911] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/drones color: rgb(120, 120, 120) color: inherit {"dp":"/drones","o":"http://localhost:3000/drones","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712412253} /_vercel/insights/view
-[00:00:32.519] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/report color: rgb(120, 120, 120) color: inherit {"dp":"/report","o":"http://localhost:3000/report","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712412865} /_vercel/insights/view
-[00:00:32.850] Browser LOG     Fetching alerts from: http://localhost:5000/api/alerts/alerts?limit=1000&sortBy=createdAt&sortOrder=desc
-[00:00:32.850] Browser LOG     Fetching alerts from: http://localhost:5000/api/alerts/alerts?limit=1000&sortBy=createdAt&sortOrder=desc
-[00:00:32.850] Browser LOG     Response status: 200
-[00:00:32.850] Browser LOG     Response headers: application/json; charset=utf-8
-[00:00:32.850] Browser LOG     Successfully fetched alerts: {"data":[{"createdAt":"2026-06-26T06:08:58.064Z","decidedAt":"2026-06-26T06:09:18.892Z","decision":"neutralised:manual_clear","id":"752e3609-a786-416e-ba42-1cf76134dc0d","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"26 June 2026 at 11:38 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"},{"createdAt":"2026-06-24T05:27:48.682Z","decidedAt":"2026-06-24T05:28:03.121Z","decision":"neutralised:manual_clear","id":"45b3de9b-8df5-448f-b50f-6ecf2742cac4","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"24 June 2026 at 10:57 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"}],"pagination":{"hasMore":false,"limit":1000,"skip":0,"total":2},"success":true}
-[00:00:32.850] Browser LOG     Response status: 200
-[00:00:32.850] Browser LOG     Response headers: application/json; charset=utf-8
-[00:00:32.850] Browser LOG     Successfully fetched alerts: {"data":[{"createdAt":"2026-06-26T06:08:58.064Z","decidedAt":"2026-06-26T06:09:18.892Z","decision":"neutralised:manual_clear","id":"752e3609-a786-416e-ba42-1cf76134dc0d","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"26 June 2026 at 11:38 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"},{"createdAt":"2026-06-24T05:27:48.682Z","decidedAt":"2026-06-24T05:28:03.121Z","decision":"neutralised:manual_clear","id":"45b3de9b-8df5-448f-b50f-6ecf2742cac4","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"24 June 2026 at 10:57 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"}],"pagination":{"hasMore":false,"limit":1000,"skip":0,"total":2},"success":true}
-[00:00:33.127] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/maps/manage color: rgb(120, 120, 120) color: inherit {"dp":"/maps/manage","o":"http://localhost:3000/maps/manage","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712413473} /_vercel/insights/view
-[00:00:33.842] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/health color: rgb(120, 120, 120) color: inherit {"dp":"/health","o":"http://localhost:3000/health","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712414175} /_vercel/insights/view
-[00:00:33.842] Browser LOG     {"data":[],"message":"all smartMeters fetched","pagination":{"hasNextPage":false,"hasPrevPage":false,"limit":10000,"page":1,"totalCount":0,"totalPages":0},"success":true}
-[00:00:33.842] Browser LOG     {"data":[],"message":"all smartMeters fetched","pagination":{"hasNextPage":false,"hasPrevPage":false,"limit":10000,"page":1,"totalCount":0,"totalPages":0},"success":true}
-[00:00:35.809] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/maps/manage color: rgb(120, 120, 120) color: inherit {"dp":"/maps/manage","o":"http://localhost:3000/maps/manage","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712416154} /_vercel/insights/view
-[00:00:36.491] Browser LOG     Fetching alerts from: http://localhost:5000/api/alerts/alerts?limit=1000&sortBy=createdAt&sortOrder=desc
-[00:00:36.491] Browser LOG     Fetching alerts from: http://localhost:5000/api/alerts/alerts?limit=1000&sortBy=createdAt&sortOrder=desc
-[00:00:36.491] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/report color: rgb(120, 120, 120) color: inherit {"dp":"/report","o":"http://localhost:3000/report","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712416801} /_vercel/insights/view
-[00:00:36.491] Browser LOG     Response status: 200
-[00:00:36.491] Browser LOG     Response headers: application/json; charset=utf-8
-[00:00:36.491] Browser LOG     Successfully fetched alerts: {"data":[{"createdAt":"2026-06-26T06:08:58.064Z","decidedAt":"2026-06-26T06:09:18.892Z","decision":"neutralised:manual_clear","id":"752e3609-a786-416e-ba42-1cf76134dc0d","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"26 June 2026 at 11:38 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"},{"createdAt":"2026-06-24T05:27:48.682Z","decidedAt":"2026-06-24T05:28:03.121Z","decision":"neutralised:manual_clear","id":"45b3de9b-8df5-448f-b50f-6ecf2742cac4","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"24 June 2026 at 10:57 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"}],"pagination":{"hasMore":false,"limit":1000,"skip":0,"total":2},"success":true}
-[00:00:36.491] Browser LOG     Response status: 200
-[00:00:36.491] Browser LOG     Response headers: application/json; charset=utf-8
-[00:00:36.491] Browser LOG     Successfully fetched alerts: {"data":[{"createdAt":"2026-06-26T06:08:58.064Z","decidedAt":"2026-06-26T06:09:18.892Z","decision":"neutralised:manual_clear","id":"752e3609-a786-416e-ba42-1cf76134dc0d","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"26 June 2026 at 11:38 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"},{"createdAt":"2026-06-24T05:27:48.682Z","decidedAt":"2026-06-24T05:28:03.121Z","decision":"neutralised:manual_clear","id":"45b3de9b-8df5-448f-b50f-6ecf2742cac4","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"24 June 2026 at 10:57 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"}],"pagination":{"hasMore":false,"limit":1000,"skip":0,"total":2},"success":true}
-[00:00:37.639] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/health color: rgb(120, 120, 120) color: inherit {"dp":"/health","o":"http://localhost:3000/health","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712417965} /_vercel/insights/view
-[00:00:37.639] Browser LOG     {"data":[],"message":"all smartMeters fetched","pagination":{"hasNextPage":false,"hasPrevPage":false,"limit":10000,"page":1,"totalCount":0,"totalPages":0},"success":true}
-[00:00:37.639] Browser LOG     {"data":[],"message":"all smartMeters fetched","pagination":{"hasNextPage":false,"hasPrevPage":false,"limit":10000,"page":1,"totalCount":0,"totalPages":0},"success":true}
-[00:00:43.707] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/maps/manage color: rgb(120, 120, 120) color: inherit {"dp":"/maps/manage","o":"http://localhost:3000/maps/manage","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712424051} /_vercel/insights/view
-[00:00:44.445] Browser LOG     Fetching alerts from: http://localhost:5000/api/alerts/alerts?limit=1000&sortBy=createdAt&sortOrder=desc
-[00:00:44.446] Browser LOG     Fetching alerts from: http://localhost:5000/api/alerts/alerts?limit=1000&sortBy=createdAt&sortOrder=desc
-[00:00:44.446] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/report color: rgb(120, 120, 120) color: inherit {"dp":"/report","o":"http://localhost:3000/report","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712424766} /_vercel/insights/view
-[00:00:44.446] Browser LOG     Response status: 200
-[00:00:44.446] Browser LOG     Response headers: application/json; charset=utf-8
-[00:00:44.446] Browser LOG     Successfully fetched alerts: {"data":[{"createdAt":"2026-06-26T06:08:58.064Z","decidedAt":"2026-06-26T06:09:18.892Z","decision":"neutralised:manual_clear","id":"752e3609-a786-416e-ba42-1cf76134dc0d","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"26 June 2026 at 11:38 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"},{"createdAt":"2026-06-24T05:27:48.682Z","decidedAt":"2026-06-24T05:28:03.121Z","decision":"neutralised:manual_clear","id":"45b3de9b-8df5-448f-b50f-6ecf2742cac4","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"24 June 2026 at 10:57 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"}],"pagination":{"hasMore":false,"limit":1000,"skip":0,"total":2},"success":true}
-[00:00:44.446] Browser LOG     Response status: 200
-[00:00:44.446] Browser LOG     Response headers: application/json; charset=utf-8
-[00:00:44.446] Browser LOG     Successfully fetched alerts: {"data":[{"createdAt":"2026-06-26T06:08:58.064Z","decidedAt":"2026-06-26T06:09:18.892Z","decision":"neutralised:manual_clear","id":"752e3609-a786-416e-ba42-1cf76134dc0d","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"26 June 2026 at 11:38 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"},{"createdAt":"2026-06-24T05:27:48.682Z","decidedAt":"2026-06-24T05:28:03.121Z","decision":"neutralised:manual_clear","id":"45b3de9b-8df5-448f-b50f-6ecf2742cac4","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"24 June 2026 at 10:57 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"}],"pagination":{"hasMore":false,"limit":1000,"skip":0,"total":2},"success":true}
-[00:00:45.029] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/drones color: rgb(120, 120, 120) color: inherit {"dp":"/drones","o":"http://localhost:3000/drones","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712425375} /_vercel/insights/view
-[00:00:45.713] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712426058} /_vercel/insights/view
-[00:00:46.394] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/area color: rgb(120, 120, 120) color: inherit {"dp":"/area","o":"http://localhost:3000/area","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712426739} /_vercel/insights/view
-[00:00:46.975] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712427319} /_vercel/insights/view
-[00:00:48.259] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/area color: rgb(120, 120, 120) color: inherit {"dp":"/area","o":"http://localhost:3000/area","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712428604} /_vercel/insights/view
-[00:00:51.014] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712431358} /_vercel/insights/view
-[00:01:30.332] Server  LOG      ✓ Compiled in 25ms
-[00:01:33.800] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/health color: rgb(120, 120, 120) color: inherit {"dp":"/health","o":"http://localhost:3000/health","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712474129} /_vercel/insights/view
-[00:01:33.800] Browser LOG     {"data":[],"message":"all smartMeters fetched","pagination":{"hasNextPage":false,"hasPrevPage":false,"limit":10000,"page":1,"totalCount":0,"totalPages":0},"success":true}
-[00:01:33.800] Browser LOG     {"data":[],"message":"all smartMeters fetched","pagination":{"hasNextPage":false,"hasPrevPage":false,"limit":10000,"page":1,"totalCount":0,"totalPages":0},"success":true}
-[00:01:34.521] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/maps/manage color: rgb(120, 120, 120) color: inherit {"dp":"/maps/manage","o":"http://localhost:3000/maps/manage","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712474865} /_vercel/insights/view
-[00:01:35.116] Browser LOG     Fetching alerts from: http://localhost:5000/api/alerts/alerts?limit=1000&sortBy=createdAt&sortOrder=desc
-[00:01:35.116] Browser LOG     Fetching alerts from: http://localhost:5000/api/alerts/alerts?limit=1000&sortBy=createdAt&sortOrder=desc
-[00:01:35.116] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/report color: rgb(120, 120, 120) color: inherit {"dp":"/report","o":"http://localhost:3000/report","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712475428} /_vercel/insights/view
-[00:01:35.116] Browser LOG     Response status: 200
-[00:01:35.116] Browser LOG     Response headers: application/json; charset=utf-8
-[00:01:35.116] Browser LOG     Successfully fetched alerts: {"data":[{"createdAt":"2026-06-26T06:08:58.064Z","decidedAt":"2026-06-26T06:09:18.892Z","decision":"neutralised:manual_clear","id":"752e3609-a786-416e-ba42-1cf76134dc0d","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"26 June 2026 at 11:38 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"},{"createdAt":"2026-06-24T05:27:48.682Z","decidedAt":"2026-06-24T05:28:03.121Z","decision":"neutralised:manual_clear","id":"45b3de9b-8df5-448f-b50f-6ecf2742cac4","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"24 June 2026 at 10:57 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"}],"pagination":{"hasMore":false,"limit":1000,"skip":0,"total":2},"success":true}
-[00:01:35.116] Browser LOG     Response status: 200
-[00:01:35.116] Browser LOG     Response headers: application/json; charset=utf-8
-[00:01:35.116] Browser LOG     Successfully fetched alerts: {"data":[{"createdAt":"2026-06-26T06:08:58.064Z","decidedAt":"2026-06-26T06:09:18.892Z","decision":"neutralised:manual_clear","id":"752e3609-a786-416e-ba42-1cf76134dc0d","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"26 June 2026 at 11:38 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"},{"createdAt":"2026-06-24T05:27:48.682Z","decidedAt":"2026-06-24T05:28:03.121Z","decision":"neutralised:manual_clear","id":"45b3de9b-8df5-448f-b50f-6ecf2742cac4","message":"Person detected","metadata":null,"sensor":{"activeShuruMode":"Inactive","addedBy":"Abhinn Vyas","alarmId":null,"area":{"addedBy":"Abhinn Vyas","areaId":"A001","createdAt":"2026-06-24T05:21:51.860Z","id":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","latitude":22.22,"longitude":22.22,"name":"Area 1","status":"Active","updatedAt":"2026-06-24T05:21:51.860Z"},"areaId":"2e79af7f-bbe5-470b-bf77-f049365bf1c8","battery":"100","createdAt":"2026-06-24T05:23:58.231Z","id":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","ipAddress":"192.168.1.69","latitude":28.451328,"longitude":77.071096,"name":"Sensor 1","rtspUrl":"rtsp://admin:123456Ai@192.168.1.69:554/snl/live/1/1","sendDrone":"No","sensorId":"sensor1","sensorType":"Camera","smartMeterId":null,"status":"Active","updatedAt":"2026-06-26T11:18:50.998Z"},"sensorDbId":"4b056f21-2a99-4016-ab3f-31bff7fe1d4b","sensorId":"sensor1","status":"NEUTRALISED","time":"24 June 2026 at 10:57 am","timestamp":"2057-09-17T08:59:59.339Z","type":"Person"}],"pagination":{"hasMore":false,"limit":1000,"skip":0,"total":2},"success":true}
-[00:01:35.640] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/drones color: rgb(120, 120, 120) color: inherit {"dp":"/drones","o":"http://localhost:3000/drones","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712475986} /_vercel/insights/view
-[00:01:36.780] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712477124} /_vercel/insights/view
-[00:01:37.328] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/area color: rgb(120, 120, 120) color: inherit {"dp":"/area","o":"http://localhost:3000/area","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712477672} /_vercel/insights/view
-[00:01:38.003] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782712478347} /_vercel/insights/view
+[00:00:00.506] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:00.566] Server  LOG      ✓ Ready in 373ms
+[00:00:08.024] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.183] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:08.183] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors","route":"/sensors"}
+[00:00:08.183] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898925646} /_vercel/insights/view
+[00:00:10.124] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/drones color: rgb(120, 120, 120) color: inherit {"dp":"/drones","o":"http://localhost:3000/drones","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898927584} /_vercel/insights/view
+[00:00:10.615] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898928076} /_vercel/insights/view
+[00:00:12.424] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898929885} /_vercel/insights/view
+[00:00:12.787] Browser LOG     {"activeShuruMode":"Active","addedBy":"asdfadsfsf","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T08:54:24.235Z","id":"34381415-fdfc-455d-a72c-e3747a51eba1","ipAddress":null,"latitude":13.92,"longitude":77.08,"name":"Yash Chakrawarti","rtspUrl":null,"sendDrone":"No","sensorId":"02werwr","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Active","updatedAt":"2026-07-01T09:35:57.216Z"}
+[00:00:12.787] Browser LOG     {"activeShuruMode":"Active","addedBy":"asdfadsfsf","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T08:54:24.235Z","id":"34381415-fdfc-455d-a72c-e3747a51eba1","ipAddress":null,"latitude":13.92,"longitude":77.08,"name":"Yash Chakrawarti","rtspUrl":null,"sendDrone":"No","sensorId":"02werwr","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Active","updatedAt":"2026-07-01T09:35:57.216Z"}
+[00:00:18.223] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1 color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]","o":"http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898935685} /_vercel/insights/view
+[00:00:25.255] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898942675} /_vercel/insights/view
+[00:00:25.255] Browser LOG     {"activeShuruMode":"Active","addedBy":"asdfadsfsf","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T08:54:24.235Z","id":"34381415-fdfc-455d-a72c-e3747a51eba1","ipAddress":null,"latitude":13.921,"longitude":77.08,"name":"Yash Chakrawarti","rtspUrl":null,"sendDrone":"No","sensorId":"02werwr","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Active","updatedAt":"2026-07-01T09:42:15.217Z"}
+[00:00:25.255] Browser LOG     {"activeShuruMode":"Active","addedBy":"asdfadsfsf","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T08:54:24.235Z","id":"34381415-fdfc-455d-a72c-e3747a51eba1","ipAddress":null,"latitude":13.921,"longitude":77.08,"name":"Yash Chakrawarti","rtspUrl":null,"sendDrone":"No","sensorId":"02werwr","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Active","updatedAt":"2026-07-01T09:42:15.217Z"}
+[00:00:27.113] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1 color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]","o":"http://localhost:3000/sensors/34381415-fdfc-455d-a72c-e3747a51eba1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898944574} /_vercel/insights/view
+[00:00:28.213] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898945674} /_vercel/insights/view
+[00:00:29.777] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:29.910] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:29.910] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors","route":"/sensors"}
+[00:00:29.910] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898947372} /_vercel/insights/view
+[00:00:31.132] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898948592} /_vercel/insights/view
+[00:00:31.494] Browser LOG     {"activeShuruMode":"Active","addedBy":"Parikshit","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T09:01:37.968Z","id":"1f8d63ee-978e-4915-8747-b90512ce63c3","ipAddress":null,"latitude":13.92,"longitude":77.08,"name":"Parikshit Gole","rtspUrl":null,"sendDrone":"No","sensorId":"nkn","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Inactive","updatedAt":"2026-07-01T09:37:25.621Z"}
+[00:00:31.494] Browser LOG     {"activeShuruMode":"Active","addedBy":"Parikshit","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T09:01:37.968Z","id":"1f8d63ee-978e-4915-8747-b90512ce63c3","ipAddress":null,"latitude":13.92,"longitude":77.08,"name":"Parikshit Gole","rtspUrl":null,"sendDrone":"No","sensorId":"nkn","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Inactive","updatedAt":"2026-07-01T09:37:25.621Z"}
+[00:00:32.219] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:32.441] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+      <DashboardLayout params={Promise}>
+        <div className="flex h-scr...">
+          <DashboardHeader>
+            <header className="flex h-14 ...">
+              <LinkComponent>
+              <nav>
+              <div>
+              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_4..." ...>
+                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
+                                <button
+                                  data-slot="sheet-trigger"
+                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+                                  type="button"
+                                  aria-haspopup="dialog"
+                                  aria-expanded={false}
++                                 aria-controls="radix-_R_4cndlb_"
+-                                 aria-controls="radix-_R_hkndlb_"
+                                  data-state="closed"
+                                  onClick={function handleEvent}
+                                  ref={function}
+                                >
+                    ...
+          ...
+
+[00:00:32.441] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:32.441] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit","route":"/sensors/[id]/edit"}
+[00:00:32.441] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898949857} /_vercel/insights/view
+[00:00:32.441] Browser LOG     {"activeShuruMode":"Active","addedBy":"Parikshit","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T09:01:37.968Z","id":"1f8d63ee-978e-4915-8747-b90512ce63c3","ipAddress":null,"latitude":13.92,"longitude":77.08,"name":"Parikshit Gole","rtspUrl":null,"sendDrone":"No","sensorId":"nkn","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Inactive","updatedAt":"2026-07-01T09:37:25.621Z"}
+[00:00:33.391] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:33.541] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:33.541] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit","route":"/sensors/[id]/edit"}
+[00:00:33.541] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]/edit","o":"http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898950994} /_vercel/insights/view
+[00:00:33.541] Browser LOG     {"activeShuruMode":"Active","addedBy":"Parikshit","alarm":null,"alarmId":null,"area":null,"areaId":null,"battery":null,"createdAt":"2026-07-01T09:01:37.968Z","id":"1f8d63ee-978e-4915-8747-b90512ce63c3","ipAddress":null,"latitude":13.92,"longitude":77.08,"name":"Parikshit Gole","rtspUrl":null,"sendDrone":"No","sensorId":"nkn","sensorType":"Camera","smartMeter":null,"smartMeterId":null,"status":"Inactive","updatedAt":"2026-07-01T09:37:25.621Z"}
+[00:00:34.286] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3 color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/[id]","o":"http://localhost:3000/sensors/1f8d63ee-978e-4915-8747-b90512ce63c3","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898951748} /_vercel/insights/view
+[00:00:37.105] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898954567} /_vercel/insights/view
+[00:00:38.933] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898956354} /_vercel/insights/view
+[00:00:38.933] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
+[00:00:38.933] Browser LOG     Fetched alarms: []
+[00:00:38.933] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
+[00:00:38.933] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
+[00:00:38.933] Browser LOG     Fetched alarms: []
+[00:00:38.933] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
+[00:00:39.991] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:40.144] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+      <DashboardLayout params={Promise}>
+        <div className="flex h-scr...">
+          <DashboardHeader>
+            <header className="flex h-14 ...">
+              <LinkComponent>
+              <nav>
+              <div>
+              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_4..." ...>
+                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
+                                <button
+                                  data-slot="sheet-trigger"
+                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+                                  type="button"
+                                  aria-haspopup="dialog"
+                                  aria-expanded={false}
++                                 aria-controls="radix-_R_4cndlb_"
+-                                 aria-controls="radix-_R_hkndlb_"
+                                  data-state="closed"
+                                  onClick={function handleEvent}
+                                  ref={function}
+                                >
+                    ...
+          ...
+
+[00:00:40.144] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:40.144] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/add","route":"/sensors/add"}
+[00:00:40.144] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898957577} /_vercel/insights/view
+[00:00:40.144] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
+[00:00:40.144] Browser LOG     Fetched alarms: []
+[00:00:40.144] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
+[00:00:40.748] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:40.933] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+      <DashboardLayout params={Promise}>
+        <div className="flex h-scr...">
+          <DashboardHeader>
+            <header className="flex h-14 ...">
+              <LinkComponent>
+              <nav>
+              <div>
+              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_4..." ...>
+                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
+                                <button
+                                  data-slot="sheet-trigger"
+                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+                                  type="button"
+                                  aria-haspopup="dialog"
+                                  aria-expanded={false}
++                                 aria-controls="radix-_R_4cndlb_"
+-                                 aria-controls="radix-_R_hkndlb_"
+                                  data-state="closed"
+                                  onClick={function handleEvent}
+                                  ref={function}
+                                >
+                    ...
+          ...
+
+[00:00:40.933] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:40.933] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/add","route":"/sensors/add"}
+[00:00:40.933] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898958384} /_vercel/insights/view
+[00:00:40.933] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
+[00:00:40.933] Browser LOG     Fetched alarms: []
+[00:00:40.933] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
+[00:00:41.421] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:41.571] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:41.571] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/add","route":"/sensors/add"}
+[00:00:41.571] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898959011} /_vercel/insights/view
+[00:00:41.571] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
+[00:00:41.571] Browser LOG     Fetched alarms: []
+[00:00:41.571] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
+[00:00:43.323] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/area color: rgb(120, 120, 120) color: inherit {"dp":"/area","o":"http://localhost:3000/area","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898960784} /_vercel/insights/view
+[00:00:43.756] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898961217} /_vercel/insights/view
+[00:00:44.456] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:44.627] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+      <DashboardLayout params={Promise}>
+        <div className="flex h-scr...">
+          <DashboardHeader>
+            <header className="flex h-14 ...">
+              <LinkComponent>
+              <nav>
+              <div>
+              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_4..." ...>
+                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
+                                <button
+                                  data-slot="sheet-trigger"
+                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+                                  type="button"
+                                  aria-haspopup="dialog"
+                                  aria-expanded={false}
++                                 aria-controls="radix-_R_4cndlb_"
+-                                 aria-controls="radix-_R_hkndlb_"
+                                  data-state="closed"
+                                  onClick={function handleEvent}
+                                  ref={function}
+                                >
+                    ...
+          ...
+
+[00:00:44.627] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:44.627] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors","route":"/sensors"}
+[00:00:44.627] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors color: rgb(120, 120, 120) color: inherit {"dp":"/sensors","o":"http://localhost:3000/sensors","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898962090} /_vercel/insights/view
+[00:00:45.226] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898962687} /_vercel/insights/view
+[00:00:45.573] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
+[00:00:45.573] Browser LOG     Fetched alarms: []
+[00:00:45.573] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
+[00:00:45.573] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
+[00:00:45.573] Browser LOG     Fetched alarms: []
+[00:00:45.573] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
+[00:00:46.294] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:46.470] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+      <DashboardLayout params={Promise}>
+        <div className="flex h-scr...">
+          <DashboardHeader>
+            <header className="flex h-14 ...">
+              <LinkComponent>
+              <nav>
+              <div>
+              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_4..." ...>
+                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
+                                <button
+                                  data-slot="sheet-trigger"
+                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+                                  type="button"
+                                  aria-haspopup="dialog"
+                                  aria-expanded={false}
++                                 aria-controls="radix-_R_4cndlb_"
+-                                 aria-controls="radix-_R_hkndlb_"
+                                  data-state="closed"
+                                  onClick={function handleEvent}
+                                  ref={function}
+                                >
+                    ...
+          ...
+
+[00:00:46.470] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:46.470] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sensors/add","route":"/sensors/add"}
+[00:00:46.470] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/sensors/add color: rgb(120, 120, 120) color: inherit {"dp":"/sensors/add","o":"http://localhost:3000/sensors/add","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898963923} /_vercel/insights/view
+[00:00:46.470] Browser LOG     Fetched areas: [{"addedBy":"hey","areaId":"area-0001","createdAt":"2026-06-30T16:41:31.236Z","id":"de8a51dd-e67f-49ff-a2dd-9411293bf8ea","latitude":37.4219983,"longitude":-122.084,"name":"south","status":"Active","updatedAt":"2026-06-30T16:41:31.236Z"}]
+[00:00:46.470] Browser LOG     Fetched alarms: []
+[00:00:46.470] Browser LOG     Fetched smartmeters: [{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:50:46.068Z","id":"1c4dadef-9292-47d4-81f4-0af3230dae98","ipAddress":"192.168.20.1","latitude":13.92,"location":"GURUGRAM","longitude":77.08,"smartMeterId":"SM-002","status":"Active","updatedAt":"2026-07-01T07:59:16.389Z"},{"NetworkStatus":"Inactive","addedBy":"PARIKSHIT","createdAt":"2026-07-01T06:27:21.560Z","id":"d255e425-6d69-4250-a61b-1f6a1786fb13","ipAddress":"192.168.20.1","latitude":13.92,"location":"INDORE","longitude":77.08,"smartMeterId":"SM-001","status":"Active","updatedAt":"2026-07-01T07:59:16.388Z"}]
+[00:00:47.742] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/area color: rgb(120, 120, 120) color: inherit {"dp":"/area","o":"http://localhost:3000/area","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1782898965204} /_vercel/insights/view

@@ -1,9 +1,8 @@
 {
   "/(protected)/area/page": "app/(protected)/area/page.js",
   "/(protected)/drones/page": "app/(protected)/drones/page.js",
-  "/(protected)/health/page": "app/(protected)/health/page.js",
-  "/(protected)/maps/manage/page": "app/(protected)/maps/manage/page.js",
-  "/(protected)/page": "app/(protected)/page.js",
-  "/(protected)/report/page": "app/(protected)/report/page.js",
+  "/(protected)/sensors/[id]/edit/page": "app/(protected)/sensors/[id]/edit/page.js",
+  "/(protected)/sensors/[id]/page": "app/(protected)/sensors/[id]/page.js",
+  "/(protected)/sensors/add/page": "app/(protected)/sensors/add/page.js",
   "/(protected)/sensors/page": "app/(protected)/sensors/page.js"
 }
