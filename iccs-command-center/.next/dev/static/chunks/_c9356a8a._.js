@@ -324,113 +324,238 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 "use client";
 ;
-const COLORS = {
-    FX: "bg-blue-500 shadow-[0_0_8px_#3b82f6]",
-    TX: "bg-yellow-400 shadow-[0_0_8px_#facc15]",
-    LINK: "bg-green-500 shadow-[0_0_8px_#22c55e]",
-    PWR: "bg-red-500 shadow-[0_0_8px_#ef4444]",
-    ACT: "bg-purple-500 shadow-[0_0_8px_#a855f7]",
-    FDX: "bg-cyan-400 shadow-[0_0_8px_#22d3ee]"
-};
-function PreviewLED({ label }) {
+function LedPosition({ position, label, align = "left" }) {
+    if (align === "right") {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex items-center justify-between rounded-md border border-zinc-800 bg-zinc-900 px-3 py-2",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "h-3 w-3 rounded-full border-2 border-zinc-500 bg-zinc-700"
+                }, void 0, false, {
+                    fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                    lineNumber: 27,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "text-right",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-sm font-semibold text-white",
+                            children: label
+                        }, void 0, false, {
+                            fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                            lineNumber: 31,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-[11px] text-zinc-500",
+                            children: position
+                        }, void 0, false, {
+                            fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                            lineNumber: 32,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/smartmeter/ledPreview.tsx",
+            lineNumber: 25,
+            columnNumber: 7
+        }, this);
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-950 px-2.5 py-1.5",
+        className: "flex items-center justify-between rounded-md border border-zinc-800 bg-zinc-900 px-3 py-2",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `h-2 w-2 shrink-0 animate-pulse rounded-full ${COLORS[label]}`
-            }, void 0, false, {
-                fileName: "[project]/components/smartmeter/ledPreview.tsx",
-                lineNumber: 26,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "text-xs font-medium text-zinc-300",
-                children: label
-            }, void 0, false, {
-                fileName: "[project]/components/smartmeter/ledPreview.tsx",
-                lineNumber: 27,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/smartmeter/ledPreview.tsx",
-        lineNumber: 25,
-        columnNumber: 5
-    }, this);
-}
-_c = PreviewLED;
-function LedPreview({ left1Label, left2Label, left3Label, right1Label, right2Label, right3Label }) {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "mb-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-500",
-                children: "Live Preview"
-            }, void 0, false, {
-                fileName: "[project]/components/smartmeter/ledPreview.tsx",
-                lineNumber: 42,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid grid-cols-2 gap-1.5 sm:grid-cols-3",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PreviewLED, {
-                        label: left1Label
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-sm font-semibold text-white",
+                        children: label
                     }, void 0, false, {
                         fileName: "[project]/components/smartmeter/ledPreview.tsx",
-                        lineNumber: 47,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PreviewLED, {
-                        label: left2Label
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-[11px] text-zinc-500",
+                        children: position
                     }, void 0, false, {
                         fileName: "[project]/components/smartmeter/ledPreview.tsx",
-                        lineNumber: 48,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PreviewLED, {
-                        label: left3Label
-                    }, void 0, false, {
-                        fileName: "[project]/components/smartmeter/ledPreview.tsx",
-                        lineNumber: 49,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PreviewLED, {
-                        label: right1Label
-                    }, void 0, false, {
-                        fileName: "[project]/components/smartmeter/ledPreview.tsx",
-                        lineNumber: 50,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PreviewLED, {
-                        label: right2Label
-                    }, void 0, false, {
-                        fileName: "[project]/components/smartmeter/ledPreview.tsx",
-                        lineNumber: 51,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PreviewLED, {
-                        label: right3Label
-                    }, void 0, false, {
-                        fileName: "[project]/components/smartmeter/ledPreview.tsx",
-                        lineNumber: 52,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/smartmeter/ledPreview.tsx",
-                lineNumber: 46,
+                lineNumber: 41,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "h-3 w-3 rounded-full border-2 border-zinc-500 bg-zinc-700"
+            }, void 0, false, {
+                fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                lineNumber: 47,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/smartmeter/ledPreview.tsx",
-        lineNumber: 41,
+        lineNumber: 39,
+        columnNumber: 5
+    }, this);
+}
+_c = LedPosition;
+function LedPreview({ left1Label, left2Label, left3Label, right1Label, right2Label, right3Label }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                className: "mb-3 text-sm font-medium text-zinc-300",
+                children: "LED Preview"
+            }, void 0, false, {
+                fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                lineNumber: 62,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "rounded-xl border border-zinc-800 bg-zinc-950 p-5",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-4 grid grid-cols-2 text-center text-xs font-semibold uppercase tracking-wider text-zinc-500",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: "Left Side"
+                            }, void 0, false, {
+                                fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                                lineNumber: 68,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: "Right Side"
+                            }, void 0, false, {
+                                fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                                lineNumber: 69,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                        lineNumber: 67,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-2 gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(LedPosition, {
+                                        position: "L1",
+                                        label: left1Label
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                                        lineNumber: 75,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(LedPosition, {
+                                        position: "L2",
+                                        label: left2Label
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                                        lineNumber: 76,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(LedPosition, {
+                                        position: "L3",
+                                        label: left3Label
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                                        lineNumber: 77,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                                lineNumber: 74,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(LedPosition, {
+                                        position: "R1",
+                                        label: right1Label,
+                                        align: "right"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                                        lineNumber: 82,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(LedPosition, {
+                                        position: "R2",
+                                        label: right2Label,
+                                        align: "right"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                                        lineNumber: 87,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(LedPosition, {
+                                        position: "R3",
+                                        label: right3Label,
+                                        align: "right"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                                        lineNumber: 92,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                                lineNumber: 81,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                        lineNumber: 72,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-5 border-t border-zinc-800 pt-3 text-center",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-xs text-zinc-500",
+                            children: "Reference layout of the media converter front panel."
+                        }, void 0, false, {
+                            fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                            lineNumber: 101,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                        lineNumber: 100,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/smartmeter/ledPreview.tsx",
+                lineNumber: 66,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/smartmeter/ledPreview.tsx",
+        lineNumber: 61,
         columnNumber: 5
     }, this);
 }
 _c1 = LedPreview;
 var _c, _c1;
-__turbopack_context__.k.register(_c, "PreviewLED");
+__turbopack_context__.k.register(_c, "LedPosition");
 __turbopack_context__.k.register(_c1, "LedPreview");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
@@ -472,112 +597,131 @@ function LedMapping({ value, onChange }) {
         onChange(updated);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "space-y-6",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid gap-x-6 gap-y-2 sm:grid-cols-2",
+                className: "grid gap-6 md:grid-cols-2",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "space-y-2",
+                        className: "rounded-lg border border-zinc-800 p-4",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[10px] font-semibold tracking-[0.2em] text-blue-400/80",
-                                children: "LEFT"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "mb-4 font-medium text-white",
+                                children: "Left Ports"
                             }, void 0, false, {
                                 fileName: "[project]/components/smartmeter/ledMapping.tsx",
-                                lineNumber: 53,
-                                columnNumber: 11
+                                lineNumber: 51,
+                                columnNumber: 9
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledDropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                label: "L1",
-                                value: value.left1Label,
-                                selectedValues: selected,
-                                onChange: (v)=>update("left1Label", v)
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-3",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledDropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        label: "LEFT 1",
+                                        value: value.left1Label,
+                                        selectedValues: selected,
+                                        onChange: (v)=>update("left1Label", v)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/smartmeter/ledMapping.tsx",
+                                        lineNumber: 56,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledDropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        label: "LEFT 2",
+                                        value: value.left2Label,
+                                        selectedValues: selected,
+                                        onChange: (v)=>update("left2Label", v)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/smartmeter/ledMapping.tsx",
+                                        lineNumber: 63,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledDropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        label: "LEFT 3",
+                                        value: value.left3Label,
+                                        selectedValues: selected,
+                                        onChange: (v)=>update("left3Label", v)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/smartmeter/ledMapping.tsx",
+                                        lineNumber: 70,
+                                        columnNumber: 11
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/components/smartmeter/ledMapping.tsx",
-                                lineNumber: 57,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledDropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                label: "L2",
-                                value: value.left2Label,
-                                selectedValues: selected,
-                                onChange: (v)=>update("left2Label", v)
-                            }, void 0, false, {
-                                fileName: "[project]/components/smartmeter/ledMapping.tsx",
-                                lineNumber: 63,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledDropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                label: "L3",
-                                value: value.left3Label,
-                                selectedValues: selected,
-                                onChange: (v)=>update("left3Label", v)
-                            }, void 0, false, {
-                                fileName: "[project]/components/smartmeter/ledMapping.tsx",
-                                lineNumber: 69,
-                                columnNumber: 11
+                                lineNumber: 55,
+                                columnNumber: 9
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/smartmeter/ledMapping.tsx",
-                        lineNumber: 52,
-                        columnNumber: 9
+                        lineNumber: 50,
+                        columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "space-y-2",
+                        className: "rounded-lg border border-zinc-800 p-4",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[10px] font-semibold tracking-[0.2em] text-red-400/80",
-                                children: "RIGHT"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "mb-4 font-medium text-white",
+                                children: "Right Ports"
                             }, void 0, false, {
                                 fileName: "[project]/components/smartmeter/ledMapping.tsx",
-                                lineNumber: 79,
-                                columnNumber: 11
+                                lineNumber: 80,
+                                columnNumber: 9
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledDropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                label: "R1",
-                                value: value.right1Label,
-                                selectedValues: selected,
-                                onChange: (v)=>update("right1Label", v)
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-3",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledDropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        label: "RIGHT 1",
+                                        value: value.right1Label,
+                                        selectedValues: selected,
+                                        onChange: (v)=>update("right1Label", v)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/smartmeter/ledMapping.tsx",
+                                        lineNumber: 85,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledDropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        label: "RIGHT 2",
+                                        value: value.right2Label,
+                                        selectedValues: selected,
+                                        onChange: (v)=>update("right2Label", v)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/smartmeter/ledMapping.tsx",
+                                        lineNumber: 92,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledDropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        label: "RIGHT 3",
+                                        value: value.right3Label,
+                                        selectedValues: selected,
+                                        onChange: (v)=>update("right3Label", v)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/smartmeter/ledMapping.tsx",
+                                        lineNumber: 99,
+                                        columnNumber: 11
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/components/smartmeter/ledMapping.tsx",
-                                lineNumber: 83,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledDropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                label: "R2",
-                                value: value.right2Label,
-                                selectedValues: selected,
-                                onChange: (v)=>update("right2Label", v)
-                            }, void 0, false, {
-                                fileName: "[project]/components/smartmeter/ledMapping.tsx",
-                                lineNumber: 89,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledDropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                label: "R3",
-                                value: value.right3Label,
-                                selectedValues: selected,
-                                onChange: (v)=>update("right3Label", v)
-                            }, void 0, false, {
-                                fileName: "[project]/components/smartmeter/ledMapping.tsx",
-                                lineNumber: 95,
-                                columnNumber: 11
+                                lineNumber: 84,
+                                columnNumber: 9
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/smartmeter/ledMapping.tsx",
-                        lineNumber: 78,
-                        columnNumber: 9
+                        lineNumber: 79,
+                        columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/smartmeter/ledMapping.tsx",
-                lineNumber: 50,
-                columnNumber: 7
+                lineNumber: 49,
+                columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-4 border-t border-zinc-800 pt-4",
+                className: "rounded-lg border border-zinc-800 bg-zinc-950 p-4",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledPreview$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     left1Label: value.left1Label,
                     left2Label: value.left2Label,
@@ -587,19 +731,19 @@ function LedMapping({ value, onChange }) {
                     right3Label: value.right3Label
                 }, void 0, false, {
                     fileName: "[project]/components/smartmeter/ledMapping.tsx",
-                    lineNumber: 106,
-                    columnNumber: 9
+                    lineNumber: 111,
+                    columnNumber: 7
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/smartmeter/ledMapping.tsx",
-                lineNumber: 105,
-                columnNumber: 7
+                lineNumber: 109,
+                columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/smartmeter/ledMapping.tsx",
         lineNumber: 48,
-        columnNumber: 5
+        columnNumber: 3
     }, this);
 }
 _c = LedMapping;
@@ -618,95 +762,113 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trash-2.js [app-client] (ecmascript) <export default as Trash2>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cpu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Cpu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/cpu.js [app-client] (ecmascript) <export default as Cpu>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/input.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledMapping$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/smartmeter/ledMapping.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$network$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Network$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/network.js [app-client] (ecmascript) <export default as Network>");
 "use client";
+;
 ;
 ;
 ;
 ;
 function MediaConverterCard({ index, converter, onIdChange, onMappingChange, onRemove, removable }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "rounded-xl border border-zinc-800 bg-zinc-900/90 transition-colors duration-200 hover:border-red-700/40",
+        className: "rounded-xl border border-zinc-700 bg-white-300 p-6 shadow-md transition-colors hover:border-zinc-600",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center gap-3 border-b border-zinc-800 px-4 py-3",
+                className: "flex items-center justify-between",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-zinc-700 bg-zinc-950 text-red-500",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cpu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Cpu$3e$__["Cpu"], {
-                            className: "h-4 w-4"
-                        }, void 0, false, {
-                            fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
-                            lineNumber: 39,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
-                        lineNumber: 38,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "shrink-0 text-xs font-medium text-zinc-400",
+                        className: "flex items-center gap-3",
                         children: [
-                            "Converter ",
-                            index + 1
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 shadow-lg shadow-blue-500/30",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$network$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Network$3e$__["Network"], {
+                                    className: "h-6 w-6 text-white"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
+                                    lineNumber: 41,
+                                    columnNumber: 3
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
+                                lineNumber: 40,
+                                columnNumber: 8
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-lg font-semibold text-white",
+                                    children: [
+                                        "Media Converter ",
+                                        index + 1
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
+                                    lineNumber: 45,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
+                                lineNumber: 44,
+                                columnNumber: 11
+                            }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
-                        lineNumber: 42,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "h-4 w-px shrink-0 bg-zinc-800"
+                    removable && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        onClick: onRemove,
+                        className: "rounded-lg p-2 text-zinc-500 transition-colors hover:bg-red-500/10 hover:text-red-400",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
+                            className: "h-4 w-4"
+                        }, void 0, false, {
+                            fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
+                            lineNumber: 58,
+                            columnNumber: 13
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
-                        lineNumber: 46,
+                        lineNumber: 53,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
+                lineNumber: 38,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mt-6",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                        className: "mb-2 block text-sm font-medium text-zinc-300",
+                        children: "Media Converter ID"
+                    }, void 0, false, {
+                        fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
+                        lineNumber: 65,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
                         value: converter.mediaConverterId,
                         placeholder: "MC-001",
                         onChange: (e)=>onIdChange(e.target.value),
-                        className: "h-8 w-32 border-zinc-700 bg-zinc-950 font-mono text-xs text-white focus:border-red-700 focus:ring-1 focus:ring-red-700/30"
+                        className: "border-zinc-600 bg-zinc-900 text-white placeholder:text-zinc-500 focus:border-red-500"
                     }, void 0, false, {
                         fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
-                        lineNumber: 48,
+                        lineNumber: 69,
                         columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex-1"
-                    }, void 0, false, {
-                        fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
-                        lineNumber: 55,
-                        columnNumber: 9
-                    }, this),
-                    removable && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        type: "button",
-                        onClick: onRemove,
-                        "aria-label": "Remove media converter",
-                        className: "rounded-md p-1.5 text-zinc-500 transition-all duration-200 hover:bg-red-500/10 hover:text-red-400 active:scale-95",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
-                            className: "h-4 w-4"
-                        }, void 0, false, {
-                            fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
-                            lineNumber: 64,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
-                        lineNumber: 58,
-                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
-                lineNumber: 37,
+                lineNumber: 64,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "p-4",
+                className: "mt-6",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smartmeter$2f$ledMapping$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     value: {
                         left1Label: converter.left1Label,
@@ -719,18 +881,18 @@ function MediaConverterCard({ index, converter, onIdChange, onMappingChange, onR
                     onChange: onMappingChange
                 }, void 0, false, {
                     fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
-                    lineNumber: 71,
+                    lineNumber: 79,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
-                lineNumber: 70,
+                lineNumber: 78,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/smartmeter/mediaConverterCard.tsx",
-        lineNumber: 35,
+        lineNumber: 36,
         columnNumber: 5
     }, this);
 }
@@ -825,7 +987,7 @@ async function createSmartMeter(data) {
             const errorData = await response.json();
             return {
                 success: false,
-                error: errorData.error || errorData.message || "Failed to update Smart Meter"
+                error: errorData.error || errorData.message || "Failed to create Smart Meter"
             };
         }
         return await response.json();
@@ -849,11 +1011,11 @@ async function updateSmartMeter(id, data) {
         });
         if (!response.ok) {
             const errorData = await response.json();
-            // throw new Error(
-            //   errorData.error || "Failed to update Smart Meter"
-            // );
-            alert(`${errorData.error} || failed to update Smart Meter`);
-            return;
+            alert(`${errorData.message}`);
+            return {
+                success: false,
+                error: errorData.error || errorData.message || "Failed to update Smart Meter"
+            };
         }
         return await response.json();
     } catch (error) {
@@ -963,6 +1125,20 @@ function AddSmartMeterPage() {
         ipAddress: ""
     });
     const validateForm = ()=>{
+        for (const converter of formData.mediaConverters){
+            const labels = [
+                converter.left1Label,
+                converter.left2Label,
+                converter.left3Label,
+                converter.right1Label,
+                converter.right2Label,
+                converter.right3Label
+            ];
+            if (new Set(labels).size !== labels.length) {
+                alert("Each LED label can only be selected once per Media Converter.");
+                return false;
+            }
+        }
         //function for validating ip
         const isValidIP = (ip)=>{
             const ipRegex = /^(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)$/;
@@ -976,11 +1152,6 @@ function AddSmartMeterPage() {
         };
         let isValid = true;
         if (formData.mediaConverters.length === 2 && formData.mediaConverters[0].mediaConverterId.trim() && formData.mediaConverters[1].mediaConverterId.trim() && formData.mediaConverters[0].mediaConverterId.trim() === formData.mediaConverters[1].mediaConverterId.trim()) {
-            // toast({
-            //   title: "Validation Error",
-            //   description: "Both Media Converter IDs cannot be the same",
-            //   variant: "destructive",
-            // });
             alert("Both Media Converter Cannot Be Same");
             isValid = false;
         }
@@ -1017,12 +1188,7 @@ function AddSmartMeterPage() {
         console.log("SUBMIT CLICKED");
         // Validate form
         if (!validateForm()) {
-            // toast({
-            //   title: "Validation Error",
-            //   description: "Please check the form for errors",
-            //   variant: "destructive",
-            // });
-            alert("validation failed");
+            alert("Validation Error");
             return;
         }
         setIsSubmitting(true);
@@ -1055,25 +1221,17 @@ function AddSmartMeterPage() {
                             ...prev,
                             smartMeterId: response.error
                         }));
-                    toast({
-                        title: "Duplicate Smart Meter",
-                        description: response.error,
-                        variant: "destructive"
-                    });
+                    alert(response.error);
                     return;
-                } else {
-                    if (!response.success) {
-                        alert(`Error\n\n${response.error || "Failed to create Smart Meter"}`);
-                        return;
-                    }
                 }
             }
         } catch (err) {
-            toast({
-                title: "Error",
-                description: "Failed to create SmartMeter. Please try again.",
-                variant: "destructive"
-            });
+            // toast({
+            //   title: "Error",
+            //   description: "Failed to create SmartMeter. Please try again.",
+            //   variant: "destructive",
+            // });
+            alert("Failed to Create Smart Meter");
         } finally{
             setIsSubmitting(false);
         }
@@ -1102,14 +1260,14 @@ function AddSmartMeterPage() {
                             className: "h-4 w-4"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                            lineNumber: 248,
+                            lineNumber: 231,
                             columnNumber: 11
                         }, this),
                         "Back to SmartMeter"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                    lineNumber: 244,
+                    lineNumber: 227,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -1125,12 +1283,12 @@ function AddSmartMeterPage() {
                                             className: "h-5 w-5 text-white"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                            lineNumber: 256,
+                                            lineNumber: 239,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                        lineNumber: 255,
+                                        lineNumber: 238,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1140,7 +1298,7 @@ function AddSmartMeterPage() {
                                                 children: "Add New SmartMeter"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 259,
+                                                lineNumber: 242,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardDescription"], {
@@ -1148,24 +1306,24 @@ function AddSmartMeterPage() {
                                                 children: "Create a new smartmeter with coordinates"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 262,
+                                                lineNumber: 245,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                        lineNumber: 258,
+                                        lineNumber: 241,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                lineNumber: 254,
+                                lineNumber: 237,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                            lineNumber: 253,
+                            lineNumber: 236,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1189,13 +1347,13 @@ function AddSmartMeterPage() {
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                                lineNumber: 273,
+                                                                lineNumber: 256,
                                                                 columnNumber: 36
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 272,
+                                                        lineNumber: 255,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -1207,7 +1365,7 @@ function AddSmartMeterPage() {
                                                         className: "border-[#333] bg-[#1a1a1a] text-white placeholder:text-gray-500 focus:border-[#8B0000] focus:ring-[#8B0000]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 275,
+                                                        lineNumber: 258,
                                                         columnNumber: 19
                                                     }, this),
                                                     validationErrors.smartMeterId ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1215,20 +1373,20 @@ function AddSmartMeterPage() {
                                                         children: validationErrors.smartMeterId
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 286,
+                                                        lineNumber: 269,
                                                         columnNumber: 21
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-xs text-gray-500",
                                                         children: "Unique identifier for the smartmeter"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 290,
+                                                        lineNumber: 273,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 271,
+                                                lineNumber: 254,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1240,7 +1398,7 @@ function AddSmartMeterPage() {
                                                         children: "Status"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 296,
+                                                        lineNumber: 279,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
@@ -1254,12 +1412,12 @@ function AddSmartMeterPage() {
                                                                 className: "border-[#333] bg-[#1a1a1a] text-white focus:ring-[#8B0000]",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {}, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                                    lineNumber: 306,
+                                                                    lineNumber: 289,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                                lineNumber: 305,
+                                                                lineNumber: 288,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -1271,7 +1429,7 @@ function AddSmartMeterPage() {
                                                                         children: "Active"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                                        lineNumber: 309,
+                                                                        lineNumber: 292,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -1280,31 +1438,31 @@ function AddSmartMeterPage() {
                                                                         children: "Inactive"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                                        lineNumber: 315,
+                                                                        lineNumber: 298,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                                lineNumber: 308,
+                                                                lineNumber: 291,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 299,
+                                                        lineNumber: 282,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 295,
+                                                lineNumber: 278,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                        lineNumber: 270,
+                                        lineNumber: 253,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1323,14 +1481,14 @@ function AddSmartMeterPage() {
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                                lineNumber: 330,
-                                                                columnNumber: 29
+                                                                lineNumber: 312,
+                                                                columnNumber: 31
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 329,
-                                                        columnNumber: 17
+                                                        lineNumber: 311,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
                                                         id: "ipAddress",
@@ -1341,28 +1499,28 @@ function AddSmartMeterPage() {
                                                         className: "border-[#333] bg-[#1a1a1a] text-white placeholder:text-gray-500 focus:border-[#8B0000] focus:ring-[#8B0000]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 332,
-                                                        columnNumber: 17
+                                                        lineNumber: 314,
+                                                        columnNumber: 19
                                                     }, this),
                                                     validationErrors.ipAddress ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-xs text-red-500",
                                                         children: validationErrors.ipAddress
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 341,
+                                                        lineNumber: 325,
                                                         columnNumber: 21
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-xs text-gray-500",
                                                         children: "Range: -90 to 90"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 345,
+                                                        lineNumber: 329,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 328,
+                                                lineNumber: 310,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1378,14 +1536,14 @@ function AddSmartMeterPage() {
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                                lineNumber: 353,
-                                                                columnNumber: 28
+                                                                lineNumber: 335,
+                                                                columnNumber: 30
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 352,
-                                                        columnNumber: 18
+                                                        lineNumber: 334,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
                                                         id: "addedBy",
@@ -1398,19 +1556,19 @@ function AddSmartMeterPage() {
                                                         className: "border-[#333] bg-[#1a1a1a] text-white placeholder:text-gray-500 focus:border-[#8B0000] focus:ring-[#8B0000]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 355,
-                                                        columnNumber: 17
+                                                        lineNumber: 337,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 351,
+                                                lineNumber: 333,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                        lineNumber: 327,
+                                        lineNumber: 309,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1426,13 +1584,13 @@ function AddSmartMeterPage() {
                                                         children: "*"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 368,
+                                                        lineNumber: 352,
                                                         columnNumber: 28
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 367,
+                                                lineNumber: 351,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -1444,13 +1602,13 @@ function AddSmartMeterPage() {
                                                 className: "border-[#333] bg-[#1a1a1a] text-white placeholder:text-gray-500 focus:border-[#8B0000] focus:ring-[#8B0000]"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 370,
+                                                lineNumber: 354,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                        lineNumber: 366,
+                                        lineNumber: 350,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1469,13 +1627,13 @@ function AddSmartMeterPage() {
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                                lineNumber: 385,
+                                                                lineNumber: 369,
                                                                 columnNumber: 30
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 384,
+                                                        lineNumber: 368,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -1489,7 +1647,7 @@ function AddSmartMeterPage() {
                                                         className: "border-[#333] bg-[#1a1a1a] text-white placeholder:text-gray-500 focus:border-[#8B0000] focus:ring-[#8B0000]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 387,
+                                                        lineNumber: 371,
                                                         columnNumber: 19
                                                     }, this),
                                                     validationErrors.latitude ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1497,20 +1655,20 @@ function AddSmartMeterPage() {
                                                         children: validationErrors.latitude
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 400,
+                                                        lineNumber: 384,
                                                         columnNumber: 21
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-xs text-gray-500",
                                                         children: "Range: -90 to 90"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 404,
+                                                        lineNumber: 388,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 383,
+                                                lineNumber: 367,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1526,13 +1684,13 @@ function AddSmartMeterPage() {
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                                lineNumber: 409,
+                                                                lineNumber: 393,
                                                                 columnNumber: 31
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 408,
+                                                        lineNumber: 392,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -1546,7 +1704,7 @@ function AddSmartMeterPage() {
                                                         className: "border-[#333] bg-[#1a1a1a] text-white placeholder:text-gray-500 focus:border-[#8B0000] focus:ring-[#8B0000]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 411,
+                                                        lineNumber: 395,
                                                         columnNumber: 19
                                                     }, this),
                                                     validationErrors.longitude ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1554,26 +1712,26 @@ function AddSmartMeterPage() {
                                                         children: validationErrors.longitude
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 424,
+                                                        lineNumber: 408,
                                                         columnNumber: 21
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-xs text-gray-500",
                                                         children: "Range: -180 to 180"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 428,
+                                                        lineNumber: 412,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 407,
+                                                lineNumber: 391,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                        lineNumber: 382,
+                                        lineNumber: 366,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1589,22 +1747,22 @@ function AddSmartMeterPage() {
                                                                 children: "Media Converters"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                                lineNumber: 438,
-                                                                columnNumber: 27
+                                                                lineNumber: 421,
+                                                                columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                 className: "text-sm text-gray-400",
                                                                 children: "Maximum 2 converters can be attached to a Smart Meter"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                                lineNumber: 442,
-                                                                columnNumber: 27
+                                                                lineNumber: 425,
+                                                                columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 437,
-                                                        columnNumber: 25
+                                                        lineNumber: 420,
+                                                        columnNumber: 19
                                                     }, this),
                                                     formData.mediaConverters.length < 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                                         type: "button",
@@ -1613,7 +1771,13 @@ function AddSmartMeterPage() {
                                                                 mediaConverters: [
                                                                     ...formData.mediaConverters,
                                                                     {
-                                                                        mediaConverterId: ""
+                                                                        mediaConverterId: "",
+                                                                        left1Label: "FX",
+                                                                        left2Label: "TX",
+                                                                        left3Label: "LINK",
+                                                                        right1Label: "PWR",
+                                                                        right2Label: "ACT",
+                                                                        right3Label: "FDX"
                                                                     }
                                                                 ]
                                                             }),
@@ -1621,14 +1785,14 @@ function AddSmartMeterPage() {
                                                         children: "+ Add Converter"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                        lineNumber: 448,
-                                                        columnNumber: 23
+                                                        lineNumber: 431,
+                                                        columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 436,
-                                                columnNumber: 23
+                                                lineNumber: 419,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "grid gap-4",
@@ -1669,24 +1833,24 @@ function AddSmartMeterPage() {
                                                             }
                                                         }, index, false, {
                                                             fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                            lineNumber: 474,
-                                                            columnNumber: 5
+                                                            lineNumber: 461,
+                                                            columnNumber: 23
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                    lineNumber: 470,
-                                                    columnNumber: 2
+                                                    lineNumber: 459,
+                                                    columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 468,
-                                                columnNumber: 21
+                                                lineNumber: 458,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                        lineNumber: 435,
-                                        columnNumber: 21
+                                        lineNumber: 418,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex flex-col-reverse gap-3 pt-4 sm:flex-row sm:justify-end",
@@ -1701,12 +1865,12 @@ function AddSmartMeterPage() {
                                                     children: "Cancel"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                    lineNumber: 538,
+                                                    lineNumber: 505,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 537,
+                                                lineNumber: 504,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1719,7 +1883,7 @@ function AddSmartMeterPage() {
                                                             className: "h-4 w-4 animate-spin"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                            lineNumber: 554,
+                                                            lineNumber: 521,
                                                             columnNumber: 23
                                                         }, this),
                                                         "Creating..."
@@ -1730,7 +1894,7 @@ function AddSmartMeterPage() {
                                                             className: "h-4 w-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                            lineNumber: 559,
+                                                            lineNumber: 526,
                                                             columnNumber: 23
                                                         }, this),
                                                         "Create SmartMeter"
@@ -1738,45 +1902,45 @@ function AddSmartMeterPage() {
                                                 }, void 0, true)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                                lineNumber: 547,
+                                                lineNumber: 514,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                        lineNumber: 536,
+                                        lineNumber: 503,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                                lineNumber: 269,
+                                lineNumber: 252,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                            lineNumber: 268,
+                            lineNumber: 251,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-                    lineNumber: 252,
+                    lineNumber: 235,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-            lineNumber: 242,
+            lineNumber: 225,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/(protected)/smartmeter/add/page.tsx",
-        lineNumber: 241,
+        lineNumber: 224,
         columnNumber: 5
     }, this);
 }
-_s(AddSmartMeterPage, "7lCC/BJVJPrLrS9VoX4S1HG1oVI=", false, function() {
+_s(AddSmartMeterPage, "8qCVfsti7CrsmRaDMzHJwHDMoKA=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
         __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"]

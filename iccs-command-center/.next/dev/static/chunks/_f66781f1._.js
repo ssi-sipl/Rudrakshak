@@ -646,6 +646,7 @@ async function updateSensor(id, sensorData) {
         });
         if (!response.ok) {
             const errorData = await response.json();
+            console.log(errorData);
             throw new Error(errorData.error || "Failed to update sensor");
         }
         return await response.json();

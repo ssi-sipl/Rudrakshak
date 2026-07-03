@@ -453,7 +453,7 @@ async function createSmartMeter(data) {
             const errorData = await response.json();
             return {
                 success: false,
-                error: errorData.error || errorData.message || "Failed to update Smart Meter"
+                error: errorData.error || errorData.message || "Failed to create Smart Meter"
             };
         }
         return await response.json();
@@ -477,11 +477,11 @@ async function updateSmartMeter(id, data) {
         });
         if (!response.ok) {
             const errorData = await response.json();
-            // throw new Error(
-            //   errorData.error || "Failed to update Smart Meter"
-            // );
-            alert(`${errorData.error} || failed to update Smart Meter`);
-            return;
+            alert(`${errorData.message}`);
+            return {
+                success: false,
+                error: errorData.error || errorData.message || "Failed to update Smart Meter"
+            };
         }
         return await response.json();
     } catch (error) {

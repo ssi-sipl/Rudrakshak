@@ -363,7 +363,7 @@ __turbopack_context__.s([
     ()=>updateSmartMeter
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllSmartMeters(params) {
     try {
         const queryParams = new URLSearchParams();
@@ -431,7 +431,7 @@ async function createSmartMeter(data) {
             const errorData = await response.json();
             return {
                 success: false,
-                error: errorData.error || errorData.message || "Failed to update Smart Meter"
+                error: errorData.error || errorData.message || "Failed to create Smart Meter"
             };
         }
         return await response.json();
@@ -455,11 +455,11 @@ async function updateSmartMeter(id, data) {
         });
         if (!response.ok) {
             const errorData = await response.json();
-            // throw new Error(
-            //   errorData.error || "Failed to update Smart Meter"
-            // );
-            alert(`${errorData.error} || failed to update Smart Meter`);
-            return;
+            alert(`${errorData.message}`);
+            return {
+                success: false,
+                error: errorData.error || errorData.message || "Failed to update Smart Meter"
+            };
         }
         return await response.json();
     } catch (error) {
