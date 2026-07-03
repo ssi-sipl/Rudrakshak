@@ -21,6 +21,16 @@ enum Role {
   USER
 }
 
+
+enum LedType {
+  FX
+  TX
+  LINK
+  PWR
+  ACT
+  FDX
+}
+
 enum AlertStatus {
   ACTIVE // waiting for your decision
   SENT // drone dispatched
@@ -256,14 +266,21 @@ model MediaConverters {
 
   //relations
   smartMeterId String?
-  smartMeter   SmartMeter? @relation(fields: [smartMeterId], references: [id], onDelete: Cascade)
+  smartMeter   SmartMeter? @relation(fields: [smartMeterId], references: [id], onDelete: SetNull)
 
-  fx   Boolean
-  tx   Boolean
-  link Boolean
-  pwr  Boolean
-  act  Boolean
-  fdx  Boolean
+  left1  Boolean @default(false)
+  left2  Boolean @default(false)
+  left3  Boolean @default(false)
+  right1 Boolean @default(false)
+  right2 Boolean @default(false)
+  right3 Boolean @default(false)
+
+  left1Label  LedType @default(FX)
+  left2Label  LedType @default(TX)
+  left3Label  LedType @default(LINK)
+  right1Label LedType @default(PWR)
+  right2Label LedType @default(ACT)
+  right3Label LedType @default(FDX)
 
   lastUpdatedAt DateTime @updatedAt
   createdAt     DateTime @default(now())
