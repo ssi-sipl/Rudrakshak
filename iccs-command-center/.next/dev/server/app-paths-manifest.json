@@ -1,4 +1,5 @@
 {
-  "/(protected)/drones/[id]/control/page": "app/(protected)/drones/[id]/control/page.js",
-  "/(protected)/page": "app/(protected)/page.js"
+  "/(protected)/page": "app/(protected)/page.js",
+  "/(protected)/users/[id]/edit/page": "app/(protected)/users/[id]/edit/page.js",
+  "/(protected)/users/page": "app/(protected)/users/page.js"
 }

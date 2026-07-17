@@ -198,107 +198,91 @@ __turbopack_context__.s([
     "updateUser",
     ()=>updateUser
 ]);
-const mockUsers = [
-    {
-        id: "user-1",
-        name: "Super Admin",
-        email: "superadmin@demo.com",
-        role: "SUPER_ADMIN",
-        isActive: true,
-        createdAt: "2026-07-14T10:00:00Z"
-    },
-    {
-        id: "user-2",
-        name: "Admin User",
-        email: "admin@demo.com",
-        role: "ADMIN",
-        isActive: true,
-        createdAt: "2026-07-14T10:00:00Z"
-    },
-    {
-        id: "user-3",
-        name: "Operator One",
-        email: "operator@demo.com",
-        role: "OPERATOR",
-        isActive: true,
-        createdAt: "2026-07-14T10:00:00Z"
-    },
-    {
-        id: "user-4",
-        name: "Security User",
-        email: "user@demo.com",
-        role: "USER",
-        isActive: false,
-        createdAt: "2026-07-14T10:00:00Z"
-    }
-];
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
 async function getUsers() {
-    await new Promise((r)=>setTimeout(r, 300));
-    return {
-        success: true,
-        users: mockUsers
-    };
+    try {
+        const response = await fetch(`${API_BASE_URL}/api/admin/users/users`, {
+            credentials: "include",
+            cache: "no-store"
+        });
+        const result = await response.json();
+        return result;
+    } catch (error) {
+        return {
+            success: false,
+            error: "Failed to fetch users"
+        };
+    }
 }
 async function createUser(data) {
-    await new Promise((r)=>setTimeout(r, 300));
-    const newUser = {
-        id: `user-${mockUsers.length + 1}`,
-        name: data.name,
-        email: data.email,
-        role: "USER",
-        isActive: data.isActive,
-        createdAt: new Date().toISOString()
-    };
-    mockUsers.unshift(newUser);
-    return {
-        success: true,
-        data: newUser,
-        message: "User created successfully"
-    };
+    try {
+        const response = await fetch(`${API_BASE_URL}/api/admin/users/createUser`, {
+            method: "POST",
+            credentials: "include",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+        const result = await response.json();
+        return result;
+    } catch (error) {
+        return {
+            success: false,
+            error: "Failed to create user"
+        };
+    }
 }
 async function deleteUser(userId) {
-    await new Promise((r)=>setTimeout(r, 300));
-    const index = mockUsers.findIndex((u)=>u.id === userId);
-    if (index !== -1) {
-        mockUsers.splice(index, 1);
+    try {
+        const response = await fetch(`${API_BASE_URL}/api/admin/users/deleteUser/${userId}`, {
+            method: "DELETE",
+            credentials: "include"
+        });
+        const result = await response.json();
+        return result;
+    } catch (error) {
+        return {
+            success: false,
+            error: "Failed to delete user"
+        };
     }
-    return {
-        success: true,
-        message: "User deleted successfully"
-    };
 }
 async function getUserById(userId) {
-    await new Promise((r)=>setTimeout(r, 300));
-    const user = mockUsers.find((u)=>u.id === userId);
-    if (!user) {
+    try {
+        const response = await fetch(`${API_BASE_URL}/api/admin/users/${userId}`, {
+            method: "GET",
+            credentials: "include",
+            cache: "no-store"
+        });
+        const result = await response.json();
+        return result;
+    } catch (error) {
         return {
             success: false,
-            error: "User not found"
+            error: "Failed to fetch user"
         };
     }
-    return {
-        success: true,
-        data: user
-    };
 }
 async function updateUser(userId, data) {
-    await new Promise((r)=>setTimeout(r, 300));
-    const user = mockUsers.find((u)=>u.id === userId);
-    if (!user) {
+    try {
+        const response = await fetch(`${API_BASE_URL}/api/admin/users/updateUser/${userId}`, {
+            method: "PUT",
+            credentials: "include",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+        const result = await response.json();
+        return result;
+    } catch  {
         return {
             success: false,
-            error: "User not found"
+            error: "Failed to update user"
         };
     }
-    user.name = data.name;
-    user.email = data.email;
-    user.role = data.role;
-    user.isActive = data.isActive;
-    return {
-        success: true,
-        data: user,
-        message: "User updated successfully"
-    };
 }
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
