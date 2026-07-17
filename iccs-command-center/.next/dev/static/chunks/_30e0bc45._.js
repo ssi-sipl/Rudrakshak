@@ -934,33 +934,14 @@ function getSensorIconPathWhite(sensorType) {
     if (t.includes("command")) return "/Icons/White/Commond Center - W.png";
     return "/Icons/White/Other - W.png";
 }
-function getSensorIcon(sensor, hasActiveAlert, zoom, droneOnSensor, isFocused, mode) {
+function getSensorIcon(sensor, hasActiveAlert, zoom, droneOnSensor, isFocused) {
     const leaflet = __turbopack_context__.r("[project]/node_modules/leaflet/dist/leaflet-src.js [app-client] (ecmascript)");
     const markerSize = calculateMarkerSize(zoom);
     const fontSize = Math.max(9, Math.round(markerSize * 0.45));
     const borderWidth = markerSize > 30 ? 2 : 1;
-    // const baseColor = getSensorBaseColor(sensor.sensorType);
-    // const bg = hasActiveAlert ? "#b91c1c" : baseColor;
-    // const border = hasActiveAlert ? "#fecaca" : "#0f172a";
-    let bg;
-    let border;
-    if (mode === "sensor-health") {
-        // System disabled
-        if (sensor.status === "Inactive") {
-            bg = "#6b7280";
-            border = "#9ca3af";
-        } else if (sensor.activeShuruMode === "Active") {
-            bg = "#2563eb";
-            border = "#93c5fd";
-        } else {
-            bg = "#dc2626";
-            border = "#fca5a5";
-        }
-    } else {
-        const baseColor = getSensorBaseColor(sensor.sensorType);
-        bg = hasActiveAlert ? "#b91c1c" : baseColor;
-        border = hasActiveAlert ? "#fecaca" : "#0f172a";
-    }
+    const baseColor = getSensorBaseColor(sensor.sensorType);
+    const bg = hasActiveAlert ? "#b91c1c" : baseColor;
+    const border = hasActiveAlert ? "#fecaca" : "#0f172a";
     const t = sensor.sensorType.toLowerCase();
     let label = "S";
     if (t.includes("camera")) label = "C";
@@ -1097,7 +1078,7 @@ function getSensorIcon(sensor, hasActiveAlert, zoom, droneOnSensor, isFocused, m
 //     iconAnchor: [size / 2, size / 2],
 //   });
 // }
-function MapRenderer({ mode, mapConfig, sensors, drones, alertBySensorDbId, dronePositions, droneStatus, currentZoom, socketConnected, markerUpdateKey, onZoomChange, onSensorClick, onDroneMarkerClick, droneTelemetryData, focusedSensorId }) {
+function MapRenderer({ mapConfig, sensors, drones, alertBySensorDbId, dronePositions, droneStatus, currentZoom, socketConnected, markerUpdateKey, onZoomChange, onSensorClick, onDroneMarkerClick, droneTelemetryData, focusedSensorId }) {
     _s();
     const leafletMapRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const center = [
@@ -1142,10 +1123,9 @@ function MapRenderer({ mode, mapConfig, sensors, drones, alertBySensorDbId, dron
         return droneIconCache.current.get(key);
     };
     const getMemoizedSensorIcon = (sensor, hasActiveAlert, droneOnSensor, isFocused)=>{
-        ;
-        const key = `${sensor.id}-${sensor.activeShuruMode}-${sensor.status}-${hasActiveAlert}-${currentZoom}-${droneOnSensor}-${isFocused}-${mode}`;
+        const key = `${sensor.id}-${hasActiveAlert}-${currentZoom}-${droneOnSensor}-${isFocused}`;
         if (!sensorIconCache.current.has(key)) {
-            sensorIconCache.current.set(key, getSensorIcon(sensor, hasActiveAlert, currentZoom, droneOnSensor, isFocused, mode));
+            sensorIconCache.current.set(key, getSensorIcon(sensor, hasActiveAlert, currentZoom, droneOnSensor, isFocused));
         }
         return sensorIconCache.current.get(key);
     };
@@ -1173,24 +1153,18 @@ function MapRenderer({ mode, mapConfig, sensors, drones, alertBySensorDbId, dron
             return sensors.filter({
                 "MapRenderer.useMemo[visibleSensors]": (sensor)=>{
                     // ❌ sensor inactive
-                    if (mode === "operations") {
-                        if (sensor.status !== "Active") return false;
-                        // ❌ area inactive
-                        if (sensor.area?.status !== "Active") return false;
-                    }
+                    if (sensor.status !== "Active") return false;
+                    // ❌ area inactive
+                    if (sensor.area?.status !== "Active") return false;
                     return true;
                 }
             }["MapRenderer.useMemo[visibleSensors]"]);
         }
     }["MapRenderer.useMemo[visibleSensors]"], [
-        sensors,
-        mode
+        sensors
     ]);
     const visibleDrones = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "MapRenderer.useMemo[visibleDrones]": ()=>{
-            if (mode === "sensor-health") {
-                return [];
-            }
             return drones.filter({
                 "MapRenderer.useMemo[visibleDrones]": (drone)=>{
                     // ❌ area inactive
@@ -1200,609 +1174,462 @@ function MapRenderer({ mode, mapConfig, sensors, drones, alertBySensorDbId, dron
             }["MapRenderer.useMemo[visibleDrones]"]);
         }
     }["MapRenderer.useMemo[visibleDrones]"], [
-        drones,
-        mode
+        drones
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "relative h-full w-full",
-        children: [
-            mode === "sensor-health" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: " absolute bottom-4 right-4 z-[1000] bg-black/70 backdrop-blur-md border border-white/10 rounded-lg p-4 space-y-2 text-white text-xs ",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "font-bold",
-                        children: "Sensor Health"
-                    }, void 0, false, {
-                        fileName: "[project]/components/map-renderer.tsx",
-                        lineNumber: 873,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: " w-4 h-4 rounded-full bg-blue-600 "
-                            }, void 0, false, {
-                                fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 876,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "Sensor available in network"
-                            }, void 0, false, {
-                                fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 885,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/map-renderer.tsx",
-                        lineNumber: 875,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: " w-4 h-4 rounded-full bg-red-600 "
-                            }, void 0, false, {
-                                fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 889,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "Sensor unavailable / cannot ping"
-                            }, void 0, false, {
-                                fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 898,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/map-renderer.tsx",
-                        lineNumber: 888,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: " w-4 h-4 rounded-full bg-gray-500 "
-                            }, void 0, false, {
-                                fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 902,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "Monitoring disabled"
-                            }, void 0, false, {
-                                fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 911,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/map-renderer.tsx",
-                        lineNumber: 901,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/map-renderer.tsx",
-                lineNumber: 856,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MapContainer, {
-                preferCanvas: true,
-                center: center,
-                attributionControl: false,
-                zoom: mapConfig.minZoom,
-                minZoom: mapConfig.minZoom,
-                maxZoom: 40,
-                zoomSnap: 0.1,
-                zoomDelta: 0.5,
-                maxBounds: [
-                    [
-                        mapConfig.south,
-                        mapConfig.west
-                    ],
-                    [
-                        mapConfig.north,
-                        mapConfig.east
-                    ]
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MapContainer, {
+            preferCanvas: true,
+            center: center,
+            attributionControl: false,
+            zoom: mapConfig.minZoom,
+            minZoom: mapConfig.minZoom,
+            maxZoom: 40,
+            zoomSnap: 0.1,
+            zoomDelta: 0.5,
+            maxBounds: [
+                [
+                    mapConfig.south,
+                    mapConfig.west
                 ],
-                maxBoundsViscosity: 1.0,
-                className: "h-full w-full bg-black",
-                zoomControl: true,
-                doubleClickZoom: false,
-                whenCreated: (mapInstance)=>{
-                    leafletMapRef.current = mapInstance;
-                    onZoomChange(mapInstance.getZoom()); // 🔑 initialize state once
-                    mapInstance.zoomControl.setPosition("bottomright");
-                },
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TileLayer, {
-                        url: `${API_BASE_URL}/maps/${mapConfig.id}/{z}/{x}/{y}.jpg`,
-                        minZoom: mapConfig.minZoom,
-                        maxNativeZoom: mapConfig.maxZoom,
-                        maxZoom: 40,
-                        // maxZoom={Math.min(mapConfig.maxZoom, 19)}
-                        noWrap: true,
-                        bounds: [
+                [
+                    mapConfig.north,
+                    mapConfig.east
+                ]
+            ],
+            maxBoundsViscosity: 1.0,
+            className: "h-full w-full bg-black",
+            zoomControl: true,
+            doubleClickZoom: false,
+            whenCreated: (mapInstance)=>{
+                leafletMapRef.current = mapInstance;
+                onZoomChange(mapInstance.getZoom()); // 🔑 initialize state once
+                mapInstance.zoomControl.setPosition("bottomright");
+            },
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TileLayer, {
+                    url: `${API_BASE_URL}/maps/${mapConfig.id}/{z}/{x}/{y}.jpg`,
+                    minZoom: mapConfig.minZoom,
+                    maxNativeZoom: mapConfig.maxZoom,
+                    maxZoom: 40,
+                    // maxZoom={Math.min(mapConfig.maxZoom, 19)}
+                    noWrap: true,
+                    bounds: [
+                        [
+                            mapConfig.south,
+                            mapConfig.west
+                        ],
+                        [
+                            mapConfig.north,
+                            mapConfig.east
+                        ]
+                    ],
+                    attribution: ""
+                }, void 0, false, {
+                    fileName: "[project]/components/map-renderer.tsx",
+                    lineNumber: 838,
+                    columnNumber: 9
+                }, this),
+                visibleSensors.map((sensor)=>{
+                    const alert = alertBySensorDbId[sensor.id];
+                    const hasActiveAlert = !!alert && alert.status === "ACTIVE";
+                    const droneOnSensor = getDroneOnSensor(sensor, dronePositions, droneTelemetryData) !== null;
+                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Marker, {
+                        position: [
+                            sensor.latitude,
+                            sensor.longitude
+                        ],
+                        icon: getMemoizedSensorIcon(sensor, hasActiveAlert, droneOnSensor, sensor.id === focusedSensorId),
+                        ref: (ref)=>{
+                            if (ref) {
+                                sensorMarkerRefs.current[sensor.id] = ref;
+                            }
+                        },
+                        eventHandlers: {
+                            click: ()=>onSensorClick(sensor)
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Tooltip, {
+                            direction: "top",
+                            offset: [
+                                0,
+                                -10
+                            ],
+                            opacity: 0.9,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-1 text-xs",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "font-semibold text-black",
+                                        children: sensor.name
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 881,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-black-200",
+                                        children: sensor.sensorType
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 882,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-[10px] text-black-300",
+                                        children: [
+                                            "Lat: ",
+                                            sensor.latitude.toFixed(5),
+                                            ", Lon:",
+                                            " ",
+                                            sensor.longitude.toFixed(5)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 884,
+                                        columnNumber: 19
+                                    }, this),
+                                    droneOnSensor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-[10px] font-semibold text-blue-600",
+                                        children: "✈ Drone on sensor"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 889,
+                                        columnNumber: 21
+                                    }, this),
+                                    hasActiveAlert && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-[10px] font-semibold text-red-500",
+                                        children: "🚨 ACTIVE ALERT"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 894,
+                                        columnNumber: 21
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/map-renderer.tsx",
+                                lineNumber: 880,
+                                columnNumber: 17
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/map-renderer.tsx",
+                            lineNumber: 879,
+                            columnNumber: 15
+                        }, this)
+                    }, sensor.id, false, {
+                        fileName: "[project]/components/map-renderer.tsx",
+                        lineNumber: 861,
+                        columnNumber: 13
+                    }, this);
+                }),
+                visibleDrones.map((drone)=>{
+                    const pos = dronePositions[drone.id];
+                    const status = droneStatus[drone.id];
+                    const telemetry = droneTelemetryData[drone.id]; // Get telemetry for status
+                    if (!pos) return null;
+                    const markerPos = [
+                        pos.lat,
+                        pos.lng
+                    ];
+                    const isOnline = status?.isLive === true;
+                    const isStale = status?.isStale === true;
+                    const hasAlert = status?.hasAlert === true;
+                    // Get status from telemetry (renamed to avoid conflict)
+                    const currentDroneStatus = status?.isLive === false ? null : telemetry?.status ?? null;
+                    // Status display based on telemetry.status
+                    let statusDisplay = "Offline";
+                    let statusColor = "text-gray-500";
+                    let statusEmoji = "⚪";
+                    let statusBadge = "";
+                    if (isOnline) {
+                        switch(currentDroneStatus){
+                            case "on_air":
+                                statusDisplay = "In Flight";
+                                statusColor = "text-blue-400";
+                                statusEmoji = "✈️";
+                                statusBadge = "🔵 Flying";
+                                break;
+                            case "ground":
+                                statusDisplay = "On Ground";
+                                statusColor = "text-gray-400";
+                                statusEmoji = "🛬";
+                                statusBadge = "⚪ Landed";
+                                break;
+                            case "reached":
+                                statusDisplay = "Target Reached";
+                                statusColor = "text-green-400";
+                                statusEmoji = "🎯";
+                                statusBadge = "🟢 Reached";
+                                break;
+                            default:
+                                statusDisplay = "Online";
+                                statusColor = "text-green-600";
+                                statusEmoji = "🟢";
+                                statusBadge = "🟢 Active";
+                        }
+                    }
+                    let tooltipStatusText = "● Ready";
+                    let tooltipStatusColor = "text-gray-400";
+                    if (status?.recovered) {
+                        tooltipStatusText = "⚠ Telemetry Recovering";
+                        tooltipStatusColor = "text-amber-500";
+                    } else if (status?.hasEverReceivedTelemetry && !isOnline) {
+                        tooltipStatusText = "○ Link Unavailable";
+                        tooltipStatusColor = "text-gray-500";
+                    } else if (hasAlert) {
+                        tooltipStatusText = "🚨 Telemetry Lost";
+                        tooltipStatusColor = "text-red-600";
+                    } else if (isOnline) {
+                        switch(currentDroneStatus){
+                            case "on_air":
+                                tooltipStatusText = "✈ In Flight";
+                                tooltipStatusColor = "text-blue-500";
+                                break;
+                            case "reached":
+                                tooltipStatusText = "🎯 At Target";
+                                tooltipStatusColor = "text-green-500";
+                                break;
+                            case "ground":
+                                tooltipStatusText = "🛬 Idle";
+                                tooltipStatusColor = "text-gray-400";
+                                break;
+                            default:
+                                tooltipStatusText = "● Ready";
+                                tooltipStatusColor = "text-gray-400";
+                        }
+                    }
+                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Marker, {
+                        position: markerPos,
+                        icon: getMemoizedDroneIcon(isOnline, isStale, hasAlert, currentDroneStatus),
+                        zIndexOffset: 1000,
+                        eventHandlers: {
+                            click: (e)=>{
+                                e.originalEvent?.stopPropagation();
+                                onDroneMarkerClick?.(drone.id, e.originalEvent);
+                            },
+                            dblclick: (e)=>{
+                                e.originalEvent?.stopPropagation();
+                            }
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Tooltip, {
+                            direction: "top",
+                            offset: [
+                                0,
+                                -10
+                            ],
+                            opacity: 0.9,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-1 text-xs",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "font-semibold text-black",
+                                        children: [
+                                            "✈ ",
+                                            drone.droneId
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 1011,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-[10px] text-black-300",
+                                        children: drone.droneOSName
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 1014,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: `text-[10px] font-bold ${tooltipStatusColor}`,
+                                        children: tooltipStatusText
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 1018,
+                                        columnNumber: 19
+                                    }, this),
+                                    !isOnline && status?.connectionLossTime && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-[9px] text-gray-500",
+                                        children: [
+                                            "Lost",
+                                            " ",
+                                            Math.floor((Date.now() - status.connectionLossTime) / 1000),
+                                            "s ago"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 1025,
+                                        columnNumber: 21
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-[10px] text-black-300",
+                                        children: [
+                                            "Lat: ",
+                                            pos.lat.toFixed(5),
+                                            ", Lon: ",
+                                            pos.lng.toFixed(5)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 1034,
+                                        columnNumber: 19
+                                    }, this),
+                                    pos.alt != null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-[10px] text-black-300",
+                                        children: [
+                                            "Alt: ",
+                                            pos.alt,
+                                            " m"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 1038,
+                                        columnNumber: 21
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/map-renderer.tsx",
+                                lineNumber: 1010,
+                                columnNumber: 17
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/map-renderer.tsx",
+                            lineNumber: 1009,
+                            columnNumber: 15
+                        }, this)
+                    }, `drone-${drone.id}`, false, {
+                        fileName: "[project]/components/map-renderer.tsx",
+                        lineNumber: 989,
+                        columnNumber: 13
+                    }, this);
+                }),
+                visibleDrones.map((drone)=>{
+                    const telemetry = droneTelemetryData[drone.id];
+                    const pos = dronePositions[drone.id];
+                    // Must have everything
+                    if (!telemetry || !pos || drone.latitude == null || drone.longitude == null) {
+                        return null;
+                    }
+                    // 🧠 Distance from base
+                    const distanceFromBase = haversineMeters(pos.lat, pos.lng, drone.latitude, drone.longitude);
+                    // ✅ Hide base marker once drone is back home
+                    if (distanceFromBase <= REACH_RADIUS_METERS) {
+                        return null;
+                    }
+                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Marker, {
+                        position: [
+                            drone.latitude,
+                            drone.longitude
+                        ],
+                        icon: getMemoizedDroneIcon(true, false, false, "ground", true),
+                        zIndexOffset: -1000,
+                        interactive: true,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Tooltip, {
+                            direction: "top",
+                            offset: [
+                                0,
+                                -10
+                            ],
+                            opacity: 0.9,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-1 text-xs",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "font-semibold text-black",
+                                        children: "🏠 Base"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 1091,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-[10px] text-black-300",
+                                        children: [
+                                            "Drone: ",
+                                            drone.droneId
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 1092,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-[10px] text-black-300",
+                                        children: [
+                                            "Lat: ",
+                                            drone.latitude.toFixed(5)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 1095,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-[10px] text-black-300",
+                                        children: [
+                                            "Lon: ",
+                                            drone.longitude.toFixed(5)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/map-renderer.tsx",
+                                        lineNumber: 1098,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/map-renderer.tsx",
+                                lineNumber: 1090,
+                                columnNumber: 17
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/map-renderer.tsx",
+                            lineNumber: 1089,
+                            columnNumber: 15
+                        }, this)
+                    }, `base-${drone.id}`, false, {
+                        fileName: "[project]/components/map-renderer.tsx",
+                        lineNumber: 1076,
+                        columnNumber: 13
+                    }, this);
+                }),
+                visibleDrones.map((drone)=>{
+                    const telemetry = droneTelemetryData[drone.id];
+                    if (!telemetry) return null;
+                    // Only draw when drone is flying
+                    const status = droneStatus[drone.id];
+                    if (!status?.isLive || status.isStale || telemetry.status === "ground" || telemetry.targetLat == null || telemetry.targetLng == null) {
+                        return null;
+                    }
+                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Polyline, {
+                        positions: [
                             [
-                                mapConfig.south,
-                                mapConfig.west
+                                telemetry.lat,
+                                telemetry.lng
                             ],
                             [
-                                mapConfig.north,
-                                mapConfig.east
+                                telemetry.targetLat,
+                                telemetry.targetLng
                             ]
                         ],
-                        attribution: ""
-                    }, void 0, false, {
+                        pathOptions: {
+                            color: "#f59e0b",
+                            weight: 3,
+                            dashArray: "6 8"
+                        }
+                    }, `telemetry-path-${drone.id}`, false, {
                         fileName: "[project]/components/map-renderer.tsx",
-                        lineNumber: 939,
-                        columnNumber: 9
-                    }, this),
-                    visibleSensors.map((sensor)=>{
-                        const alert = alertBySensorDbId[sensor.id];
-                        const hasActiveAlert = !!alert && alert.status === "ACTIVE";
-                        // const droneOnSensor =
-                        //   getDroneOnSensor(sensor, dronePositions, droneTelemetryData) !==
-                        //   null;
-                        const droneOnSensor = mode === "operations" ? getDroneOnSensor(sensor, dronePositions, droneTelemetryData) !== null : false;
-                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Marker, {
-                            position: [
-                                sensor.latitude,
-                                sensor.longitude
-                            ],
-                            icon: getMemoizedSensorIcon(sensor, hasActiveAlert, droneOnSensor, sensor.id === focusedSensorId),
-                            ref: (ref)=>{
-                                if (ref) {
-                                    sensorMarkerRefs.current[sensor.id] = ref;
-                                }
-                            },
-                            eventHandlers: {
-                                click: ()=>onSensorClick(sensor)
-                            },
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Tooltip, {
-                                direction: "top",
-                                offset: [
-                                    0,
-                                    -10
-                                ],
-                                opacity: 0.95,
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "space-y-2 min-w-[180px]",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "font-bold text-black",
-                                            children: sensor.name
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1009,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-xs text-gray-700",
-                                            children: sensor.sensorType
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1011,
-                                            columnNumber: 19
-                                        }, this),
-                                        mode === "sensor-health" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex justify-between text-xs",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: "System Status:"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/map-renderer.tsx",
-                                                            lineNumber: 1018,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: sensor.status === "Active" ? "text-blue-600 font-semibold" : "text-gray-500 font-semibold",
-                                                            children: sensor.status
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/map-renderer.tsx",
-                                                            lineNumber: 1020,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/components/map-renderer.tsx",
-                                                    lineNumber: 1017,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex justify-between text-xs",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: "Network Status:"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/map-renderer.tsx",
-                                                            lineNumber: 1032,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: sensor.activeShuruMode === "Active" ? "text-blue-600 font-semibold" : "text-red-600 font-semibold",
-                                                            children: sensor.activeShuruMode
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/map-renderer.tsx",
-                                                            lineNumber: 1034,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/components/map-renderer.tsx",
-                                                    lineNumber: 1031,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "text-[10px]",
-                                                    children: [
-                                                        "Lat:",
-                                                        sensor.latitude.toFixed(5)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/components/map-renderer.tsx",
-                                                    lineNumber: 1047,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "text-[10px]",
-                                                    children: [
-                                                        "Lon:",
-                                                        sensor.longitude.toFixed(5)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/components/map-renderer.tsx",
-                                                    lineNumber: 1052,
-                                                    columnNumber: 23
-                                                }, this),
-                                                hasActiveAlert && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: " text-red-500 font-semibold ",
-                                                    children: "🚨 ACTIVE ALERT"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/map-renderer.tsx",
-                                                    lineNumber: 1058,
-                                                    columnNumber: 25
-                                                }, this)
-                                            ]
-                                        }, void 0, true)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/map-renderer.tsx",
-                                    lineNumber: 1008,
-                                    columnNumber: 17
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 1007,
-                                columnNumber: 15
-                            }, this)
-                        }, sensor.id, false, {
-                            fileName: "[project]/components/map-renderer.tsx",
-                            lineNumber: 968,
-                            columnNumber: 13
-                        }, this);
-                    }),
-                    visibleDrones.map((drone)=>{
-                        const pos = dronePositions[drone.id];
-                        const status = droneStatus[drone.id];
-                        const telemetry = droneTelemetryData[drone.id]; // Get telemetry for status
-                        if (!pos) return null;
-                        const markerPos = [
-                            pos.lat,
-                            pos.lng
-                        ];
-                        const isOnline = status?.isLive === true;
-                        const isStale = status?.isStale === true;
-                        const hasAlert = status?.hasAlert === true;
-                        // Get status from telemetry (renamed to avoid conflict)
-                        const currentDroneStatus = status?.isLive === false ? null : telemetry?.status ?? null;
-                        // Status display based on telemetry.status
-                        let statusDisplay = "Offline";
-                        let statusColor = "text-gray-500";
-                        let statusEmoji = "⚪";
-                        let statusBadge = "";
-                        if (isOnline) {
-                            switch(currentDroneStatus){
-                                case "on_air":
-                                    statusDisplay = "In Flight";
-                                    statusColor = "text-blue-400";
-                                    statusEmoji = "✈️";
-                                    statusBadge = "🔵 Flying";
-                                    break;
-                                case "ground":
-                                    statusDisplay = "On Ground";
-                                    statusColor = "text-gray-400";
-                                    statusEmoji = "🛬";
-                                    statusBadge = "⚪ Landed";
-                                    break;
-                                case "reached":
-                                    statusDisplay = "Target Reached";
-                                    statusColor = "text-green-400";
-                                    statusEmoji = "🎯";
-                                    statusBadge = "🟢 Reached";
-                                    break;
-                                default:
-                                    statusDisplay = "Online";
-                                    statusColor = "text-green-600";
-                                    statusEmoji = "🟢";
-                                    statusBadge = "🟢 Active";
-                            }
-                        }
-                        let tooltipStatusText = "● Ready";
-                        let tooltipStatusColor = "text-gray-400";
-                        if (status?.recovered) {
-                            tooltipStatusText = "⚠ Telemetry Recovering";
-                            tooltipStatusColor = "text-amber-500";
-                        } else if (status?.hasEverReceivedTelemetry && !isOnline) {
-                            tooltipStatusText = "○ Link Unavailable";
-                            tooltipStatusColor = "text-gray-500";
-                        } else if (hasAlert) {
-                            tooltipStatusText = "🚨 Telemetry Lost";
-                            tooltipStatusColor = "text-red-600";
-                        } else if (isOnline) {
-                            switch(currentDroneStatus){
-                                case "on_air":
-                                    tooltipStatusText = "✈ In Flight";
-                                    tooltipStatusColor = "text-blue-500";
-                                    break;
-                                case "reached":
-                                    tooltipStatusText = "🎯 At Target";
-                                    tooltipStatusColor = "text-green-500";
-                                    break;
-                                case "ground":
-                                    tooltipStatusText = "🛬 Idle";
-                                    tooltipStatusColor = "text-gray-400";
-                                    break;
-                                default:
-                                    tooltipStatusText = "● Ready";
-                                    tooltipStatusColor = "text-gray-400";
-                            }
-                        }
-                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Marker, {
-                            position: markerPos,
-                            icon: getMemoizedDroneIcon(isOnline, isStale, hasAlert, currentDroneStatus),
-                            zIndexOffset: 1000,
-                            eventHandlers: {
-                                click: (e)=>{
-                                    e.originalEvent?.stopPropagation();
-                                    onDroneMarkerClick?.(drone.id, e.originalEvent);
-                                },
-                                dblclick: (e)=>{
-                                    e.originalEvent?.stopPropagation();
-                                }
-                            },
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Tooltip, {
-                                direction: "top",
-                                offset: [
-                                    0,
-                                    -10
-                                ],
-                                opacity: 0.9,
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "space-y-1 text-xs",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "font-semibold text-black",
-                                            children: [
-                                                "✈ ",
-                                                drone.droneId
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1182,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-[10px] text-black-300",
-                                            children: drone.droneOSName
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1185,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: `text-[10px] font-bold ${tooltipStatusColor}`,
-                                            children: tooltipStatusText
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1189,
-                                            columnNumber: 19
-                                        }, this),
-                                        !isOnline && status?.connectionLossTime && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-[9px] text-gray-500",
-                                            children: [
-                                                "Lost",
-                                                " ",
-                                                Math.floor((Date.now() - status.connectionLossTime) / 1000),
-                                                "s ago"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1196,
-                                            columnNumber: 21
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-[10px] text-black-300",
-                                            children: [
-                                                "Lat: ",
-                                                pos.lat.toFixed(5),
-                                                ", Lon: ",
-                                                pos.lng.toFixed(5)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1205,
-                                            columnNumber: 19
-                                        }, this),
-                                        pos.alt != null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-[10px] text-black-300",
-                                            children: [
-                                                "Alt: ",
-                                                pos.alt,
-                                                " m"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1209,
-                                            columnNumber: 21
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/map-renderer.tsx",
-                                    lineNumber: 1181,
-                                    columnNumber: 17
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 1180,
-                                columnNumber: 15
-                            }, this)
-                        }, `drone-${drone.id}`, false, {
-                            fileName: "[project]/components/map-renderer.tsx",
-                            lineNumber: 1160,
-                            columnNumber: 13
-                        }, this);
-                    }),
-                    visibleDrones.map((drone)=>{
-                        const telemetry = droneTelemetryData[drone.id];
-                        const pos = dronePositions[drone.id];
-                        // Must have everything
-                        if (!telemetry || !pos || drone.latitude == null || drone.longitude == null) {
-                            return null;
-                        }
-                        // 🧠 Distance from base
-                        const distanceFromBase = haversineMeters(pos.lat, pos.lng, drone.latitude, drone.longitude);
-                        // ✅ Hide base marker once drone is back home
-                        if (distanceFromBase <= REACH_RADIUS_METERS) {
-                            return null;
-                        }
-                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Marker, {
-                            position: [
-                                drone.latitude,
-                                drone.longitude
-                            ],
-                            icon: getMemoizedDroneIcon(true, false, false, "ground", true),
-                            zIndexOffset: -1000,
-                            interactive: true,
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Tooltip, {
-                                direction: "top",
-                                offset: [
-                                    0,
-                                    -10
-                                ],
-                                opacity: 0.9,
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "space-y-1 text-xs",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "font-semibold text-black",
-                                            children: "🏠 Base"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1262,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-[10px] text-black-300",
-                                            children: [
-                                                "Drone: ",
-                                                drone.droneId
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1263,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-[10px] text-black-300",
-                                            children: [
-                                                "Lat: ",
-                                                drone.latitude.toFixed(5)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1266,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-[10px] text-black-300",
-                                            children: [
-                                                "Lon: ",
-                                                drone.longitude.toFixed(5)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1269,
-                                            columnNumber: 19
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/map-renderer.tsx",
-                                    lineNumber: 1261,
-                                    columnNumber: 17
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 1260,
-                                columnNumber: 15
-                            }, this)
-                        }, `base-${drone.id}`, false, {
-                            fileName: "[project]/components/map-renderer.tsx",
-                            lineNumber: 1247,
-                            columnNumber: 13
-                        }, this);
-                    }),
-                    visibleDrones.map((drone)=>{
-                        const telemetry = droneTelemetryData[drone.id];
-                        if (!telemetry) return null;
-                        // Only draw when drone is flying
-                        const status = droneStatus[drone.id];
-                        if (!status?.isLive || status.isStale || telemetry.status === "ground" || telemetry.targetLat == null || telemetry.targetLng == null) {
-                            return null;
-                        }
-                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Polyline, {
-                            positions: [
-                                [
-                                    telemetry.lat,
-                                    telemetry.lng
-                                ],
-                                [
-                                    telemetry.targetLat,
-                                    telemetry.targetLng
-                                ]
-                            ],
-                            pathOptions: {
-                                color: "#f59e0b",
-                                weight: 3,
-                                dashArray: "6 8"
-                            }
-                        }, `telemetry-path-${drone.id}`, false, {
-                            fileName: "[project]/components/map-renderer.tsx",
-                            lineNumber: 1297,
-                            columnNumber: 13
-                        }, this);
-                    })
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/map-renderer.tsx",
-                lineNumber: 916,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
+                        lineNumber: 1126,
+                        columnNumber: 13
+                    }, this);
+                })
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/map-renderer.tsx",
+            lineNumber: 815,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "[project]/components/map-renderer.tsx",
-        lineNumber: 838,
+        lineNumber: 798,
         columnNumber: 5
     }, this);
 }
@@ -2965,7 +2792,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$socket$2e$io$2d$client$2f$build$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/socket.io-client/build/esm/index.js [app-client] (ecmascript) <locals>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scan$2d$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ScanSearch$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/scan-search.js [app-client] (ecmascript) <export default as ScanSearch>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-client] (ecmascript) <export default as Loader2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/dialog.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-client] (ecmascript)");
@@ -3019,7 +2845,7 @@ function calculateMarkerSize(zoom) {
     const progress = (normalizedZoom - minZoom) / (maxZoom - minZoom);
     return Math.round(minSize + (maxSize - minSize) * progress);
 }
-function MapView({ mode = "operations" }) {
+function MapView() {
     _s();
     const { toast } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
@@ -3037,9 +2863,7 @@ function MapView({ mode = "operations" }) {
     const [sensorSearchResults, setSensorSearchResults] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [focusedSensorId, setFocusedSensorId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    const [scanning, setScanning] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [sensors, setSensors] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    const [smartMeters, setSmartMeters] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [activeAlerts, setActiveAlerts] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [drones, setDrones] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [socket, setSocket] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -3159,36 +2983,6 @@ function MapView({ mode = "operations" }) {
                     }
                 }
             }["MapView.useEffect.loadSensors"];
-            const loadSmartMeters = {
-                "MapView.useEffect.loadSmartMeters": async ()=>{
-                    setLoadingSensors(true);
-                    try {
-                        const res = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2f$sensors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getAllSensors"])({
-                            include: true,
-                            page: 1,
-                            limit: 10000
-                        });
-                        if (res.success && res.data) {
-                            setSensors(res.data);
-                        } else {
-                            toast({
-                                title: "Error",
-                                description: res.error || "Failed to load sensors",
-                                variant: "destructive"
-                            });
-                        }
-                    } catch (err) {
-                        console.error("Error loading sensors:", err);
-                        toast({
-                            title: "Error",
-                            description: "Failed to load sensors",
-                            variant: "destructive"
-                        });
-                    } finally{
-                        setLoadingSensors(false);
-                    }
-                }
-            }["MapView.useEffect.loadSmartMeters"];
             loadSensors();
         }
     }["MapView.useEffect"], [
@@ -3273,39 +3067,6 @@ function MapView({ mode = "operations" }) {
     }["MapView.useEffect"], [
         drones
     ]);
-    //Scanning Handelling
-    const handleScanSensors = async ()=>{
-        try {
-            setScanning(true);
-            const response = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5001")}/api/camera/status/activeShuruMode`, {
-                method: "GET"
-            });
-            const data = await response.json();
-            if (!response.ok) {
-                throw new Error(data.message || "Scan failed");
-            }
-            const sensorRes = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2f$sensors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getAllSensors"])({
-                include: true,
-                page: 1,
-                limit: 10000
-            });
-            if (sensorRes.success && sensorRes.data) {
-                setSensors(sensorRes.data);
-            }
-            toast({
-                title: "Success",
-                description: "Sensor scan completed"
-            });
-        } catch (error) {
-            toast({
-                title: "Error",
-                description: error.message,
-                variant: "destructive"
-            });
-        } finally{
-            setScanning(false);
-        }
-    };
     const handleAlertDispatch = (alert)=>{
         const sensor = sensorsRef.current.find((s)=>s.id === alert.sensorDbId);
         if (!sensor || sensor.sendDrone !== "Yes") {
@@ -3395,18 +3156,6 @@ function MapView({ mode = "operations" }) {
                                     hasAlert: false
                                 }
                             })
-                    }["MapView.useEffect"]);
-                }
-            }["MapView.useEffect"]);
-            s.on("sensor_status_updated", {
-                "MapView.useEffect": (payload)=>{
-                    setSensors({
-                        "MapView.useEffect": (prev)=>prev.map({
-                                "MapView.useEffect": (sensor)=>sensor.sensorId === payload.sensorId ? {
-                                        ...sensor,
-                                        activeShuruMode: payload.status
-                                    } : sensor
-                            }["MapView.useEffect"])
                     }["MapView.useEffect"]);
                 }
             }["MapView.useEffect"]);
@@ -4022,12 +3771,12 @@ function MapView({ mode = "operations" }) {
                 children: "Loading map..."
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1158,
+                lineNumber: 1062,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/map-view.tsx",
-            lineNumber: 1157,
+            lineNumber: 1061,
             columnNumber: 7
         }, this);
     }
@@ -4039,12 +3788,12 @@ function MapView({ mode = "operations" }) {
                 children: error
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1166,
+                lineNumber: 1070,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/map-view.tsx",
-            lineNumber: 1165,
+            lineNumber: 1069,
             columnNumber: 7
         }, this);
     }
@@ -4061,19 +3810,19 @@ function MapView({ mode = "operations" }) {
                         children: "/maps/manage"
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1176,
+                        lineNumber: 1080,
                         columnNumber: 11
                     }, this),
                     " and create / activate one."
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1174,
+                lineNumber: 1078,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/map-view.tsx",
-            lineNumber: 1173,
+            lineNumber: 1077,
             columnNumber: 7
         }, this);
     }
@@ -4097,7 +3846,7 @@ function MapView({ mode = "operations" }) {
                                     children: "🚫 Auto-dispatch blocked"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1199,
+                                    lineNumber: 1101,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4105,7 +3854,7 @@ function MapView({ mode = "operations" }) {
                                     children: autoDispatchBlocked.reason
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1203,
+                                    lineNumber: 1105,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4119,7 +3868,7 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1207,
+                                    lineNumber: 1109,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4130,13 +3879,13 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1212,
+                                    lineNumber: 1114,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1198,
+                            lineNumber: 1100,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -4147,76 +3896,40 @@ function MapView({ mode = "operations" }) {
                             children: "Acknowledge"
                         }, void 0, false, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1217,
+                            lineNumber: 1119,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/map-view.tsx",
-                    lineNumber: 1197,
+                    lineNumber: 1099,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1196,
+                lineNumber: 1098,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute top-4 right-4 z-10 w-80",
+                className: "absolute top-4 right-4 z-[1200] w-80",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col gap-2 sm:flex-row max-w-[250px] sm:max-w-none",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                value: sensorSearchInput,
-                                onChange: (e)=>setSensorSearchInput(e.target.value),
-                                onKeyDown: (e)=>{
-                                    if (e.key === "Enter") {
-                                        const q = sensorSearchInput.trim().toLowerCase();
-                                        if (!q) return;
-                                        const matches = sensors.filter((s)=>s.name.toLowerCase().includes(q) || s.sensorId.toLowerCase().includes(q));
-                                        setSensorSearchResults(matches.slice(0, 15)); // cap results
-                                    }
-                                },
-                                placeholder: "Search sensor → Press Enter",
-                                className: "w-full rounded-md border border-[#333] bg-black/80 px-3 py-2 text-xs text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 backdrop-blur"
-                            }, void 0, false, {
-                                fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1233,
-                                columnNumber: 11
-                            }, this),
-                            mode === "sensor-health" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                onClick: handleScanSensors,
-                                disabled: scanning,
-                                className: " h-10 px-4 bg-white-500/90 hover:bg-blue-300 text-black border border-green-400/30 shadow-lg shadow-green-500/20 text-white flex items-center gap-2 ",
-                                children: scanning ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
-                                    className: "h-5 w-5 animate-spin"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1271,
-                                    columnNumber: 11
-                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scan$2d$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ScanSearch$3e$__["ScanSearch"], {
-                                            className: "h-5 w-5"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1274,
-                                            columnNumber: 11
-                                        }, this),
-                                        "SCAN"
-                                    ]
-                                }, void 0, true)
-                            }, void 0, false, {
-                                fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1255,
-                                columnNumber: 7
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        value: sensorSearchInput,
+                        onChange: (e)=>setSensorSearchInput(e.target.value),
+                        onKeyDown: (e)=>{
+                            if (e.key === "Enter") {
+                                const q = sensorSearchInput.trim().toLowerCase();
+                                if (!q) return;
+                                const matches = sensors.filter((s)=>s.name.toLowerCase().includes(q) || s.sensorId.toLowerCase().includes(q));
+                                setSensorSearchResults(matches.slice(0, 15)); // cap results
+                            }
+                        },
+                        placeholder: "Search sensor → Press Enter",
+                        className: "w-full rounded-md border border-[#333] bg-black/80 px-3 py-2 text-xs text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 backdrop-blur"
+                    }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1231,
-                        columnNumber: 8
+                        lineNumber: 1132,
+                        columnNumber: 9
                     }, this),
                     sensorSearchResults.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mt-1 max-h-72 overflow-auto rounded-md border border-[#333] bg-black/90 text-xs shadow-xl backdrop-blur",
@@ -4233,7 +3946,7 @@ function MapView({ mode = "operations" }) {
                                         children: sensor.name
                                     }, void 0, false, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1297,
+                                        lineNumber: 1165,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4245,58 +3958,27 @@ function MapView({ mode = "operations" }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1298,
+                                        lineNumber: 1166,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, sensor.id, true, {
                                 fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1288,
+                                lineNumber: 1156,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1286,
+                        lineNumber: 1154,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1229,
+                lineNumber: 1131,
                 columnNumber: 7
             }, this),
-            scanning && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "pointer-events-none absolute inset-0 z-[1100] overflow-hidden",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute inset-0",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute h-40 w-full animate-[scan_2.5s_linear_infinite] bg-gradient-to-b from-green-500/0 via-green-500/20 to-green-500/0"
-                        }, void 0, false, {
-                            fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1311,
-                            columnNumber: 7
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1310,
-                        columnNumber: 5
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute inset-0 backdrop-blur-[2px] bg-green-500/10"
-                    }, void 0, false, {
-                        fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1315,
-                        columnNumber: 3
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1308,
-                columnNumber: 3
-            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$map$2d$renderer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                mode: mode,
                 mapConfig: mapConfig,
                 sensors: sensors,
                 drones: drones,
@@ -4313,7 +3995,7 @@ function MapView({ mode = "operations" }) {
                 focusedSensorId: focusedSensorId
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1326,
+                lineNumber: 1175,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -4334,7 +4016,7 @@ function MapView({ mode = "operations" }) {
                                     children: selectedSensor ? selectedSensor.name : "Sensor"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1354,
+                                    lineNumber: 1202,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4350,7 +4032,7 @@ function MapView({ mode = "operations" }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1361,
+                                            lineNumber: 1209,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -4358,19 +4040,19 @@ function MapView({ mode = "operations" }) {
                                             children: selectedSensor?.addedBy || "N/A"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1365,
+                                            lineNumber: 1213,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1360,
+                                    lineNumber: 1208,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1353,
+                            lineNumber: 1201,
                             columnNumber: 11
                         }, this),
                         autoDispatchBlocked && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4381,7 +4063,7 @@ function MapView({ mode = "operations" }) {
                                     children: "🚫 Auto-dispatch blocked"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1379,
+                                    lineNumber: 1227,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4389,7 +4071,7 @@ function MapView({ mode = "operations" }) {
                                     children: autoDispatchBlocked.reason
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1383,
+                                    lineNumber: 1231,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4403,7 +4085,7 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1387,
+                                    lineNumber: 1235,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4414,13 +4096,13 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1392,
+                                    lineNumber: 1240,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1378,
+                            lineNumber: 1226,
                             columnNumber: 13
                         }, this),
                         autoDispatchCountdown !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4436,7 +4118,7 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1401,
+                                    lineNumber: 1249,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4449,18 +4131,18 @@ function MapView({ mode = "operations" }) {
                                         children: "Cancel Auto Send"
                                     }, void 0, false, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1403,
+                                        lineNumber: 1251,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1402,
+                                    lineNumber: 1250,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1399,
+                            lineNumber: 1247,
                             columnNumber: 13
                         }, this),
                         selectedSensor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4482,7 +4164,7 @@ function MapView({ mode = "operations" }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1419,
+                                                    lineNumber: 1267,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4492,13 +4174,13 @@ function MapView({ mode = "operations" }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1423,
+                                                    lineNumber: 1271,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1418,
+                                            lineNumber: 1266,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4509,13 +4191,13 @@ function MapView({ mode = "operations" }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1425,
+                                            lineNumber: 1273,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1417,
+                                    lineNumber: 1265,
                                     columnNumber: 15
                                 }, this),
                                 selectedAlert ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4526,7 +4208,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Active Alert"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1432,
+                                            lineNumber: 1280,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4534,7 +4216,7 @@ function MapView({ mode = "operations" }) {
                                             children: selectedAlert.message
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1435,
+                                            lineNumber: 1283,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4546,13 +4228,13 @@ function MapView({ mode = "operations" }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1438,
+                                            lineNumber: 1286,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1431,
+                                    lineNumber: 1279,
                                     columnNumber: 17
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "rounded-md border border-[#333] bg-[#18181b] p-3 text-xs text-gray-300",
@@ -4560,14 +4242,14 @@ function MapView({ mode = "operations" }) {
                                         "No active alert on this sensor.",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1446,
+                                            lineNumber: 1294,
                                             columnNumber: 19
                                         }, this),
                                         "You can still manually dispatch a drone from here."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1444,
+                                    lineNumber: 1292,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4578,7 +4260,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Select Drone to Dispatch:"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1452,
+                                            lineNumber: 1300,
                                             columnNumber: 17
                                         }, this),
                                         loadingDrones ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4588,27 +4270,27 @@ function MapView({ mode = "operations" }) {
                                                     className: "h-3 w-3 animate-spin"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1458,
+                                                    lineNumber: 1306,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "Loading drones..."
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1459,
+                                                    lineNumber: 1307,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1457,
+                                            lineNumber: 1305,
                                             columnNumber: 19
                                         }, this) : dronesInSameArea.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "rounded-md border border-amber-700 bg-amber-950/40 p-3 text-xs text-amber-200",
                                             children: "No drones available in this sensor's area."
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1462,
+                                            lineNumber: 1310,
                                             columnNumber: 19
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "space-y-2",
@@ -4627,7 +4309,7 @@ function MapView({ mode = "operations" }) {
                                                             children: "Select a drone"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 1475,
+                                                            lineNumber: 1323,
                                                             columnNumber: 23
                                                         }, this),
                                                         dronesInSameArea.map((drone)=>{
@@ -4659,14 +4341,14 @@ function MapView({ mode = "operations" }) {
                                                                 ]
                                                             }, drone.id, true, {
                                                                 fileName: "[project]/components/map-view.tsx",
-                                                                lineNumber: 1497,
+                                                                lineNumber: 1345,
                                                                 columnNumber: 27
                                                             }, this);
                                                         })
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1467,
+                                                    lineNumber: 1315,
                                                     columnNumber: 21
                                                 }, this),
                                                 selectedDroneId && isDroneBusy(selectedDroneId) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4676,38 +4358,38 @@ function MapView({ mode = "operations" }) {
                                                             children: "⚠️"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 1512,
+                                                            lineNumber: 1360,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: droneTelemetryData[selectedDroneId]?.status === "on_air" ? "This drone is currently in the air. Please wait for it to land." : "This drone is executing another mission."
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 1513,
+                                                            lineNumber: 1361,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1511,
+                                                    lineNumber: 1359,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1466,
+                                            lineNumber: 1314,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1451,
+                                    lineNumber: 1299,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1416,
+                            lineNumber: 1264,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -4722,7 +4404,7 @@ function MapView({ mode = "operations" }) {
                                     children: "Neutralise Alert"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1529,
+                                    lineNumber: 1377,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -4737,7 +4419,7 @@ function MapView({ mode = "operations" }) {
                                                 className: "mr-2 h-4 w-4 animate-spin"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/map-view.tsx",
-                                                lineNumber: 1554,
+                                                lineNumber: 1402,
                                                 columnNumber: 19
                                             }, this),
                                             "Launching..."
@@ -4745,7 +4427,7 @@ function MapView({ mode = "operations" }) {
                                     }, void 0, true) : "Video Feed"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1540,
+                                    lineNumber: 1388,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -4756,24 +4438,24 @@ function MapView({ mode = "operations" }) {
                                     children: selectedAlert ? "Send Drone (ड्रोन भेजिए)" : "Send Drone (ड्रोन भेजिए)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1562,
+                                    lineNumber: 1410,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1527,
+                            lineNumber: 1375,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/map-view.tsx",
-                    lineNumber: 1352,
+                    lineNumber: 1200,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1344,
+                lineNumber: 1192,
                 columnNumber: 7
             }, this),
             telemetryWindowOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$telemetry$2d$window$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TelemetryWindow"], {
@@ -4784,13 +4466,13 @@ function MapView({ mode = "operations" }) {
                 onRecall: handleRecall
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1583,
+                lineNumber: 1431,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true);
 }
-_s(MapView, "K7FtbIrUTWlVgI2ZhJiwAxHE49g=", false, function() {
+_s(MapView, "eJtH7WJLiebjjOMbkc7iFV7/w4w=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
@@ -4811,20 +4493,23 @@ __turbopack_context__.s([
     ()=>DashboardPage
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$map$2d$view$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/map-view.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 function DashboardPage() {
-    // sensor-health operations
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$map$2d$view$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MapView"], {
-        mode: "operations"
-    }, void 0, false, {
+    _s();
+    const [sidebarOpen, setSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$map$2d$view$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MapView"], {}, void 0, false, {
         fileName: "[project]/app/(protected)/page.tsx",
-        lineNumber: 6,
+        lineNumber: 11,
         columnNumber: 10
     }, this);
 }
+_s(DashboardPage, "5rGDkYpGQ8fHM9RkMWnKOwsxadk=");
 _c = DashboardPage;
 var _c;
 __turbopack_context__.k.register(_c, "DashboardPage");

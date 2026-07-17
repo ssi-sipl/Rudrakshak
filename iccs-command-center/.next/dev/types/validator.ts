@@ -108,6 +108,24 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../../app/(protected)/battle-planner/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/battle-planner">> = Specific
+  const handler = {} as typeof import("../../../app/(protected)/battle-planner/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/(protected)/drones/[id]/control/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/drones/[id]/control">> = Specific
+  const handler = {} as typeof import("../../../app/(protected)/drones/[id]/control/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/(protected)/drones/[id]/edit/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/drones/[id]/edit">> = Specific
@@ -139,6 +157,15 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 {
   type __IsExpected<Specific extends AppPageConfig<"/drones">> = Specific
   const handler = {} as typeof import("../../../app/(protected)/drones/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/(protected)/forbidden/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/forbidden">> = Specific
+  const handler = {} as typeof import("../../../app/(protected)/forbidden/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
@@ -247,6 +274,42 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 {
   type __IsExpected<Specific extends AppPageConfig<"/smartmeter">> = Specific
   const handler = {} as typeof import("../../../app/(protected)/smartmeter/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/(protected)/users/[id]/edit/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/users/[id]/edit">> = Specific
+  const handler = {} as typeof import("../../../app/(protected)/users/[id]/edit/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/(protected)/users/[id]/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/users/[id]">> = Specific
+  const handler = {} as typeof import("../../../app/(protected)/users/[id]/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/(protected)/users/add/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/users/add">> = Specific
+  const handler = {} as typeof import("../../../app/(protected)/users/add/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/(protected)/users/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/users">> = Specific
+  const handler = {} as typeof import("../../../app/(protected)/users/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

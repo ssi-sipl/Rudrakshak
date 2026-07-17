@@ -61,6 +61,14 @@
       "namedRegex": "^/drones/(?<nxtPid>[^/]+?)(?:/)?$"
     },
     {
+      "page": "/drones/[id]/control",
+      "regex": "^/drones/([^/]+?)/control(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/drones/(?<nxtPid>[^/]+?)/control(?:/)?$"
+    },
+    {
       "page": "/drones/[id]/edit",
       "regex": "^/drones/([^/]+?)/edit(?:/)?$",
       "routeKeys": {
@@ -99,6 +107,22 @@
         "nxtPid": "nxtPid"
       },
       "namedRegex": "^/smartmeter/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    },
+    {
+      "page": "/users/[id]",
+      "regex": "^/users/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/users/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/users/[id]/edit",
+      "regex": "^/users/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/users/(?<nxtPid>[^/]+?)/edit(?:/)?$"
     }
   ],
   "staticRoutes": [
@@ -145,6 +169,12 @@
       "namedRegex": "^/area/add(?:/)?$"
     },
     {
+      "page": "/battle-planner",
+      "regex": "^/battle\\-planner(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/battle\\-planner(?:/)?$"
+    },
+    {
       "page": "/drones",
       "regex": "^/drones(?:/)?$",
       "routeKeys": {},
@@ -155,6 +185,12 @@
       "regex": "^/drones/add(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/drones/add(?:/)?$"
+    },
+    {
+      "page": "/forbidden",
+      "regex": "^/forbidden(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/forbidden(?:/)?$"
     },
     {
       "page": "/health",
@@ -203,6 +239,18 @@
       "regex": "^/smartmeter/add(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/smartmeter/add(?:/)?$"
+    },
+    {
+      "page": "/users",
+      "regex": "^/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/users(?:/)?$"
+    },
+    {
+      "page": "/users/add",
+      "regex": "^/users/add(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/users/add(?:/)?$"
     }
   ],
   "dataRoutes": [],

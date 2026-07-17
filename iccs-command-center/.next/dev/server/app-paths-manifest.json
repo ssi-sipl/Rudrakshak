@@ -1,3 +1,4 @@
 {
-  "/(protected)/smartmeter/[id]/page": "app/(protected)/smartmeter/[id]/page.js"
+  "/(protected)/drones/[id]/control/page": "app/(protected)/drones/[id]/control/page.js",
+  "/(protected)/page": "app/(protected)/page.js"
 }

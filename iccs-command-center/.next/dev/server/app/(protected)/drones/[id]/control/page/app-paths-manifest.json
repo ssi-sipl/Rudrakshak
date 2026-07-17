@@ -1,0 +1,3 @@
+{
+  "/(protected)/drones/[id]/control/page": "app/(protected)/drones/[id]/control/page.js"
+}

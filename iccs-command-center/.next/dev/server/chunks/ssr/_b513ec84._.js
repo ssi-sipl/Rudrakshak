@@ -70,182 +70,374 @@ __turbopack_context__.s([
     "updateSensor",
     ()=>updateSensor
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
-async function getAllSensors(params) {
-    try {
-        const queryParams = new URLSearchParams();
-        if (params?.status) queryParams.append("status", params.status);
-        if (params?.areaId) queryParams.append("areaId", params.areaId);
-        if (params?.sensorType) queryParams.append("sensorType", params.sensorType);
-        if (params?.include) queryParams.append("include", "true");
-        if (params?.page) queryParams.append("page", params.page.toString());
-        if (params?.limit) queryParams.append("limit", params.limit.toString());
-        if (params?.search) queryParams.append("search", params.search);
-        const url = `${API_BASE_URL}/api/sensors${queryParams.toString() ? `?${queryParams.toString()}` : ""}`;
-        const response = await fetch(url, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            cache: "no-store"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch sensors");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching sensors:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch sensors"
-        };
+const mockSensors = [
+    {
+        id: "sensor-1",
+        sensorId: "SENSOR-001",
+        name: "North Gate Camera",
+        sensorType: "PTZ Camera",
+        latitude: 28.6192,
+        longitude: 77.2045,
+        ipAddress: "192.168.1.101",
+        rtspUrl: "rtsp://camera1/live",
+        smartMeterId: "meter-1",
+        battery: "95%",
+        status: "Active",
+        sendDrone: "No",
+        activeShuruMode: "Active",
+        areaId: "area-1",
+        alarmId: "alarm-1",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z"
+    },
+    {
+        id: "sensor-2",
+        sensorId: "SENSOR-002",
+        name: "North Fence Camera",
+        sensorType: "Thermal Camera",
+        latitude: 28.6184,
+        longitude: 77.2063,
+        ipAddress: "192.168.1.102",
+        rtspUrl: "rtsp://camera2/live",
+        smartMeterId: "meter-1",
+        battery: "91%",
+        status: "Active",
+        sendDrone: "No",
+        activeShuruMode: "Active",
+        areaId: "area-1",
+        alarmId: null,
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z"
+    },
+    {
+        id: "sensor-3",
+        sensorId: "SENSOR-003",
+        name: "East Entry Camera",
+        sensorType: "Fixed Camera",
+        latitude: 28.6176,
+        longitude: 77.2087,
+        ipAddress: "192.168.1.103",
+        rtspUrl: "rtsp://camera3/live",
+        smartMeterId: "meter-2",
+        battery: "88%",
+        status: "Active",
+        sendDrone: "No",
+        activeShuruMode: "Active",
+        areaId: "area-2",
+        alarmId: "alarm-2",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z"
+    },
+    {
+        id: "sensor-4",
+        sensorId: "SENSOR-004",
+        name: "East Fence",
+        sensorType: "PTZ Camera",
+        latitude: 28.6169,
+        longitude: 77.2102,
+        ipAddress: "192.168.1.104",
+        rtspUrl: "rtsp://camera4/live",
+        smartMeterId: "meter-2",
+        battery: "83%",
+        status: "Active",
+        sendDrone: "No",
+        activeShuruMode: "Active",
+        areaId: "area-2",
+        alarmId: null,
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z"
+    },
+    {
+        id: "sensor-5",
+        sensorId: "SENSOR-005",
+        name: "Central Camera 1",
+        sensorType: "Thermal Camera",
+        latitude: 28.6158,
+        longitude: 77.2118,
+        ipAddress: "192.168.1.105",
+        rtspUrl: "rtsp://camera5/live",
+        smartMeterId: "meter-3",
+        battery: "90%",
+        status: "Active",
+        sendDrone: "No",
+        activeShuruMode: "Active",
+        areaId: "area-3",
+        alarmId: "alarm-3",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z"
+    },
+    {
+        id: "sensor-6",
+        sensorId: "SENSOR-006",
+        name: "Central Camera 2",
+        sensorType: "Fixed Camera",
+        latitude: 28.6148,
+        longitude: 77.2130,
+        ipAddress: "192.168.1.106",
+        rtspUrl: "rtsp://camera6/live",
+        smartMeterId: "meter-3",
+        battery: "89%",
+        status: "Active",
+        sendDrone: "No",
+        activeShuruMode: "Active",
+        areaId: "area-3",
+        alarmId: null,
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z"
+    },
+    {
+        id: "sensor-7",
+        sensorId: "SENSOR-007",
+        name: "Operations Gate",
+        sensorType: "PTZ Camera",
+        latitude: 28.6137,
+        longitude: 77.2140,
+        ipAddress: "192.168.1.107",
+        rtspUrl: "rtsp://camera7/live",
+        smartMeterId: "meter-4",
+        battery: "82%",
+        status: "Active",
+        sendDrone: "No",
+        activeShuruMode: "Active",
+        areaId: "area-4",
+        alarmId: "alarm-4",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z"
+    },
+    {
+        id: "sensor-8",
+        sensorId: "SENSOR-008",
+        name: "Operations Tower",
+        sensorType: "Thermal Camera",
+        latitude: 28.6125,
+        longitude: 77.2125,
+        ipAddress: "192.168.1.108",
+        rtspUrl: "rtsp://camera8/live",
+        smartMeterId: "meter-4",
+        battery: "79%",
+        status: "Active",
+        sendDrone: "No",
+        activeShuruMode: "Active",
+        areaId: "area-4",
+        alarmId: null,
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z"
+    },
+    {
+        id: "sensor-9",
+        sensorId: "SENSOR-009",
+        name: "West Gate",
+        sensorType: "PTZ Camera",
+        latitude: 28.6118,
+        longitude: 77.2108,
+        ipAddress: "192.168.1.109",
+        rtspUrl: "rtsp://camera9/live",
+        smartMeterId: "meter-5",
+        battery: "94%",
+        status: "Active",
+        sendDrone: "No",
+        activeShuruMode: "Active",
+        areaId: "area-5",
+        alarmId: null,
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z"
+    },
+    {
+        id: "sensor-10",
+        sensorId: "SENSOR-010",
+        name: "West Fence",
+        sensorType: "Fixed Camera",
+        latitude: 28.6109,
+        longitude: 77.2088,
+        ipAddress: "192.168.1.110",
+        rtspUrl: "rtsp://camera10/live",
+        smartMeterId: "meter-5",
+        battery: "92%",
+        status: "Active",
+        sendDrone: "No",
+        activeShuruMode: "Active",
+        areaId: "area-5",
+        alarmId: null,
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z"
+    },
+    {
+        id: "sensor-11",
+        sensorId: "SENSOR-011",
+        name: "South Camera 1",
+        sensorType: "PTZ Camera",
+        latitude: 28.6098,
+        longitude: 77.2069,
+        ipAddress: "192.168.1.111",
+        rtspUrl: "rtsp://camera11/live",
+        smartMeterId: "meter-6",
+        battery: "80%",
+        status: "Active",
+        sendDrone: "No",
+        activeShuruMode: "Active",
+        areaId: "area-6",
+        alarmId: null,
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z"
+    },
+    {
+        id: "sensor-12",
+        sensorId: "SENSOR-012",
+        name: "South Camera 2",
+        sensorType: "Thermal Camera",
+        latitude: 28.6089,
+        longitude: 77.2053,
+        ipAddress: "192.168.1.112",
+        rtspUrl: "rtsp://camera12/live",
+        smartMeterId: "meter-6",
+        battery: "78%",
+        status: "Active",
+        sendDrone: "No",
+        activeShuruMode: "Active",
+        areaId: "area-6",
+        alarmId: null,
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z"
     }
+];
+async function getAllSensors(params) {
+    await new Promise((r)=>setTimeout(r, 300));
+    let data = [
+        ...mockSensors
+    ];
+    if (params?.status) {
+        data = data.filter((s)=>s.status === params.status);
+    }
+    if (params?.areaId) {
+        data = data.filter((s)=>s.areaId === params.areaId);
+    }
+    if (params?.sensorType) {
+        data = data.filter((s)=>s.sensorType === params.sensorType);
+    }
+    if (params?.search) {
+        const search = params.search.toLowerCase();
+        data = data.filter((s)=>s.name.toLowerCase().includes(search) || s.sensorId.toLowerCase().includes(search) || s.sensorType.toLowerCase().includes(search));
+    }
+    return {
+        success: true,
+        data,
+        pagination: {
+            page: 1,
+            limit: data.length,
+            totalCount: data.length,
+            totalPages: 1,
+            hasNextPage: false,
+            hasPrevPage: false
+        }
+    };
 }
 async function getSensorStats() {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/sensors/stats`, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            cache: "no-store"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch sensor stats");
+    await new Promise((r)=>setTimeout(r, 200));
+    return {
+        success: true,
+        data: {
+            total: mockSensors.length,
+            active: mockSensors.filter((s)=>s.status === "Active").length,
+            inactive: mockSensors.filter((s)=>s.status === "Inactive").length,
+            warning: mockSensors.filter((s)=>s.status === "Warning").length
         }
-        return await response.json();
-    } catch (error) {
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch stats"
-        };
-    }
+    };
 }
 async function getSensorById(id, includeRelations = false) {
-    try {
-        const url = `${API_BASE_URL}/api/sensors/${id}${includeRelations ? "?include=true" : ""}`;
-        const response = await fetch(url, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            cache: "no-store"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch sensor");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching sensor:", error);
+    await new Promise((r)=>setTimeout(r, 300));
+    const sensor = mockSensors.find((s)=>s.id === id);
+    if (!sensor) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch sensor"
+            error: "Sensor not found"
         };
     }
+    return {
+        success: true,
+        data: sensor
+    };
 }
 async function getSensorsByArea(areaId) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/sensors/area/${areaId}`, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            cache: "no-store"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch sensors");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching sensors:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch sensors"
-        };
-    }
+    await new Promise((r)=>setTimeout(r, 300));
+    return {
+        success: true,
+        count: mockSensors.filter((s)=>s.areaId === areaId).length,
+        data: mockSensors.filter((s)=>s.areaId === areaId)
+    };
 }
 async function createSensor(sensorData) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/sensors`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            body: JSON.stringify(sensorData)
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to create sensor");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error creating sensor:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to create sensor"
-        };
-    }
+    await new Promise((r)=>setTimeout(r, 300));
+    const newSensor = {
+        id: `sensor-${mockSensors.length + 1}`,
+        sensorId: sensorData.sensorId,
+        name: sensorData.name,
+        sensorType: sensorData.sensorType,
+        latitude: sensorData.latitude,
+        longitude: sensorData.longitude,
+        ipAddress: sensorData.ipAddress || null,
+        rtspUrl: sensorData.rtspUrl || null,
+        smartMeterId: sensorData.smartMeterId || null,
+        battery: sensorData.battery || null,
+        status: sensorData.status,
+        sendDrone: sensorData.sendDrone || "No",
+        activeShuruMode: sensorData.activeShuruMode,
+        areaId: sensorData.areaId || null,
+        alarmId: sensorData.alarmId || null,
+        addedBy: sensorData.addedBy || "Demo Admin",
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString()
+    };
+    mockSensors.unshift(newSensor);
+    return {
+        success: true,
+        data: newSensor,
+        message: "Sensor created successfully"
+    };
 }
 async function updateSensor(id, sensorData) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/sensors/${id}`, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            body: JSON.stringify(sensorData)
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            console.log(errorData);
-            throw new Error(errorData.error || "Failed to update sensor");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error updating sensor:", error);
+    await new Promise((r)=>setTimeout(r, 300));
+    const sensor = mockSensors.find((s)=>s.id === id);
+    if (!sensor) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to update sensor"
+            error: "Sensor not found"
         };
     }
+    Object.assign(sensor, sensorData);
+    sensor.updatedAt = new Date().toISOString();
+    return {
+        success: true,
+        data: sensor,
+        message: "Sensor updated successfully"
+    };
 }
 async function deleteSensor(id) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/sensors/${id}`, {
-            method: "DELETE",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to delete sensor");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error deleting sensor:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to delete sensor"
-        };
+    await new Promise((r)=>setTimeout(r, 300));
+    const index = mockSensors.findIndex((s)=>s.id === id);
+    if (index !== -1) {
+        mockSensors.splice(index, 1);
     }
+    return {
+        success: true,
+        message: "Sensor deleted successfully"
+    };
 }
 }),
 "[project]/lib/api/areas.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// API service functions for areas
 __turbopack_context__.s([
     "createArea",
     ()=>createArea,
@@ -258,128 +450,209 @@ __turbopack_context__.s([
     "updateArea",
     ()=>updateArea
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
-async function getAllAreas(params) {
-    try {
-        const queryParams = new URLSearchParams();
-        if (params?.status) queryParams.append("status", params.status);
-        if (params?.include) queryParams.append("include", "true");
-        if (params?.page) queryParams.append("page", params.page.toString());
-        if (params?.limit) queryParams.append("limit", params.limit.toString());
-        if (params?.search) queryParams.append("search", params.search);
-        const url = `${API_BASE_URL}/api/areas${queryParams.toString() ? `?${queryParams.toString()}` : ""}`;
-        const response = await fetch(url, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            cache: "no-store"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch areas");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching areas:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch areas"
-        };
+const mockAreas = [
+    {
+        id: "area-1",
+        areaId: "AREA-001",
+        name: "North Command",
+        latitude: 28.6440,
+        longitude: 77.2140,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-2",
+        areaId: "AREA-002",
+        name: "North-East Sector",
+        latitude: 28.6410,
+        longitude: 77.2350,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-3",
+        areaId: "AREA-003",
+        name: "Central Sector",
+        latitude: 28.6220,
+        longitude: 77.2120,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-4",
+        areaId: "AREA-004",
+        name: "Operations Zone",
+        latitude: 28.6170,
+        longitude: 77.2280,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-5",
+        areaId: "AREA-005",
+        name: "West Security",
+        latitude: 28.6210,
+        longitude: 77.1900,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-6",
+        areaId: "AREA-006",
+        name: "South Command",
+        latitude: 28.5980,
+        longitude: 77.2140,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-7",
+        areaId: "AREA-007",
+        name: "South-East Outpost",
+        latitude: 28.5940,
+        longitude: 77.2380,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-8",
+        areaId: "AREA-008",
+        name: "Training Ground",
+        latitude: 28.6070,
+        longitude: 77.1990,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
     }
+];
+async function getAllAreas(params) {
+    await new Promise((r)=>setTimeout(r, 300));
+    let data = [
+        ...mockAreas
+    ];
+    if (params?.status) {
+        data = data.filter((a)=>a.status === params.status);
+    }
+    if (params?.search) {
+        const search = params.search.toLowerCase();
+        data = data.filter((a)=>a.name.toLowerCase().includes(search) || a.areaId.toLowerCase().includes(search));
+    }
+    return {
+        success: true,
+        data,
+        pagination: {
+            page: 1,
+            limit: data.length,
+            totalCount: data.length,
+            totalPages: 1,
+            hasNextPage: false,
+            hasPrevPage: false
+        }
+    };
 }
 async function getAreaById(id, includeRelations = false) {
-    try {
-        const url = `${API_BASE_URL}/api/areas/${id}${includeRelations ? "?include=true" : ""}`;
-        const response = await fetch(url, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            cache: "no-store"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch area");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching area:", error);
+    await new Promise((r)=>setTimeout(r, 300));
+    const area = mockAreas.find((a)=>a.id === id);
+    if (!area) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch area"
+            error: "Area not found"
         };
     }
+    return {
+        success: true,
+        data: area
+    };
 }
 async function createArea(areaData) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/areas`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            body: JSON.stringify(areaData)
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to create area");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error creating area:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to create area"
-        };
-    }
+    await new Promise((r)=>setTimeout(r, 300));
+    const newArea = {
+        id: `area-${mockAreas.length + 1}`,
+        areaId: areaData.areaId,
+        name: areaData.name,
+        latitude: areaData.latitude,
+        longitude: areaData.longitude,
+        status: areaData.status || "Active",
+        addedBy: areaData.addedBy || "Demo Admin",
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+        sensors: [],
+        alarms: [],
+        drones: []
+    };
+    mockAreas.unshift(newArea);
+    return {
+        success: true,
+        data: newArea,
+        message: "Area created successfully"
+    };
 }
 async function updateArea(id, areaData) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/areas/${id}`, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            body: JSON.stringify(areaData)
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to update area");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error updating area:", error);
+    await new Promise((r)=>setTimeout(r, 300));
+    const area = mockAreas.find((a)=>a.id === id);
+    if (!area) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to update area"
+            error: "Area not found"
         };
     }
+    Object.assign(area, areaData);
+    area.updatedAt = new Date().toISOString();
+    return {
+        success: true,
+        data: area,
+        message: "Area updated successfully"
+    };
 }
 async function deleteArea(id) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/areas/${id}`, {
-            method: "DELETE",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to delete area");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error deleting area:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to delete area"
-        };
+    await new Promise((r)=>setTimeout(r, 300));
+    const index = mockAreas.findIndex((a)=>a.id === id);
+    if (index !== -1) {
+        mockAreas.splice(index, 1);
     }
+    return {
+        success: true,
+        message: "Area deleted successfully"
+    };
 }
 }),
 "[project]/lib/api/alarms.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -401,172 +674,238 @@ __turbopack_context__.s([
     "updateAlarm",
     ()=>updateAlarm
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
-async function getAllAlarms(params) {
-    try {
-        const queryParams = new URLSearchParams();
-        if (params?.status) queryParams.append("status", params.status);
-        if (params?.areaId) queryParams.append("areaId", params.areaId);
-        if (params?.include) queryParams.append("include", "true");
-        const url = `${API_BASE_URL}/api/alarms${queryParams.toString() ? `?${queryParams.toString()}` : ""}`;
-        const response = await fetch(url, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
+const mockAlarms = [
+    {
+        id: "alarm-1",
+        alarmId: "ALARM-001",
+        name: "North Zone Alarm",
+        status: "Active",
+        areaId: "area-1",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        area: {
+            id: "area-1",
+            areaId: "AREA-001",
+            name: "North Zone",
+            latitude: 28.6139,
+            longitude: 77.209,
+            status: "Active"
+        },
+        sensors: [
+            {
+                id: "sensor-1",
+                sensorId: "SENSOR-001",
+                name: "North Gate Camera"
             },
-            credentials: "include",
-            cache: "no-store"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch alarms");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching alarms:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch alarms"
-        };
+            {
+                id: "sensor-2",
+                sensorId: "SENSOR-002",
+                name: "North Fence"
+            }
+        ]
+    },
+    {
+        id: "alarm-2",
+        alarmId: "ALARM-002",
+        name: "South Zone Alarm",
+        status: "Active",
+        areaId: "area-2",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        area: {
+            id: "area-2",
+            areaId: "AREA-002",
+            name: "South Zone",
+            latitude: 28.5355,
+            longitude: 77.391,
+            status: "Active"
+        },
+        sensors: [
+            {
+                id: "sensor-3",
+                sensorId: "SENSOR-003",
+                name: "South Entrance"
+            }
+        ]
+    },
+    {
+        id: "alarm-3",
+        alarmId: "ALARM-003",
+        name: "East Zone Alarm",
+        status: "Inactive",
+        areaId: "area-3",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        area: {
+            id: "area-3",
+            areaId: "AREA-003",
+            name: "East Zone",
+            latitude: 28.7041,
+            longitude: 77.1025,
+            status: "Inactive"
+        },
+        sensors: []
     }
+];
+async function getAllAlarms(params) {
+    await new Promise((r)=>setTimeout(r, 300));
+    let data = [
+        ...mockAlarms
+    ];
+    if (params?.status) {
+        data = data.filter((a)=>a.status === params.status);
+    }
+    if (params?.areaId) {
+        data = data.filter((a)=>a.areaId === params.areaId);
+    }
+    return {
+        success: true,
+        count: data.length,
+        data
+    };
 }
 async function getAlarmById(id, includeRelations = false) {
-    try {
-        const url = `${API_BASE_URL}/api/alarms/${id}${includeRelations ? "?include=true" : ""}`;
-        const response = await fetch(url, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            cache: "no-store"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch alarm");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching alarm:", error);
+    await new Promise((r)=>setTimeout(r, 250));
+    const alarm = mockAlarms.find((a)=>a.id === id);
+    if (!alarm) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch alarm"
+            error: "Alarm not found"
         };
     }
+    return {
+        success: true,
+        data: alarm
+    };
 }
 async function getAlarmsByArea(areaId) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/alarms/area/${areaId}`, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            cache: "no-store"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch alarms");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching alarms:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch alarms"
-        };
-    }
+    await new Promise((r)=>setTimeout(r, 250));
+    const alarms = mockAlarms.filter((a)=>a.areaId === areaId);
+    return {
+        success: true,
+        count: alarms.length,
+        data: alarms
+    };
 }
 async function getAlarmSensors(id) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/alarms/${id}/sensors`, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            cache: "no-store"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch alarm sensors");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching alarm sensors:", error);
+    await new Promise((r)=>setTimeout(r, 200));
+    const alarm = mockAlarms.find((a)=>a.id === id);
+    if (!alarm) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch alarm sensors"
+            error: "Alarm not found"
         };
     }
+    return {
+        success: true,
+        count: alarm.sensors?.length || 0,
+        data: alarm.sensors || []
+    };
 }
 async function createAlarm(alarmData) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/alarms`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            body: JSON.stringify(alarmData)
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to create alarm");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error creating alarm:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to create alarm"
-        };
-    }
+    await new Promise((r)=>setTimeout(r, 300));
+    const newAlarm = {
+        id: `alarm-${mockAlarms.length + 1}`,
+        alarmId: alarmData.alarmId,
+        name: alarmData.name,
+        status: alarmData.status || "Active",
+        areaId: alarmData.areaId || null,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+        area: alarmData.areaId === "area-1" ? {
+            id: "area-1",
+            areaId: "AREA-001",
+            name: "North Zone",
+            latitude: 28.6139,
+            longitude: 77.209,
+            status: "Active"
+        } : alarmData.areaId === "area-2" ? {
+            id: "area-2",
+            areaId: "AREA-002",
+            name: "South Zone",
+            latitude: 28.5355,
+            longitude: 77.391,
+            status: "Active"
+        } : alarmData.areaId === "area-3" ? {
+            id: "area-3",
+            areaId: "AREA-003",
+            name: "East Zone",
+            latitude: 28.7041,
+            longitude: 77.1025,
+            status: "Inactive"
+        } : undefined,
+        sensors: []
+    };
+    mockAlarms.unshift(newAlarm);
+    return {
+        success: true,
+        data: newAlarm,
+        message: "Alarm created successfully"
+    };
 }
 async function updateAlarm(id, alarmData) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/alarms/${id}`, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            body: JSON.stringify(alarmData)
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to update alarm");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error updating alarm:", error);
+    await new Promise((r)=>setTimeout(r, 300));
+    const alarm = mockAlarms.find((a)=>a.id === id);
+    if (!alarm) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to update alarm"
+            error: "Alarm not found"
         };
     }
+    Object.assign(alarm, alarmData);
+    if (alarmData.areaId !== undefined) {
+        if (alarmData.areaId === "area-1") {
+            alarm.area = {
+                id: "area-1",
+                areaId: "AREA-001",
+                name: "North Zone",
+                latitude: 28.6139,
+                longitude: 77.209,
+                status: "Active"
+            };
+        } else if (alarmData.areaId === "area-2") {
+            alarm.area = {
+                id: "area-2",
+                areaId: "AREA-002",
+                name: "South Zone",
+                latitude: 28.5355,
+                longitude: 77.391,
+                status: "Active"
+            };
+        } else if (alarmData.areaId === "area-3") {
+            alarm.area = {
+                id: "area-3",
+                areaId: "AREA-003",
+                name: "East Zone",
+                latitude: 28.7041,
+                longitude: 77.1025,
+                status: "Inactive"
+            };
+        } else {
+            alarm.area = undefined;
+        }
+    }
+    alarm.updatedAt = new Date().toISOString();
+    return {
+        success: true,
+        data: alarm,
+        message: "Alarm updated successfully"
+    };
 }
 async function deleteAlarm(id) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/alarms/${id}`, {
-            method: "DELETE",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to delete alarm");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error deleting alarm:", error);
+    await new Promise((r)=>setTimeout(r, 300));
+    const index = mockAlarms.findIndex((a)=>a.id === id);
+    if (index === -1) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to delete alarm"
+            error: "Alarm not found"
         };
     }
+    mockAlarms.splice(index, 1);
+    return {
+        success: true,
+        message: "Alarm deleted successfully"
+    };
 }
 }),
 "[project]/lib/api/smartmeter.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -584,134 +923,234 @@ __turbopack_context__.s([
     "updateSmartMeter",
     ()=>updateSmartMeter
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
-async function getAllSmartMeters(params) {
-    try {
-        const queryParams = new URLSearchParams();
-        if (params?.status) queryParams.append("status", params.status);
-        if (params?.include) queryParams.append("include", "true");
-        if (params?.page) queryParams.append("page", params.page.toString());
-        if (params?.limit) queryParams.append("limit", params.limit.toString());
-        if (params?.search) queryParams.append("search", params.search);
-        const response = await fetch(`${API_BASE_URL}/api/smartmeters${queryParams.toString() ? `?${queryParams.toString()}` : ""}`, {
-            method: "GET",
-            credentials: "include",
-            cache: "no-store",
-            headers: {
-                "Content-Type": "application/json"
+const mockSmartMeters = [
+    {
+        id: "meter-1",
+        smartMeterId: "SM-001",
+        location: "North Zone",
+        ipAddress: "192.168.1.201",
+        latitude: 28.6139,
+        longitude: 77.209,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [
+            {
+                id: "sensor-1",
+                sensorId: "SENSOR-001",
+                name: "North Gate Camera"
+            },
+            {
+                id: "sensor-2",
+                sensorId: "SENSOR-002",
+                name: "North Fence"
             }
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            console.log(errorData);
-            throw new Error(errorData.error || "Failed to fetch Smart Meters");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching Smart Meters:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch Smart Meters"
-        };
+        ],
+        mediaConverters: [
+            {
+                id: "mc-1",
+                mediaConverterId: "MC-001",
+                left1: false,
+                left2: true,
+                left3: false,
+                right1: true,
+                right2: false,
+                right3: true,
+                left1Label: "FX",
+                left2Label: "TX",
+                left3Label: "LINK",
+                right1Label: "PWR",
+                right2Label: "ACT",
+                right3Label: "FDX"
+            },
+            {
+                id: "mc-2",
+                mediaConverterId: "MC-002",
+                left1: true,
+                left2: true,
+                left3: true,
+                right1: true,
+                right2: true,
+                right3: false,
+                left1Label: "FX",
+                left2Label: "TX",
+                left3Label: "LINK",
+                right1Label: "PWR",
+                right2Label: "ACT",
+                right3Label: "FDX"
+            }
+        ]
+    },
+    {
+        id: "meter-2",
+        smartMeterId: "SM-002",
+        location: "South Zone",
+        ipAddress: "192.168.1.202",
+        latitude: 28.5355,
+        longitude: 77.391,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [
+            {
+                id: "sensor-3",
+                sensorId: "SENSOR-003",
+                name: "South Entrance"
+            }
+        ],
+        mediaConverters: [
+            {
+                id: "mc-3",
+                mediaConverterId: "MC-003",
+                left1: true,
+                left2: false,
+                left3: true,
+                right1: true,
+                right2: true,
+                right3: false,
+                left1Label: "FX",
+                left2Label: "TX",
+                left3Label: "LINK",
+                right1Label: "PWR",
+                right2Label: "ACT",
+                right3Label: "FDX"
+            }
+        ]
     }
+];
+async function getAllSmartMeters(params) {
+    await new Promise((r)=>setTimeout(r, 300));
+    let data = [
+        ...mockSmartMeters
+    ];
+    if (params?.status) {
+        data = data.filter((m)=>m.status === params.status);
+    }
+    if (params?.search) {
+        const search = params.search.toLowerCase();
+        data = data.filter((m)=>m.smartMeterId.toLowerCase().includes(search) || (m.location ?? "").toLowerCase().includes(search) || m.ipAddress.toLowerCase().includes(search));
+    }
+    return {
+        success: true,
+        data,
+        pagination: {
+            page: 1,
+            limit: data.length,
+            totalCount: data.length,
+            totalPages: 1,
+            hasNextPage: false,
+            hasPrevPage: false
+        }
+    };
 }
 async function getSmartMeterById(id, includeRelations = false) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/smartmeters/${id}${includeRelations ? "?include=true" : ""}`, {
-            method: "GET",
-            credentials: "include",
-            cache: "no-store",
-            headers: {
-                "Content-Type": "application/json"
-            }
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch Smart Meter");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching Smart Meter:", error);
+    await new Promise((r)=>setTimeout(r, 250));
+    const meter = mockSmartMeters.find((m)=>m.id === id);
+    if (!meter) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch Smart Meter"
+            error: "Smart Meter not found"
         };
     }
+    return {
+        success: true,
+        data: meter
+    };
 }
 async function createSmartMeter(data) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/smartmeters`, {
-            method: "POST",
-            credentials: "include",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            return {
-                success: false,
-                error: errorData.error || errorData.message || "Failed to create Smart Meter"
-            };
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error creating Smart Meter:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to create Smart Meter"
-        };
-    }
+    await new Promise((r)=>setTimeout(r, 300));
+    const newMeter = {
+        id: `meter-${mockSmartMeters.length + 1}`,
+        smartMeterId: data.smartMeterId,
+        location: data.location || "",
+        ipAddress: data.ipAddress || "",
+        latitude: data.latitude,
+        longitude: data.longitude,
+        status: data.status || "Active",
+        addedBy: data.addedBy || "Demo Admin",
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+        sensors: [],
+        mediaConverters: data.mediaConverters?.map((mc, index)=>({
+                id: `mc-${Date.now()}-${index}`,
+                mediaConverterId: mc.mediaConverterId,
+                left1: false,
+                left2: false,
+                left3: false,
+                right1: false,
+                right2: false,
+                right3: false,
+                left1Label: mc.left1Label,
+                left2Label: mc.left2Label,
+                left3Label: mc.left3Label,
+                right1Label: mc.right1Label,
+                right2Label: mc.right2Label,
+                right3Label: mc.right3Label
+            })) || []
+    };
+    mockSmartMeters.unshift(newMeter);
+    return {
+        success: true,
+        data: newMeter,
+        message: "Smart Meter created successfully"
+    };
 }
 async function updateSmartMeter(id, data) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/smartmeters/${id}`, {
-            method: "PUT",
-            credentials: "include",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            alert(`${errorData.message}`);
-            return {
-                success: false,
-                error: errorData.error || errorData.message || "Failed to update Smart Meter"
-            };
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error updating Smart Meter:", error);
+    await new Promise((r)=>setTimeout(r, 300));
+    const meter = mockSmartMeters.find((m)=>m.id === id);
+    if (!meter) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to update Smart Meter"
+            error: "Smart Meter not found"
         };
     }
+    if (data.smartMeterId !== undefined) meter.smartMeterId = data.smartMeterId;
+    if (data.location !== undefined) meter.location = data.location;
+    if (data.ipAddress !== undefined) meter.ipAddress = data.ipAddress;
+    if (data.latitude !== undefined) meter.latitude = data.latitude;
+    if (data.longitude !== undefined) meter.longitude = data.longitude;
+    if (data.status !== undefined) meter.status = data.status;
+    if (data.mediaConverters) {
+        meter.mediaConverters = data.mediaConverters.map((mc)=>({
+                id: mc.id || `mc-${Date.now()}`,
+                mediaConverterId: mc.mediaConverterId,
+                left1: false,
+                left2: false,
+                left3: false,
+                right1: false,
+                right2: false,
+                right3: false,
+                left1Label: mc.left1Label,
+                left2Label: mc.left2Label,
+                left3Label: mc.left3Label,
+                right1Label: mc.right1Label,
+                right2Label: mc.right2Label,
+                right3Label: mc.right3Label
+            }));
+    }
+    meter.updatedAt = new Date().toISOString();
+    return {
+        success: true,
+        data: meter,
+        message: "Smart Meter updated successfully"
+    };
 }
 async function deleteSmartMeter(id) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/smartmeters/${id}`, {
-            method: "DELETE",
-            credentials: "include",
-            headers: {
-                "Content-Type": "application/json"
-            }
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to delete Smart Meter");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error deleting Smart Meter:", error);
+    await new Promise((r)=>setTimeout(r, 300));
+    const index = mockSmartMeters.findIndex((m)=>m.id === id);
+    if (index === -1) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to delete Smart Meter"
+            error: "Smart Meter not found"
         };
     }
+    mockSmartMeters.splice(index, 1);
+    return {
+        success: true,
+        message: "Smart Meter deleted successfully"
+    };
 }
 }),
 "[project]/app/(protected)/sensors/[id]/edit/page.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {

@@ -362,135 +362,234 @@ __turbopack_context__.s([
     "updateSmartMeter",
     ()=>updateSmartMeter
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
-async function getAllSmartMeters(params) {
-    try {
-        const queryParams = new URLSearchParams();
-        if (params?.status) queryParams.append("status", params.status);
-        if (params?.include) queryParams.append("include", "true");
-        if (params?.page) queryParams.append("page", params.page.toString());
-        if (params?.limit) queryParams.append("limit", params.limit.toString());
-        if (params?.search) queryParams.append("search", params.search);
-        const response = await fetch(`${API_BASE_URL}/api/smartmeters${queryParams.toString() ? `?${queryParams.toString()}` : ""}`, {
-            method: "GET",
-            credentials: "include",
-            cache: "no-store",
-            headers: {
-                "Content-Type": "application/json"
+const mockSmartMeters = [
+    {
+        id: "meter-1",
+        smartMeterId: "SM-001",
+        location: "North Zone",
+        ipAddress: "192.168.1.201",
+        latitude: 28.6139,
+        longitude: 77.209,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [
+            {
+                id: "sensor-1",
+                sensorId: "SENSOR-001",
+                name: "North Gate Camera"
+            },
+            {
+                id: "sensor-2",
+                sensorId: "SENSOR-002",
+                name: "North Fence"
             }
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            console.log(errorData);
-            throw new Error(errorData.error || "Failed to fetch Smart Meters");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching Smart Meters:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch Smart Meters"
-        };
+        ],
+        mediaConverters: [
+            {
+                id: "mc-1",
+                mediaConverterId: "MC-001",
+                left1: false,
+                left2: true,
+                left3: false,
+                right1: true,
+                right2: false,
+                right3: true,
+                left1Label: "FX",
+                left2Label: "TX",
+                left3Label: "LINK",
+                right1Label: "PWR",
+                right2Label: "ACT",
+                right3Label: "FDX"
+            },
+            {
+                id: "mc-2",
+                mediaConverterId: "MC-002",
+                left1: true,
+                left2: true,
+                left3: true,
+                right1: true,
+                right2: true,
+                right3: false,
+                left1Label: "FX",
+                left2Label: "TX",
+                left3Label: "LINK",
+                right1Label: "PWR",
+                right2Label: "ACT",
+                right3Label: "FDX"
+            }
+        ]
+    },
+    {
+        id: "meter-2",
+        smartMeterId: "SM-002",
+        location: "South Zone",
+        ipAddress: "192.168.1.202",
+        latitude: 28.5355,
+        longitude: 77.391,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [
+            {
+                id: "sensor-3",
+                sensorId: "SENSOR-003",
+                name: "South Entrance"
+            }
+        ],
+        mediaConverters: [
+            {
+                id: "mc-3",
+                mediaConverterId: "MC-003",
+                left1: true,
+                left2: false,
+                left3: true,
+                right1: true,
+                right2: true,
+                right3: false,
+                left1Label: "FX",
+                left2Label: "TX",
+                left3Label: "LINK",
+                right1Label: "PWR",
+                right2Label: "ACT",
+                right3Label: "FDX"
+            }
+        ]
     }
+];
+async function getAllSmartMeters(params) {
+    await new Promise((r)=>setTimeout(r, 300));
+    let data = [
+        ...mockSmartMeters
+    ];
+    if (params?.status) {
+        data = data.filter((m)=>m.status === params.status);
+    }
+    if (params?.search) {
+        const search = params.search.toLowerCase();
+        data = data.filter((m)=>m.smartMeterId.toLowerCase().includes(search) || (m.location ?? "").toLowerCase().includes(search) || m.ipAddress.toLowerCase().includes(search));
+    }
+    return {
+        success: true,
+        data,
+        pagination: {
+            page: 1,
+            limit: data.length,
+            totalCount: data.length,
+            totalPages: 1,
+            hasNextPage: false,
+            hasPrevPage: false
+        }
+    };
 }
 async function getSmartMeterById(id, includeRelations = false) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/smartmeters/${id}${includeRelations ? "?include=true" : ""}`, {
-            method: "GET",
-            credentials: "include",
-            cache: "no-store",
-            headers: {
-                "Content-Type": "application/json"
-            }
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch Smart Meter");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching Smart Meter:", error);
+    await new Promise((r)=>setTimeout(r, 250));
+    const meter = mockSmartMeters.find((m)=>m.id === id);
+    if (!meter) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch Smart Meter"
+            error: "Smart Meter not found"
         };
     }
+    return {
+        success: true,
+        data: meter
+    };
 }
 async function createSmartMeter(data) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/smartmeters`, {
-            method: "POST",
-            credentials: "include",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            return {
-                success: false,
-                error: errorData.error || errorData.message || "Failed to create Smart Meter"
-            };
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error creating Smart Meter:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to create Smart Meter"
-        };
-    }
+    await new Promise((r)=>setTimeout(r, 300));
+    const newMeter = {
+        id: `meter-${mockSmartMeters.length + 1}`,
+        smartMeterId: data.smartMeterId,
+        location: data.location || "",
+        ipAddress: data.ipAddress || "",
+        latitude: data.latitude,
+        longitude: data.longitude,
+        status: data.status || "Active",
+        addedBy: data.addedBy || "Demo Admin",
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+        sensors: [],
+        mediaConverters: data.mediaConverters?.map((mc, index)=>({
+                id: `mc-${Date.now()}-${index}`,
+                mediaConverterId: mc.mediaConverterId,
+                left1: false,
+                left2: false,
+                left3: false,
+                right1: false,
+                right2: false,
+                right3: false,
+                left1Label: mc.left1Label,
+                left2Label: mc.left2Label,
+                left3Label: mc.left3Label,
+                right1Label: mc.right1Label,
+                right2Label: mc.right2Label,
+                right3Label: mc.right3Label
+            })) || []
+    };
+    mockSmartMeters.unshift(newMeter);
+    return {
+        success: true,
+        data: newMeter,
+        message: "Smart Meter created successfully"
+    };
 }
 async function updateSmartMeter(id, data) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/smartmeters/${id}`, {
-            method: "PUT",
-            credentials: "include",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            alert(`${errorData.message}`);
-            return {
-                success: false,
-                error: errorData.error || errorData.message || "Failed to update Smart Meter"
-            };
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error updating Smart Meter:", error);
+    await new Promise((r)=>setTimeout(r, 300));
+    const meter = mockSmartMeters.find((m)=>m.id === id);
+    if (!meter) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to update Smart Meter"
+            error: "Smart Meter not found"
         };
     }
+    if (data.smartMeterId !== undefined) meter.smartMeterId = data.smartMeterId;
+    if (data.location !== undefined) meter.location = data.location;
+    if (data.ipAddress !== undefined) meter.ipAddress = data.ipAddress;
+    if (data.latitude !== undefined) meter.latitude = data.latitude;
+    if (data.longitude !== undefined) meter.longitude = data.longitude;
+    if (data.status !== undefined) meter.status = data.status;
+    if (data.mediaConverters) {
+        meter.mediaConverters = data.mediaConverters.map((mc)=>({
+                id: mc.id || `mc-${Date.now()}`,
+                mediaConverterId: mc.mediaConverterId,
+                left1: false,
+                left2: false,
+                left3: false,
+                right1: false,
+                right2: false,
+                right3: false,
+                left1Label: mc.left1Label,
+                left2Label: mc.left2Label,
+                left3Label: mc.left3Label,
+                right1Label: mc.right1Label,
+                right2Label: mc.right2Label,
+                right3Label: mc.right3Label
+            }));
+    }
+    meter.updatedAt = new Date().toISOString();
+    return {
+        success: true,
+        data: meter,
+        message: "Smart Meter updated successfully"
+    };
 }
 async function deleteSmartMeter(id) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/smartmeters/${id}`, {
-            method: "DELETE",
-            credentials: "include",
-            headers: {
-                "Content-Type": "application/json"
-            }
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to delete Smart Meter");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error deleting Smart Meter:", error);
+    await new Promise((r)=>setTimeout(r, 300));
+    const index = mockSmartMeters.findIndex((m)=>m.id === id);
+    if (index === -1) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to delete Smart Meter"
+            error: "Smart Meter not found"
         };
     }
+    mockSmartMeters.splice(index, 1);
+    return {
+        success: true,
+        message: "Smart Meter deleted successfully"
+    };
 }
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);

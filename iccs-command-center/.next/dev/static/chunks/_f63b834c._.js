@@ -122,7 +122,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/lib/api/areas.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// API service functions for areas
 __turbopack_context__.s([
     "createArea",
     ()=>createArea,
@@ -135,129 +134,209 @@ __turbopack_context__.s([
     "updateArea",
     ()=>updateArea
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
-async function getAllAreas(params) {
-    try {
-        const queryParams = new URLSearchParams();
-        if (params?.status) queryParams.append("status", params.status);
-        if (params?.include) queryParams.append("include", "true");
-        if (params?.page) queryParams.append("page", params.page.toString());
-        if (params?.limit) queryParams.append("limit", params.limit.toString());
-        if (params?.search) queryParams.append("search", params.search);
-        const url = `${API_BASE_URL}/api/areas${queryParams.toString() ? `?${queryParams.toString()}` : ""}`;
-        const response = await fetch(url, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            cache: "no-store"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch areas");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching areas:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch areas"
-        };
+const mockAreas = [
+    {
+        id: "area-1",
+        areaId: "AREA-001",
+        name: "North Command",
+        latitude: 28.6440,
+        longitude: 77.2140,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-2",
+        areaId: "AREA-002",
+        name: "North-East Sector",
+        latitude: 28.6410,
+        longitude: 77.2350,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-3",
+        areaId: "AREA-003",
+        name: "Central Sector",
+        latitude: 28.6220,
+        longitude: 77.2120,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-4",
+        areaId: "AREA-004",
+        name: "Operations Zone",
+        latitude: 28.6170,
+        longitude: 77.2280,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-5",
+        areaId: "AREA-005",
+        name: "West Security",
+        latitude: 28.6210,
+        longitude: 77.1900,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-6",
+        areaId: "AREA-006",
+        name: "South Command",
+        latitude: 28.5980,
+        longitude: 77.2140,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-7",
+        areaId: "AREA-007",
+        name: "South-East Outpost",
+        latitude: 28.5940,
+        longitude: 77.2380,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
+    },
+    {
+        id: "area-8",
+        areaId: "AREA-008",
+        name: "Training Ground",
+        latitude: 28.6070,
+        longitude: 77.1990,
+        status: "Active",
+        addedBy: "Demo Admin",
+        createdAt: "2026-07-14T10:00:00Z",
+        updatedAt: "2026-07-14T10:00:00Z",
+        sensors: [],
+        alarms: [],
+        drones: []
     }
+];
+async function getAllAreas(params) {
+    await new Promise((r)=>setTimeout(r, 300));
+    let data = [
+        ...mockAreas
+    ];
+    if (params?.status) {
+        data = data.filter((a)=>a.status === params.status);
+    }
+    if (params?.search) {
+        const search = params.search.toLowerCase();
+        data = data.filter((a)=>a.name.toLowerCase().includes(search) || a.areaId.toLowerCase().includes(search));
+    }
+    return {
+        success: true,
+        data,
+        pagination: {
+            page: 1,
+            limit: data.length,
+            totalCount: data.length,
+            totalPages: 1,
+            hasNextPage: false,
+            hasPrevPage: false
+        }
+    };
 }
 async function getAreaById(id, includeRelations = false) {
-    try {
-        const url = `${API_BASE_URL}/api/areas/${id}${includeRelations ? "?include=true" : ""}`;
-        const response = await fetch(url, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            cache: "no-store"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to fetch area");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching area:", error);
+    await new Promise((r)=>setTimeout(r, 300));
+    const area = mockAreas.find((a)=>a.id === id);
+    if (!area) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to fetch area"
+            error: "Area not found"
         };
     }
+    return {
+        success: true,
+        data: area
+    };
 }
 async function createArea(areaData) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/areas`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            body: JSON.stringify(areaData)
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to create area");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error creating area:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to create area"
-        };
-    }
+    await new Promise((r)=>setTimeout(r, 300));
+    const newArea = {
+        id: `area-${mockAreas.length + 1}`,
+        areaId: areaData.areaId,
+        name: areaData.name,
+        latitude: areaData.latitude,
+        longitude: areaData.longitude,
+        status: areaData.status || "Active",
+        addedBy: areaData.addedBy || "Demo Admin",
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+        sensors: [],
+        alarms: [],
+        drones: []
+    };
+    mockAreas.unshift(newArea);
+    return {
+        success: true,
+        data: newArea,
+        message: "Area created successfully"
+    };
 }
 async function updateArea(id, areaData) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/areas/${id}`, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include",
-            body: JSON.stringify(areaData)
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to update area");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error updating area:", error);
+    await new Promise((r)=>setTimeout(r, 300));
+    const area = mockAreas.find((a)=>a.id === id);
+    if (!area) {
         return {
             success: false,
-            error: error instanceof Error ? error.message : "Failed to update area"
+            error: "Area not found"
         };
     }
+    Object.assign(area, areaData);
+    area.updatedAt = new Date().toISOString();
+    return {
+        success: true,
+        data: area,
+        message: "Area updated successfully"
+    };
 }
 async function deleteArea(id) {
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/areas/${id}`, {
-            method: "DELETE",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        });
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || "Failed to delete area");
-        }
-        return await response.json();
-    } catch (error) {
-        console.error("Error deleting area:", error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed to delete area"
-        };
+    await new Promise((r)=>setTimeout(r, 300));
+    const index = mockAreas.findIndex((a)=>a.id === id);
+    if (index !== -1) {
+        mockAreas.splice(index, 1);
     }
+    return {
+        success: true,
+        message: "Area deleted successfully"
+    };
 }
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
@@ -290,9 +369,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/triangle-alert.js [app-client] (ecmascript) <export default as AlertTriangle>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2f$areas$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/api/areas.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hooks/use-toast.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$UserContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/context/UserContext.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -311,6 +392,7 @@ function ViewAreaPage() {
     const [area, setArea] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const { user } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$UserContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUser"])();
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "ViewAreaPage.useEffect": ()=>{
             if (params.id) {
@@ -366,7 +448,7 @@ function ViewAreaPage() {
                         className: "mx-auto mb-4 h-12 w-12 animate-spin text-[#8B0000]"
                     }, void 0, false, {
                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                        lineNumber: 84,
+                        lineNumber: 85,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -374,18 +456,18 @@ function ViewAreaPage() {
                         children: "Loading area details..."
                     }, void 0, false, {
                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                        lineNumber: 85,
+                        lineNumber: 86,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                lineNumber: 83,
+                lineNumber: 84,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-            lineNumber: 82,
+            lineNumber: 83,
             columnNumber: 7
         }, this);
     }
@@ -400,7 +482,7 @@ function ViewAreaPage() {
                         className: "mx-auto mb-4 h-12 w-12 text-gray-600"
                     }, void 0, false, {
                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                        lineNumber: 98,
+                        lineNumber: 99,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -408,7 +490,7 @@ function ViewAreaPage() {
                         children: "Area Not Found"
                     }, void 0, false, {
                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                        lineNumber: 99,
+                        lineNumber: 100,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -416,7 +498,7 @@ function ViewAreaPage() {
                         children: error || "The requested area does not exist."
                     }, void 0, false, {
                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                        lineNumber: 100,
+                        lineNumber: 101,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -426,23 +508,23 @@ function ViewAreaPage() {
                             children: "Back to Areas"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 104,
+                            lineNumber: 105,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                        lineNumber: 103,
+                        lineNumber: 104,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                lineNumber: 97,
+                lineNumber: 98,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-            lineNumber: 96,
+            lineNumber: 97,
             columnNumber: 7
         }, this);
     }
@@ -459,14 +541,14 @@ function ViewAreaPage() {
                             className: "h-4 w-4"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 121,
+                            lineNumber: 122,
                             columnNumber: 11
                         }, this),
                         "Back to Areas"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                    lineNumber: 117,
+                    lineNumber: 118,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -482,7 +564,7 @@ function ViewAreaPage() {
                                             children: area.name
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                            lineNumber: 129,
+                                            lineNumber: 130,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -490,13 +572,13 @@ function ViewAreaPage() {
                                             children: area.status
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                            lineNumber: 132,
+                                            lineNumber: 133,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 128,
+                                    lineNumber: 129,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -507,7 +589,7 @@ function ViewAreaPage() {
                                             children: area.areaId
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                            lineNumber: 144,
+                                            lineNumber: 145,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -515,22 +597,22 @@ function ViewAreaPage() {
                                             children: area.addedBy
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                            lineNumber: 147,
+                                            lineNumber: 148,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 143,
+                                    lineNumber: 144,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 127,
+                            lineNumber: 128,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        user?.role === "ADMIN" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: `/area/${area.id}/edit`,
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                 className: "gap-2 bg-[#8B0000] text-white hover:bg-[#6B0000]",
@@ -539,25 +621,25 @@ function ViewAreaPage() {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 154,
-                                        columnNumber: 15
+                                        lineNumber: 156,
+                                        columnNumber: 17
                                     }, this),
                                     "Edit Area"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                lineNumber: 153,
-                                columnNumber: 13
+                                lineNumber: 155,
+                                columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 152,
-                            columnNumber: 11
-                        }, this)
+                            lineNumber: 154,
+                            columnNumber: 13
+                        }, this) : null
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                    lineNumber: 126,
+                    lineNumber: 127,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -575,19 +657,19 @@ function ViewAreaPage() {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                lineNumber: 165,
+                                                lineNumber: 168,
                                                 columnNumber: 17
                                             }, this),
                                             "Area ID"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 164,
+                                        lineNumber: 167,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 163,
+                                    lineNumber: 166,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -596,18 +678,18 @@ function ViewAreaPage() {
                                         children: area.areaId
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 170,
+                                        lineNumber: 173,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 169,
+                                    lineNumber: 172,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 162,
+                            lineNumber: 165,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -622,19 +704,19 @@ function ViewAreaPage() {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                lineNumber: 177,
+                                                lineNumber: 180,
                                                 columnNumber: 17
                                             }, this),
                                             "Created"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 176,
+                                        lineNumber: 179,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 175,
+                                    lineNumber: 178,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -643,18 +725,18 @@ function ViewAreaPage() {
                                         children: formatDate(area.createdAt)
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 182,
+                                        lineNumber: 185,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 181,
+                                    lineNumber: 184,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 174,
+                            lineNumber: 177,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -669,19 +751,19 @@ function ViewAreaPage() {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                lineNumber: 191,
+                                                lineNumber: 194,
                                                 columnNumber: 17
                                             }, this),
                                             "Latitude"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 190,
+                                        lineNumber: 193,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 189,
+                                    lineNumber: 192,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -690,18 +772,18 @@ function ViewAreaPage() {
                                         children: area.latitude.toFixed(4)
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 196,
+                                        lineNumber: 199,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 195,
+                                    lineNumber: 198,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 188,
+                            lineNumber: 191,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -716,19 +798,19 @@ function ViewAreaPage() {
                                                 className: "h-4 w-4 rotate-90"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                lineNumber: 205,
+                                                lineNumber: 208,
                                                 columnNumber: 17
                                             }, this),
                                             "Longitude"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 204,
+                                        lineNumber: 207,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 203,
+                                    lineNumber: 206,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -737,24 +819,24 @@ function ViewAreaPage() {
                                         children: area.longitude.toFixed(4)
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 210,
+                                        lineNumber: 213,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 209,
+                                    lineNumber: 212,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 202,
+                            lineNumber: 205,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                    lineNumber: 161,
+                    lineNumber: 164,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -772,19 +854,19 @@ function ViewAreaPage() {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                lineNumber: 222,
+                                                lineNumber: 225,
                                                 columnNumber: 17
                                             }, this),
                                             "Sensors"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 221,
+                                        lineNumber: 224,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 220,
+                                    lineNumber: 223,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -794,7 +876,7 @@ function ViewAreaPage() {
                                             children: area.sensors?.length || 0
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                            lineNumber: 227,
+                                            lineNumber: 230,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -806,19 +888,19 @@ function ViewAreaPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                            lineNumber: 230,
+                                            lineNumber: 233,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 226,
+                                    lineNumber: 229,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 219,
+                            lineNumber: 222,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -833,19 +915,19 @@ function ViewAreaPage() {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                lineNumber: 242,
+                                                lineNumber: 245,
                                                 columnNumber: 17
                                             }, this),
                                             "Alarms"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 241,
+                                        lineNumber: 244,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 240,
+                                    lineNumber: 243,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -855,7 +937,7 @@ function ViewAreaPage() {
                                             children: area.alarms?.length || 0
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                            lineNumber: 247,
+                                            lineNumber: 250,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -867,25 +949,25 @@ function ViewAreaPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                            lineNumber: 250,
+                                            lineNumber: 253,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                    lineNumber: 246,
+                                    lineNumber: 249,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 239,
+                            lineNumber: 242,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                    lineNumber: 218,
+                    lineNumber: 221,
                     columnNumber: 9
                 }, this),
                 area.sensors && area.sensors.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -899,19 +981,19 @@ function ViewAreaPage() {
                                         className: "h-5 w-5"
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 305,
+                                        lineNumber: 308,
                                         columnNumber: 17
                                     }, this),
                                     "Associated Sensors"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                lineNumber: 304,
+                                lineNumber: 307,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 303,
+                            lineNumber: 306,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -927,7 +1009,7 @@ function ViewAreaPage() {
                                                         children: sensor.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                        lineNumber: 317,
+                                                        lineNumber: 320,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -935,13 +1017,13 @@ function ViewAreaPage() {
                                                         children: sensor.sensorId
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                        lineNumber: 318,
+                                                        lineNumber: 321,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                lineNumber: 316,
+                                                lineNumber: 319,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -949,29 +1031,29 @@ function ViewAreaPage() {
                                                 children: sensor.status
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                lineNumber: 320,
+                                                lineNumber: 323,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, sensor.id, true, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 312,
+                                        lineNumber: 315,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                lineNumber: 310,
+                                lineNumber: 313,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 309,
+                            lineNumber: 312,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                    lineNumber: 302,
+                    lineNumber: 305,
                     columnNumber: 11
                 }, this),
                 area.alarms && area.alarms.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -985,19 +1067,19 @@ function ViewAreaPage() {
                                         className: "h-5 w-5"
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 341,
+                                        lineNumber: 344,
                                         columnNumber: 17
                                     }, this),
                                     "Associated Alarms"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                lineNumber: 340,
+                                lineNumber: 343,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 339,
+                            lineNumber: 342,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1013,7 +1095,7 @@ function ViewAreaPage() {
                                                         children: alarm.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                        lineNumber: 353,
+                                                        lineNumber: 356,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1021,13 +1103,13 @@ function ViewAreaPage() {
                                                         children: alarm.alarmId
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                        lineNumber: 354,
+                                                        lineNumber: 357,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                lineNumber: 352,
+                                                lineNumber: 355,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -1035,48 +1117,49 @@ function ViewAreaPage() {
                                                 children: alarm.status
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                                lineNumber: 356,
+                                                lineNumber: 359,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, alarm.id, true, {
                                         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                        lineNumber: 348,
+                                        lineNumber: 351,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                                lineNumber: 346,
+                                lineNumber: 349,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                            lineNumber: 345,
+                            lineNumber: 348,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-                    lineNumber: 338,
+                    lineNumber: 341,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-            lineNumber: 115,
+            lineNumber: 116,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/(protected)/area/[id]/page.tsx",
-        lineNumber: 114,
+        lineNumber: 115,
         columnNumber: 5
     }, this);
 }
-_s(ViewAreaPage, "1hoxG0BDLUpQ78JBjcUA49LGpvc=", false, function() {
+_s(ViewAreaPage, "lrg/PkfjuYJueJmP0zM0U35eC1w=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useParams"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$UserContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUser"]
     ];
 });
 _c = ViewAreaPage;

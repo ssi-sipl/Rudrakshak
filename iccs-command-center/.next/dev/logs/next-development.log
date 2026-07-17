@@ -1,160 +1,29 @@
-[00:00:00.634] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:00.717] Server  LOG      ✓ Ready in 473ms
-[00:00:10.347] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:10.497] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:10.497] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/smartmeter/8865af4c-6d4c-4552-87d0-141d25a8d038","route":"/smartmeter/[id]"}
-[00:00:10.497] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/smartmeter/8865af4c-6d4c-4552-87d0-141d25a8d038 color: rgb(120, 120, 120) color: inherit {"dp":"/smartmeter/[id]","o":"http://localhost:3000/smartmeter/8865af4c-6d4c-4552-87d0-141d25a8d038","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1783059890823} /_vercel/insights/view
-[00:00:13.903] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:14.088] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
-      <DashboardLayout params={Promise}>
-        <div className="flex h-scr...">
-          <DashboardHeader>
-            <header className="flex h-14 ...">
-              <LinkComponent>
-              ...
-                <MenuAnchor asChild={true} __scopeMenu={{Menu:[...], ...}}>
-                  <PopperAnchor __scopePopper={{Menu:[...], ...}} asChild={true} ref={null}>
-                    <Primitive.div asChild={true} ref={function}>
-                      <Slot ref={function}>
-                        <SlotClone ref={function}>
-                          <Primitive.button type="button" id="radix-_R_i..." aria-haspopup="menu" aria-expanded={false} ...>
-                            <Slot type="button" id="radix-_R_i..." aria-haspopup="menu" aria-expanded={false} ...>
-                              <SlotClone type="button" id="radix-_R_i..." aria-haspopup="menu" aria-expanded={false} ...>
-                                <Button variant="ghost" size="sm" className={"\n    ga..."} type="button" ...>
-                                  <button
-                                    data-slot="dropdown-menu-trigger"
-                                    className={"inline-flex items-center justify-center whitespace-nowrap font-medium..."}
-                                    type="button"
-+                                   id="radix-_R_icndlb_"
--                                   id="radix-_R_29kndlb_"
-                                    aria-haspopup="menu"
-                                    aria-expanded={false}
-                                    aria-controls={undefined}
-                                    data-state="closed"
-                                    data-disabled={undefined}
-                                    disabled={false}
-                                    onPointerDown={function handleEvent}
-                                    onKeyDown={function handleEvent}
-                                    ref={function}
-                                  >
-              <div>
-              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
-                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
-                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
-                    <SheetTrigger asChild={true}>
-                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
-                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_4..." ...>
-                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
-                                <button
-                                  data-slot="sheet-trigger"
-                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
-                                  type="button"
-                                  aria-haspopup="dialog"
-                                  aria-expanded={false}
-+                                 aria-controls="radix-_R_4cndlb_"
--                                 aria-controls="radix-_R_hkndlb_"
-                                  data-state="closed"
-                                  onClick={function handleEvent}
-                                  ref={function}
-                                >
-                    ...
-          ...
-
-[00:00:14.088] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:14.088] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/smartmeter/8865af4c-6d4c-4552-87d0-141d25a8d038","route":"/smartmeter/[id]"}
-[00:00:14.088] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/smartmeter/8865af4c-6d4c-4552-87d0-141d25a8d038 color: rgb(120, 120, 120) color: inherit {"dp":"/smartmeter/[id]","o":"http://localhost:3000/smartmeter/8865af4c-6d4c-4552-87d0-141d25a8d038","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1783059894423} /_vercel/insights/view
-[00:00:29.330] Server  LOG        Reload env: .env.local
-[00:00:29.402] Server  LOG      ✓ Compiled in 24ms
-[00:00:29.403] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./lib/api/auth.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:00:29.651] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:29.813] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
-      <DashboardLayout params={Promise}>
-        <div className="flex h-scr...">
-          <DashboardHeader>
-            <header className="flex h-14 ...">
-              <LinkComponent>
-              ...
-                <MenuAnchor asChild={true} __scopeMenu={{Menu:[...], ...}}>
-                  <PopperAnchor __scopePopper={{Menu:[...], ...}} asChild={true} ref={null}>
-                    <Primitive.div asChild={true} ref={function}>
-                      <Slot ref={function}>
-                        <SlotClone ref={function}>
-                          <Primitive.button type="button" id="radix-_R_i..." aria-haspopup="menu" aria-expanded={false} ...>
-                            <Slot type="button" id="radix-_R_i..." aria-haspopup="menu" aria-expanded={false} ...>
-                              <SlotClone type="button" id="radix-_R_i..." aria-haspopup="menu" aria-expanded={false} ...>
-                                <Button variant="ghost" size="sm" className={"\n    ga..."} type="button" ...>
-                                  <button
-                                    data-slot="dropdown-menu-trigger"
-                                    className={"inline-flex items-center justify-center whitespace-nowrap font-medium..."}
-                                    type="button"
-+                                   id="radix-_R_icndlb_"
--                                   id="radix-_R_29kndlb_"
-                                    aria-haspopup="menu"
-                                    aria-expanded={false}
-                                    aria-controls={undefined}
-                                    data-state="closed"
-                                    data-disabled={undefined}
-                                    disabled={false}
-                                    onPointerDown={function handleEvent}
-                                    onKeyDown={function handleEvent}
-                                    ref={function}
-                                  >
-              <div>
-              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
-                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
-                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
-                    <SheetTrigger asChild={true}>
-                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
-                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_4..." ...>
-                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
-                                <button
-                                  data-slot="sheet-trigger"
-                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
-                                  type="button"
-                                  aria-haspopup="dialog"
-                                  aria-expanded={false}
-+                                 aria-controls="radix-_R_4cndlb_"
--                                 aria-controls="radix-_R_hkndlb_"
-                                  data-state="closed"
-                                  onClick={function handleEvent}
-                                  ref={function}
-                                >
-                    ...
-          ...
-
-[00:00:29.813] Browser ERROR   Error fetching drone OS: {}
-[00:00:29.813] Browser ERROR   Error fetching active alerts: {}
-[00:00:29.813] Browser ERROR   Error fetching Smart Meter: {}
-[00:00:29.813] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:29.813] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/smartmeter/8865af4c-6d4c-4552-87d0-141d25a8d038","route":"/smartmeter/[id]"}
-[00:00:29.813] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/smartmeter/8865af4c-6d4c-4552-87d0-141d25a8d038 color: rgb(120, 120, 120) color: inherit {"dp":"/smartmeter/[id]","o":"http://localhost:3000/smartmeter/8865af4c-6d4c-4552-87d0-141d25a8d038","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1783059910148} /_vercel/insights/view
+[00:00:00.573] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:00.656] Server  LOG      ✓ Ready in 451ms
+[00:00:04.080] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.322] Browser LOG     DashboardHeader user: null
+[00:00:04.322] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:04.322] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:04.322] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1784270439112} /_vercel/insights/view
+[00:00:04.322] Browser LOG     DashboardHeader user: {"email":"admintest@example.com","id":"d7c91400-ebcd-4099-930a-fff6cc1eb979","name":"Admin User","role":"ADMIN"}
+[00:00:04.322] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
+[00:00:04.322] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
+[00:00:07.627] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
+[00:00:07.627] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
+[00:00:10.862] Browser ERROR   Failed to start inference: Failed to start inference
+[00:00:24.922] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/drones/8f906fc2-8346-4cb3-bbea-d983d6f0c5e7/control color: rgb(120, 120, 120) color: inherit {"dp":"/drones/[id]/control","o":"http://localhost:3000/drones/8f906fc2-8346-4cb3-bbea-d983d6f0c5e7/control","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1784270459787} /_vercel/insights/view
+[00:01:53.133] Server  LOG      ✓ Compiled in 63ms
+[00:02:01.125] Server  LOG      ✓ Compiled in 41ms
+[00:02:27.808] Server  LOG      ✓ Compiled in 41ms
+[00:02:41.280] Server  LOG      ✓ Compiled in 41ms
+[00:02:52.639] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1784270607467} /_vercel/insights/view
+[00:02:52.639] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
+[00:02:52.639] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
+[00:02:52.639] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
+[00:02:52.639] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
+[00:02:53.672] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
+[00:02:53.672] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
+[00:02:54.603] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
+[00:02:54.603] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
+[00:02:58.739] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
+[00:02:58.739] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
