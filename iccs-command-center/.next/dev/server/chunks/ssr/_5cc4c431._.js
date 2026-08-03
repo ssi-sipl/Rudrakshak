@@ -1555,7 +1555,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: smartMeter.smartMeterId
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1214,
+                                            lineNumber: 1211,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1563,7 +1563,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: smartMeter.location
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1218,
+                                            lineNumber: 1215,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1573,7 +1573,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     children: "System Status:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-renderer.tsx",
-                                                    lineNumber: 1221,
+                                                    lineNumber: 1218,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1581,13 +1581,13 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     children: smartMeter.status
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-renderer.tsx",
-                                                    lineNumber: 1223,
+                                                    lineNumber: 1220,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1220,
+                                            lineNumber: 1217,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1597,7 +1597,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     children: "Network Status:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-renderer.tsx",
-                                                    lineNumber: 1235,
+                                                    lineNumber: 1232,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1605,13 +1605,13 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     children: smartMeter.NetworkStatus
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-renderer.tsx",
-                                                    lineNumber: 1237,
+                                                    lineNumber: 1234,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1234,
+                                            lineNumber: 1231,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1619,23 +1619,23 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: "Click to open Smart Meter"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1248,
+                                            lineNumber: 1245,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-renderer.tsx",
-                                    lineNumber: 1213,
+                                    lineNumber: 1210,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 1212,
+                                lineNumber: 1209,
                                 columnNumber: 15
                             }, this)
                         }, `smartmeter-${smartMeter.id}`, false, {
                             fileName: "[project]/components/map-renderer.tsx",
-                            lineNumber: 1204,
+                            lineNumber: 1201,
                             columnNumber: 13
                         }, this);
                     }),
@@ -1648,12 +1648,6 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                             pos.lat,
                             pos.lng
                         ];
-                        console.log({
-                            drone: drone.droneId,
-                            id: drone.id,
-                            statusObject: status,
-                            telemetryStatus: telemetry?.status
-                        });
                         const isOnline = status?.isLive === true;
                         const isStale = status?.isStale === true;
                         const hasAlert = status?.hasAlert === true;
@@ -1755,7 +1749,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1378,
+                                            lineNumber: 1369,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1763,7 +1757,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: drone.droneOSName
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1381,
+                                            lineNumber: 1372,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1771,7 +1765,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: drone.droneType
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1384,
+                                            lineNumber: 1375,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1779,7 +1773,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: tooltipStatusText
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1386,
+                                            lineNumber: 1377,
                                             columnNumber: 19
                                         }, this),
                                         !isOnline && status?.connectionLossTime && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1792,7 +1786,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1393,
+                                            lineNumber: 1384,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1805,7 +1799,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1402,
+                                            lineNumber: 1393,
                                             columnNumber: 19
                                         }, this),
                                         pos.alt != null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1817,23 +1811,23 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1406,
+                                            lineNumber: 1397,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-renderer.tsx",
-                                    lineNumber: 1377,
+                                    lineNumber: 1368,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 1376,
+                                lineNumber: 1367,
                                 columnNumber: 15
                             }, this)
                         }, `drone-${drone.id}`, false, {
                             fileName: "[project]/components/map-renderer.tsx",
-                            lineNumber: 1353,
+                            lineNumber: 1344,
                             columnNumber: 13
                         }, this);
                     }),
@@ -1873,7 +1867,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: "🏠 Base"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1459,
+                                            lineNumber: 1450,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1884,7 +1878,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1460,
+                                            lineNumber: 1451,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1895,7 +1889,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1463,
+                                            lineNumber: 1454,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1906,23 +1900,23 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1466,
+                                            lineNumber: 1457,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-renderer.tsx",
-                                    lineNumber: 1458,
+                                    lineNumber: 1449,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 1457,
+                                lineNumber: 1448,
                                 columnNumber: 15
                             }, this)
                         }, `base-${drone.id}`, false, {
                             fileName: "[project]/components/map-renderer.tsx",
-                            lineNumber: 1444,
+                            lineNumber: 1435,
                             columnNumber: 13
                         }, this);
                     }),
@@ -1953,7 +1947,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                             }
                         }, `telemetry-path-${drone.id}`, false, {
                             fileName: "[project]/components/map-renderer.tsx",
-                            lineNumber: 1496,
+                            lineNumber: 1487,
                             columnNumber: 13
                         }, this);
                     })
@@ -2896,7 +2890,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall, 
                             showVideo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "rounded-md overflow-hidden border border-[#333]",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
-                                    src: "/videos/demo.mp4",
+                                    src: "/videos/343478.mp4",
                                     controls: true,
                                     autoPlay: true,
                                     className: "w-full"
@@ -3683,7 +3677,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
     }, [
         videoSrc
     ]);
-    const feedLabel = feedStatus === "loading" ? "Connecting to video feed..." : feedStatus === "ready" ? "Live feed ready" : feedStatus === "error" ? "Video feed error" : "Waiting for video source";
+    const feedLabel = feedStatus === "loading" ? "Connecting to video feed..." : feedStatus === "ready" ? "Live feed ready" : feedStatus === "error" ? "Video feed error" : "";
     // ── Central command sender (same call the old panel used) ──────────
     const send = async (command, value)=>{
         if (!droneId) return;
@@ -3945,31 +3939,24 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                             position: "relative"
                         },
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
-                                ref: videoRef,
-                                src: videoSrc || undefined,
-                                autoPlay: true,
-                                muted: true,
-                                playsInline: true,
-                                style: {
-                                    width: "100%",
-                                    height: "100%",
-                                    objectFit: "cover",
-                                    display: "block",
-                                    backgroundColor: "#000"
-                                },
-                                onLoadedData: ()=>{
-                                    setFeedStatus("ready");
-                                    setFeedError(null);
-                                },
-                                onError: ()=>{
-                                    setFeedStatus("error");
-                                    setFeedError("Unable to load the video feed.");
-                                }
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "mt-3 rounded-md overflow-hidden border border-[#333] bg-black",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                                    src: "/videos/343478.mp4",
+                                    controls: true,
+                                    autoPlay: true,
+                                    muted: true,
+                                    playsInline: true,
+                                    className: "w-full h-auto"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/DroneControllerNew.tsx",
+                                    lineNumber: 354,
+                                    columnNumber: 15
+                                }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 330,
-                                columnNumber: 21
+                                lineNumber: 353,
+                                columnNumber: 22
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 style: {
@@ -3980,7 +3967,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 353,
+                                lineNumber: 364,
                                 columnNumber: 21
                             }, this),
                             (feedStatus !== "ready" || feedError) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4009,7 +3996,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                             children: feedLabel
                                         }, void 0, false, {
                                             fileName: "[project]/components/DroneControllerNew.tsx",
-                                            lineNumber: 387,
+                                            lineNumber: 398,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4017,21 +4004,21 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                                 opacity: 0.78,
                                                 marginTop: "8px"
                                             },
-                                            children: feedError ?? "Prepared for future RTSP/WebRTC integration."
+                                            children: feedError ?? ""
                                         }, void 0, false, {
                                             fileName: "[project]/components/DroneControllerNew.tsx",
-                                            lineNumber: 388,
+                                            lineNumber: 399,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/DroneControllerNew.tsx",
-                                    lineNumber: 375,
+                                    lineNumber: 386,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 364,
+                                lineNumber: 375,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4046,7 +4033,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                 children: "LIVE"
                             }, void 0, false, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 395,
+                                lineNumber: 406,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4061,7 +4048,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                 children: "FPV CAM"
                             }, void 0, false, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 408,
+                                lineNumber: 419,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4088,7 +4075,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                             strokeWidth: "1.5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/DroneControllerNew.tsx",
-                                            lineNumber: 435,
+                                            lineNumber: 446,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -4100,7 +4087,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                             strokeWidth: "1.5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/DroneControllerNew.tsx",
-                                            lineNumber: 436,
+                                            lineNumber: 447,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -4112,7 +4099,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                             strokeWidth: "1.5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/DroneControllerNew.tsx",
-                                            lineNumber: 437,
+                                            lineNumber: 448,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -4124,7 +4111,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                             strokeWidth: "1.5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/DroneControllerNew.tsx",
-                                            lineNumber: 438,
+                                            lineNumber: 449,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -4136,18 +4123,18 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                             strokeWidth: "1.5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/DroneControllerNew.tsx",
-                                            lineNumber: 439,
+                                            lineNumber: 450,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/DroneControllerNew.tsx",
-                                    lineNumber: 434,
+                                    lineNumber: 445,
                                     columnNumber: 25
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 421,
+                                lineNumber: 432,
                                 columnNumber: 21
                             }, this)
                         ]
@@ -4183,20 +4170,20 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/DroneControllerNew.tsx",
-                                        lineNumber: 459,
+                                        lineNumber: 470,
                                         columnNumber: 25
                                     }, this),
                                     isSending && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$spinner$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Spinner"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/DroneControllerNew.tsx",
-                                        lineNumber: 462,
+                                        lineNumber: 473,
                                         columnNumber: 39
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 458,
+                                lineNumber: 469,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4241,7 +4228,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                                lineNumber: 494,
+                                                lineNumber: 505,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4252,18 +4239,18 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                                 children: mode
                                             }, void 0, false, {
                                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                                lineNumber: 508,
+                                                lineNumber: 519,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, mode, true, {
                                         fileName: "[project]/components/DroneControllerNew.tsx",
-                                        lineNumber: 468,
+                                        lineNumber: 479,
                                         columnNumber: 29
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 466,
+                                lineNumber: 477,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4305,7 +4292,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                                 children: label
                                             }, void 0, false, {
                                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                                lineNumber: 522,
+                                                lineNumber: 533,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4317,18 +4304,18 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                                 children: value
                                             }, void 0, false, {
                                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                                lineNumber: 523,
+                                                lineNumber: 534,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, label, true, {
                                         fileName: "[project]/components/DroneControllerNew.tsx",
-                                        lineNumber: 521,
+                                        lineNumber: 532,
                                         columnNumber: 29
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 514,
+                                lineNumber: 525,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4353,7 +4340,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                 children: "Drop Payload"
                             }, void 0, false, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 529,
+                                lineNumber: 540,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4374,13 +4361,13 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                 children: "Recall"
                             }, void 0, false, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 553,
+                                lineNumber: 564,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 445,
+                        lineNumber: 456,
                         columnNumber: 17
                     }, this)
                 ]
@@ -4405,7 +4392,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                         onDiagonal: handleDiagonal
                     }, void 0, false, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 585,
+                        lineNumber: 596,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Compass, {
@@ -4422,7 +4409,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 591,
+                        lineNumber: 602,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AltitudeControl, {
@@ -4430,13 +4417,13 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                         onConfirm: confirmAltitude
                     }, void 0, false, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 605,
+                        lineNumber: 616,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 575,
+                lineNumber: 586,
                 columnNumber: 13
             }, this),
             showDropModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4477,7 +4464,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                     children: "Confirm Drop Payload"
                                 }, void 0, false, {
                                     fileName: "[project]/components/DroneControllerNew.tsx",
-                                    lineNumber: 634,
+                                    lineNumber: 645,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4488,13 +4475,13 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                     children: "Secure"
                                 }, void 0, false, {
                                     fileName: "[project]/components/DroneControllerNew.tsx",
-                                    lineNumber: 635,
+                                    lineNumber: 646,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 633,
+                            lineNumber: 644,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4506,7 +4493,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                             children: "Enter 4-digit PIN to authorize payload release."
                         }, void 0, false, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 638,
+                            lineNumber: 649,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4536,7 +4523,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                             }
                         }, void 0, false, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 642,
+                            lineNumber: 653,
                             columnNumber: 25
                         }, this),
                         dropPinError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4548,7 +4535,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                             children: dropPinError
                         }, void 0, false, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 670,
+                            lineNumber: 681,
                             columnNumber: 29
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4575,7 +4562,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/components/DroneControllerNew.tsx",
-                                    lineNumber: 674,
+                                    lineNumber: 685,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4594,24 +4581,24 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                     children: isSending ? "Sending..." : "Confirm"
                                 }, void 0, false, {
                                     fileName: "[project]/components/DroneControllerNew.tsx",
-                                    lineNumber: 692,
+                                    lineNumber: 703,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 673,
+                            lineNumber: 684,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/DroneControllerNew.tsx",
-                    lineNumber: 621,
+                    lineNumber: 632,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 610,
+                lineNumber: 621,
                 columnNumber: 17
             }, this),
             showRecallModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4642,7 +4629,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                             children: "Confirm Recall"
                         }, void 0, false, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 736,
+                            lineNumber: 747,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4653,7 +4640,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                             children: "Are you sure you want the drone to return?"
                         }, void 0, false, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 737,
+                            lineNumber: 748,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4676,7 +4663,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/components/DroneControllerNew.tsx",
-                                    lineNumber: 741,
+                                    lineNumber: 752,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4695,24 +4682,24 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                                     children: isSending ? "Sending..." : "Confirm"
                                 }, void 0, false, {
                                     fileName: "[project]/components/DroneControllerNew.tsx",
-                                    lineNumber: 754,
+                                    lineNumber: 765,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 740,
+                            lineNumber: 751,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/DroneControllerNew.tsx",
-                    lineNumber: 726,
+                    lineNumber: 737,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 715,
+                lineNumber: 726,
                 columnNumber: 17
             }, this)
         ]
@@ -4725,12 +4712,12 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                 children: body
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 780,
+                lineNumber: 791,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/DroneControllerNew.tsx",
-            lineNumber: 779,
+            lineNumber: 790,
             columnNumber: 13
         }, this);
     }
@@ -4749,7 +4736,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
         children: body
     }, void 0, false, {
         fileName: "[project]/components/DroneControllerNew.tsx",
-        lineNumber: 786,
+        lineNumber: 797,
         columnNumber: 9
     }, this);
 }
@@ -4782,7 +4769,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                 children: "Forward"
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 830,
+                lineNumber: 841,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4798,7 +4785,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                 children: "Backward"
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 833,
+                lineNumber: 844,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4814,7 +4801,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                 children: "Left"
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 836,
+                lineNumber: 847,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4830,7 +4817,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                 children: "Right"
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 839,
+                lineNumber: 850,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DPadBtn, {
@@ -4841,12 +4828,12 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                 onClick: ()=>onMove("Forward", "FORWARD"),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(TriUp, {}, void 0, false, {
                     fileName: "[project]/components/DroneControllerNew.tsx",
-                    lineNumber: 844,
+                    lineNumber: 855,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 843,
+                lineNumber: 854,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DPadBtn, {
@@ -4857,12 +4844,12 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                 onClick: ()=>onMove("Left", "LEFT"),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(TriLeft, {}, void 0, false, {
                     fileName: "[project]/components/DroneControllerNew.tsx",
-                    lineNumber: 848,
+                    lineNumber: 859,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 847,
+                lineNumber: 858,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DPadBtn, {
@@ -4887,7 +4874,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                             strokeLinecap: "round"
                         }, void 0, false, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 853,
+                            lineNumber: 864,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -4900,18 +4887,18 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                             strokeLinecap: "round"
                         }, void 0, false, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 854,
+                            lineNumber: 865,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/DroneControllerNew.tsx",
-                    lineNumber: 852,
+                    lineNumber: 863,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 851,
+                lineNumber: 862,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DPadBtn, {
@@ -4922,12 +4909,12 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                 onClick: ()=>onMove("Right", "RIGHT"),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(TriRight, {}, void 0, false, {
                     fileName: "[project]/components/DroneControllerNew.tsx",
-                    lineNumber: 859,
+                    lineNumber: 870,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 858,
+                lineNumber: 869,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DPadBtn, {
@@ -4938,12 +4925,12 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                 onClick: ()=>onMove("Backward", "BACKWARD"),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(TriDown, {}, void 0, false, {
                     fileName: "[project]/components/DroneControllerNew.tsx",
-                    lineNumber: 863,
+                    lineNumber: 874,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 862,
+                lineNumber: 873,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SmallDiag, {
@@ -4954,7 +4941,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                 onClick: ()=>onDiagonal("ForwardLeft", "FORWARD", "LEFT")
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 866,
+                lineNumber: 877,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SmallDiag, {
@@ -4965,7 +4952,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                 onClick: ()=>onDiagonal("ForwardRight", "FORWARD", "RIGHT")
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 867,
+                lineNumber: 878,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SmallDiag, {
@@ -4976,7 +4963,7 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                 onClick: ()=>onDiagonal("BackwardLeft", "BACKWARD", "LEFT")
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 868,
+                lineNumber: 879,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SmallDiag, {
@@ -4987,13 +4974,13 @@ function DroneController({ droneId, currentAltitude = 0, onClose, telemetry = nu
                 onClick: ()=>onDiagonal("BackwardRight", "BACKWARD", "RIGHT")
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 869,
+                lineNumber: 880,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/DroneControllerNew.tsx",
-        lineNumber: 815,
+        lineNumber: 826,
         columnNumber: 9
     }, this);
 }
@@ -5027,7 +5014,7 @@ function DPadBtn({ children, top, bottom, left, right, translateX, translateY, c
         children: children
     }, void 0, false, {
         fileName: "[project]/components/DroneControllerNew.tsx",
-        lineNumber: 903,
+        lineNumber: 914,
         columnNumber: 9
     }, this);
 }
@@ -5064,17 +5051,17 @@ function SmallDiag({ top, bottom, left, right, rot, active, onClick }) {
                 fill: "white"
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 973,
+                lineNumber: 984,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/DroneControllerNew.tsx",
-            lineNumber: 972,
+            lineNumber: 983,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/DroneControllerNew.tsx",
-        lineNumber: 952,
+        lineNumber: 963,
         columnNumber: 9
     }, this);
 }
@@ -5090,17 +5077,17 @@ const TriUp = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5
                 fill: "white"
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 982,
+                lineNumber: 993,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/components/DroneControllerNew.tsx",
-            lineNumber: 981,
+            lineNumber: 992,
             columnNumber: 9
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/DroneControllerNew.tsx",
-        lineNumber: 980,
+        lineNumber: 991,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 const TriDown = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -5115,17 +5102,17 @@ const TriDown = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project
                 fill: "white"
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 989,
+                lineNumber: 1000,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/components/DroneControllerNew.tsx",
-            lineNumber: 988,
+            lineNumber: 999,
             columnNumber: 9
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/DroneControllerNew.tsx",
-        lineNumber: 987,
+        lineNumber: 998,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 const TriLeft = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -5138,12 +5125,12 @@ const TriLeft = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project
             fill: "white"
         }, void 0, false, {
             fileName: "[project]/components/DroneControllerNew.tsx",
-            lineNumber: 995,
+            lineNumber: 1006,
             columnNumber: 9
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/DroneControllerNew.tsx",
-        lineNumber: 994,
+        lineNumber: 1005,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -5158,17 +5145,17 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                 fill: "white"
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 1001,
+                lineNumber: 1012,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/components/DroneControllerNew.tsx",
-            lineNumber: 1000,
+            lineNumber: 1011,
             columnNumber: 9
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/DroneControllerNew.tsx",
-        lineNumber: 999,
+        lineNumber: 1010,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 /* ── COMPASS ── */ function Compass({ heading, setHeading, startRotating, stopRotating, onDragStart, onDragEnd }) {
@@ -5257,7 +5244,7 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                 children: "⟲"
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 1095,
+                lineNumber: 1106,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -5274,7 +5261,7 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                         fill: "none"
                     }, void 0, false, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 1114,
+                        lineNumber: 1125,
                         columnNumber: 17
                     }, this),
                     Array.from({
@@ -5292,7 +5279,7 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                             strokeWidth: 3
                         }, i, false, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 1120,
+                            lineNumber: 1131,
                             columnNumber: 25
                         }, this);
                     }),
@@ -5304,7 +5291,7 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                         children: "N"
                     }, void 0, false, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 1131,
+                        lineNumber: 1142,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -5315,7 +5302,7 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                         children: "S"
                     }, void 0, false, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 1132,
+                        lineNumber: 1143,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -5325,7 +5312,7 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                         children: "W"
                     }, void 0, false, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 1133,
+                        lineNumber: 1144,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -5335,7 +5322,7 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                         children: "E"
                     }, void 0, false, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 1134,
+                        lineNumber: 1145,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -5345,7 +5332,7 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                         fill: "#1a1a1a"
                     }, void 0, false, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 1135,
+                        lineNumber: 1146,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
@@ -5361,7 +5348,7 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                                 y2: "100"
                             }, void 0, false, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 1137,
+                                lineNumber: 1148,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -5371,13 +5358,13 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                                 y2: "108"
                             }, void 0, false, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 1138,
+                                lineNumber: 1149,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 1136,
+                        lineNumber: 1147,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
@@ -5396,13 +5383,13 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 1140,
+                        lineNumber: 1151,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 1113,
+                lineNumber: 1124,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5422,13 +5409,13 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                 children: "⟳"
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 1157,
+                lineNumber: 1168,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/DroneControllerNew.tsx",
-        lineNumber: 1081,
+        lineNumber: 1092,
         columnNumber: 9
     }, this);
 }
@@ -5443,12 +5430,12 @@ const TriRight = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
             fill: "white"
         }, void 0, false, {
             fileName: "[project]/components/DroneControllerNew.tsx",
-            lineNumber: 1182,
+            lineNumber: 1193,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/DroneControllerNew.tsx",
-        lineNumber: 1181,
+        lineNumber: 1192,
         columnNumber: 9
     }, this);
 }
@@ -5463,12 +5450,12 @@ function AltTriDown() {
             fill: "white"
         }, void 0, false, {
             fileName: "[project]/components/DroneControllerNew.tsx",
-            lineNumber: 1189,
+            lineNumber: 1200,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/DroneControllerNew.tsx",
-        lineNumber: 1188,
+        lineNumber: 1199,
         columnNumber: 9
     }, this);
 }
@@ -5572,12 +5559,12 @@ function AltitudeControl({ altitude, onConfirm }) {
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AltTriUp, {}, void 0, false, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 1304,
+                            lineNumber: 1315,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 1288,
+                        lineNumber: 1299,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5601,7 +5588,7 @@ function AltitudeControl({ altitude, onConfirm }) {
                                 }
                             }, `empty-${i}`, false, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 1312,
+                                lineNumber: 1323,
                                 columnNumber: 50
                             }, this);
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5625,7 +5612,7 @@ function AltitudeControl({ altitude, onConfirm }) {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/components/DroneControllerNew.tsx",
-                                        lineNumber: 1321,
+                                        lineNumber: 1332,
                                         columnNumber: 33
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5639,7 +5626,7 @@ function AltitudeControl({ altitude, onConfirm }) {
                                         children: lvl
                                     }, void 0, false, {
                                         fileName: "[project]/components/DroneControllerNew.tsx",
-                                        lineNumber: 1322,
+                                        lineNumber: 1333,
                                         columnNumber: 33
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5650,19 +5637,19 @@ function AltitudeControl({ altitude, onConfirm }) {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/components/DroneControllerNew.tsx",
-                                        lineNumber: 1325,
+                                        lineNumber: 1336,
                                         columnNumber: 33
                                     }, this)
                                 ]
                             }, lvl, true, {
                                 fileName: "[project]/components/DroneControllerNew.tsx",
-                                lineNumber: 1314,
+                                lineNumber: 1325,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 1307,
+                        lineNumber: 1318,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5682,18 +5669,18 @@ function AltitudeControl({ altitude, onConfirm }) {
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AltTriDown, {}, void 0, false, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 1347,
+                            lineNumber: 1358,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/DroneControllerNew.tsx",
-                        lineNumber: 1331,
+                        lineNumber: 1342,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 1267,
+                lineNumber: 1278,
                 columnNumber: 13
             }, this),
             pendingAltitude !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5724,7 +5711,7 @@ function AltitudeControl({ altitude, onConfirm }) {
                             children: "Confirm Altitude Change"
                         }, void 0, false, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 1364,
+                            lineNumber: 1375,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5741,14 +5728,14 @@ function AltitudeControl({ altitude, onConfirm }) {
                                     children: pendingAltitude
                                 }, void 0, false, {
                                     fileName: "[project]/components/DroneControllerNew.tsx",
-                                    lineNumber: 1366,
+                                    lineNumber: 1377,
                                     columnNumber: 48
                                 }, this),
                                 "?"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 1365,
+                            lineNumber: 1376,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5771,7 +5758,7 @@ function AltitudeControl({ altitude, onConfirm }) {
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/components/DroneControllerNew.tsx",
-                                    lineNumber: 1369,
+                                    lineNumber: 1380,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5787,24 +5774,24 @@ function AltitudeControl({ altitude, onConfirm }) {
                                     children: "Confirm"
                                 }, void 0, false, {
                                     fileName: "[project]/components/DroneControllerNew.tsx",
-                                    lineNumber: 1372,
+                                    lineNumber: 1383,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/DroneControllerNew.tsx",
-                            lineNumber: 1368,
+                            lineNumber: 1379,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/DroneControllerNew.tsx",
-                    lineNumber: 1363,
+                    lineNumber: 1374,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/DroneControllerNew.tsx",
-                lineNumber: 1352,
+                lineNumber: 1363,
                 columnNumber: 17
             }, this)
         ]
@@ -6176,6 +6163,11 @@ function MapView({ mode = "operations" }) {
                     setDrones(res.data);
                     const initialStatus = {};
                     const initialPositions = {};
+                    console.table(res.data.map((d)=>({
+                            id: d.id,
+                            droneId: d.droneId,
+                            name: d.droneOSName
+                        })));
                     res.data.forEach((drone)=>{
                         initialStatus[drone.id] = {
                             id: drone.id,
@@ -6371,6 +6363,7 @@ function MapView({ mode = "operations" }) {
         s.on("drone_telemetry", (telemetry)=>{
             // console.log("Telemetry:", telemetry);
             setDroneStatus((prev)=>{
+                console.log("Telemetry:", telemetry.droneDbId, telemetry.lat, telemetry.lng);
                 const prevStatus = prev[telemetry.droneDbId];
                 // 🔑 Check if drone just landed
                 const isNowGrounded = telemetry.status === "ground";
@@ -6955,12 +6948,12 @@ function MapView({ mode = "operations" }) {
                 children: "Loading map..."
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1379,
+                lineNumber: 1393,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/map-view.tsx",
-            lineNumber: 1378,
+            lineNumber: 1392,
             columnNumber: 7
         }, this);
     }
@@ -6972,12 +6965,12 @@ function MapView({ mode = "operations" }) {
                 children: error
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1387,
+                lineNumber: 1401,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/map-view.tsx",
-            lineNumber: 1386,
+            lineNumber: 1400,
             columnNumber: 7
         }, this);
     }
@@ -6994,19 +6987,19 @@ function MapView({ mode = "operations" }) {
                         children: "/maps/manage"
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1397,
+                        lineNumber: 1411,
                         columnNumber: 11
                     }, this),
                     " and create / activate one."
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1395,
+                lineNumber: 1409,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/map-view.tsx",
-            lineNumber: 1394,
+            lineNumber: 1408,
             columnNumber: 7
         }, this);
     }
@@ -7046,7 +7039,7 @@ function MapView({ mode = "operations" }) {
                                     children: "🚫 Auto-dispatch blocked"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1441,
+                                    lineNumber: 1454,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7054,7 +7047,7 @@ function MapView({ mode = "operations" }) {
                                     children: autoDispatchBlocked.reason
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1445,
+                                    lineNumber: 1458,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7068,7 +7061,7 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1449,
+                                    lineNumber: 1462,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7079,13 +7072,13 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1454,
+                                    lineNumber: 1467,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1440,
+                            lineNumber: 1453,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -7096,18 +7089,18 @@ function MapView({ mode = "operations" }) {
                             children: "Acknowledge"
                         }, void 0, false, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1459,
+                            lineNumber: 1472,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/map-view.tsx",
-                    lineNumber: 1439,
+                    lineNumber: 1452,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1438,
+                lineNumber: 1451,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7131,7 +7124,7 @@ function MapView({ mode = "operations" }) {
                                 className: "w-full rounded-md border border-[#333] bg-black/80 px-3 py-2 text-xs text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 backdrop-blur"
                             }, void 0, false, {
                                 fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1472,
+                                lineNumber: 1485,
                                 columnNumber: 11
                             }, this),
                             mode === "sensor-health" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -7142,7 +7135,7 @@ function MapView({ mode = "operations" }) {
                                     className: "h-5 w-5 animate-spin"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1509,
+                                    lineNumber: 1522,
                                     columnNumber: 17
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                                     children: [
@@ -7150,7 +7143,7 @@ function MapView({ mode = "operations" }) {
                                             className: "h-5 w-5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1512,
+                                            lineNumber: 1525,
                                             columnNumber: 19
                                         }, this),
                                         "SCAN"
@@ -7158,13 +7151,13 @@ function MapView({ mode = "operations" }) {
                                 }, void 0, true)
                             }, void 0, false, {
                                 fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1494,
+                                lineNumber: 1507,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1471,
+                        lineNumber: 1484,
                         columnNumber: 9
                     }, this),
                     sensorSearchResults.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7182,7 +7175,7 @@ function MapView({ mode = "operations" }) {
                                         children: sensor.name
                                     }, void 0, false, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1532,
+                                        lineNumber: 1545,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7194,24 +7187,24 @@ function MapView({ mode = "operations" }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1533,
+                                        lineNumber: 1546,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, sensor.id, true, {
                                 fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1523,
+                                lineNumber: 1536,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1521,
+                        lineNumber: 1534,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1470,
+                lineNumber: 1483,
                 columnNumber: 7
             }, this),
             scanning && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7223,25 +7216,25 @@ function MapView({ mode = "operations" }) {
                             className: "absolute h-40 w-full animate-[scan_2.5s_linear_infinite] bg-gradient-to-b from-green-500/0 via-green-500/20 to-green-500/0"
                         }, void 0, false, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1545,
+                            lineNumber: 1558,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1544,
+                        lineNumber: 1557,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 backdrop-blur-[2px] bg-green-500/10"
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1549,
+                        lineNumber: 1562,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1542,
+                lineNumber: 1555,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$map$2d$renderer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -7281,7 +7274,7 @@ function MapView({ mode = "operations" }) {
                 onSmartMeterClick: (smartMeter)=>router.push(`/smartmeter/${smartMeter.id}`)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1552,
+                lineNumber: 1565,
                 columnNumber: 7
             }, this),
             mode === "battle-planner" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7299,7 +7292,7 @@ function MapView({ mode = "operations" }) {
                                             className: `h-3 w-3 rounded-full ${battleStarted ? "bg-green-400 animate-pulse" : "bg-yellow-400 animate-pulse"}`
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1608,
+                                            lineNumber: 1621,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7308,18 +7301,18 @@ function MapView({ mode = "operations" }) {
                                                 children: "ICCS BATTLE PLANNER"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/map-view.tsx",
-                                                lineNumber: 1617,
+                                                lineNumber: 1630,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1616,
+                                            lineNumber: 1629,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1607,
+                                    lineNumber: 1620,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7332,7 +7325,7 @@ function MapView({ mode = "operations" }) {
                                                     children: "Link"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1626,
+                                                    lineNumber: 1639,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7342,7 +7335,7 @@ function MapView({ mode = "operations" }) {
                                                             className: "h-2 w-2 rounded-full bg-green-400 animate-pulse"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 1631,
+                                                            lineNumber: 1644,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7350,26 +7343,26 @@ function MapView({ mode = "operations" }) {
                                                             children: "ONLINE"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 1633,
+                                                            lineNumber: 1646,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1630,
+                                                    lineNumber: 1643,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1625,
+                                            lineNumber: 1638,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "h-8 w-px bg-[#4a5562]"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1637,
+                                            lineNumber: 1650,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7379,7 +7372,7 @@ function MapView({ mode = "operations" }) {
                                                     children: "Mission"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1640,
+                                                    lineNumber: 1653,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7387,25 +7380,25 @@ function MapView({ mode = "operations" }) {
                                                     children: battleStarted ? "ACTIVE" : "READY"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1644,
+                                                    lineNumber: 1657,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1639,
+                                            lineNumber: 1652,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1624,
+                                    lineNumber: 1637,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1605,
+                            lineNumber: 1618,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7418,7 +7411,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Drone"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1662,
+                                            lineNumber: 1675,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -7431,7 +7424,7 @@ function MapView({ mode = "operations" }) {
                                                     children: "Select"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1671,
+                                                    lineNumber: 1684,
                                                     columnNumber: 19
                                                 }, this),
                                                 BATTLE_DRONES.map((drone)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -7439,19 +7432,19 @@ function MapView({ mode = "operations" }) {
                                                         children: drone.name
                                                     }, drone.id, false, {
                                                         fileName: "[project]/components/map-view.tsx",
-                                                        lineNumber: 1674,
+                                                        lineNumber: 1687,
                                                         columnNumber: 21
                                                     }, this))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1666,
+                                            lineNumber: 1679,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1661,
+                                    lineNumber: 1674,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7461,7 +7454,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Target"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1684,
+                                            lineNumber: 1697,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -7474,7 +7467,7 @@ function MapView({ mode = "operations" }) {
                                                     children: "Select"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1693,
+                                                    lineNumber: 1706,
                                                     columnNumber: 19
                                                 }, this),
                                                 sensors.map((sensor)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -7482,19 +7475,19 @@ function MapView({ mode = "operations" }) {
                                                         children: sensor.sensorId
                                                     }, sensor.id, false, {
                                                         fileName: "[project]/components/map-view.tsx",
-                                                        lineNumber: 1696,
+                                                        lineNumber: 1709,
                                                         columnNumber: 21
                                                     }, this))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1688,
+                                            lineNumber: 1701,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1683,
+                                    lineNumber: 1696,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7505,7 +7498,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Range"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1706,
+                                            lineNumber: 1719,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7513,13 +7506,13 @@ function MapView({ mode = "operations" }) {
                                             children: battleDrone ? `${battleDrone.range / 1000} km` : "--"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1710,
+                                            lineNumber: 1723,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1705,
+                                    lineNumber: 1718,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7530,7 +7523,7 @@ function MapView({ mode = "operations" }) {
                                             children: "ETA"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1718,
+                                            lineNumber: 1731,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7538,13 +7531,13 @@ function MapView({ mode = "operations" }) {
                                             children: battleDrone && battleSensor ? "4 min." : "--"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1722,
+                                            lineNumber: 1735,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1717,
+                                    lineNumber: 1730,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7555,7 +7548,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Battery"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1730,
+                                            lineNumber: 1743,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7563,13 +7556,13 @@ function MapView({ mode = "operations" }) {
                                             children: "94%"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1734,
+                                            lineNumber: 1747,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1729,
+                                    lineNumber: 1742,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7580,7 +7573,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Mission"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1742,
+                                            lineNumber: 1755,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7588,13 +7581,13 @@ function MapView({ mode = "operations" }) {
                                             children: battleDrone ? battleDrone.type === "Kamikaze" ? "Strike" : battleDrone.type === "Recon" ? "Recon" : "Intercept" : "--"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1746,
+                                            lineNumber: 1759,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1741,
+                                    lineNumber: 1754,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7632,29 +7625,29 @@ function MapView({ mode = "operations" }) {
                                         children: battleStarted ? "MISSION ACTIVE" : "LAUNCH"
                                     }, void 0, false, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1759,
+                                        lineNumber: 1772,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1758,
+                                    lineNumber: 1771,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1656,
+                            lineNumber: 1669,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/map-view.tsx",
-                    lineNumber: 1601,
+                    lineNumber: 1614,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1600,
+                lineNumber: 1613,
                 columnNumber: 9
             }, this),
             mode === "operations" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7676,20 +7669,20 @@ function MapView({ mode = "operations" }) {
                                 className: `absolute inset-0 rounded-full ${isListening ? "animate-ping bg-red-100/30" : "bg-cyan-400/20 animate-pulse"}`
                             }, void 0, false, {
                                 fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1830,
+                                lineNumber: 1843,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mic$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mic$3e$__["Mic"], {
                                 className: "relative z-10 h-6 w-6 text-white"
                             }, void 0, false, {
                                 fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1838,
+                                lineNumber: 1851,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1811,
+                        lineNumber: 1824,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7697,13 +7690,13 @@ function MapView({ mode = "operations" }) {
                         children: isUploading ? "Processing..." : isListening ? "Listening..." : "Voice"
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1841,
+                        lineNumber: 1854,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1810,
+                lineNumber: 1823,
                 columnNumber: 9
             }, this) : null,
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -7724,7 +7717,7 @@ function MapView({ mode = "operations" }) {
                                     children: selectedSensor ? selectedSensor.name : "Sensor"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1861,
+                                    lineNumber: 1874,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7740,7 +7733,7 @@ function MapView({ mode = "operations" }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1868,
+                                            lineNumber: 1881,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
@@ -7748,19 +7741,19 @@ function MapView({ mode = "operations" }) {
                                             children: selectedSensor?.addedBy || "N/A"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1872,
+                                            lineNumber: 1885,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1867,
+                                    lineNumber: 1880,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1860,
+                            lineNumber: 1873,
                             columnNumber: 11
                         }, this),
                         autoDispatchBlocked && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7771,7 +7764,7 @@ function MapView({ mode = "operations" }) {
                                     children: "🚫 Auto-dispatch blocked"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1885,
+                                    lineNumber: 1899,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7779,7 +7772,7 @@ function MapView({ mode = "operations" }) {
                                     children: autoDispatchBlocked.reason
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1889,
+                                    lineNumber: 1903,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7793,7 +7786,7 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1893,
+                                    lineNumber: 1907,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7804,13 +7797,13 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1898,
+                                    lineNumber: 1912,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1884,
+                            lineNumber: 1898,
                             columnNumber: 13
                         }, this),
                         autoDispatchCountdown !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7826,7 +7819,7 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1907,
+                                    lineNumber: 1921,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7839,18 +7832,18 @@ function MapView({ mode = "operations" }) {
                                         children: "Cancel Auto Send"
                                     }, void 0, false, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1909,
+                                        lineNumber: 1923,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1908,
+                                    lineNumber: 1922,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1905,
+                            lineNumber: 1919,
                             columnNumber: 13
                         }, this),
                         selectedSensor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7872,7 +7865,7 @@ function MapView({ mode = "operations" }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1925,
+                                                    lineNumber: 1939,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7882,13 +7875,13 @@ function MapView({ mode = "operations" }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1929,
+                                                    lineNumber: 1943,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1924,
+                                            lineNumber: 1938,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7899,13 +7892,13 @@ function MapView({ mode = "operations" }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1931,
+                                            lineNumber: 1945,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1923,
+                                    lineNumber: 1937,
                                     columnNumber: 15
                                 }, this),
                                 selectedAlert ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7916,7 +7909,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Active Alert"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1938,
+                                            lineNumber: 1952,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7924,7 +7917,7 @@ function MapView({ mode = "operations" }) {
                                             children: selectedAlert.message
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1941,
+                                            lineNumber: 1955,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7936,13 +7929,13 @@ function MapView({ mode = "operations" }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1944,
+                                            lineNumber: 1958,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1937,
+                                    lineNumber: 1951,
                                     columnNumber: 17
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "rounded-md border border-[#333] bg-[#18181b] p-3 text-xs text-gray-300",
@@ -7950,14 +7943,14 @@ function MapView({ mode = "operations" }) {
                                         "No active alert on this sensor.",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1952,
+                                            lineNumber: 1966,
                                             columnNumber: 19
                                         }, this),
                                         "You can still manually dispatch a drone from here."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1950,
+                                    lineNumber: 1964,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7968,7 +7961,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Select Drone to Dispatch:"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1958,
+                                            lineNumber: 1972,
                                             columnNumber: 17
                                         }, this),
                                         loadingDrones ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7978,27 +7971,27 @@ function MapView({ mode = "operations" }) {
                                                     className: "h-3 w-3 animate-spin"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1964,
+                                                    lineNumber: 1978,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "Loading drones..."
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1965,
+                                                    lineNumber: 1979,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1963,
+                                            lineNumber: 1977,
                                             columnNumber: 19
                                         }, this) : dronesInSameArea.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "rounded-md border border-amber-700 bg-amber-950/40 p-3 text-xs text-amber-200",
                                             children: "No drones available in this sensor's area."
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1968,
+                                            lineNumber: 1982,
                                             columnNumber: 19
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "space-y-2",
@@ -8017,7 +8010,7 @@ function MapView({ mode = "operations" }) {
                                                             children: "Select a drone"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 1981,
+                                                            lineNumber: 1995,
                                                             columnNumber: 23
                                                         }, this),
                                                         dronesInSameArea.map((drone)=>{
@@ -8049,14 +8042,14 @@ function MapView({ mode = "operations" }) {
                                                                 ]
                                                             }, drone.id, true, {
                                                                 fileName: "[project]/components/map-view.tsx",
-                                                                lineNumber: 2003,
+                                                                lineNumber: 2017,
                                                                 columnNumber: 27
                                                             }, this);
                                                         })
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1973,
+                                                    lineNumber: 1987,
                                                     columnNumber: 21
                                                 }, this),
                                                 selectedDroneId && isDroneBusy(selectedDroneId) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8066,38 +8059,38 @@ function MapView({ mode = "operations" }) {
                                                             children: "⚠️"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 2018,
+                                                            lineNumber: 2032,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: droneTelemetryData[selectedDroneId]?.status === "on_air" ? "This drone is currently in the air. Please wait for it to land." : "This drone is executing another mission."
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 2019,
+                                                            lineNumber: 2033,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 2017,
+                                                    lineNumber: 2031,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1972,
+                                            lineNumber: 1986,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1957,
+                                    lineNumber: 1971,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1922,
+                            lineNumber: 1936,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -8112,14 +8105,14 @@ function MapView({ mode = "operations" }) {
                                     children: "Neutralise Alert"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 2035,
+                                    lineNumber: 2049,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                     type: "button",
                                     variant: "ghost",
                                     className: "border-[#333] bg-[#111] text-white hover:bg-[#222]",
-                                    onClick: handleOpenVideoFeed,
+                                    onClick: ()=>setShowVideo(true),
                                     disabled: actionLoading || !selectedSensor || !("rtspUrl" in (selectedSensor || {})) || !selectedSensor?.rtspUrl,
                                     children: actionLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                                         children: [
@@ -8127,7 +8120,7 @@ function MapView({ mode = "operations" }) {
                                                 className: "mr-2 h-4 w-4 animate-spin"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/map-view.tsx",
-                                                lineNumber: 2060,
+                                                lineNumber: 2074,
                                                 columnNumber: 19
                                             }, this),
                                             "Launching..."
@@ -8135,7 +8128,7 @@ function MapView({ mode = "operations" }) {
                                     }, void 0, true) : "Video Feed"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 2046,
+                                    lineNumber: 2060,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -8146,24 +8139,43 @@ function MapView({ mode = "operations" }) {
                                     children: selectedAlert ? "Send Drone (ड्रोन भेजिए)" : "Send Drone (ड्रोन भेजिए)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 2068,
+                                    lineNumber: 2082,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 2033,
+                            lineNumber: 2047,
                             columnNumber: 11
+                        }, this),
+                        showVideo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-3 rounded-md overflow-hidden border border-[#333] bg-black",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                                src: "/videos/343478.mp4",
+                                controls: true,
+                                autoPlay: true,
+                                muted: true,
+                                playsInline: true,
+                                className: "w-full h-auto"
+                            }, void 0, false, {
+                                fileName: "[project]/components/map-view.tsx",
+                                lineNumber: 2101,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/map-view.tsx",
+                            lineNumber: 2100,
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/map-view.tsx",
-                    lineNumber: 1859,
+                    lineNumber: 1872,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1851,
+                lineNumber: 1864,
                 columnNumber: 7
             }, this),
             telemetryWindowOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$telemetry$2d$window$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TelemetryWindow"], {
@@ -8178,7 +8190,7 @@ function MapView({ mode = "operations" }) {
                 isControllerOpen: false
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 2089,
+                lineNumber: 2115,
                 columnNumber: 9
             }, this),
             selectedDroneIdForTelemetry && showController && // <DroneController
@@ -8193,7 +8205,7 @@ function MapView({ mode = "operations" }) {
                 onClose: ()=>setShowController(false)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 2107,
+                lineNumber: 2135,
                 columnNumber: 9
             }, this)
         ]

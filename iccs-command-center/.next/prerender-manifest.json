@@ -152,31 +152,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/battle-planner": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/battle-planner",
-      "dataRoute": "/battle-planner.rsc",
-      "prefetchDataRoute": null,
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/drones/add": {
       "experimentalBypassFor": [
         {
@@ -531,8 +506,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "50e09b48832ec257891dbb91f6dc689f",
-    "previewModeSigningKey": "39bc14f4a354d42ec2a15766f900188dd359f3a83cd53c35b8d805d0f2455377",
-    "previewModeEncryptionKey": "7c9f698222dcd345f1190f1b7009e87d90692b9634d6d843689fc296f24287aa"
+    "previewModeId": "83e5b48de5a4d088cc90a9d8d4f401ec",
+    "previewModeSigningKey": "c5e3803b04882cb29a8c36194b93b2ecea5473806aac64b0b5c5c3efbf661ecf",
+    "previewModeEncryptionKey": "e774307a4c9605c8f2f36a65da15abc468d755dc322cf810a05b46b01c68b734"
   }
 }

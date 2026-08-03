@@ -616,7 +616,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cpu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Cpu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/cpu.js [app-client] (ecmascript) <export default as Cpu>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user.js [app-client] (ecmascript) <export default as User>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plane$2d$landing$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LucidePlaneLanding$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/plane-landing.js [app-client] (ecmascript) <export default as LucidePlaneLanding>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$sheet$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/sheet.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
@@ -671,11 +670,6 @@ function DashboardHeader() {
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"],
             label: "REPORT",
             href: "/report"
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plane$2d$landing$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LucidePlaneLanding$3e$__["LucidePlaneLanding"],
-            label: "BATTLE PLANNER",
-            href: "/battle-planner"
         },
         // { icon: ShieldCheck, label: "HEALTH", href: "/health" },
         ...user?.role === "ADMIN" ? [
@@ -732,12 +726,12 @@ function DashboardHeader() {
                             className: "h-10 w-10 md:h-10 md:w-10 object-contain"
                         }, void 0, false, {
                             fileName: "[project]/components/dashboard-header.tsx",
-                            lineNumber: 93,
+                            lineNumber: 91,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/dashboard-header.tsx",
-                        lineNumber: 92,
+                        lineNumber: 90,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -745,13 +739,13 @@ function DashboardHeader() {
                         children: "RUDRARAKSHAK 2.1"
                     }, void 0, false, {
                         fileName: "[project]/components/dashboard-header.tsx",
-                        lineNumber: 102,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/dashboard-header.tsx",
-                lineNumber: 91,
+                lineNumber: 89,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -768,19 +762,19 @@ function DashboardHeader() {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/dashboard-header.tsx",
-                                        lineNumber: 119,
+                                        lineNumber: 117,
                                         columnNumber: 15
                                     }, this),
                                     item.label
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/dashboard-header.tsx",
-                                lineNumber: 110,
+                                lineNumber: 108,
                                 columnNumber: 13
                             }, this)
                         }, item.label, false, {
                             fileName: "[project]/components/dashboard-header.tsx",
-                            lineNumber: 109,
+                            lineNumber: 107,
                             columnNumber: 11
                         }, this)),
                     user?.role === "ADMIN" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenu"], {
@@ -799,14 +793,14 @@ function DashboardHeader() {
                                             className: "h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/dashboard-header.tsx",
-                                            lineNumber: 139,
+                                            lineNumber: 137,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "HEALTH"
                                         }, void 0, false, {
                                             fileName: "[project]/components/dashboard-header.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 139,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
@@ -815,18 +809,18 @@ function DashboardHeader() {
     `
                                         }, void 0, false, {
                                             fileName: "[project]/components/dashboard-header.tsx",
-                                            lineNumber: 143,
+                                            lineNumber: 141,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/dashboard-header.tsx",
-                                    lineNumber: 127,
+                                    lineNumber: 125,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/dashboard-header.tsx",
-                                lineNumber: 126,
+                                lineNumber: 124,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -844,25 +838,25 @@ function DashboardHeader() {
                                                     className: "h-4 w-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/dashboard-header.tsx",
-                                                    lineNumber: 178,
+                                                    lineNumber: 176,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "Health Dashboard"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/dashboard-header.tsx",
-                                                    lineNumber: 179,
+                                                    lineNumber: 177,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/dashboard-header.tsx",
-                                            lineNumber: 167,
+                                            lineNumber: 165,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/dashboard-header.tsx",
-                                        lineNumber: 166,
+                                        lineNumber: 164,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -875,43 +869,43 @@ function DashboardHeader() {
                                                     className: "h-4 w-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/dashboard-header.tsx",
-                                                    lineNumber: 196,
+                                                    lineNumber: 194,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "Smart Meter"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/dashboard-header.tsx",
-                                                    lineNumber: 197,
+                                                    lineNumber: 195,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/dashboard-header.tsx",
-                                            lineNumber: 184,
+                                            lineNumber: 182,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/dashboard-header.tsx",
-                                        lineNumber: 183,
+                                        lineNumber: 181,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/dashboard-header.tsx",
-                                lineNumber: 151,
+                                lineNumber: 149,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/dashboard-header.tsx",
-                        lineNumber: 125,
+                        lineNumber: 123,
                         columnNumber: 11
                     }, this) : null
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/dashboard-header.tsx",
-                lineNumber: 107,
+                lineNumber: 105,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -926,19 +920,19 @@ function DashboardHeader() {
                             className: "h-4 w-4"
                         }, void 0, false, {
                             fileName: "[project]/components/dashboard-header.tsx",
-                            lineNumber: 212,
+                            lineNumber: 210,
                             columnNumber: 11
                         }, this),
                         "LOGOUT"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/dashboard-header.tsx",
-                    lineNumber: 206,
+                    lineNumber: 204,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/dashboard-header.tsx",
-                lineNumber: 205,
+                lineNumber: 203,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$sheet$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Sheet"], {
@@ -955,17 +949,17 @@ function DashboardHeader() {
                                 className: "h-6 w-6"
                             }, void 0, false, {
                                 fileName: "[project]/components/dashboard-header.tsx",
-                                lineNumber: 224,
+                                lineNumber: 222,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/dashboard-header.tsx",
-                            lineNumber: 219,
+                            lineNumber: 217,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/dashboard-header.tsx",
-                        lineNumber: 218,
+                        lineNumber: 216,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$sheet$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SheetContent"], {
@@ -979,12 +973,12 @@ function DashboardHeader() {
                                     children: "Menu"
                                 }, void 0, false, {
                                     fileName: "[project]/components/dashboard-header.tsx",
-                                    lineNumber: 232,
+                                    lineNumber: 230,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/dashboard-header.tsx",
-                                lineNumber: 231,
+                                lineNumber: 229,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -1001,19 +995,19 @@ function DashboardHeader() {
                                                         className: "h-5 w-5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/dashboard-header.tsx",
-                                                        lineNumber: 246,
+                                                        lineNumber: 244,
                                                         columnNumber: 19
                                                     }, this),
                                                     item.label
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/dashboard-header.tsx",
-                                                lineNumber: 237,
+                                                lineNumber: 235,
                                                 columnNumber: 17
                                             }, this)
                                         }, item.label, false, {
                                             fileName: "[project]/components/dashboard-header.tsx",
-                                            lineNumber: 236,
+                                            lineNumber: 234,
                                             columnNumber: 15
                                         }, this)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1027,19 +1021,19 @@ function DashboardHeader() {
                                                     className: "h-5 w-5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/dashboard-header.tsx",
-                                                    lineNumber: 262,
+                                                    lineNumber: 260,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Health Dashboard"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/dashboard-header.tsx",
-                                            lineNumber: 253,
+                                            lineNumber: 251,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/dashboard-header.tsx",
-                                        lineNumber: 252,
+                                        lineNumber: 250,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1053,26 +1047,26 @@ function DashboardHeader() {
                                                     className: "h-5 w-5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/dashboard-header.tsx",
-                                                    lineNumber: 279,
+                                                    lineNumber: 277,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Smart Meter"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/dashboard-header.tsx",
-                                            lineNumber: 268,
+                                            lineNumber: 266,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/dashboard-header.tsx",
-                                        lineNumber: 267,
+                                        lineNumber: 265,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "my-4 border-t border-[#333]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/dashboard-header.tsx",
-                                        lineNumber: 284,
+                                        lineNumber: 282,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1084,38 +1078,38 @@ function DashboardHeader() {
                                                 className: "h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/dashboard-header.tsx",
-                                                lineNumber: 291,
+                                                lineNumber: 289,
                                                 columnNumber: 15
                                             }, this),
                                             "LOGOUT"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/dashboard-header.tsx",
-                                        lineNumber: 286,
+                                        lineNumber: 284,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/dashboard-header.tsx",
-                                lineNumber: 234,
+                                lineNumber: 232,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/dashboard-header.tsx",
-                        lineNumber: 227,
+                        lineNumber: 225,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/dashboard-header.tsx",
-                lineNumber: 217,
+                lineNumber: 215,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/dashboard-header.tsx",
-        lineNumber: 89,
+        lineNumber: 87,
         columnNumber: 5
     }, this);
 }
@@ -2345,8 +2339,6 @@ __turbopack_context__.s([
     ()=>dronePatrol,
     "dropPayload",
     ()=>dropPayload,
-    "manualControl",
-    ()=>manualControl,
     "recallDrone",
     ()=>recallDrone,
     "sendDrone",
@@ -2422,16 +2414,6 @@ async function dronePatrol(payload) {
         return {
             success: false,
             error: error instanceof Error ? error.message : "Failed to start patrol"
-        };
-    }
-}
-async function manualControl(payload) {
-    try {
-        return await postJson(`${API_BASE_URL}/api/drone-command/manual`, payload);
-    } catch (error) {
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : "Failed manual control"
         };
     }
 }
@@ -3287,7 +3269,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                 className: "text-[11px] text-gray-500",
-                                                                children: new Date(alert.createdAt).toLocaleString() ?? ""
+                                                                children: alert.time
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/dashboard-sidebar.tsx",
                                                                 lineNumber: 686,

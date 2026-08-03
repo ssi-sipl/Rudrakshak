@@ -61,14 +61,6 @@
       "namedRegex": "^/drones/(?<nxtPid>[^/]+?)(?:/)?$"
     },
     {
-      "page": "/drones/[id]/control",
-      "regex": "^/drones/([^/]+?)/control(?:/)?$",
-      "routeKeys": {
-        "nxtPid": "nxtPid"
-      },
-      "namedRegex": "^/drones/(?<nxtPid>[^/]+?)/control(?:/)?$"
-    },
-    {
       "page": "/drones/[id]/edit",
       "regex": "^/drones/([^/]+?)/edit(?:/)?$",
       "routeKeys": {
@@ -167,12 +159,6 @@
       "regex": "^/area/add(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/area/add(?:/)?$"
-    },
-    {
-      "page": "/battle-planner",
-      "regex": "^/battle\\-planner(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/battle\\-planner(?:/)?$"
     },
     {
       "page": "/drones",

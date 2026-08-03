@@ -1638,7 +1638,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: smartMeter.smartMeterId
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1214,
+                                            lineNumber: 1211,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1646,7 +1646,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: smartMeter.location
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1218,
+                                            lineNumber: 1215,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1656,7 +1656,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     children: "System Status:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-renderer.tsx",
-                                                    lineNumber: 1221,
+                                                    lineNumber: 1218,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1664,13 +1664,13 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     children: smartMeter.status
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-renderer.tsx",
-                                                    lineNumber: 1223,
+                                                    lineNumber: 1220,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1220,
+                                            lineNumber: 1217,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1680,7 +1680,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     children: "Network Status:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-renderer.tsx",
-                                                    lineNumber: 1235,
+                                                    lineNumber: 1232,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1688,13 +1688,13 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     children: smartMeter.NetworkStatus
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-renderer.tsx",
-                                                    lineNumber: 1237,
+                                                    lineNumber: 1234,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1234,
+                                            lineNumber: 1231,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1702,23 +1702,23 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: "Click to open Smart Meter"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1248,
+                                            lineNumber: 1245,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-renderer.tsx",
-                                    lineNumber: 1213,
+                                    lineNumber: 1210,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 1212,
+                                lineNumber: 1209,
                                 columnNumber: 15
                             }, this)
                         }, `smartmeter-${smartMeter.id}`, false, {
                             fileName: "[project]/components/map-renderer.tsx",
-                            lineNumber: 1204,
+                            lineNumber: 1201,
                             columnNumber: 13
                         }, this);
                     }),
@@ -1731,12 +1731,6 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                             pos.lat,
                             pos.lng
                         ];
-                        console.log({
-                            drone: drone.droneId,
-                            id: drone.id,
-                            statusObject: status,
-                            telemetryStatus: telemetry?.status
-                        });
                         const isOnline = status?.isLive === true;
                         const isStale = status?.isStale === true;
                         const hasAlert = status?.hasAlert === true;
@@ -1838,7 +1832,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1378,
+                                            lineNumber: 1369,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1846,7 +1840,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: drone.droneOSName
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1381,
+                                            lineNumber: 1372,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1854,7 +1848,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: drone.droneType
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1384,
+                                            lineNumber: 1375,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1862,7 +1856,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: tooltipStatusText
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1386,
+                                            lineNumber: 1377,
                                             columnNumber: 19
                                         }, this),
                                         !isOnline && status?.connectionLossTime && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1875,7 +1869,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1393,
+                                            lineNumber: 1384,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1888,7 +1882,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1402,
+                                            lineNumber: 1393,
                                             columnNumber: 19
                                         }, this),
                                         pos.alt != null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1900,23 +1894,23 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1406,
+                                            lineNumber: 1397,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-renderer.tsx",
-                                    lineNumber: 1377,
+                                    lineNumber: 1368,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 1376,
+                                lineNumber: 1367,
                                 columnNumber: 15
                             }, this)
                         }, `drone-${drone.id}`, false, {
                             fileName: "[project]/components/map-renderer.tsx",
-                            lineNumber: 1353,
+                            lineNumber: 1344,
                             columnNumber: 13
                         }, this);
                     }),
@@ -1956,7 +1950,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: "🏠 Base"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1459,
+                                            lineNumber: 1450,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1967,7 +1961,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1460,
+                                            lineNumber: 1451,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1978,7 +1972,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1463,
+                                            lineNumber: 1454,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1989,23 +1983,23 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-renderer.tsx",
-                                            lineNumber: 1466,
+                                            lineNumber: 1457,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-renderer.tsx",
-                                    lineNumber: 1458,
+                                    lineNumber: 1449,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/map-renderer.tsx",
-                                lineNumber: 1457,
+                                lineNumber: 1448,
                                 columnNumber: 15
                             }, this)
                         }, `base-${drone.id}`, false, {
                             fileName: "[project]/components/map-renderer.tsx",
-                            lineNumber: 1444,
+                            lineNumber: 1435,
                             columnNumber: 13
                         }, this);
                     }),
@@ -2036,7 +2030,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                             }
                         }, `telemetry-path-${drone.id}`, false, {
                             fileName: "[project]/components/map-renderer.tsx",
-                            lineNumber: 1496,
+                            lineNumber: 1487,
                             columnNumber: 13
                         }, this);
                     })
@@ -6417,6 +6411,13 @@ function MapView({ mode = "operations" }) {
                             setDrones(res.data);
                             const initialStatus = {};
                             const initialPositions = {};
+                            console.table(res.data.map({
+                                "MapView.useEffect.loadDrones": (d)=>({
+                                        id: d.id,
+                                        droneId: d.droneId,
+                                        name: d.droneOSName
+                                    })
+                            }["MapView.useEffect.loadDrones"]));
                             res.data.forEach({
                                 "MapView.useEffect.loadDrones": (drone)=>{
                                     initialStatus[drone.id] = {
@@ -6641,6 +6642,7 @@ function MapView({ mode = "operations" }) {
                     // console.log("Telemetry:", telemetry);
                     setDroneStatus({
                         "MapView.useEffect": (prev)=>{
+                            console.log("Telemetry:", telemetry.droneDbId, telemetry.lat, telemetry.lng);
                             const prevStatus = prev[telemetry.droneDbId];
                             // 🔑 Check if drone just landed
                             const isNowGrounded = telemetry.status === "ground";
@@ -7308,12 +7310,12 @@ function MapView({ mode = "operations" }) {
                 children: "Loading map..."
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1377,
+                lineNumber: 1393,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/map-view.tsx",
-            lineNumber: 1376,
+            lineNumber: 1392,
             columnNumber: 7
         }, this);
     }
@@ -7325,12 +7327,12 @@ function MapView({ mode = "operations" }) {
                 children: error
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1385,
+                lineNumber: 1401,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/map-view.tsx",
-            lineNumber: 1384,
+            lineNumber: 1400,
             columnNumber: 7
         }, this);
     }
@@ -7347,19 +7349,19 @@ function MapView({ mode = "operations" }) {
                         children: "/maps/manage"
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1395,
+                        lineNumber: 1411,
                         columnNumber: 11
                     }, this),
                     " and create / activate one."
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1393,
+                lineNumber: 1409,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/map-view.tsx",
-            lineNumber: 1392,
+            lineNumber: 1408,
             columnNumber: 7
         }, this);
     }
@@ -7399,7 +7401,7 @@ function MapView({ mode = "operations" }) {
                                     children: "🚫 Auto-dispatch blocked"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1438,
+                                    lineNumber: 1454,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7407,7 +7409,7 @@ function MapView({ mode = "operations" }) {
                                     children: autoDispatchBlocked.reason
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1442,
+                                    lineNumber: 1458,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7421,7 +7423,7 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1446,
+                                    lineNumber: 1462,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7432,13 +7434,13 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1451,
+                                    lineNumber: 1467,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1437,
+                            lineNumber: 1453,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -7449,18 +7451,18 @@ function MapView({ mode = "operations" }) {
                             children: "Acknowledge"
                         }, void 0, false, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1456,
+                            lineNumber: 1472,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/map-view.tsx",
-                    lineNumber: 1436,
+                    lineNumber: 1452,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1435,
+                lineNumber: 1451,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7484,7 +7486,7 @@ function MapView({ mode = "operations" }) {
                                 className: "w-full rounded-md border border-[#333] bg-black/80 px-3 py-2 text-xs text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 backdrop-blur"
                             }, void 0, false, {
                                 fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1469,
+                                lineNumber: 1485,
                                 columnNumber: 11
                             }, this),
                             mode === "sensor-health" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -7495,7 +7497,7 @@ function MapView({ mode = "operations" }) {
                                     className: "h-5 w-5 animate-spin"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1506,
+                                    lineNumber: 1522,
                                     columnNumber: 17
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                     children: [
@@ -7503,7 +7505,7 @@ function MapView({ mode = "operations" }) {
                                             className: "h-5 w-5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1509,
+                                            lineNumber: 1525,
                                             columnNumber: 19
                                         }, this),
                                         "SCAN"
@@ -7511,13 +7513,13 @@ function MapView({ mode = "operations" }) {
                                 }, void 0, true)
                             }, void 0, false, {
                                 fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1491,
+                                lineNumber: 1507,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1468,
+                        lineNumber: 1484,
                         columnNumber: 9
                     }, this),
                     sensorSearchResults.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7535,7 +7537,7 @@ function MapView({ mode = "operations" }) {
                                         children: sensor.name
                                     }, void 0, false, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1529,
+                                        lineNumber: 1545,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7547,24 +7549,24 @@ function MapView({ mode = "operations" }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1530,
+                                        lineNumber: 1546,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, sensor.id, true, {
                                 fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1520,
+                                lineNumber: 1536,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1518,
+                        lineNumber: 1534,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1467,
+                lineNumber: 1483,
                 columnNumber: 7
             }, this),
             scanning && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7576,25 +7578,25 @@ function MapView({ mode = "operations" }) {
                             className: "absolute h-40 w-full animate-[scan_2.5s_linear_infinite] bg-gradient-to-b from-green-500/0 via-green-500/20 to-green-500/0"
                         }, void 0, false, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1542,
+                            lineNumber: 1558,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1541,
+                        lineNumber: 1557,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 backdrop-blur-[2px] bg-green-500/10"
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1546,
+                        lineNumber: 1562,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1539,
+                lineNumber: 1555,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$map$2d$renderer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -7634,7 +7636,7 @@ function MapView({ mode = "operations" }) {
                 onSmartMeterClick: (smartMeter)=>router.push(`/smartmeter/${smartMeter.id}`)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1549,
+                lineNumber: 1565,
                 columnNumber: 7
             }, this),
             mode === "battle-planner" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7652,7 +7654,7 @@ function MapView({ mode = "operations" }) {
                                             className: `h-3 w-3 rounded-full ${battleStarted ? "bg-green-400 animate-pulse" : "bg-yellow-400 animate-pulse"}`
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1605,
+                                            lineNumber: 1621,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7661,18 +7663,18 @@ function MapView({ mode = "operations" }) {
                                                 children: "ICCS BATTLE PLANNER"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/map-view.tsx",
-                                                lineNumber: 1614,
+                                                lineNumber: 1630,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1613,
+                                            lineNumber: 1629,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1604,
+                                    lineNumber: 1620,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7685,7 +7687,7 @@ function MapView({ mode = "operations" }) {
                                                     children: "Link"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1623,
+                                                    lineNumber: 1639,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7695,7 +7697,7 @@ function MapView({ mode = "operations" }) {
                                                             className: "h-2 w-2 rounded-full bg-green-400 animate-pulse"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 1628,
+                                                            lineNumber: 1644,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7703,26 +7705,26 @@ function MapView({ mode = "operations" }) {
                                                             children: "ONLINE"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 1630,
+                                                            lineNumber: 1646,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1627,
+                                                    lineNumber: 1643,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1622,
+                                            lineNumber: 1638,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "h-8 w-px bg-[#4a5562]"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1634,
+                                            lineNumber: 1650,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7732,7 +7734,7 @@ function MapView({ mode = "operations" }) {
                                                     children: "Mission"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1637,
+                                                    lineNumber: 1653,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7740,25 +7742,25 @@ function MapView({ mode = "operations" }) {
                                                     children: battleStarted ? "ACTIVE" : "READY"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1641,
+                                                    lineNumber: 1657,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1636,
+                                            lineNumber: 1652,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1621,
+                                    lineNumber: 1637,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1602,
+                            lineNumber: 1618,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7771,7 +7773,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Drone"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1659,
+                                            lineNumber: 1675,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -7784,7 +7786,7 @@ function MapView({ mode = "operations" }) {
                                                     children: "Select"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1668,
+                                                    lineNumber: 1684,
                                                     columnNumber: 19
                                                 }, this),
                                                 BATTLE_DRONES.map((drone)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -7792,19 +7794,19 @@ function MapView({ mode = "operations" }) {
                                                         children: drone.name
                                                     }, drone.id, false, {
                                                         fileName: "[project]/components/map-view.tsx",
-                                                        lineNumber: 1671,
+                                                        lineNumber: 1687,
                                                         columnNumber: 21
                                                     }, this))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1663,
+                                            lineNumber: 1679,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1658,
+                                    lineNumber: 1674,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7814,7 +7816,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Target"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1681,
+                                            lineNumber: 1697,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -7827,7 +7829,7 @@ function MapView({ mode = "operations" }) {
                                                     children: "Select"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1690,
+                                                    lineNumber: 1706,
                                                     columnNumber: 19
                                                 }, this),
                                                 sensors.map((sensor)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -7835,19 +7837,19 @@ function MapView({ mode = "operations" }) {
                                                         children: sensor.sensorId
                                                     }, sensor.id, false, {
                                                         fileName: "[project]/components/map-view.tsx",
-                                                        lineNumber: 1693,
+                                                        lineNumber: 1709,
                                                         columnNumber: 21
                                                     }, this))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1685,
+                                            lineNumber: 1701,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1680,
+                                    lineNumber: 1696,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7858,7 +7860,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Range"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1703,
+                                            lineNumber: 1719,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7866,13 +7868,13 @@ function MapView({ mode = "operations" }) {
                                             children: battleDrone ? `${battleDrone.range / 1000} km` : "--"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1707,
+                                            lineNumber: 1723,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1702,
+                                    lineNumber: 1718,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7883,7 +7885,7 @@ function MapView({ mode = "operations" }) {
                                             children: "ETA"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1715,
+                                            lineNumber: 1731,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7891,13 +7893,13 @@ function MapView({ mode = "operations" }) {
                                             children: battleDrone && battleSensor ? "4 min." : "--"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1719,
+                                            lineNumber: 1735,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1714,
+                                    lineNumber: 1730,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7908,7 +7910,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Battery"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1727,
+                                            lineNumber: 1743,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7916,13 +7918,13 @@ function MapView({ mode = "operations" }) {
                                             children: "94%"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1731,
+                                            lineNumber: 1747,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1726,
+                                    lineNumber: 1742,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7933,7 +7935,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Mission"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1739,
+                                            lineNumber: 1755,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7941,13 +7943,13 @@ function MapView({ mode = "operations" }) {
                                             children: battleDrone ? battleDrone.type === "Kamikaze" ? "Strike" : battleDrone.type === "Recon" ? "Recon" : "Intercept" : "--"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1743,
+                                            lineNumber: 1759,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1738,
+                                    lineNumber: 1754,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7985,29 +7987,29 @@ function MapView({ mode = "operations" }) {
                                         children: battleStarted ? "MISSION ACTIVE" : "LAUNCH"
                                     }, void 0, false, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1756,
+                                        lineNumber: 1772,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1755,
+                                    lineNumber: 1771,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1653,
+                            lineNumber: 1669,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/map-view.tsx",
-                    lineNumber: 1598,
+                    lineNumber: 1614,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1597,
+                lineNumber: 1613,
                 columnNumber: 9
             }, this),
             mode === "operations" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8029,20 +8031,20 @@ function MapView({ mode = "operations" }) {
                                 className: `absolute inset-0 rounded-full ${isListening ? "animate-ping bg-red-100/30" : "bg-cyan-400/20 animate-pulse"}`
                             }, void 0, false, {
                                 fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1827,
+                                lineNumber: 1843,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mic$3e$__["Mic"], {
                                 className: "relative z-10 h-6 w-6 text-white"
                             }, void 0, false, {
                                 fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 1835,
+                                lineNumber: 1851,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1808,
+                        lineNumber: 1824,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8050,13 +8052,13 @@ function MapView({ mode = "operations" }) {
                         children: isUploading ? "Processing..." : isListening ? "Listening..." : "Voice"
                     }, void 0, false, {
                         fileName: "[project]/components/map-view.tsx",
-                        lineNumber: 1838,
+                        lineNumber: 1854,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1807,
+                lineNumber: 1823,
                 columnNumber: 9
             }, this) : null,
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -8077,7 +8079,7 @@ function MapView({ mode = "operations" }) {
                                     children: selectedSensor ? selectedSensor.name : "Sensor"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1858,
+                                    lineNumber: 1874,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8093,7 +8095,7 @@ function MapView({ mode = "operations" }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1865,
+                                            lineNumber: 1881,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -8101,19 +8103,19 @@ function MapView({ mode = "operations" }) {
                                             children: selectedSensor?.addedBy || "N/A"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1869,
+                                            lineNumber: 1885,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1864,
+                                    lineNumber: 1880,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1857,
+                            lineNumber: 1873,
                             columnNumber: 11
                         }, this),
                         autoDispatchBlocked && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8124,7 +8126,7 @@ function MapView({ mode = "operations" }) {
                                     children: "🚫 Auto-dispatch blocked"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1883,
+                                    lineNumber: 1899,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8132,7 +8134,7 @@ function MapView({ mode = "operations" }) {
                                     children: autoDispatchBlocked.reason
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1887,
+                                    lineNumber: 1903,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8146,7 +8148,7 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1891,
+                                    lineNumber: 1907,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8157,13 +8159,13 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1896,
+                                    lineNumber: 1912,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1882,
+                            lineNumber: 1898,
                             columnNumber: 13
                         }, this),
                         autoDispatchCountdown !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8179,7 +8181,7 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1905,
+                                    lineNumber: 1921,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8192,18 +8194,18 @@ function MapView({ mode = "operations" }) {
                                         children: "Cancel Auto Send"
                                     }, void 0, false, {
                                         fileName: "[project]/components/map-view.tsx",
-                                        lineNumber: 1907,
+                                        lineNumber: 1923,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1906,
+                                    lineNumber: 1922,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1903,
+                            lineNumber: 1919,
                             columnNumber: 13
                         }, this),
                         selectedSensor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8225,7 +8227,7 @@ function MapView({ mode = "operations" }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1923,
+                                                    lineNumber: 1939,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8235,13 +8237,13 @@ function MapView({ mode = "operations" }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1927,
+                                                    lineNumber: 1943,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1922,
+                                            lineNumber: 1938,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8252,13 +8254,13 @@ function MapView({ mode = "operations" }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1929,
+                                            lineNumber: 1945,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1921,
+                                    lineNumber: 1937,
                                     columnNumber: 15
                                 }, this),
                                 selectedAlert ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8269,7 +8271,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Active Alert"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1936,
+                                            lineNumber: 1952,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8277,7 +8279,7 @@ function MapView({ mode = "operations" }) {
                                             children: selectedAlert.message
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1939,
+                                            lineNumber: 1955,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8289,13 +8291,13 @@ function MapView({ mode = "operations" }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1942,
+                                            lineNumber: 1958,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1935,
+                                    lineNumber: 1951,
                                     columnNumber: 17
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "rounded-md border border-[#333] bg-[#18181b] p-3 text-xs text-gray-300",
@@ -8303,14 +8305,14 @@ function MapView({ mode = "operations" }) {
                                         "No active alert on this sensor.",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1950,
+                                            lineNumber: 1966,
                                             columnNumber: 19
                                         }, this),
                                         "You can still manually dispatch a drone from here."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1948,
+                                    lineNumber: 1964,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8321,7 +8323,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Select Drone to Dispatch:"
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1956,
+                                            lineNumber: 1972,
                                             columnNumber: 17
                                         }, this),
                                         loadingDrones ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8331,27 +8333,27 @@ function MapView({ mode = "operations" }) {
                                                     className: "h-3 w-3 animate-spin"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1962,
+                                                    lineNumber: 1978,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "Loading drones..."
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1963,
+                                                    lineNumber: 1979,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1961,
+                                            lineNumber: 1977,
                                             columnNumber: 19
                                         }, this) : dronesInSameArea.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "rounded-md border border-amber-700 bg-amber-950/40 p-3 text-xs text-amber-200",
                                             children: "No drones available in this sensor's area."
                                         }, void 0, false, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1966,
+                                            lineNumber: 1982,
                                             columnNumber: 19
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "space-y-2",
@@ -8370,7 +8372,7 @@ function MapView({ mode = "operations" }) {
                                                             children: "Select a drone"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 1979,
+                                                            lineNumber: 1995,
                                                             columnNumber: 23
                                                         }, this),
                                                         dronesInSameArea.map((drone)=>{
@@ -8402,14 +8404,14 @@ function MapView({ mode = "operations" }) {
                                                                 ]
                                                             }, drone.id, true, {
                                                                 fileName: "[project]/components/map-view.tsx",
-                                                                lineNumber: 2001,
+                                                                lineNumber: 2017,
                                                                 columnNumber: 27
                                                             }, this);
                                                         })
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 1971,
+                                                    lineNumber: 1987,
                                                     columnNumber: 21
                                                 }, this),
                                                 selectedDroneId && isDroneBusy(selectedDroneId) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8419,38 +8421,38 @@ function MapView({ mode = "operations" }) {
                                                             children: "⚠️"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 2016,
+                                                            lineNumber: 2032,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: droneTelemetryData[selectedDroneId]?.status === "on_air" ? "This drone is currently in the air. Please wait for it to land." : "This drone is executing another mission."
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/map-view.tsx",
-                                                            lineNumber: 2017,
+                                                            lineNumber: 2033,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/map-view.tsx",
-                                                    lineNumber: 2015,
+                                                    lineNumber: 2031,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/map-view.tsx",
-                                            lineNumber: 1970,
+                                            lineNumber: 1986,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 1955,
+                                    lineNumber: 1971,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 1920,
+                            lineNumber: 1936,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -8465,7 +8467,7 @@ function MapView({ mode = "operations" }) {
                                     children: "Neutralise Alert"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 2033,
+                                    lineNumber: 2049,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -8480,7 +8482,7 @@ function MapView({ mode = "operations" }) {
                                                 className: "mr-2 h-4 w-4 animate-spin"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/map-view.tsx",
-                                                lineNumber: 2058,
+                                                lineNumber: 2074,
                                                 columnNumber: 19
                                             }, this),
                                             "Launching..."
@@ -8488,7 +8490,7 @@ function MapView({ mode = "operations" }) {
                                     }, void 0, true) : "Video Feed"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 2044,
+                                    lineNumber: 2060,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -8499,13 +8501,13 @@ function MapView({ mode = "operations" }) {
                                     children: selectedAlert ? "Send Drone (ड्रोन भेजिए)" : "Send Drone (ड्रोन भेजिए)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/map-view.tsx",
-                                    lineNumber: 2066,
+                                    lineNumber: 2082,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 2031,
+                            lineNumber: 2047,
                             columnNumber: 11
                         }, this),
                         showVideo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8519,23 +8521,23 @@ function MapView({ mode = "operations" }) {
                                 className: "w-full h-auto"
                             }, void 0, false, {
                                 fileName: "[project]/components/map-view.tsx",
-                                lineNumber: 2085,
+                                lineNumber: 2101,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/map-view.tsx",
-                            lineNumber: 2084,
+                            lineNumber: 2100,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/map-view.tsx",
-                    lineNumber: 1856,
+                    lineNumber: 1872,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 1848,
+                lineNumber: 1864,
                 columnNumber: 7
             }, this),
             telemetryWindowOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$telemetry$2d$window$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TelemetryWindow"], {
@@ -8550,7 +8552,7 @@ function MapView({ mode = "operations" }) {
                 isControllerOpen: false
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 2099,
+                lineNumber: 2115,
                 columnNumber: 9
             }, this),
             selectedDroneIdForTelemetry && showController && // <DroneController
@@ -8565,7 +8567,7 @@ function MapView({ mode = "operations" }) {
                 onClose: ()=>setShowController(false)
             }, void 0, false, {
                 fileName: "[project]/components/map-view.tsx",
-                lineNumber: 2119,
+                lineNumber: 2135,
                 columnNumber: 9
             }, this)
         ]

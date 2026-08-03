@@ -1,12 +1,362 @@
-[00:00:00.973] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:01.096] Server  LOG      ✓ Ready in 868ms
-[00:00:08.017] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.146] Browser LOG     DashboardHeader user: null
-[00:00:08.345] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:08.345] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:08.345] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1784283045041} /_vercel/insights/view
-[00:00:08.346] Browser LOG     DashboardHeader user: {"email":"admintest@example.com","id":"d7c91400-ebcd-4099-930a-fff6cc1eb979","name":"Admin User","role":"ADMIN"}
-[00:00:08.346] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
-[00:00:08.346] Browser LOG     {"drone":"falcon","id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","statusObject":{"droneId":"falcon","hasAlert":false,"hasEverReceivedTelemetry":false,"id":"8f906fc2-8346-4cb3-bbea-d983d6f0c5e7","isLive":false,"isStale":false,"lastUpdateTime":0}}
-[00:01:22.361] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/users color: rgb(120, 120, 120) color: inherit {"dp":"/users","o":"http://localhost:3000/users","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1784283119139} /_vercel/insights/view
-[00:01:27.617] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/users/952f4368-3226-468e-8286-1506983893d3/edit color: rgb(120, 120, 120) color: inherit {"dp":"/users/[id]/edit","o":"http://localhost:3000/users/952f4368-3226-468e-8286-1506983893d3/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1784283124396} /_vercel/insights/view
+[00:00:00.528] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:00.612] Server  LOG      ✓ Ready in 421ms
+[00:00:06.654] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.622] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:07.623] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/login","route":"/login"}
+[00:00:07.623] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3","ts":1785734257149} /_vercel/insights/view
+[00:00:08.408] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.521] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:08.521] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/login","route":"/login"}
+[00:00:08.521] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3","ts":1785734258704} /_vercel/insights/view
+[00:00:55.522] Browser LOG     DashboardHeader user: {"email":"admintest@example.com","id":"d7c91400-ebcd-4099-930a-fff6cc1eb979","name":"Admin User","role":"ADMIN"}
+[00:00:55.522] Browser LOG     DashboardHeader user: {"email":"admintest@example.com","id":"d7c91400-ebcd-4099-930a-fff6cc1eb979","name":"Admin User","role":"ADMIN"}
+[00:00:55.522] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3","ts":1785734305697} /_vercel/insights/view
+[00:01:18.352] Browser LOG     {}
+[00:01:18.352] Browser LOG     Voice Response: {"message":"Please specify a valid sensor.","success":false}
+[00:01:18.352] Browser LOG     {"message":"Please specify a valid sensor.","success":false}
+[00:01:26.119] Browser LOG     {}
+[00:01:26.119] Browser LOG     Voice Response: {"flightId":{"alertId":null,"createdAt":"2026-08-03T05:18:56.289Z","dispatchedAt":"2026-08-03T05:18:56.289Z","droneDbId":"a6642e66-4644-43b2-b4e2-428e753fba19","id":"cd08515c-cd68-4d4f-974d-7b334f342844","sensorId":"042e4e9e-64a6-40b5-8e69-787dd605155d","updatedAt":"2026-08-03T05:18:56.289Z"},"message":"Drone command sent successfully","success":true}
+[00:01:26.119] Browser LOG     {"flightId":{"alertId":null,"createdAt":"2026-08-03T05:18:56.289Z","dispatchedAt":"2026-08-03T05:18:56.289Z","droneDbId":"a6642e66-4644-43b2-b4e2-428e753fba19","id":"cd08515c-cd68-4d4f-974d-7b334f342844","sensorId":"042e4e9e-64a6-40b5-8e69-787dd605155d","updatedAt":"2026-08-03T05:18:56.289Z"},"message":"Drone command sent successfully","success":true}
+[00:07:24.258] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:24.420] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+      <DashboardLayout params={Promise}>
+        <div className="flex h-scr...">
+          <DashboardHeader>
+            <header className="flex h-14 ...">
+              <LinkComponent>
+              <nav>
+              <div>
+              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_h..." ...>
+                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
+                                <button
+                                  data-slot="sheet-trigger"
+                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+                                  type="button"
+                                  aria-haspopup="dialog"
+                                  aria-expanded={false}
++                                 aria-controls="radix-_R_hitplb_"
+-                                 aria-controls="radix-_R_26itplb_"
+                                  data-state="closed"
+                                  onClick={function handleEvent}
+                                  ref={function}
+                                >
+                    ...
+          ...
+
+[00:07:24.420] Browser LOG     DashboardHeader user: null
+[00:07:24.420] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:07:24.420] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:07:24.420] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3","ts":1785734694591} /_vercel/insights/view
+[00:07:24.420] Browser LOG     DashboardHeader user: {"email":"admintest@example.com","id":"d7c91400-ebcd-4099-930a-fff6cc1eb979","name":"Admin User","role":"ADMIN"}
+[00:07:28.997] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:29.136] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+      <DashboardLayout params={Promise}>
+        <div className="flex h-scr...">
+          <DashboardHeader>
+            <header className="flex h-14 ...">
+              <LinkComponent>
+              <nav>
+              <div>
+              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_h..." ...>
+                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
+                                <button
+                                  data-slot="sheet-trigger"
+                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+                                  type="button"
+                                  aria-haspopup="dialog"
+                                  aria-expanded={false}
++                                 aria-controls="radix-_R_hitplb_"
+-                                 aria-controls="radix-_R_26itplb_"
+                                  data-state="closed"
+                                  onClick={function handleEvent}
+                                  ref={function}
+                                >
+                    ...
+          ...
+
+[00:07:29.136] Browser LOG     DashboardHeader user: null
+[00:07:29.136] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:07:29.136] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:07:29.136] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3","ts":1785734699308} /_vercel/insights/view
+[00:07:29.136] Browser LOG     DashboardHeader user: {"email":"admintest@example.com","id":"d7c91400-ebcd-4099-930a-fff6cc1eb979","name":"Admin User","role":"ADMIN"}
+[00:07:43.074] Browser LOG     {}
+[00:07:43.074] Browser LOG     Voice Response: {"data":{"action":"unknown","drone":"alpha","drone_score":100,"mode":"operations","sensor":null,"sensor_score":0,"text":"Signed, alphard will be purchased."},"success":true}
+[00:07:43.074] Browser LOG     {"data":{"action":"unknown","drone":"alpha","drone_score":100,"mode":"operations","sensor":null,"sensor_score":0,"text":"Signed, alphard will be purchased."},"success":true}
+[00:07:57.123] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:57.252] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+      <DashboardLayout params={Promise}>
+        <div className="flex h-scr...">
+          <DashboardHeader>
+            <header className="flex h-14 ...">
+              <LinkComponent>
+              <nav>
+              <div>
+              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_h..." ...>
+                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
+                                <button
+                                  data-slot="sheet-trigger"
+                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+                                  type="button"
+                                  aria-haspopup="dialog"
+                                  aria-expanded={false}
++                                 aria-controls="radix-_R_hitplb_"
+-                                 aria-controls="radix-_R_26itplb_"
+                                  data-state="closed"
+                                  onClick={function handleEvent}
+                                  ref={function}
+                                >
+                    ...
+          ...
+
+[00:07:57.252] Browser LOG     DashboardHeader user: null
+[00:07:57.252] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:07:57.252] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:07:57.252] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3","ts":1785734727430} /_vercel/insights/view
+[00:07:57.252] Browser LOG     DashboardHeader user: {"email":"admintest@example.com","id":"d7c91400-ebcd-4099-930a-fff6cc1eb979","name":"Admin User","role":"ADMIN"}
+[00:07:58.285] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:58.420] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+      <DashboardLayout params={Promise}>
+        <div className="flex h-scr...">
+          <DashboardHeader>
+            <header className="flex h-14 ...">
+              <LinkComponent>
+              <nav>
+              <div>
+              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_h..." ...>
+                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
+                                <button
+                                  data-slot="sheet-trigger"
+                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+                                  type="button"
+                                  aria-haspopup="dialog"
+                                  aria-expanded={false}
++                                 aria-controls="radix-_R_hitplb_"
+-                                 aria-controls="radix-_R_26itplb_"
+                                  data-state="closed"
+                                  onClick={function handleEvent}
+                                  ref={function}
+                                >
+                    ...
+          ...
+
+[00:07:58.420] Browser LOG     DashboardHeader user: null
+[00:07:58.420] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:07:58.420] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:07:58.420] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3","ts":1785734728599} /_vercel/insights/view
+[00:07:58.420] Browser LOG     DashboardHeader user: {"email":"admintest@example.com","id":"d7c91400-ebcd-4099-930a-fff6cc1eb979","name":"Admin User","role":"ADMIN"}
+[00:07:59.076] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:59.205] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+      <DashboardLayout params={Promise}>
+        <div className="flex h-scr...">
+          <DashboardHeader>
+            <header className="flex h-14 ...">
+              <LinkComponent>
+              <nav>
+              <div>
+              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_h..." ...>
+                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
+                                <button
+                                  data-slot="sheet-trigger"
+                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+                                  type="button"
+                                  aria-haspopup="dialog"
+                                  aria-expanded={false}
++                                 aria-controls="radix-_R_hitplb_"
+-                                 aria-controls="radix-_R_26itplb_"
+                                  data-state="closed"
+                                  onClick={function handleEvent}
+                                  ref={function}
+                                >
+                    ...
+          ...
+
+[00:07:59.205] Browser LOG     DashboardHeader user: null
+[00:07:59.205] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:07:59.205] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:07:59.205] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3","ts":1785734729381} /_vercel/insights/view
+[00:07:59.205] Browser LOG     DashboardHeader user: {"email":"admintest@example.com","id":"d7c91400-ebcd-4099-930a-fff6cc1eb979","name":"Admin User","role":"ADMIN"}
+[00:08:15.416] Browser LOG     {}
+[00:08:15.416] Browser LOG     Voice Response: {"message":"Drone not detected","success":false}
+[00:08:15.416] Browser LOG     {"message":"Drone not detected","success":false}
+[00:08:23.492] Browser LOG     {}
+[00:08:23.492] Browser LOG     Voice Response: {"data":{"action":"unknown","drone":"alpha","drone_score":100,"mode":"operations","sensor":null,"sensor_score":0,"text":"Signed, Alpha, 2D Force, 2D, and 1C."},"success":true}
+[00:08:23.492] Browser LOG     {"data":{"action":"unknown","drone":"alpha","drone_score":100,"mode":"operations","sensor":null,"sensor_score":0,"text":"Signed, Alpha, 2D Force, 2D, and 1C."},"success":true}
+[00:08:53.202] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:53.335] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+      <DashboardLayout params={Promise}>
+        <div className="flex h-scr...">
+          <DashboardHeader>
+            <header className="flex h-14 ...">
+              <LinkComponent>
+              <nav>
+              <div>
+              <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                          <Slot type="button" aria-haspopup="dialog" aria-expanded={false} aria-controls="radix-_R_h..." ...>
+                            <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                              <Button variant="ghost" size="icon" className="xl:hidden ..." type="button" ...>
+                                <button
+                                  data-slot="sheet-trigger"
+                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+                                  type="button"
+                                  aria-haspopup="dialog"
+                                  aria-expanded={false}
++                                 aria-controls="radix-_R_hitplb_"
+-                                 aria-controls="radix-_R_26itplb_"
+                                  data-state="closed"
+                                  onClick={function handleEvent}
+                                  ref={function}
+                                >
+                    ...
+          ...
+
+[00:08:53.336] Browser LOG     DashboardHeader user: null
+[00:08:53.336] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:08:53.336] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:08:53.336] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3","ts":1785734783512} /_vercel/insights/view
+[00:08:53.336] Browser LOG     DashboardHeader user: {"email":"admintest@example.com","id":"d7c91400-ebcd-4099-930a-fff6cc1eb979","name":"Admin User","role":"ADMIN"}
+[00:12:06.721] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:06.875] Browser LOG     DashboardHeader user: null
+[00:12:06.875] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:06.875] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:12:06.875] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3","ts":1785734977045} /_vercel/insights/view
+[00:12:06.875] Browser LOG     DashboardHeader user: {"email":"admintest@example.com","id":"d7c91400-ebcd-4099-930a-fff6cc1eb979","name":"Admin User","role":"ADMIN"}
+[00:12:17.143] Browser LOG     {}
+[00:12:17.143] Browser LOG     Voice Response: {"flightId":{"alertId":null,"createdAt":"2026-08-03T05:29:47.341Z","dispatchedAt":"2026-08-03T05:29:47.341Z","droneDbId":"a6642e66-4644-43b2-b4e2-428e753fba19","id":"96116aa4-d19a-43f7-a34b-b55a4885be10","sensorId":"c53292f4-e436-4c44-9fd0-3eaa2550899f","updatedAt":"2026-08-03T05:29:47.341Z"},"message":"Drone command sent successfully","success":true}
+[00:12:17.143] Browser LOG     {"flightId":{"alertId":null,"createdAt":"2026-08-03T05:29:47.341Z","dispatchedAt":"2026-08-03T05:29:47.341Z","droneDbId":"a6642e66-4644-43b2-b4e2-428e753fba19","id":"96116aa4-d19a-43f7-a34b-b55a4885be10","sensorId":"c53292f4-e436-4c44-9fd0-3eaa2550899f","updatedAt":"2026-08-03T05:29:47.341Z"},"message":"Drone command sent successfully","success":true}
+[00:12:31.798] Browser LOG     {}
+[00:12:31.798] Browser LOG     Voice Response: {"message":"Drone not detected","success":false}
+[00:12:31.798] Browser LOG     {"message":"Drone not detected","success":false}
+[00:12:44.132] Browser LOG     {}
+[00:12:44.132] Browser LOG     Voice Response: {"message":"Drone command sent successfully","success":true}
+[00:12:44.132] Browser LOG     {"message":"Drone command sent successfully","success":true}
+[00:14:40.385] Browser LOG     {"droneId":"falcon02","landedAt":"2026-08-03T05:32:10.570Z"}
+[00:17:51.541] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:51.739] Browser LOG     DashboardHeader user: null
+[00:17:51.739] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:17:51.739] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:17:51.739] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3","ts":1785735321864} /_vercel/insights/view
+[00:17:51.739] Browser LOG     DashboardHeader user: {"email":"admintest@example.com","id":"d7c91400-ebcd-4099-930a-fff6cc1eb979","name":"Admin User","role":"ADMIN"}
+[00:18:15.131] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:15.276] Browser LOG     DashboardHeader user: null
+[00:18:15.276] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:18:15.277] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:18:15.277] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3","ts":1785735345455} /_vercel/insights/view
+[00:18:15.277] Browser LOG     DashboardHeader user: {"email":"admintest@example.com","id":"d7c91400-ebcd-4099-930a-fff6cc1eb979","name":"Admin User","role":"ADMIN"}

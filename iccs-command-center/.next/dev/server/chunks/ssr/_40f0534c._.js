@@ -1166,7 +1166,7 @@ __turbopack_context__.s([
 async function fetchWithAuth(input, data) {
     const response = await fetch(input, data);
     if (response.status === 403) {
-        window.location.replace("/forbidden");
+        window.location.href = "/forbidden";
         throw new Error("Forbidden");
     }
     return response;

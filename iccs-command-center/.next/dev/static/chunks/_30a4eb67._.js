@@ -379,7 +379,7 @@ __turbopack_context__.s([
 async function fetchWithAuth(input, data) {
     const response = await fetch(input, data);
     if (response.status === 403) {
-        window.location.replace("/forbidden");
+        window.location.href = "/forbidden";
         throw new Error("Forbidden");
     }
     return response;
@@ -567,9 +567,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2f$smartmeter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/api/smartmeter.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hooks/use-toast.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$UserContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/context/UserContext.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -591,7 +593,19 @@ function SmartMeterListPage() {
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const [deleting, setDeleting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const { toast } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"])();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const { user } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$UserContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUser"])();
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "SmartMeterListPage.useEffect": ()=>{
+            if (!loading && user?.role !== "ADMIN") {
+                router.replace("/forbidden");
+            }
+        }
+    }["SmartMeterListPage.useEffect"], [
+        loading,
+        user,
+        router
+    ]);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "SmartMeterListPage.useEffect": ()=>{
             setPage(1);
@@ -678,7 +692,7 @@ function SmartMeterListPage() {
                                     children: "Smart Meter Management"
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                    lineNumber: 138,
+                                    lineNumber: 149,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -686,13 +700,13 @@ function SmartMeterListPage() {
                                     children: "Manage and monitor all surveillance areas"
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                    lineNumber: 141,
+                                    lineNumber: 152,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                            lineNumber: 137,
+                            lineNumber: 148,
                             columnNumber: 11
                         }, this),
                         user?.role == "ADMIN" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -704,25 +718,25 @@ function SmartMeterListPage() {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                        lineNumber: 148,
+                                        lineNumber: 159,
                                         columnNumber: 15
                                     }, this),
                                     "Add New Smart Meter"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                lineNumber: 147,
+                                lineNumber: 158,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                            lineNumber: 146,
+                            lineNumber: 157,
                             columnNumber: 33
                         }, this) : null
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                    lineNumber: 136,
+                    lineNumber: 147,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -735,7 +749,7 @@ function SmartMeterListPage() {
                                     className: "absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-500"
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                    lineNumber: 158,
+                                    lineNumber: 169,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -752,13 +766,13 @@ function SmartMeterListPage() {
                                     className: "border-[#333] bg-[#222] pl-10 text-white placeholder:text-gray-500 focus:border-[#8B0000] focus:ring-[#8B0000]"
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                    lineNumber: 159,
+                                    lineNumber: 170,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                            lineNumber: 157,
+                            lineNumber: 168,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -772,13 +786,13 @@ function SmartMeterListPage() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                            lineNumber: 173,
+                            lineNumber: 184,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                    lineNumber: 156,
+                    lineNumber: 167,
                     columnNumber: 9
                 }, this),
                 loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -788,7 +802,7 @@ function SmartMeterListPage() {
                             className: "mb-4 h-12 w-12 animate-spin text-[#8B0000]"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                            lineNumber: 181,
+                            lineNumber: 192,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -796,13 +810,13 @@ function SmartMeterListPage() {
                             children: "Loading SmartMeters..."
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                            lineNumber: 182,
+                            lineNumber: 193,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                    lineNumber: 180,
+                    lineNumber: 191,
                     columnNumber: 11
                 }, this),
                 !loading && smartMeters.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -818,7 +832,7 @@ function SmartMeterListPage() {
                                             children: "Smart Meter ID"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 192,
+                                            lineNumber: 203,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
@@ -826,7 +840,7 @@ function SmartMeterListPage() {
                                             children: "IP Address"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 193,
+                                            lineNumber: 204,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
@@ -834,7 +848,7 @@ function SmartMeterListPage() {
                                             children: "Latitude"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 194,
+                                            lineNumber: 205,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
@@ -842,7 +856,7 @@ function SmartMeterListPage() {
                                             children: "Longitude"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 195,
+                                            lineNumber: 206,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
@@ -850,7 +864,7 @@ function SmartMeterListPage() {
                                             children: "Added By"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 196,
+                                            lineNumber: 207,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
@@ -858,7 +872,7 @@ function SmartMeterListPage() {
                                             children: "Status"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 197,
+                                            lineNumber: 208,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
@@ -866,18 +880,18 @@ function SmartMeterListPage() {
                                             children: "Actions"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 198,
+                                            lineNumber: 209,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                    lineNumber: 191,
+                                    lineNumber: 202,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                lineNumber: 190,
+                                lineNumber: 201,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableBody"], {
@@ -889,7 +903,7 @@ function SmartMeterListPage() {
                                                 children: meter.smartMeterId
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                lineNumber: 204,
+                                                lineNumber: 215,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
@@ -897,7 +911,7 @@ function SmartMeterListPage() {
                                                 children: meter.ipAddress || "N/A"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                lineNumber: 207,
+                                                lineNumber: 218,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
@@ -905,7 +919,7 @@ function SmartMeterListPage() {
                                                 children: meter.latitude?.toFixed(4) ?? "N/A"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                lineNumber: 210,
+                                                lineNumber: 221,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
@@ -913,7 +927,7 @@ function SmartMeterListPage() {
                                                 children: meter.longitude?.toFixed(4) ?? "N/A"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                lineNumber: 213,
+                                                lineNumber: 224,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
@@ -922,12 +936,12 @@ function SmartMeterListPage() {
                                                     children: meter.addedBy || "N/A"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                    lineNumber: 217,
+                                                    lineNumber: 228,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                lineNumber: 216,
+                                                lineNumber: 227,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
@@ -936,12 +950,12 @@ function SmartMeterListPage() {
                                                     children: meter.status
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                    lineNumber: 222,
+                                                    lineNumber: 233,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                lineNumber: 221,
+                                                lineNumber: 232,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
@@ -959,17 +973,17 @@ function SmartMeterListPage() {
                                                                     className: "h-4 w-4"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                    lineNumber: 240,
+                                                                    lineNumber: 251,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                lineNumber: 235,
+                                                                lineNumber: 246,
                                                                 columnNumber: 27
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                            lineNumber: 234,
+                                                            lineNumber: 245,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -982,17 +996,17 @@ function SmartMeterListPage() {
                                                                     className: "h-4 w-4"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                    lineNumber: 249,
+                                                                    lineNumber: 260,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                lineNumber: 244,
+                                                                lineNumber: 255,
                                                                 columnNumber: 27
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                            lineNumber: 243,
+                                                            lineNumber: 254,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AlertDialog"], {
@@ -1008,23 +1022,23 @@ function SmartMeterListPage() {
                                                                             className: "h-4 w-4 animate-spin"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                            lineNumber: 261,
+                                                                            lineNumber: 272,
                                                                             columnNumber: 33
                                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
                                                                             className: "h-4 w-4"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                            lineNumber: 263,
+                                                                            lineNumber: 274,
                                                                             columnNumber: 33
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                        lineNumber: 254,
+                                                                        lineNumber: 265,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                    lineNumber: 253,
+                                                                    lineNumber: 264,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AlertDialogContent"], {
@@ -1037,7 +1051,7 @@ function SmartMeterListPage() {
                                                                                     children: "Delete SmartMeter"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                                    lineNumber: 269,
+                                                                                    lineNumber: 280,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AlertDialogDescription"], {
@@ -1049,13 +1063,13 @@ function SmartMeterListPage() {
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                                    lineNumber: 272,
+                                                                                    lineNumber: 283,
                                                                                     columnNumber: 31
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                            lineNumber: 268,
+                                                                            lineNumber: 279,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AlertDialogFooter"], {
@@ -1065,7 +1079,7 @@ function SmartMeterListPage() {
                                                                                     children: "Cancel"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                                    lineNumber: 279,
+                                                                                    lineNumber: 290,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AlertDialogAction"], {
@@ -1074,58 +1088,58 @@ function SmartMeterListPage() {
                                                                                     children: "Delete"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                                    lineNumber: 282,
+                                                                                    lineNumber: 293,
                                                                                     columnNumber: 31
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                            lineNumber: 278,
+                                                                            lineNumber: 289,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                    lineNumber: 267,
+                                                                    lineNumber: 278,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                            lineNumber: 252,
+                                                            lineNumber: 263,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                    lineNumber: 233,
+                                                    lineNumber: 244,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                lineNumber: 232,
+                                                lineNumber: 243,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, meter.id, true, {
                                         fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                        lineNumber: 203,
+                                        lineNumber: 214,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                lineNumber: 201,
+                                lineNumber: 212,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                        lineNumber: 189,
+                        lineNumber: 200,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                    lineNumber: 188,
+                    lineNumber: 199,
                     columnNumber: 11
                 }, this),
                 !loading && smartMeters.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1141,7 +1155,7 @@ function SmartMeterListPage() {
                                             children: meter.smartMeterId
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 310,
+                                            lineNumber: 321,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -1149,13 +1163,13 @@ function SmartMeterListPage() {
                                             children: meter.status
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 311,
+                                            lineNumber: 322,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                    lineNumber: 309,
+                                    lineNumber: 320,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1168,7 +1182,7 @@ function SmartMeterListPage() {
                                                     className: "h-3.5 w-3.5 shrink-0 text-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                    lineNumber: 325,
+                                                    lineNumber: 336,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1176,13 +1190,13 @@ function SmartMeterListPage() {
                                                     children: meter.ipAddress || "N/A"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                    lineNumber: 326,
+                                                    lineNumber: 337,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 324,
+                                            lineNumber: 335,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1192,7 +1206,7 @@ function SmartMeterListPage() {
                                                     className: "h-3.5 w-3.5 shrink-0 text-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                    lineNumber: 331,
+                                                    lineNumber: 342,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1205,13 +1219,13 @@ function SmartMeterListPage() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                    lineNumber: 332,
+                                                    lineNumber: 343,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 330,
+                                            lineNumber: 341,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1221,7 +1235,7 @@ function SmartMeterListPage() {
                                                     className: "h-3.5 w-3.5 shrink-0 text-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                    lineNumber: 338,
+                                                    lineNumber: 349,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1229,19 +1243,19 @@ function SmartMeterListPage() {
                                                     children: meter.addedBy || "N/A"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                    lineNumber: 339,
+                                                    lineNumber: 350,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 337,
+                                            lineNumber: 348,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                    lineNumber: 323,
+                                    lineNumber: 334,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1259,19 +1273,19 @@ function SmartMeterListPage() {
                                                         className: "h-4 w-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                        lineNumber: 351,
+                                                        lineNumber: 362,
                                                         columnNumber: 23
                                                     }, this),
                                                     "View"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                lineNumber: 346,
+                                                lineNumber: 357,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 345,
+                                            lineNumber: 356,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1286,19 +1300,19 @@ function SmartMeterListPage() {
                                                         className: "h-4 w-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                        lineNumber: 361,
+                                                        lineNumber: 372,
                                                         columnNumber: 23
                                                     }, this),
                                                     "Edit"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                lineNumber: 356,
+                                                lineNumber: 367,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 355,
+                                            lineNumber: 366,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AlertDialog"], {
@@ -1314,23 +1328,23 @@ function SmartMeterListPage() {
                                                             className: "h-4 w-4 animate-spin"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                            lineNumber: 374,
+                                                            lineNumber: 385,
                                                             columnNumber: 27
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
                                                             className: "h-4 w-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                            lineNumber: 376,
+                                                            lineNumber: 387,
                                                             columnNumber: 27
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                        lineNumber: 367,
+                                                        lineNumber: 378,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                    lineNumber: 366,
+                                                    lineNumber: 377,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AlertDialogContent"], {
@@ -1343,7 +1357,7 @@ function SmartMeterListPage() {
                                                                     children: "Delete SmartMeter"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                    lineNumber: 382,
+                                                                    lineNumber: 393,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AlertDialogDescription"], {
@@ -1355,13 +1369,13 @@ function SmartMeterListPage() {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                    lineNumber: 385,
+                                                                    lineNumber: 396,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                            lineNumber: 381,
+                                                            lineNumber: 392,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AlertDialogFooter"], {
@@ -1371,7 +1385,7 @@ function SmartMeterListPage() {
                                                                     children: "Cancel"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                    lineNumber: 391,
+                                                                    lineNumber: 402,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AlertDialogAction"], {
@@ -1380,42 +1394,42 @@ function SmartMeterListPage() {
                                                                     children: "Delete"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                                    lineNumber: 394,
+                                                                    lineNumber: 405,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                            lineNumber: 390,
+                                                            lineNumber: 401,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                                    lineNumber: 380,
+                                                    lineNumber: 391,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                            lineNumber: 365,
+                                            lineNumber: 376,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                    lineNumber: 344,
+                                    lineNumber: 355,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, meter.id, true, {
                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                            lineNumber: 304,
+                            lineNumber: 315,
                             columnNumber: 15
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                    lineNumber: 302,
+                    lineNumber: 313,
                     columnNumber: 11
                 }, this),
                 !loading && smartMeters.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1425,7 +1439,7 @@ function SmartMeterListPage() {
                             className: "mb-4 h-12 w-12 text-gray-600"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                            lineNumber: 412,
+                            lineNumber: 423,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1433,7 +1447,7 @@ function SmartMeterListPage() {
                             children: "No SmartMeter found"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                            lineNumber: 413,
+                            lineNumber: 424,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1443,18 +1457,18 @@ function SmartMeterListPage() {
                                 children: "Add New SmartMeter"
                             }, void 0, false, {
                                 fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                                lineNumber: 415,
+                                lineNumber: 426,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                            lineNumber: 414,
+                            lineNumber: 425,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                    lineNumber: 411,
+                    lineNumber: 422,
                     columnNumber: 11
                 }, this),
                 !loading && pagination && pagination.totalPages > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1468,7 +1482,7 @@ function SmartMeterListPage() {
                             children: "Previous"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                            lineNumber: 425,
+                            lineNumber: 436,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1481,7 +1495,7 @@ function SmartMeterListPage() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                            lineNumber: 434,
+                            lineNumber: 445,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1492,30 +1506,31 @@ function SmartMeterListPage() {
                             children: "Next"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                            lineNumber: 438,
+                            lineNumber: 449,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-                    lineNumber: 424,
+                    lineNumber: 435,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-            lineNumber: 134,
+            lineNumber: 145,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/(protected)/smartmeter/page.tsx",
-        lineNumber: 133,
+        lineNumber: 144,
         columnNumber: 5
     }, this);
 }
-_s(SmartMeterListPage, "E0Wwtc7ox64aeRyxMPHeTzGODCU=", false, function() {
+_s(SmartMeterListPage, "4OSHtToSmID12cqICJKHeAOypZs=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
         __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$UserContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUser"]
     ];
 });

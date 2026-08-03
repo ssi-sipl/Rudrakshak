@@ -7,8 +7,6 @@
   "/(protected)/area/[id]/page": "/area/[id]",
   "/(protected)/area/add/page": "/area/add",
   "/(protected)/area/page": "/area",
-  "/(protected)/battle-planner/page": "/battle-planner",
-  "/(protected)/drones/[id]/control/page": "/drones/[id]/control",
   "/(protected)/drones/[id]/edit/page": "/drones/[id]/edit",
   "/(protected)/drones/[id]/page": "/drones/[id]",
   "/(protected)/drones/add/page": "/drones/add",

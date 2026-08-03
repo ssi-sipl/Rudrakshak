@@ -604,7 +604,7 @@ function AreaListPage() {
                             lineNumber: 132,
                             columnNumber: 11
                         }, this),
-                        user?.role === "ADMIN" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             href: "/area/add",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                 className: "gap-2 bg-[#8B0000] text-white hover:bg-[#6B0000]",
@@ -627,7 +627,7 @@ function AreaListPage() {
                             fileName: "[project]/app/(protected)/area/page.tsx",
                             lineNumber: 142,
                             columnNumber: 13
-                        }, this) : null
+                        }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/area/page.tsx",
@@ -881,7 +881,7 @@ function AreaListPage() {
                                                             lineNumber: 242,
                                                             columnNumber: 25
                                                         }, this),
-                                                        user?.role === "ADMIN" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                             href: `/area/${area.id}/edit`,
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                                                 variant: "ghost",
@@ -903,8 +903,8 @@ function AreaListPage() {
                                                             fileName: "[project]/app/(protected)/area/page.tsx",
                                                             lineNumber: 252,
                                                             columnNumber: 27
-                                                        }, this) : null,
-                                                        user?.role == "ADMIN" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialog"], {
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialog"], {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogTrigger"], {
                                                                     asChild: true,
@@ -917,23 +917,23 @@ function AreaListPage() {
                                                                             className: "h-4 w-4 animate-spin"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                            lineNumber: 272,
+                                                                            lineNumber: 271,
                                                                             columnNumber: 35
                                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
                                                                             className: "h-4 w-4"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                            lineNumber: 274,
+                                                                            lineNumber: 273,
                                                                             columnNumber: 35
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                        lineNumber: 265,
+                                                                        lineNumber: 264,
                                                                         columnNumber: 31
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                    lineNumber: 264,
+                                                                    lineNumber: 263,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogContent"], {
@@ -946,7 +946,7 @@ function AreaListPage() {
                                                                                     children: "Delete Area"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                                    lineNumber: 280,
+                                                                                    lineNumber: 279,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogDescription"], {
@@ -958,13 +958,13 @@ function AreaListPage() {
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                                    lineNumber: 283,
+                                                                                    lineNumber: 282,
                                                                                     columnNumber: 33
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                            lineNumber: 279,
+                                                                            lineNumber: 278,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogFooter"], {
@@ -974,7 +974,7 @@ function AreaListPage() {
                                                                                     children: "Cancel"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                                    lineNumber: 290,
+                                                                                    lineNumber: 289,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogAction"], {
@@ -983,27 +983,27 @@ function AreaListPage() {
                                                                                     children: "Delete"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                                    lineNumber: 293,
+                                                                                    lineNumber: 292,
                                                                                     columnNumber: 33
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                            lineNumber: 289,
+                                                                            lineNumber: 288,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                    lineNumber: 278,
+                                                                    lineNumber: 277,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                                            lineNumber: 263,
+                                                            lineNumber: 262,
                                                             columnNumber: 27
-                                                        }, this) : null
+                                                        }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/area/page.tsx",
@@ -1052,7 +1052,7 @@ function AreaListPage() {
                                                     children: area.areaId
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                    lineNumber: 324,
+                                                    lineNumber: 323,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1060,13 +1060,13 @@ function AreaListPage() {
                                                     children: area.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                    lineNumber: 325,
+                                                    lineNumber: 324,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                            lineNumber: 323,
+                                            lineNumber: 322,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
@@ -1074,13 +1074,13 @@ function AreaListPage() {
                                             children: area.status
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                            lineNumber: 327,
+                                            lineNumber: 326,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                    lineNumber: 322,
+                                    lineNumber: 321,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1090,7 +1090,7 @@ function AreaListPage() {
                                             className: "h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                            lineNumber: 338,
+                                            lineNumber: 337,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1102,13 +1102,13 @@ function AreaListPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                            lineNumber: 339,
+                                            lineNumber: 338,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                    lineNumber: 337,
+                                    lineNumber: 336,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1126,19 +1126,19 @@ function AreaListPage() {
                                                         className: "h-4 w-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/area/page.tsx",
-                                                        lineNumber: 350,
+                                                        lineNumber: 349,
                                                         columnNumber: 23
                                                     }, this),
                                                     "View"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/area/page.tsx",
-                                                lineNumber: 345,
+                                                lineNumber: 344,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                            lineNumber: 344,
+                                            lineNumber: 343,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1153,19 +1153,19 @@ function AreaListPage() {
                                                         className: "h-4 w-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/area/page.tsx",
-                                                        lineNumber: 360,
+                                                        lineNumber: 359,
                                                         columnNumber: 23
                                                     }, this),
                                                     "Edit"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/area/page.tsx",
-                                                lineNumber: 355,
+                                                lineNumber: 354,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                            lineNumber: 354,
+                                            lineNumber: 353,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialog"], {
@@ -1181,23 +1181,23 @@ function AreaListPage() {
                                                             className: "h-4 w-4 animate-spin"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                                            lineNumber: 373,
+                                                            lineNumber: 372,
                                                             columnNumber: 27
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
                                                             className: "h-4 w-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                                            lineNumber: 375,
+                                                            lineNumber: 374,
                                                             columnNumber: 27
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/area/page.tsx",
-                                                        lineNumber: 366,
+                                                        lineNumber: 365,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                    lineNumber: 365,
+                                                    lineNumber: 364,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogContent"], {
@@ -1210,7 +1210,7 @@ function AreaListPage() {
                                                                     children: "Delete Area"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                    lineNumber: 381,
+                                                                    lineNumber: 380,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogDescription"], {
@@ -1222,13 +1222,13 @@ function AreaListPage() {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                    lineNumber: 384,
+                                                                    lineNumber: 383,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                                            lineNumber: 380,
+                                                            lineNumber: 379,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogFooter"], {
@@ -1238,7 +1238,7 @@ function AreaListPage() {
                                                                     children: "Cancel"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                    lineNumber: 390,
+                                                                    lineNumber: 389,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogAction"], {
@@ -1247,42 +1247,42 @@ function AreaListPage() {
                                                                     children: "Delete"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                                    lineNumber: 393,
+                                                                    lineNumber: 392,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                                            lineNumber: 389,
+                                                            lineNumber: 388,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                                    lineNumber: 379,
+                                                    lineNumber: 378,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/area/page.tsx",
-                                            lineNumber: 364,
+                                            lineNumber: 363,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/area/page.tsx",
-                                    lineNumber: 343,
+                                    lineNumber: 342,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, area.id, true, {
                             fileName: "[project]/app/(protected)/area/page.tsx",
-                            lineNumber: 318,
+                            lineNumber: 317,
                             columnNumber: 15
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/(protected)/area/page.tsx",
-                    lineNumber: 316,
+                    lineNumber: 315,
                     columnNumber: 11
                 }, this),
                 !loading && areas.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1292,7 +1292,7 @@ function AreaListPage() {
                             className: "mb-4 h-12 w-12 text-gray-600"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/area/page.tsx",
-                            lineNumber: 410,
+                            lineNumber: 409,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1300,7 +1300,7 @@ function AreaListPage() {
                             children: "No areas found"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/area/page.tsx",
-                            lineNumber: 411,
+                            lineNumber: 410,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1308,13 +1308,13 @@ function AreaListPage() {
                             children: "Try adjusting your search or add a new area"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/area/page.tsx",
-                            lineNumber: 412,
+                            lineNumber: 411,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/area/page.tsx",
-                    lineNumber: 409,
+                    lineNumber: 408,
                     columnNumber: 11
                 }, this),
                 !loading && pagination && pagination.totalPages > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1328,7 +1328,7 @@ function AreaListPage() {
                             children: "Previous"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/area/page.tsx",
-                            lineNumber: 419,
+                            lineNumber: 418,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1341,7 +1341,7 @@ function AreaListPage() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/area/page.tsx",
-                            lineNumber: 428,
+                            lineNumber: 427,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1352,13 +1352,13 @@ function AreaListPage() {
                             children: "Next"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/area/page.tsx",
-                            lineNumber: 432,
+                            lineNumber: 431,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/area/page.tsx",
-                    lineNumber: 418,
+                    lineNumber: 417,
                     columnNumber: 11
                 }, this)
             ]

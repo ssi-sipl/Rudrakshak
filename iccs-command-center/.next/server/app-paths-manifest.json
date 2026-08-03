@@ -7,8 +7,6 @@
   "/(protected)/area/[id]/page": "app/(protected)/area/[id]/page.js",
   "/(protected)/area/add/page": "app/(protected)/area/add/page.js",
   "/(protected)/area/page": "app/(protected)/area/page.js",
-  "/(protected)/battle-planner/page": "app/(protected)/battle-planner/page.js",
-  "/(protected)/drones/[id]/control/page": "app/(protected)/drones/[id]/control/page.js",
   "/(protected)/drones/[id]/edit/page": "app/(protected)/drones/[id]/edit/page.js",
   "/(protected)/drones/[id]/page": "app/(protected)/drones/[id]/page.js",
   "/(protected)/drones/add/page": "app/(protected)/drones/add/page.js",
