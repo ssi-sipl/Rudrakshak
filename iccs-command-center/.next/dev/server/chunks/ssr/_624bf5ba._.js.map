@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///Users/parikshitgole/Rayonix/iccs-command-center/app/%28protected%29/page.tsx"],"sourcesContent":["\"use client\";\nimport { MapView } from \"@/components/map-view\";\n\nexport default function DashboardPage() {\n  // sensor-health operations\n  return <MapView mode=\"operations\" />;\n}\n"],"names":[],"mappings":";;;;;AACA;AADA;;;AAGe,SAAS;IACtB,2BAA2B;IAC3B,qBAAO,8OAAC,qIAAO;QAAC,MAAK;;;;;;AACvB"}}]
+}

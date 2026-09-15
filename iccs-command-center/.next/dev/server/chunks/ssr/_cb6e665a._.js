@@ -171,7 +171,7 @@ __turbopack_context__.s([
     "setMapActive",
     ()=>setMapActive
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
 async function getAllMaps() {
     try {
         const res = await fetch(`${API_BASE_URL}/api/maps`, {
@@ -311,7 +311,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.js [app-ssr] (ecmascript) <export default as CheckCircle2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-left.js [app-ssr] (ecmascript) <export default as ArrowLeft>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layers$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Layers$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/layers.js [app-ssr] (ecmascript) <export default as Layers>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$UserContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/context/UserContext.tsx [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -357,6 +359,16 @@ function ManageMapsPage() {
     const isFetchingRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(false);
     const { toast } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useToast"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    const { user } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$UserContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useUser"])();
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (!loading && user?.role !== "ADMIN") {
+            router.replace("/forbidden");
+        }
+    }, [
+        loading,
+        user,
+        router
+    ]);
     // =============================
     // Fetch maps
     // =============================
@@ -495,7 +507,9 @@ function ManageMapsPage() {
                 minZoom: minZoomNum,
                 maxZoom: maxZoomNum
             };
+            console.log("payload", payload);
             const res = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2f$maps$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createMap"])(payload);
+            console.log("response", res);
             if (!res.success || !res.data) {
                 throw new Error(res.error || "Failed to create map");
             }
@@ -616,12 +630,12 @@ function ManageMapsPage() {
                                     className: "h-4 w-4"
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                    lineNumber: 352,
+                                    lineNumber: 365,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                lineNumber: 346,
+                                lineNumber: 359,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -631,7 +645,7 @@ function ManageMapsPage() {
                                         children: "Offline Maps"
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                        lineNumber: 355,
+                                        lineNumber: 368,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -639,24 +653,24 @@ function ManageMapsPage() {
                                         children: "Manage offline map images & coordinate bounds used by the dashboard."
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                        lineNumber: 358,
+                                        lineNumber: 371,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                lineNumber: 354,
+                                lineNumber: 367,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                        lineNumber: 345,
+                        lineNumber: 358,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                    lineNumber: 344,
+                    lineNumber: 357,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -677,14 +691,14 @@ function ManageMapsPage() {
                                                         className: "h-5 w-5 text-[#4A9FD4]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                        lineNumber: 373,
+                                                        lineNumber: 386,
                                                         columnNumber: 19
                                                     }, this),
                                                     "Existing Maps"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                lineNumber: 372,
+                                                lineNumber: 385,
                                                 columnNumber: 17
                                             }, this),
                                             loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -694,26 +708,26 @@ function ManageMapsPage() {
                                                         className: "h-3 w-3 animate-spin text-[#4A9FD4]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                        lineNumber: 378,
+                                                        lineNumber: 391,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "Loading..."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                        lineNumber: 379,
+                                                        lineNumber: 392,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                lineNumber: 377,
+                                                lineNumber: 390,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                        lineNumber: 371,
+                                        lineNumber: 384,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -724,7 +738,7 @@ function ManageMapsPage() {
                                                 children: error
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                lineNumber: 385,
+                                                lineNumber: 398,
                                                 columnNumber: 19
                                             }, this),
                                             !loading && !error && maps.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -732,7 +746,7 @@ function ManageMapsPage() {
                                                 children: "No maps configured yet. Create one using the form on the right."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                lineNumber: 391,
+                                                lineNumber: 404,
                                                 columnNumber: 19
                                             }, this),
                                             !loading && !error && maps.map((map)=>{
@@ -753,7 +767,7 @@ function ManageMapsPage() {
                                                                             children: map.name
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                            lineNumber: 411,
+                                                                            lineNumber: 424,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
@@ -763,14 +777,14 @@ function ManageMapsPage() {
                                                                                     className: "h-3 w-3"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                                    lineNumber: 416,
+                                                                                    lineNumber: 429,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 "Active"
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                            lineNumber: 415,
+                                                                            lineNumber: 428,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
@@ -781,20 +795,20 @@ function ManageMapsPage() {
                                                                                     className: "h-3 w-3"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                                    lineNumber: 424,
+                                                                                    lineNumber: 437,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 "Satellite"
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                            lineNumber: 420,
+                                                                            lineNumber: 433,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 410,
+                                                                    lineNumber: 423,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 map.description && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -802,7 +816,7 @@ function ManageMapsPage() {
                                                                     children: map.description
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 429,
+                                                                    lineNumber: 442,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -815,7 +829,7 @@ function ManageMapsPage() {
                                                                                     className: "h-3 w-3 text-gray-500"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                                    lineNumber: 436,
+                                                                                    lineNumber: 449,
                                                                                     columnNumber: 33
                                                                                 }, this) : /*#__PURE__*/ "TURBOPACK unreachable",
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -823,13 +837,13 @@ function ManageMapsPage() {
                                                                                     children: "Stored locally"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                                    lineNumber: 440,
+                                                                                    lineNumber: 453,
                                                                                     columnNumber: 31
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                            lineNumber: 434,
+                                                                            lineNumber: 447,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -839,7 +853,7 @@ function ManageMapsPage() {
                                                                                     className: "h-3 w-3 text-gray-500"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                                    lineNumber: 443,
+                                                                                    lineNumber: 456,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -857,19 +871,19 @@ function ManageMapsPage() {
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                                    lineNumber: 444,
+                                                                                    lineNumber: 457,
                                                                                     columnNumber: 31
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                            lineNumber: 442,
+                                                                            lineNumber: 455,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 433,
+                                                                    lineNumber: 446,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -882,7 +896,7 @@ function ManageMapsPage() {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 451,
+                                                                    lineNumber: 464,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 map.downloadStatus === "DOWNLOADING" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -894,7 +908,7 @@ function ManageMapsPage() {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 455,
+                                                                    lineNumber: 468,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 map.downloadStatus === "READY" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -902,7 +916,7 @@ function ManageMapsPage() {
                                                                     children: "Ready"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 461,
+                                                                    lineNumber: 474,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 map.downloadStatus === "FAILED" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -914,7 +928,7 @@ function ManageMapsPage() {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 465,
+                                                                    lineNumber: 478,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -925,13 +939,13 @@ function ManageMapsPage() {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 471,
+                                                                    lineNumber: 484,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                            lineNumber: 409,
+                                                            lineNumber: 422,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -947,20 +961,20 @@ function ManageMapsPage() {
                                                                             className: "mr-1 h-3 w-3 animate-spin"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                            lineNumber: 487,
+                                                                            lineNumber: 500,
                                                                             columnNumber: 33
                                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
                                                                             className: "mr-1 h-3 w-3"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                            lineNumber: 489,
+                                                                            lineNumber: 502,
                                                                             columnNumber: 33
                                                                         }, this),
                                                                         "Set Active"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 478,
+                                                                    lineNumber: 491,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -974,50 +988,50 @@ function ManageMapsPage() {
                                                                             className: "mr-1 h-3 w-3 animate-spin"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                            lineNumber: 504,
+                                                                            lineNumber: 517,
                                                                             columnNumber: 31
                                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
                                                                             className: "mr-1 h-3 w-3"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                            lineNumber: 506,
+                                                                            lineNumber: 519,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         "Delete"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 494,
+                                                                    lineNumber: 507,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                            lineNumber: 476,
+                                                            lineNumber: 489,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, map.id, true, {
                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                    lineNumber: 405,
+                                                    lineNumber: 418,
                                                     columnNumber: 23
                                                 }, this);
                                             })
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                        lineNumber: 383,
+                                        lineNumber: 396,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                lineNumber: 370,
+                                lineNumber: 383,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                            lineNumber: 369,
+                            lineNumber: 382,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1032,19 +1046,19 @@ function ManageMapsPage() {
                                                     className: "h-5 w-5 text-[#4A9FD4]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                    lineNumber: 523,
+                                                    lineNumber: 536,
                                                     columnNumber: 19
                                                 }, this),
                                                 "Add New Map"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                            lineNumber: 522,
+                                            lineNumber: 535,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                        lineNumber: 521,
+                                        lineNumber: 534,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1065,13 +1079,13 @@ function ManageMapsPage() {
                                                                     children: "*"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 531,
+                                                                    lineNumber: 544,
                                                                     columnNumber: 31
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                            lineNumber: 530,
+                                                            lineNumber: 543,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1082,13 +1096,13 @@ function ManageMapsPage() {
                                                             className: "h-9 border-[#444] bg-[#1a1a1a] text-xs text-white placeholder:text-gray-500 focus:border-[#4A9FD4] focus:ring-[#4A9FD4]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                            lineNumber: 533,
+                                                            lineNumber: 546,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                    lineNumber: 529,
+                                                    lineNumber: 542,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1100,7 +1114,7 @@ function ManageMapsPage() {
                                                             children: "Description"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                            lineNumber: 543,
+                                                            lineNumber: 556,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1111,13 +1125,13 @@ function ManageMapsPage() {
                                                             className: "h-9 border-[#444] bg-[#1a1a1a] text-xs text-white placeholder:text-gray-500 focus:border-[#4A9FD4] focus:ring-[#4A9FD4]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                            lineNumber: 549,
+                                                            lineNumber: 562,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                    lineNumber: 542,
+                                                    lineNumber: 555,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1132,7 +1146,7 @@ function ManageMapsPage() {
                                                                     children: "Min Zoom"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 560,
+                                                                    lineNumber: 573,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1144,13 +1158,13 @@ function ManageMapsPage() {
                                                                     className: "h-9 border-[#444] bg-[#1a1a1a] text-xs text-white placeholder:text-gray-500 focus:border-[#4A9FD4] focus:ring-[#4A9FD4]"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 566,
+                                                                    lineNumber: 579,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                            lineNumber: 559,
+                                                            lineNumber: 572,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1162,7 +1176,7 @@ function ManageMapsPage() {
                                                                     children: "Max Zoom"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 576,
+                                                                    lineNumber: 589,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1174,19 +1188,19 @@ function ManageMapsPage() {
                                                                     className: "h-9 border-[#444] bg-[#1a1a1a] text-xs text-white placeholder:text-gray-500 focus:border-[#4A9FD4] focus:ring-[#4A9FD4]"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 582,
+                                                                    lineNumber: 595,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                            lineNumber: 575,
+                                                            lineNumber: 588,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                    lineNumber: 558,
+                                                    lineNumber: 571,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1205,13 +1219,13 @@ function ManageMapsPage() {
                                                                             children: "*"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                            lineNumber: 597,
+                                                                            lineNumber: 610,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 595,
+                                                                    lineNumber: 608,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1224,13 +1238,13 @@ function ManageMapsPage() {
                                                                     className: "h-9 border-[#444] bg-[#1a1a1a] text-xs text-white placeholder:text-gray-500 focus:border-[#4A9FD4] focus:ring-[#4A9FD4]"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 599,
+                                                                    lineNumber: 612,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                            lineNumber: 594,
+                                                            lineNumber: 607,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1246,13 +1260,13 @@ function ManageMapsPage() {
                                                                             children: "*"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                            lineNumber: 612,
+                                                                            lineNumber: 625,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 610,
+                                                                    lineNumber: 623,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1265,13 +1279,13 @@ function ManageMapsPage() {
                                                                     className: "h-9 border-[#444] bg-[#1a1a1a] text-xs text-white placeholder:text-gray-500 focus:border-[#4A9FD4] focus:ring-[#4A9FD4]"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 614,
+                                                                    lineNumber: 627,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                            lineNumber: 609,
+                                                            lineNumber: 622,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1287,13 +1301,13 @@ function ManageMapsPage() {
                                                                             children: "*"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                            lineNumber: 627,
+                                                                            lineNumber: 640,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 625,
+                                                                    lineNumber: 638,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1306,13 +1320,13 @@ function ManageMapsPage() {
                                                                     className: "h-9 border-[#444] bg-[#1a1a1a] text-xs text-white placeholder:text-gray-500 focus:border-[#4A9FD4] focus:ring-[#4A9FD4]"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 629,
+                                                                    lineNumber: 642,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                            lineNumber: 624,
+                                                            lineNumber: 637,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1328,13 +1342,13 @@ function ManageMapsPage() {
                                                                             children: "*"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                            lineNumber: 642,
+                                                                            lineNumber: 655,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 640,
+                                                                    lineNumber: 653,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1347,19 +1361,19 @@ function ManageMapsPage() {
                                                                     className: "h-9 border-[#444] bg-[#1a1a1a] text-xs text-white placeholder:text-gray-500 focus:border-[#4A9FD4] focus:ring-[#4A9FD4]"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 644,
+                                                                    lineNumber: 657,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                            lineNumber: 639,
+                                                            lineNumber: 652,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                    lineNumber: 593,
+                                                    lineNumber: 606,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1368,13 +1382,14 @@ function ManageMapsPage() {
                                                         type: "submit",
                                                         disabled: submitting,
                                                         className: "w-full bg-[#2563EB] text-xs text-white hover:bg-[#1D4ED8] disabled:opacity-50",
+                                                        onClick: ()=>console.log("BUTTON CLICKED"),
                                                         children: submitting ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
                                                                     className: "mr-2 h-3 w-3 animate-spin"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                                    lineNumber: 664,
+                                                                    lineNumber: 678,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 "Creating..."
@@ -1382,51 +1397,51 @@ function ManageMapsPage() {
                                                         }, void 0, true) : "Create Map"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                        lineNumber: 657,
+                                                        lineNumber: 670,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                                    lineNumber: 656,
+                                                    lineNumber: 669,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                            lineNumber: 528,
+                                            lineNumber: 541,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                        lineNumber: 527,
+                                        lineNumber: 540,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                                lineNumber: 520,
+                                lineNumber: 533,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                            lineNumber: 519,
+                            lineNumber: 532,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-                    lineNumber: 367,
+                    lineNumber: 380,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-            lineNumber: 342,
+            lineNumber: 355,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/(protected)/maps/manage/page.tsx",
-        lineNumber: 341,
+        lineNumber: 354,
         columnNumber: 5
     }, this);
 }

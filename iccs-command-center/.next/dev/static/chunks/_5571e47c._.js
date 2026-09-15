@@ -11,7 +11,7 @@ __turbopack_context__.s([
     ()=>logout
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
 async function login(email, password) {
     const res = await fetch(`${API_BASE_URL}/api/auth/login`, {
         method: "POST",
@@ -133,16 +133,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navi
 "use client";
 ;
 ;
-// package.json
-var name = "@vercel/analytics";
-var version = "1.6.1";
 // src/queue.ts
 var initQueue = ()=>{
     if (window.va) return;
     window.va = function a(...params) {
-        (window.vaq = window.vaq || []).push(params);
+        if (!window.vaq) window.vaq = [];
+        window.vaq.push(params);
     };
 };
+// package.json
+var name = "@vercel/analytics";
+var version = "2.0.1";
 // src/utils.ts
 function isBrowser() {
     return typeof window !== "undefined";
@@ -153,7 +154,7 @@ function detectEnvironment() {
         if ("TURBOPACK compile-time truthy", 1) {
             return "development";
         }
-    } catch (e) {}
+    } catch  {}
     return "production";
 }
 function setMode(mode = "auto") {
@@ -194,7 +195,7 @@ function computeRoute(pathname, pathParams) {
             }
         }
         return result;
-    } catch (e) {
+    } catch  {
         return pathname;
     }
 }
@@ -206,52 +207,86 @@ function escapeRegExp(string) {
 }
 function getScriptSrc(props) {
     if (props.scriptSrc) {
-        return props.scriptSrc;
+        return makeAbsolute(props.scriptSrc);
     }
     if (isDevelopment()) {
         return "https://va.vercel-scripts.com/v1/script.debug.js";
     }
     if (props.basePath) {
-        return `${props.basePath}/insights/script.js`;
+        return makeAbsolute(`${props.basePath}/insights/script.js`);
     }
     return "/_vercel/insights/script.js";
+}
+function loadProps(explicitProps, confString) {
+    var _a;
+    let props = explicitProps;
+    if (confString) {
+        try {
+            props = {
+                ...(_a = JSON.parse(confString)) == null ? void 0 : _a.analytics,
+                ...explicitProps
+            };
+        } catch  {}
+    }
+    setMode(props.mode);
+    const dataset = {
+        sdkn: name + (props.framework ? `/${props.framework}` : ""),
+        sdkv: version
+    };
+    if (props.disableAutoTrack) {
+        dataset.disableAutoTrack = "1";
+    }
+    if (props.viewEndpoint) {
+        dataset.viewEndpoint = makeAbsolute(props.viewEndpoint);
+    }
+    if (props.eventEndpoint) {
+        dataset.eventEndpoint = makeAbsolute(props.eventEndpoint);
+    }
+    if (props.sessionEndpoint) {
+        dataset.sessionEndpoint = makeAbsolute(props.sessionEndpoint);
+    }
+    if (isDevelopment() && props.debug === false) {
+        dataset.debug = "false";
+    }
+    if (props.dsn) {
+        dataset.dsn = props.dsn;
+    }
+    if (props.endpoint) {
+        dataset.endpoint = props.endpoint;
+    } else if (props.basePath) {
+        dataset.endpoint = makeAbsolute(`${props.basePath}/insights`);
+    }
+    return {
+        beforeSend: props.beforeSend,
+        src: getScriptSrc(props),
+        dataset
+    };
+}
+function makeAbsolute(url) {
+    return url.startsWith("http://") || url.startsWith("https://") || url.startsWith("/") ? url : `/${url}`;
 }
 // src/generic.ts
 function inject(props = {
     debug: true
-}) {
+}, confString) {
     var _a;
     if (!isBrowser()) return;
-    setMode(props.mode);
+    const { beforeSend, src, dataset } = loadProps(props, confString);
     initQueue();
-    if (props.beforeSend) {
-        (_a = window.va) == null ? void 0 : _a.call(window, "beforeSend", props.beforeSend);
+    if (beforeSend) {
+        (_a = window.va) == null ? void 0 : _a.call(window, "beforeSend", beforeSend);
     }
-    const src = getScriptSrc(props);
     if (document.head.querySelector(`script[src*="${src}"]`)) return;
     const script = document.createElement("script");
     script.src = src;
+    for (const [key, value] of Object.entries(dataset)){
+        script.dataset[key] = value;
+    }
     script.defer = true;
-    script.dataset.sdkn = name + (props.framework ? `/${props.framework}` : "");
-    script.dataset.sdkv = version;
-    if (props.disableAutoTrack) {
-        script.dataset.disableAutoTrack = "1";
-    }
-    if (props.endpoint) {
-        script.dataset.endpoint = props.endpoint;
-    } else if (props.basePath) {
-        script.dataset.endpoint = `${props.basePath}/insights`;
-    }
-    if (props.dsn) {
-        script.dataset.dsn = props.dsn;
-    }
     script.onerror = ()=>{
         const errorMessage = isDevelopment() ? "Please check if any ad blockers are enabled and try again." : "Be sure to enable Web Analytics for your project and deploy again. See https://vercel.com/docs/analytics/quickstart for more information.";
         console.log(`[Vercel Web Analytics] Failed to load script from ${src}. ${errorMessage}`);
     };
-    if (isDevelopment() && props.debug === false) {
-        script.dataset.debug = "false";
-    }
     document.head.appendChild(script);
 }
 function pageview({ route, path }) {
@@ -267,6 +302,12 @@ function getBasePath() {
         return void 0;
     }
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.REACT_APP_VERCEL_OBSERVABILITY_BASEPATH;
+}
+function getConfigString() {
+    if (typeof __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"] === "undefined" || typeof __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env === "undefined") {
+        return void 0;
+    }
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.REACT_APP_VERCEL_OBSERVABILITY_CLIENT_CONFIG;
 }
 // src/react/index.tsx
 function Analytics(props) {
@@ -289,7 +330,7 @@ function Analytics(props) {
                     disableAutoTrack: true
                 },
                 ...props
-            });
+            }, props.configString ?? getConfigString());
         }
     }["Analytics.useEffect"], []);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
@@ -330,6 +371,12 @@ function getBasePath2() {
     }
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_VERCEL_OBSERVABILITY_BASEPATH;
 }
+function getConfigString2() {
+    if (typeof __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"] === "undefined" || typeof __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env === "undefined") {
+        return void 0;
+    }
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_VERCEL_OBSERVABILITY_CLIENT_CONFIG;
+}
 // src/nextjs/index.tsx
 function AnalyticsComponent(props) {
     const { route, path } = useRoute();
@@ -338,6 +385,7 @@ function AnalyticsComponent(props) {
         route,
         ...props,
         basePath: getBasePath2(),
+        configString: getConfigString2(),
         framework: "next"
     });
 }

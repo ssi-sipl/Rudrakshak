@@ -1,0 +1,3 @@
+module.exports=[19470,a=>{"use strict";var b=a.i(80320);function c(){return(0,b.jsx)("div",{className:"flex h-screen items-center justify-center bg-[#0b132b]",children:(0,b.jsxs)("div",{className:"text-center",children:[(0,b.jsx)("div",{className:"mb-4 inline-block h-12 w-12 animate-spin rounded-full border-4 border-gray-600 border-t-[#2563EB]"}),(0,b.jsx)("p",{className:"text-sm text-gray-400",children:"Loading reports..."})]})})}a.s(["default",()=>c])}];
+
+//# sourceMappingURL=Rayonix_iccs-command-center_app_%28protected%29_report_loading_tsx_018033f6._.js.map

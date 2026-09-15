@@ -148,9 +148,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2f$droneos$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/api/droneos.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hooks/use-toast.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$UserContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/context/UserContext.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -168,6 +170,7 @@ function ViewDronePage() {
     const [drone, setDrone] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const { user } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$UserContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUser"])();
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "ViewDronePage.useEffect": ()=>{
             if (params.id) {
@@ -225,7 +228,7 @@ function ViewDronePage() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                lineNumber: 88,
+                lineNumber: 90,
                 columnNumber: 9
             }, this);
         } else if (batteryLevel >= 20) {
@@ -237,7 +240,7 @@ function ViewDronePage() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                lineNumber: 94,
+                lineNumber: 96,
                 columnNumber: 9
             }, this);
         } else {
@@ -249,7 +252,7 @@ function ViewDronePage() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                lineNumber: 100,
+                lineNumber: 102,
                 columnNumber: 9
             }, this);
         }
@@ -265,7 +268,7 @@ function ViewDronePage() {
                         className: "mx-auto mb-4 h-12 w-12 animate-spin text-[#8B0000]"
                     }, void 0, false, {
                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                        lineNumber: 110,
+                        lineNumber: 112,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -273,18 +276,18 @@ function ViewDronePage() {
                         children: "Loading drone details..."
                     }, void 0, false, {
                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                        lineNumber: 111,
+                        lineNumber: 113,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                lineNumber: 109,
+                lineNumber: 111,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-            lineNumber: 108,
+            lineNumber: 110,
             columnNumber: 7
         }, this);
     }
@@ -299,7 +302,7 @@ function ViewDronePage() {
                         className: "mx-auto mb-4 h-16 w-16 text-gray-600"
                     }, void 0, false, {
                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                        lineNumber: 124,
+                        lineNumber: 126,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -307,7 +310,7 @@ function ViewDronePage() {
                         children: "Drone Not Found"
                     }, void 0, false, {
                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                        lineNumber: 125,
+                        lineNumber: 127,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -315,7 +318,7 @@ function ViewDronePage() {
                         children: error || "The drone you're looking for doesn't exist."
                     }, void 0, false, {
                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                        lineNumber: 126,
+                        lineNumber: 128,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -325,23 +328,23 @@ function ViewDronePage() {
                             children: "Back to Drones"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                            lineNumber: 130,
+                            lineNumber: 132,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                        lineNumber: 129,
+                        lineNumber: 131,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                lineNumber: 123,
+                lineNumber: 125,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-            lineNumber: 122,
+            lineNumber: 124,
             columnNumber: 7
         }, this);
     }
@@ -358,14 +361,14 @@ function ViewDronePage() {
                             className: "h-4 w-4"
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                            lineNumber: 147,
+                            lineNumber: 149,
                             columnNumber: 11
                         }, this),
                         "Back to Drones"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                    lineNumber: 143,
+                    lineNumber: 145,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -380,12 +383,12 @@ function ViewDronePage() {
                                         className: "h-7 w-7 text-white"
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                        lineNumber: 155,
+                                        lineNumber: 157,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                    lineNumber: 154,
+                                    lineNumber: 156,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -398,14 +401,14 @@ function ViewDronePage() {
                                                     children: drone.droneOSName
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 159,
+                                                    lineNumber: 161,
                                                     columnNumber: 17
                                                 }, this),
                                                 getBatteryBadge(drone.minBatteryLevel)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 158,
+                                            lineNumber: 160,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -415,7 +418,7 @@ function ViewDronePage() {
                                                     children: drone.droneType
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 165,
+                                                    lineNumber: 167,
                                                     columnNumber: 17
                                                 }, this),
                                                 drone.droneId && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -424,7 +427,7 @@ function ViewDronePage() {
                                                             children: "•"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                            lineNumber: 169,
+                                                            lineNumber: 171,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -433,7 +436,7 @@ function ViewDronePage() {
                                                             children: drone.droneId
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                            lineNumber: 170,
+                                                            lineNumber: 172,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -442,7 +445,7 @@ function ViewDronePage() {
                                                             children: drone.addedBy
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                            lineNumber: 176,
+                                                            lineNumber: 178,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
@@ -450,24 +453,24 @@ function ViewDronePage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 164,
+                                            lineNumber: 166,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                    lineNumber: 157,
+                                    lineNumber: 159,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                            lineNumber: 153,
+                            lineNumber: 155,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex gap-2",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            children: user?.role === "ADMIN" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: `/drones/${drone.id}/edit`,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                     className: "gap-2 bg-[#8B0000] text-white hover:bg-[#6B0000]",
@@ -476,30 +479,30 @@ function ViewDronePage() {
                                             className: "h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 207,
-                                            columnNumber: 17
+                                            lineNumber: 210,
+                                            columnNumber: 19
                                         }, this),
                                         "Edit Drone"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                    lineNumber: 206,
-                                    columnNumber: 15
+                                    lineNumber: 209,
+                                    columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                lineNumber: 205,
-                                columnNumber: 13
-                            }, this)
+                                lineNumber: 208,
+                                columnNumber: 15
+                            }, this) : null
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                            lineNumber: 187,
+                            lineNumber: 189,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                    lineNumber: 152,
+                    lineNumber: 154,
                     columnNumber: 9
                 }, this),
                 drone.area && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -513,7 +516,7 @@ function ViewDronePage() {
                                     className: "h-5 w-5 text-blue-400"
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                    lineNumber: 219,
+                                    lineNumber: 223,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -523,7 +526,7 @@ function ViewDronePage() {
                                             children: "Assigned Area"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 221,
+                                            lineNumber: 225,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -536,29 +539,29 @@ function ViewDronePage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 222,
+                                            lineNumber: 226,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                    lineNumber: 220,
+                                    lineNumber: 224,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                            lineNumber: 218,
+                            lineNumber: 222,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                        lineNumber: 217,
+                        lineNumber: 221,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                    lineNumber: 216,
+                    lineNumber: 220,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -575,12 +578,12 @@ function ViewDronePage() {
                                             className: "h-6 w-6 text-blue-400"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 236,
+                                            lineNumber: 240,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                        lineNumber: 235,
+                                        lineNumber: 239,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -590,7 +593,7 @@ function ViewDronePage() {
                                                 children: "Max Speed"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                lineNumber: 239,
+                                                lineNumber: 243,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -601,24 +604,24 @@ function ViewDronePage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                lineNumber: 240,
+                                                lineNumber: 244,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                        lineNumber: 238,
+                                        lineNumber: 242,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                lineNumber: 234,
+                                lineNumber: 238,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                            lineNumber: 233,
+                            lineNumber: 237,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -632,12 +635,12 @@ function ViewDronePage() {
                                             className: "h-6 w-6 text-green-400"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 249,
+                                            lineNumber: 253,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                        lineNumber: 248,
+                                        lineNumber: 252,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -647,7 +650,7 @@ function ViewDronePage() {
                                                 children: "Max Altitude"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                lineNumber: 252,
+                                                lineNumber: 256,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -658,24 +661,24 @@ function ViewDronePage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                lineNumber: 253,
+                                                lineNumber: 257,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                        lineNumber: 251,
+                                        lineNumber: 255,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                lineNumber: 247,
+                                lineNumber: 251,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                            lineNumber: 246,
+                            lineNumber: 250,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -689,12 +692,12 @@ function ViewDronePage() {
                                             className: "h-6 w-6 text-yellow-400"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 262,
+                                            lineNumber: 266,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                        lineNumber: 261,
+                                        lineNumber: 265,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -704,7 +707,7 @@ function ViewDronePage() {
                                                 children: "Min Battery"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                lineNumber: 265,
+                                                lineNumber: 269,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -715,24 +718,24 @@ function ViewDronePage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                lineNumber: 266,
+                                                lineNumber: 270,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                        lineNumber: 264,
+                                        lineNumber: 268,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                lineNumber: 260,
+                                lineNumber: 264,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                            lineNumber: 259,
+                            lineNumber: 263,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -746,12 +749,12 @@ function ViewDronePage() {
                                             className: "h-6 w-6 text-purple-400"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 275,
+                                            lineNumber: 279,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                        lineNumber: 274,
+                                        lineNumber: 278,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -761,7 +764,7 @@ function ViewDronePage() {
                                                 children: "Max Wind"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                lineNumber: 278,
+                                                lineNumber: 282,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -772,30 +775,30 @@ function ViewDronePage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                lineNumber: 279,
+                                                lineNumber: 283,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                        lineNumber: 277,
+                                        lineNumber: 281,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                lineNumber: 273,
+                                lineNumber: 277,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                            lineNumber: 272,
+                            lineNumber: 276,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                    lineNumber: 232,
+                    lineNumber: 236,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -812,19 +815,19 @@ function ViewDronePage() {
                                                 className: "h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                lineNumber: 293,
+                                                lineNumber: 297,
                                                 columnNumber: 17
                                             }, this),
                                             "General Settings"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                        lineNumber: 292,
+                                        lineNumber: 296,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                    lineNumber: 291,
+                                    lineNumber: 295,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -838,37 +841,12 @@ function ViewDronePage() {
                                                     children: "Drone ID"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 300,
+                                                    lineNumber: 304,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "font-mono text-white",
                                                     children: drone.droneId
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 301,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 299,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex justify-between border-b border-[#333] pb-3",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-gray-400",
-                                                    children: "OS Name"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 304,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-white",
-                                                    children: drone.droneOSName
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                                     lineNumber: 305,
@@ -885,10 +863,35 @@ function ViewDronePage() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-gray-400",
+                                                    children: "OS Name"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
+                                                    lineNumber: 308,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-white",
+                                                    children: drone.droneOSName
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
+                                                    lineNumber: 309,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
+                                            lineNumber: 307,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex justify-between border-b border-[#333] pb-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-gray-400",
                                                     children: "Drone Type"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 314,
+                                                    lineNumber: 318,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -896,13 +899,13 @@ function ViewDronePage() {
                                                     children: drone.droneType
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 315,
+                                                    lineNumber: 319,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 313,
+                                            lineNumber: 317,
                                             columnNumber: 15
                                         }, this),
                                         drone.videoLink && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -913,7 +916,7 @@ function ViewDronePage() {
                                                     children: "Video Stream"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 320,
+                                                    lineNumber: 324,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -921,13 +924,13 @@ function ViewDronePage() {
                                                     children: drone.videoLink || "N/A"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 321,
+                                                    lineNumber: 325,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 319,
+                                            lineNumber: 323,
                                             columnNumber: 17
                                         }, this),
                                         drone.area && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -938,7 +941,7 @@ function ViewDronePage() {
                                                     children: "Assigned Area"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 329,
+                                                    lineNumber: 333,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -951,13 +954,13 @@ function ViewDronePage() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 330,
+                                                    lineNumber: 334,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 328,
+                                            lineNumber: 332,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -968,7 +971,7 @@ function ViewDronePage() {
                                                     children: "Target Altitude"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 336,
+                                                    lineNumber: 340,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -979,13 +982,13 @@ function ViewDronePage() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 337,
+                                                    lineNumber: 341,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 335,
+                                            lineNumber: 339,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -996,7 +999,7 @@ function ViewDronePage() {
                                                     children: "Max Altitude"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 342,
+                                                    lineNumber: 346,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1007,13 +1010,13 @@ function ViewDronePage() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 343,
+                                                    lineNumber: 347,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 341,
+                                            lineNumber: 345,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1024,7 +1027,7 @@ function ViewDronePage() {
                                                     children: "USB Address"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 348,
+                                                    lineNumber: 352,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1032,25 +1035,25 @@ function ViewDronePage() {
                                                     children: drone.usbAddress
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 349,
+                                                    lineNumber: 353,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 347,
+                                            lineNumber: 351,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                    lineNumber: 297,
+                                    lineNumber: 301,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                            lineNumber: 290,
+                            lineNumber: 294,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -1064,19 +1067,19 @@ function ViewDronePage() {
                                                 className: "h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                lineNumber: 358,
+                                                lineNumber: 362,
                                                 columnNumber: 17
                                             }, this),
                                             "GPS Settings"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                        lineNumber: 357,
+                                        lineNumber: 361,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                    lineNumber: 356,
+                                    lineNumber: 360,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1090,37 +1093,12 @@ function ViewDronePage() {
                                                     children: "GPS Name"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 364,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-white",
-                                                    children: drone.gpsName
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 365,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 363,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex justify-between border-b border-[#333] pb-3",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-gray-400",
-                                                    children: "GPS Fix"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                                     lineNumber: 368,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-white",
-                                                    children: drone.gpsFix
+                                                    children: drone.gpsName
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                                     lineNumber: 369,
@@ -1137,15 +1115,15 @@ function ViewDronePage() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-gray-400",
-                                                    children: "Min HDOP"
+                                                    children: "GPS Fix"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                                     lineNumber: 372,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-mono text-white",
-                                                    children: drone.minHDOP
+                                                    className: "text-white",
+                                                    children: drone.gpsFix
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                                     lineNumber: 373,
@@ -1162,7 +1140,7 @@ function ViewDronePage() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-gray-400",
-                                                    children: "Min Sat Count"
+                                                    children: "Min HDOP"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                                     lineNumber: 376,
@@ -1170,7 +1148,7 @@ function ViewDronePage() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "font-mono text-white",
-                                                    children: drone.minSatCount
+                                                    children: drone.minHDOP
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                                     lineNumber: 377,
@@ -1183,28 +1161,28 @@ function ViewDronePage() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex justify-between",
+                                            className: "flex justify-between border-b border-[#333] pb-3",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-gray-400",
-                                                    children: "GPS Lost Action"
+                                                    children: "Min Sat Count"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 382,
+                                                    lineNumber: 380,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-white",
-                                                    children: drone.gpsLost
+                                                    className: "font-mono text-white",
+                                                    children: drone.minSatCount
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 383,
+                                                    lineNumber: 381,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 381,
+                                            lineNumber: 379,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1212,7 +1190,7 @@ function ViewDronePage() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-gray-400",
-                                                    children: "Latitude"
+                                                    children: "GPS Lost Action"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                                     lineNumber: 386,
@@ -1220,7 +1198,7 @@ function ViewDronePage() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-white",
-                                                    children: drone.latitude
+                                                    children: drone.gpsLost
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                                     lineNumber: 387,
@@ -1237,7 +1215,7 @@ function ViewDronePage() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-gray-400",
-                                                    children: "Longitude"
+                                                    children: "Latitude"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                                     lineNumber: 390,
@@ -1245,7 +1223,7 @@ function ViewDronePage() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-white",
-                                                    children: drone.longitude
+                                                    children: drone.latitude
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                                     lineNumber: 391,
@@ -1256,17 +1234,42 @@ function ViewDronePage() {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                             lineNumber: 389,
                                             columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex justify-between",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-gray-400",
+                                                    children: "Longitude"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
+                                                    lineNumber: 394,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-white",
+                                                    children: drone.longitude
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
+                                                    lineNumber: 395,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
+                                            lineNumber: 393,
+                                            columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                    lineNumber: 362,
+                                    lineNumber: 366,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                            lineNumber: 355,
+                            lineNumber: 359,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -1280,19 +1283,19 @@ function ViewDronePage() {
                                                 className: "h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                lineNumber: 400,
+                                                lineNumber: 404,
                                                 columnNumber: 17
                                             }, this),
                                             "Safety Settings"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                        lineNumber: 399,
+                                        lineNumber: 403,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                    lineNumber: 398,
+                                    lineNumber: 402,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1306,7 +1309,7 @@ function ViewDronePage() {
                                                     children: "Min Battery Level"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 406,
+                                                    lineNumber: 410,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1317,13 +1320,13 @@ function ViewDronePage() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 407,
+                                                    lineNumber: 411,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 405,
+                                            lineNumber: 409,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1334,37 +1337,12 @@ function ViewDronePage() {
                                                     children: "Battery Fail Safe"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 412,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-white",
-                                                    children: drone.batteryFailSafe
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 413,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 411,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex justify-between border-b border-[#333] pb-3",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-gray-400",
-                                                    children: "Telemetry Lost Action"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                                     lineNumber: 416,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-white",
-                                                    children: drone.telemetryLost
+                                                    children: drone.batteryFailSafe
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
                                                     lineNumber: 417,
@@ -1377,6 +1355,31 @@ function ViewDronePage() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex justify-between border-b border-[#333] pb-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-gray-400",
+                                                    children: "Telemetry Lost Action"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
+                                                    lineNumber: 420,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-white",
+                                                    children: drone.telemetryLost
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
+                                                    lineNumber: 421,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
+                                            lineNumber: 419,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex justify-between",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1384,7 +1387,7 @@ function ViewDronePage() {
                                                     children: "Max Wind Speed"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 420,
+                                                    lineNumber: 424,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1395,25 +1398,25 @@ function ViewDronePage() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 421,
+                                                    lineNumber: 425,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 419,
+                                            lineNumber: 423,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                    lineNumber: 404,
+                                    lineNumber: 408,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                            lineNumber: 397,
+                            lineNumber: 401,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -1427,19 +1430,19 @@ function ViewDronePage() {
                                                 className: "h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                lineNumber: 432,
+                                                lineNumber: 436,
                                                 columnNumber: 17
                                             }, this),
                                             "Metadata"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                        lineNumber: 431,
+                                        lineNumber: 435,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                    lineNumber: 430,
+                                    lineNumber: 434,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1453,7 +1456,7 @@ function ViewDronePage() {
                                                     children: "Created At"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 438,
+                                                    lineNumber: 442,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1461,13 +1464,13 @@ function ViewDronePage() {
                                                     children: formatDate(drone.createdAt)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 439,
+                                                    lineNumber: 443,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 437,
+                                            lineNumber: 441,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1478,7 +1481,7 @@ function ViewDronePage() {
                                                     children: "Last Updated"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 444,
+                                                    lineNumber: 448,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1486,13 +1489,13 @@ function ViewDronePage() {
                                                     children: formatDate(drone.updatedAt)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 445,
+                                                    lineNumber: 449,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 443,
+                                            lineNumber: 447,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1503,50 +1506,51 @@ function ViewDronePage() {
                                                     children: "Battery Status"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                                    lineNumber: 450,
+                                                    lineNumber: 454,
                                                     columnNumber: 17
                                                 }, this),
                                                 getBatteryBadge(drone.minBatteryLevel)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                            lineNumber: 449,
+                                            lineNumber: 453,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                                    lineNumber: 436,
+                                    lineNumber: 440,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                            lineNumber: 429,
+                            lineNumber: 433,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-                    lineNumber: 288,
+                    lineNumber: 292,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-            lineNumber: 141,
+            lineNumber: 143,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/(protected)/drones/[id]/page.tsx",
-        lineNumber: 140,
+        lineNumber: 142,
         columnNumber: 5
     }, this);
 }
-_s(ViewDronePage, "FOzysRI0sXEgg6F8qydxAELXNQg=", false, function() {
+_s(ViewDronePage, "8mlYxVM2IStlaaJhaxc8p3UzpA4=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useParams"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$UserContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUser"]
     ];
 });
 _c = ViewDronePage;
