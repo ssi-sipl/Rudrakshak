@@ -1,0 +1,31 @@
+{
+  "sorted_middleware": [],
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/Rayonix_iccs-command-center_edge-wrapper_61fab808.js",
+        "server/edge/chunks/[root-of-the-server]__b1abaf1c._.js",
+        "server/edge/chunks/turbopack-Rayonix_iccs-command-center_edge-wrapper_366c4c6f.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/((?!_next|favicon.ico|login).*){(\\\\.json)}?",
+          "originalSource": "/((?!_next|favicon.ico|login).*)"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "vIEFHFE0zwQCCqVUS-Qa9",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "aVZ6FzEwTxatwA0iaRECxRHoEBKEjD1Vetu790HkeBM=",
+        "__NEXT_PREVIEW_MODE_ID": "20d54e911c12d8e077e3d479502b824a",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "da81e2c91cbc7d04efb92d76d1fb02f6be912c670bda018ea8595a3f443b52b5",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "f1f20d34906670b95a180a08bc3a6278a85a554eb2b658d9289457353b3c8d92"
+      }
+    }
+  },
+  "instrumentation": null,
+  "functions": {}
+}

@@ -1,0 +1,3 @@
+{
+  "/(hidden)/alarm/[id]/edit/page": "app/(hidden)/alarm/[id]/edit/page.js"
+}

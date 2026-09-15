@@ -1,0 +1,3 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["chunks/Rayonix_iccs-command-center_edge-wrapper_61fab808.js",29656,(e,n,t)=>{self._ENTRIES||={};let h=Promise.resolve().then(()=>e.i(36653));h.catch(()=>{}),self._ENTRIES.middleware_middleware=new Proxy(h,{get(e,n){if("then"===n)return(n,t)=>e.then(n,t);let t=(...t)=>e.then(e=>(0,e[n])(...t));return t.then=(t,h)=>e.then(e=>e[n]).then(t,h),t}})}]);
+
+//# sourceMappingURL=Rayonix_iccs-command-center_edge-wrapper_61fab808.js.map
