@@ -1,3 +1,0 @@
-module.exports=[24489,a=>{"use strict";var b=a.i(80320);function c(){return(0,b.jsx)("div",{className:"flex h-screen items-center justify-center bg-white",children:(0,b.jsx)("div",{className:"h-8 w-8 animate-spin rounded-full border-4 border-[#8B0000] border-t-transparent"})})}a.s(["default",()=>c])}];
-
-//# sourceMappingURL=Rayonix_iccs-command-center_app_%28protected%29_drones_loading_tsx_3dae7375._.js.map

@@ -1,3 +1,0 @@
-module.exports=[81020,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(77675);a.n(d("[project]/Rayonix/iccs-command-center/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},45190,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(77675);a.n(d("[project]/Rayonix/iccs-command-center/node_modules/next/dist/client/components/builtin/global-error.js"))},23176,a=>{"use strict";a.i(81020);var b=a.i(45190);a.n(b)}];
-
-//# sourceMappingURL=d0d66_next_dist_client_components_builtin_global-error_a6ac214b.js.map
