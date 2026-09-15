@@ -10,9 +10,9 @@ generator client {
 }
 
 datasource db {
-  provider = "mongodb"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
-}
+} 
 
 enum Role {
   SUPER_ADMIN
@@ -22,69 +22,72 @@ enum Role {
 }
 
 enum AlertStatus {
-  ACTIVE        // waiting for your decision
-  SENT          // drone dispatched
-  NEUTRALISED   // manually neutralised / ignored
+  ACTIVE // waiting for your decision
+  SENT // drone dispatched
+  NEUTRALISED // manually neutralised / ignored
 }
 
 model User {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  email     String   @unique
-  password  String
-  name      String
-  role      Role     @default(USER)
-  isActive  Boolean  @default(true)
+  id       String  @id @default(uuid())
+  email    String  @unique
+  password String
+  name     String
+  role     Role    @default(USER)
+  isActive Boolean @default(true)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
 
 model Area {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  id        String   @id @default(uuid())
   areaId    String   @unique // e.g., AREA-006
-  name      String   // e.g., North Sector Zone B
-  latitude  Float    // Range: -90 to 90
-  longitude Float    // Range: -180 to 180
+  name      String // e.g., North Sector Zone B
+  latitude  Float // Range: -90 to 90
+  longitude Float // Range: -180 to 180
   status    String   @default("Active") // Active/Inactive
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  addedBy    String @default("")   // User who added the area
+  addedBy   String   @default("") // User who added the area
 
   // Relations
-  sensors       Sensor[]
-  alarms        Alarm[]
-  drones        DroneOS[]
+  sensors Sensor[]
+  alarms  Alarm[]
+  drones  DroneOS[]
 
   @@map("areas")
 }
 
 model Sensor {
-  id         String   @id @default(auto()) @map("_id") @db.ObjectId
-  sensorId   String   @unique // Unique sensor ID
-  name       String   // Sensor name
-  sensorType String   // Type of sensor
-  latitude   Float    // Sensor location latitude
-  longitude  Float    // Sensor location longitude
-  ipAddress  String?  // Optional IP address
-  rtspUrl    String?  // Optional RTSP URL for live stream
-  battery    String?  // Battery status
-  status     String   // Sensor status (Active/Inactive)
-  
+  id         String  @id @default(uuid())
+  sensorId   String  @unique // Unique sensor ID
+  name       String // Sensor name
+  sensorType String // Type of sensor
+  latitude   Float // Sensor location latitude
+  longitude  Float // Sensor location longitude
+  ipAddress  String? // Optional IP address
+  rtspUrl    String? // Optional RTSP URL for live stream
+  battery    String? // Battery status
+  status     String // Sensor status (Active/Inactive)
+
   // Drone control fields
-  sendDrone       String   @default("No") // Auto-launch drone? Yes/No
-  activeShuruMode String   // Active/Shuru sensor state
-  
+  sendDrone       String @default("No") // Auto-launch drone? Yes/No
+  activeShuruMode String // Active/Shuru Camera Network Status (Active/Inactive)
+
   // Relations
-  areaId  String? @db.ObjectId
-  area    Area?   @relation(fields: [areaId], references: [id], onDelete: Cascade)
-  
-  alarmId String? @db.ObjectId
+  areaId String?
+  area   Area?   @relation(fields: [areaId], references: [id], onDelete: Cascade)
+
+  smartMeterId String?
+  smartMeter   SmartMeter? @relation(fields: [smartMeterId], references: [id], onDelete: SetNull)
+
+  alarmId String?
   alarm   Alarm?  @relation(fields: [alarmId], references: [id], onDelete: SetNull)
 
-  alerts        Alert[]
+  alerts Alert[]
 
-  addedBy    String @default("")   // User who added the sensor
-  
+  addedBy String @default("") // User who added the sensor
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -92,40 +95,40 @@ model Sensor {
 }
 
 model DroneOS {
-  id                String   @id @default(auto()) @map("_id") @db.ObjectId
-  droneId           String?   @unique // Unique drone ID (similar to sensorId)
-  droneOSName       String   // Drone OS name
-  droneType         String   // e.g., quadcopter, hexacopter
-  videoLink         String?  // Video feed link
-  gpsFix            String   // GPS fix value
-  minHDOP           Float    // Min HDOP (1<0): Range 0-1
-  minSatCount       Int      // Min Sat Count (1-8): Range 0-8
-  maxWindSpeed      Float    // Max Wind Speed in m/s
-  droneSpeed        Float    // Drone Speed in m/s
-  targetAltitude    Float    // Target Altitude in meters
-  gpsLost           String   // Action on GPS lost
-  telemetryLost     String   // Action on telemetry lost
-  minBatteryLevel   Float    // Min Battery Level in percentage
-  usbAddress        String   // USB Address
-  batteryFailSafe   String   // Action on battery fail safe (RTL, Land)
-  gpsName           String   // GPS Name
-  maxAltitude       Float    // Max Altitude in meters
-  latitude          Float?    // Home Latitude
-  longitude         Float?    // Home Longitude
-  addedBy           String @default("")   // User who added the drone
+  id              String  @id @default(uuid())
+  droneId         String? @unique // Unique drone ID (similar to sensorId)
+  droneOSName     String // Drone OS name
+  droneType       String // e.g., quadcopter, hexacopter
+  videoLink       String? // Video feed link
+  gpsFix          String // GPS fix value
+  minHDOP         Float // Min HDOP (1<0): Range 0-1
+  minSatCount     Int // Min Sat Count (1-8): Range 0-8
+  maxWindSpeed    Float // Max Wind Speed in m/s
+  droneSpeed      Float // Drone Speed in m/s
+  targetAltitude  Float // Target Altitude in meters
+  gpsLost         String // Action on GPS lost
+  telemetryLost   String // Action on telemetry lost
+  minBatteryLevel Float // Min Battery Level in percentage
+  usbAddress      String // USB Address
+  batteryFailSafe String // Action on battery fail safe (RTL, Land)
+  gpsName         String // GPS Name
+  maxAltitude     Float // Max Altitude in meters
+  latitude        Float? // Home Latitude
+  longitude       Float? // Home Longitude
+  addedBy         String  @default("") // User who added the drone
 
-  lastLatitude   Float?
-  lastLongitude  Float?
-  lastAltitude   Float?
-  battery        Float?
-  droneMode      String?
-  
+  lastLatitude  Float?
+  lastLongitude Float?
+  lastAltitude  Float?
+  battery       Float?
+  droneMode     String?
+
   // Relations
-  areaId        String? @db.ObjectId
-  area          Area?   @relation(fields: [areaId], references: [id], onDelete: SetNull)
-  
+  areaId String?
+  area   Area?   @relation(fields: [areaId], references: [id], onDelete: SetNull)
+
   flightHistory DroneFlightHistory[]
-  
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -133,17 +136,17 @@ model DroneOS {
 }
 
 model Alarm {
-  id       String   @id @default(auto()) @map("_id") @db.ObjectId
-  alarmId  String   @unique // Unique Alarm ID
-  name     String   // Alarm name
-  status   String   @default("Active") // Active/Inactive
-  
+  id      String @id @default(uuid())
+  alarmId String @unique // Unique Alarm ID
+  name    String // Alarm name
+  status  String @default("Active") // Active/Inactive
+
   // Relations
-  areaId  String? @db.ObjectId
-  area    Area?   @relation(fields: [areaId], references: [id], onDelete: Cascade)
-  
+  areaId String?
+  area   Area?   @relation(fields: [areaId], references: [id], onDelete: Cascade)
+
   sensors Sensor[]
-  
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -151,97 +154,163 @@ model Alarm {
 }
 
 model Alert {
-  id        String      @id @default(auto()) @map("_id") @db.ObjectId
+  id String @id @default(uuid())
 
   // Relation to Sensor (Mongo ObjectId)
-  sensorDbId String     @db.ObjectId
-  sensor     Sensor     @relation(fields: [sensorDbId], references: [id], onDelete: Cascade)
+  sensorDbId String
+  sensor     Sensor @relation(fields: [sensorDbId], references: [id], onDelete: Cascade)
 
   // Business / logical sensor ID (e.g. "SENSOR-001")
-  sensorId   String
+  sensorId String
 
-  type      String      // e.g. "ObjectDetected"
-  message   String      // e.g. "Object detected in front of Sensor-1"
-  time     String    // Time of the alert
-  timestamp DateTime    @default(now()) // When the alert was created in the system
+  type      String // e.g. "ObjectDetected"
+  message   String // e.g. "Object detected in front of Sensor-1"
+  time      String // Time of the alert
+  timestamp DateTime @default(now()) // When the alert was created in the system
 
-  status    AlertStatus @default(ACTIVE)
+  status AlertStatus @default(ACTIVE)
 
-  createdAt DateTime    @default(now())
+  createdAt DateTime  @default(now())
   decidedAt DateTime?
-  decision  String?     // "send drone:693964e5985c84e3051ffa97" | "neutralised"
+  decision  String? // "send drone:693964e5985c84e3051ffa97" | "neutralised"
 
-  metadata  Json?
+  metadata Json?
 
   // Relations
 
-  @@map("alerts")
   @@index([status])
   @@index([sensorDbId])
+  @@map("alerts")
 }
 
 model DroneFlightHistory {
-  id              String   @id @default(auto()) @map("_id") @db.ObjectId
-  
+  id String @id @default(uuid())
+
   // Relations
-  droneDbId       String   @db.ObjectId
-  drone           DroneOS  @relation(fields: [droneDbId], references: [id], onDelete: Cascade)
-  
+  droneDbId String
+  drone     DroneOS @relation(fields: [droneDbId], references: [id], onDelete: Cascade)
+
   // Business IDs for easy reference
   // droneId         String   // e.g., "DRONE-001"
-  sensorId        String?   // e.g., "SENSOR-001"
-  alertId         String?   // The alert ID that triggered this flight
-  
+  sensorId String? // e.g., "SENSOR-001"
+  alertId  String? // The alert ID that triggered this flight
+
   // Flight details
-  dispatchedAt    DateTime @default(now())
+  dispatchedAt DateTime @default(now())
   // completedAt     DateTime?
   // status          String   // e.g., "Dispatched", "In Flight", "Completed", "Aborted"
-  
+
   // Optional flight data
   // flightDuration  Int?     // Duration in seconds
   // batteryUsed     Float?   // Battery percentage used
   // maxAltitude     Float?   // Max altitude reached during flight
   // distanceCovered Float?   // Distance covered in meters
-  
+
   // notes           String?  // Any additional notes or observations
   // metadata        Json?    // Any additional data you want to store
-  
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
 
-  @@map("drone_flight_history")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
   @@index([droneDbId])
   @@index([dispatchedAt])
+  @@map("drone_flight_history")
 }
 
 model OfflineMap {
-  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  id String @id @default(uuid())
 
   name        String
   description String?
 
   // Root path where tiles will be served from backend
   // Example: "/maps/<mapId>"
-  tileRoot    String
+  tileRoot String
 
-  minZoom     Int
-  maxZoom     Int
+  minZoom Int
+  maxZoom Int
 
-  north       Float
-  south       Float
-  east        Float
-  west        Float
+  north Float
+  south Float
+  east  Float
+  west  Float
 
-  isActive    Boolean  @default(false)
+  isActive Boolean @default(false)
 
   // 🔽 DOWNLOAD STATE (NEW)
   downloadStatus   String  @default("PENDING") // PENDING | DOWNLOADING | READY | FAILED
-  downloadProgress Int     @default(0)         // 0 - 100
+  downloadProgress Int     @default(0) // 0 - 100
   downloadError    String?
 
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
-  @@map("offline_maps")
   @@index([isActive])
+  @@map("offline_maps")
+}
+
+model MediaConverters {
+  id Int @id @default(autoincrement())
+
+  mediaConverterId String @unique
+
+  //relations
+  smartMeterId String?
+  smartMeter   SmartMeter? @relation(fields: [smartMeterId], references: [id], onDelete: Cascade)
+
+  fx   Boolean
+  tx   Boolean
+  link Boolean
+  pwr  Boolean
+  act  Boolean
+  fdx  Boolean
+
+  lastUpdatedAt DateTime @updatedAt
+  createdAt     DateTime @default(now())
+
+  logs MediaConverterLogs[]
+
+  @@map("media_converters")
+}
+
+model MediaConverterLogs {
+  id Int @id @default(autoincrement())
+
+  mediaConverterId String
+  date             String
+
+  requestCount Int @default(0)
+  expected     Int
+
+  mediaConverter MediaConverters @relation(fields: [mediaConverterId], references: [mediaConverterId], onDelete: Cascade)
+
+  @@unique([mediaConverterId, date], name: "mediaConverterId_date")
+  @@map("media_converter_logs")
+}
+
+model SmartMeter {
+  id String @id @default(uuid())
+
+  smartMeterId String  @unique
+  location     String?
+
+  ipAddress String?
+
+  NetworkStatus String @default("OFFLINE")
+
+  latitude  Float?
+  longitude Float?
+
+  status String @default("Active")
+
+  addedBy String @default("")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  mediaConverters MediaConverters[]
+  sensors         Sensor[]
+
+  @@map("smart_meters")
 }
