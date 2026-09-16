@@ -1,6 +1,3 @@
 {
-  "/(protected)/area/page": "app/(protected)/area/page.js",
-  "/(protected)/drones/page": "app/(protected)/drones/page.js",
-  "/(protected)/page": "app/(protected)/page.js",
-  "/(protected)/sensors/page": "app/(protected)/sensors/page.js"
+  "/(protected)/page": "app/(protected)/page.js"
 }

@@ -200,7 +200,7 @@ __turbopack_context__.s([
     "updateSensor",
     ()=>updateSensor
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllSensors(params) {
     try {
         const queryParams = new URLSearchParams();
@@ -389,7 +389,7 @@ __turbopack_context__.s([
     "setMapActive",
     ()=>setMapActive
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllMaps() {
     try {
         const res = await fetch(`${API_BASE_URL}/api/maps`, {
@@ -524,7 +524,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2
 ;
 ;
 ;
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 const REACH_RADIUS_METERS = 6;
 const MapContainer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(async ()=>{}, {
     loadableGenerated: {
@@ -633,7 +633,7 @@ function getBaseIcon() {
       width:18px;
       height:18px;
       border-radius:9999px;
-      background:#0f172a827;
+      background:#111827;
       border:2px solid #22c55e;
       display:flex;
       align-items:center;
@@ -1188,83 +1188,83 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
         className: "relative h-full w-full",
         children: [
             mode === "sensor-health" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: " absolute bottom-4 right-4 z-[1000] bg-black/70 backdrop-blur-md border border-white/10 rounded-lg p-4 space-y-2 text-white text-xs",
+                className: "absolute bottom-6 right-6 z-[999] bg-white border border-slate-200 shadow-lg rounded-xl p-4 space-y-2 text-slate-900 text-xs",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "font-bold",
+                        className: "font-bold text-slate-900 text-sm",
                         children: "Sensor Health"
                     }, void 0, false, {
                         fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                        lineNumber: 947,
+                        lineNumber: 934,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2",
+                        className: "flex items-center gap-2.5 text-slate-800 font-medium",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "  w-4  h-4 rounded-full bg-blue-600 "
+                                className: "w-3.5 h-3.5 rounded-full bg-blue-600 shrink-0"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                lineNumber: 950,
+                                lineNumber: 937,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: "Sensor available in network"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                lineNumber: 954,
+                                lineNumber: 938,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                        lineNumber: 949,
+                        lineNumber: 936,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2",
+                        className: "flex items-center gap-2.5 text-slate-800 font-medium",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "      w-4 h-4 rounded-full bg-red-600 "
+                                className: "w-3.5 h-3.5 rounded-full bg-red-600 shrink-0"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                lineNumber: 958,
+                                lineNumber: 942,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: "Sensor unavailable / cannot ping"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                lineNumber: 962,
+                                lineNumber: 943,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                        lineNumber: 957,
+                        lineNumber: 941,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2",
+                        className: "flex items-center gap-2.5 text-slate-800 font-medium",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "  w-4   h-4   rounded-full bg-gray-500 "
+                                className: "w-3.5 h-3.5 rounded-full bg-gray-500 shrink-0"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                lineNumber: 966,
+                                lineNumber: 947,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: "Monitoring disabled"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                lineNumber: 970,
+                                lineNumber: 948,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                        lineNumber: 965,
+                        lineNumber: 946,
                         columnNumber: 11
                     }, this)
                 ]
@@ -1322,7 +1322,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                         attribution: ""
                     }, void 0, false, {
                         fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                        lineNumber: 998,
+                        lineNumber: 976,
                         columnNumber: 9
                     }, this),
                     visibleSensors.map((sensor)=>{
@@ -1361,7 +1361,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: sensor.name
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1068,
+                                            lineNumber: 1046,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1369,7 +1369,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: sensor.sensorType
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1070,
+                                            lineNumber: 1048,
                                             columnNumber: 19
                                         }, this),
                                         mode === "sensor-health" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1381,7 +1381,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                             children: "System Status:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                                            lineNumber: 1077,
+                                                            lineNumber: 1055,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1389,13 +1389,13 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                             children: sensor.status
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                                            lineNumber: 1079,
+                                                            lineNumber: 1057,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                                    lineNumber: 1076,
+                                                    lineNumber: 1054,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1405,7 +1405,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                             children: "Network Status:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                                            lineNumber: 1091,
+                                                            lineNumber: 1069,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1413,13 +1413,13 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                             children: sensor.activeShuruMode
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                                            lineNumber: 1093,
+                                                            lineNumber: 1071,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                                    lineNumber: 1090,
+                                                    lineNumber: 1068,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
@@ -1433,7 +1433,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                                    lineNumber: 1106,
+                                                    lineNumber: 1084,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1444,7 +1444,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                                    lineNumber: 1111,
+                                                    lineNumber: 1089,
                                                     columnNumber: 23
                                                 }, this),
                                                 hasActiveAlert && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1452,7 +1452,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     children: "🚨 ACTIVE ALERT"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                                    lineNumber: 1117,
+                                                    lineNumber: 1095,
                                                     columnNumber: 25
                                                 }, this)
                                             ]
@@ -1460,17 +1460,17 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                    lineNumber: 1067,
+                                    lineNumber: 1045,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                lineNumber: 1066,
+                                lineNumber: 1044,
                                 columnNumber: 15
                             }, this)
                         }, sensor.id, false, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                            lineNumber: 1027,
+                            lineNumber: 1005,
                             columnNumber: 13
                         }, this);
                     }),
@@ -1502,7 +1502,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: smartMeter.smartMeterId
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1153,
+                                            lineNumber: 1131,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1510,7 +1510,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: smartMeter.location
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1157,
+                                            lineNumber: 1135,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1520,7 +1520,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     children: "System Status:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                                    lineNumber: 1160,
+                                                    lineNumber: 1138,
                                                     columnNumber: 3
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1528,13 +1528,13 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     children: smartMeter.status
                                                 }, void 0, false, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                                    lineNumber: 1162,
+                                                    lineNumber: 1140,
                                                     columnNumber: 3
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1159,
+                                            lineNumber: 1137,
                                             columnNumber: 18
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1544,7 +1544,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     children: "Network Status:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                                    lineNumber: 1174,
+                                                    lineNumber: 1152,
                                                     columnNumber: 3
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1552,13 +1552,13 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                                     children: smartMeter.NetworkStatus
                                                 }, void 0, false, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                                    lineNumber: 1176,
+                                                    lineNumber: 1154,
                                                     columnNumber: 3
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1173,
+                                            lineNumber: 1151,
                                             columnNumber: 1
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1566,23 +1566,23 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: "Click to open Smart Meter"
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1187,
+                                            lineNumber: 1165,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                    lineNumber: 1152,
+                                    lineNumber: 1130,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                lineNumber: 1151,
+                                lineNumber: 1129,
                                 columnNumber: 15
                             }, this)
                         }, `smartmeter-${smartMeter.id}`, false, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                            lineNumber: 1143,
+                            lineNumber: 1121,
                             columnNumber: 13
                         }, this);
                     }),
@@ -1693,7 +1693,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1303,
+                                            lineNumber: 1281,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1701,7 +1701,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: drone.droneOSName
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1306,
+                                            lineNumber: 1284,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1709,7 +1709,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: tooltipStatusText
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1310,
+                                            lineNumber: 1288,
                                             columnNumber: 19
                                         }, this),
                                         !isOnline && status?.connectionLossTime && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1722,7 +1722,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1317,
+                                            lineNumber: 1295,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1735,7 +1735,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1326,
+                                            lineNumber: 1304,
                                             columnNumber: 19
                                         }, this),
                                         pos.alt != null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1747,23 +1747,23 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1330,
+                                            lineNumber: 1308,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                    lineNumber: 1302,
+                                    lineNumber: 1280,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                lineNumber: 1301,
+                                lineNumber: 1279,
                                 columnNumber: 15
                             }, this)
                         }, `drone-${drone.id}`, false, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                            lineNumber: 1281,
+                            lineNumber: 1259,
                             columnNumber: 13
                         }, this);
                     }),
@@ -1803,7 +1803,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             children: "🏠 Base"
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1383,
+                                            lineNumber: 1361,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1814,7 +1814,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1384,
+                                            lineNumber: 1362,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1825,7 +1825,7 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1387,
+                                            lineNumber: 1365,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1836,23 +1836,23 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                            lineNumber: 1390,
+                                            lineNumber: 1368,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                    lineNumber: 1382,
+                                    lineNumber: 1360,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                                lineNumber: 1381,
+                                lineNumber: 1359,
                                 columnNumber: 15
                             }, this)
                         }, `base-${drone.id}`, false, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                            lineNumber: 1368,
+                            lineNumber: 1346,
                             columnNumber: 13
                         }, this);
                     }),
@@ -1882,14 +1882,14 @@ function MapRenderer({ mode, mapConfig, sensors, smartMeters, onSmartMeterClick,
                             }
                         }, `telemetry-path-${drone.id}`, false, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                            lineNumber: 1418,
+                            lineNumber: 1396,
                             columnNumber: 13
                         }, this);
                     })
                 ]
             }, void 0, true, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/map-renderer.tsx",
-                lineNumber: 975,
+                lineNumber: 953,
                 columnNumber: 7
             }, this)
         ]
@@ -1942,7 +1942,7 @@ function getDroneStatusInfo(status) {
             return {
                 label: "On Ground",
                 emoji: "🛬",
-                color: "text-gray-400",
+                color: "text-slate-500",
                 bgColor: "bg-gray-500/20",
                 borderColor: "border-gray-500"
             };
@@ -2002,8 +2002,8 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
         setRecallError(null);
     };
     const getTelemetryColor = (value, thresholds)=>{
-        if (value === null) return "text-gray-400";
-        if (!thresholds) return "text-gray-300";
+        if (value === null) return "text-slate-500";
+        if (!thresholds) return "text-slate-700";
         if (value >= thresholds.good) return "text-green-400";
         if (value >= thresholds.warning) return "text-yellow-400";
         return "text-red-400";
@@ -2041,10 +2041,10 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "fixed bottom-2 right-2 sm:bottom-4 sm:right-4 w-[calc(100vw-1rem)] sm:w-[380px] md:w-[420px] lg:w-[26rem] rounded-lg border border-[#1c2541] bg-[#0f172a] shadow-2xl z-[900]",
+        className: "fixed bottom-2 right-2 sm:bottom-4 sm:right-4 w-[calc(100vw-1rem)] sm:w-[380px] md:w-[420px] lg:w-[26rem] rounded-lg border border-slate-200 bg-white shadow-2xl z-[900]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center justify-between border-b border-[#1c2541] px-3 sm:px-4 py-2 sm:py-3",
+                className: "flex items-center justify-between border-b border-slate-200 px-3 sm:px-4 py-2 sm:py-3",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center gap-2 sm:gap-3 min-w-0",
@@ -2102,16 +2102,16 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setIsMinimized(!isMinimized),
-                                className: "p-1 hover:bg-[#1c2541] rounded transition-colors",
+                                className: "p-1 hover:bg-slate-100 rounded transition-colors",
                                 "aria-label": isMinimized ? "Expand" : "Minimize",
                                 children: isMinimized ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$up$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronUp$3e$__["ChevronUp"], {
-                                    className: "h-3 w-3 sm:h-4 sm:w-4 text-gray-400"
+                                    className: "h-3 w-3 sm:h-4 sm:w-4 text-slate-500"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
                                     lineNumber: 228,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                    className: "h-3 w-3 sm:h-4 sm:w-4 text-gray-400"
+                                    className: "h-3 w-3 sm:h-4 sm:w-4 text-slate-500"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
                                     lineNumber: 230,
@@ -2154,10 +2154,10 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                 className: "px-3 sm:px-5 py-3 sm:py-4 space-y-2 sm:space-y-3 max-h-[calc(100vh-280px)] sm:max-h-none overflow-y-auto sm:overflow-visible",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "rounded-md bg-[#0b132b] p-2.5 sm:p-3 space-y-1.5 sm:space-y-2",
+                        className: "rounded-md bg-slate-50 p-2.5 sm:p-3 space-y-1.5 sm:space-y-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-[10px] sm:text-xs font-semibold text-gray-300 uppercase tracking-wide",
+                                className: "text-[10px] sm:text-xs font-semibold text-slate-700 uppercase tracking-wide",
                                 children: "Location"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2171,7 +2171,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                         className: "min-w-0",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gray-400 block",
+                                                className: "text-slate-500 block",
                                                 children: "Latitude:"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2179,7 +2179,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-gray-200 font-mono text-[9px] sm:text-[10px] truncate",
+                                                className: "text-slate-800 font-mono text-[9px] sm:text-[10px] truncate",
                                                 children: toNumber(telemetry?.lat)?.toFixed(6) ?? "N/A"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2196,7 +2196,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                         className: "min-w-0",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gray-400 block",
+                                                className: "text-slate-500 block",
                                                 children: "Longitude:"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2204,7 +2204,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-gray-200 font-mono text-[9px] sm:text-[10px] truncate",
+                                                className: "text-slate-800 font-mono text-[9px] sm:text-[10px] truncate",
                                                 children: toNumber(telemetry?.lng)?.toFixed(6) ?? "N/A"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2229,7 +2229,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     telemetry?.alt !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gray-400 text-[10px] sm:text-xs",
+                                                className: "text-slate-500 text-[10px] sm:text-xs",
                                                 children: "Altitude:"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2256,7 +2256,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     telemetry?.targetDistance !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gray-400",
+                                                className: "text-slate-500",
                                                 children: "To Target:"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2264,7 +2264,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-gray-200 font-semibold text-[9px] sm:text-[10px]",
+                                                className: "text-slate-800 font-semibold text-[9px] sm:text-[10px]",
                                                 children: [
                                                     toNumber(telemetry?.targetDistance)?.toFixed(1) ?? "N/A",
                                                     " m"
@@ -2296,7 +2296,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                         className: `rounded-md p-2.5 sm:p-3 space-y-1.5 sm:space-y-2 border ${getDroneStatusInfo(telemetry.status).borderColor} ${getDroneStatusInfo(telemetry.status).bgColor}`,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-[10px] sm:text-xs font-semibold text-gray-300 uppercase tracking-wide",
+                                className: "text-[10px] sm:text-xs font-semibold text-slate-700 uppercase tracking-wide",
                                 children: "Drone Status"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2326,7 +2326,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 columnNumber: 19
                                             }, this),
                                             telemetry.status === "reached" && telemetry.targetDistance !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-[8px] sm:text-[10px] text-gray-400",
+                                                className: "text-[8px] sm:text-[10px] text-slate-500",
                                                 children: [
                                                     "Distance: ",
                                                     telemetry.targetDistance.toFixed(1),
@@ -2338,7 +2338,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 columnNumber: 23
                                             }, this),
                                             telemetry.status === "on_air" && telemetry.alt !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-[8px] sm:text-[10px] text-gray-400",
+                                                className: "text-[8px] sm:text-[10px] text-slate-500",
                                                 children: [
                                                     "Alt: ",
                                                     telemetry.alt,
@@ -2368,10 +2368,10 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "rounded-md bg-[#0b132b] p-2.5 sm:p-3 space-y-1.5 sm:space-y-2",
+                        className: "rounded-md bg-slate-50 p-2.5 sm:p-3 space-y-1.5 sm:space-y-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-[10px] sm:text-xs font-semibold text-gray-300 uppercase tracking-wide",
+                                className: "text-[10px] sm:text-xs font-semibold text-slate-700 uppercase tracking-wide",
                                 children: "Status"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2384,7 +2384,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     telemetry?.battery !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gray-400",
+                                                className: "text-slate-500",
                                                 children: "Battery:"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2414,7 +2414,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     telemetry?.speed !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gray-400",
+                                                className: "text-slate-500",
                                                 children: "Speed:"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2422,7 +2422,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-gray-200 font-semibold text-[9px] sm:text-[10px]",
+                                                className: "text-slate-800 font-semibold text-[9px] sm:text-[10px]",
                                                 children: [
                                                     toNumber(telemetry?.speed)?.toFixed(1) ?? "N/A",
                                                     " m/s"
@@ -2447,7 +2447,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                             telemetry?.mode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-gray-400 text-[10px] sm:text-xs",
+                                        className: "text-slate-500 text-[10px] sm:text-xs",
                                         children: "Mode:"
                                     }, void 0, false, {
                                         fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2475,10 +2475,10 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "rounded-md bg-[#0b132b] p-2.5 sm:p-3 space-y-1.5 sm:space-y-2",
+                        className: "rounded-md bg-slate-50 p-2.5 sm:p-3 space-y-1.5 sm:space-y-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-[10px] sm:text-xs font-semibold text-gray-300 uppercase tracking-wide",
+                                className: "text-[10px] sm:text-xs font-semibold text-slate-700 uppercase tracking-wide",
                                 children: "GPS"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2491,7 +2491,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     telemetry?.gpsFix && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gray-400",
+                                                className: "text-slate-500",
                                                 children: "Fix:"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2515,7 +2515,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     telemetry?.satellites !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gray-400",
+                                                className: "text-slate-500",
                                                 children: "Satellites:"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2523,7 +2523,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-gray-200 font-semibold text-[9px] sm:text-[10px]",
+                                                className: "text-slate-800 font-semibold text-[9px] sm:text-[10px]",
                                                 children: toNumber(telemetry?.satellites) ?? "N/A"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2549,10 +2549,10 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                         columnNumber: 11
                     }, this),
                     (telemetry?.windSpeed !== null || telemetry?.targetDistance !== null) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "rounded-md bg-[#0b132b] p-2.5 sm:p-3 space-y-1.5 sm:space-y-2",
+                        className: "rounded-md bg-slate-50 p-2.5 sm:p-3 space-y-1.5 sm:space-y-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-[10px] sm:text-xs font-semibold text-gray-300 uppercase tracking-wide",
+                                className: "text-[10px] sm:text-xs font-semibold text-slate-700 uppercase tracking-wide",
                                 children: "Environment"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2564,7 +2564,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                 children: telemetry?.windSpeed !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-gray-400",
+                                            className: "text-slate-500",
                                             children: "Wind:"
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2572,7 +2572,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-gray-200 font-semibold text-[9px] sm:text-[10px]",
+                                            className: "text-slate-800 font-semibold text-[9px] sm:text-[10px]",
                                             children: [
                                                 toNumber(telemetry?.windSpeed)?.toFixed(1) ?? "N/A",
                                                 " m/s"
@@ -2600,10 +2600,10 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                         columnNumber: 13
                     }, this),
                     telemetry?.videoLink && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "rounded-md bg-[#0b132b] p-2.5 sm:p-3 space-y-2",
+                        className: "rounded-md bg-slate-50 p-2.5 sm:p-3 space-y-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-[10px] sm:text-xs font-semibold text-gray-300 uppercase tracking-wide",
+                                className: "text-[10px] sm:text-xs font-semibold text-slate-700 uppercase tracking-wide",
                                 children: "Video Feed"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2645,7 +2645,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                 columnNumber: 9
             }, this),
             !isMinimized && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "border-t border-[#1c2541] px-3 sm:px-4 py-2 sm:py-3 flex gap-2",
+                className: "border-t border-slate-200 px-3 sm:px-4 py-2 sm:py-3 flex gap-2",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                         size: "sm",
@@ -2683,7 +2683,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
             recallConfirmOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed inset-0 z-[950] flex items-center justify-center bg-black/70",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full max-w-sm rounded-lg border border-[#1c2541] bg-[#0f172a] p-5",
+                    className: "w-full max-w-sm rounded-lg border border-slate-200 bg-white p-5",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             className: "mb-2 text-sm font-semibold text-white",
@@ -2696,7 +2696,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                         !recallSuccess ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "mb-4 text-xs text-gray-400",
+                                    className: "mb-4 text-xs text-slate-500",
                                     children: [
                                         "The drone will immediately return to its home location.",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -2727,7 +2727,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                             variant: "outline",
                                             disabled: recallLoading,
                                             onClick: closeRecallModal,
-                                            className: "border-[#28385e] bg-transparent text-gray-300",
+                                            className: "border-slate-300 bg-transparent text-slate-700",
                                             children: "Cancel"
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2792,7 +2792,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "mt-1 text-xs text-gray-400",
+                                    className: "mt-1 text-xs text-slate-500",
                                     children: [
                                         "Drone: ",
                                         telemetry?.droneId
@@ -2808,7 +2808,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                         size: "sm",
                                         variant: "outline",
                                         onClick: closeRecallModal,
-                                        className: "border-[#28385e] bg-transparent text-gray-300",
+                                        className: "border-slate-300 bg-transparent text-slate-700",
                                         children: "Close"
                                     }, void 0, false, {
                                         fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -2840,7 +2840,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
             dropConfirmOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed inset-0 z-[950] flex items-center justify-center bg-black/70",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full max-w-sm rounded-lg border border-[#1c2541] bg-[#0f172a] p-5",
+                    className: "w-full max-w-sm rounded-lg border border-slate-200 bg-white p-5",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             className: "mb-2 text-sm font-semibold text-white",
@@ -2853,7 +2853,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                         !dropSuccess ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "mb-4 text-xs text-gray-400",
+                                    className: "mb-4 text-xs text-slate-500",
                                     children: [
                                         "This is a",
                                         " ",
@@ -2886,7 +2886,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                         setDropPinError(null);
                                     },
                                     placeholder: "Enter PIN",
-                                    className: "mb-2 w-full rounded-md border border-[#1c2541] bg-[#0f172a] px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-red-600"
+                                    className: "mb-2 w-full rounded-md border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-red-600"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
                                     lineNumber: 582,
@@ -2921,7 +2921,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "mt-1 text-xs text-gray-400",
+                                    className: "mt-1 text-xs text-slate-500",
                                     children: [
                                         "Drone: ",
                                         telemetry?.droneId
@@ -2949,7 +2949,7 @@ function TelemetryWindow({ telemetry, isOpen, onClose, onDropPayload, onRecall }
                                         setDropPin("");
                                         setDropPinError(null);
                                     },
-                                    className: "border-[#28385e] bg-transparent text-gray-300",
+                                    className: "border-slate-300 bg-transparent text-slate-700",
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/telemetry-window.tsx",
@@ -3034,7 +3034,7 @@ __turbopack_context__.s([
     "updateSmartMeter",
     ()=>updateSmartMeter
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllSmartMeters(params) {
     try {
         const queryParams = new URLSearchParams();
@@ -3203,13 +3203,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2
 ;
 ;
 ;
-const SOCKET_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const SOCKET_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 const REACH_RADIUS_METERS = 6;
 const DRONE_LOCATION_TIMEOUT_MS = 5000;
 const STALE_DATA_THRESHOLD_MS = 10000;
 const CRITICAL_LOSS_THRESHOLD_MS = 12000;
 const DRONE_STATUS_REFRESH_MS = 5000;
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 const ZOOM_SCALE_CONFIG = {
     minZoom: 10,
     maxZoom: 40,
@@ -3452,7 +3452,7 @@ function MapView({ mode = "operations" }) {
     const handleScanSensors = async ()=>{
         try {
             setScanning(true);
-            const response = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5001")}/api/camera/status/activeShuruMode`, {
+            const response = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5000")}/api/camera/status/activeShuruMode`, {
                 method: "GET"
             });
             const data = await response.json();
@@ -4103,9 +4103,9 @@ function MapView({ mode = "operations" }) {
     const isLoading = loadingMapConfig || loadingSensors || loadingAlerts;
     if (isLoading) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex h-full w-full items-center justify-center bg-[#0f172a]",
+            className: "flex h-full w-full items-center justify-center bg-white",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "text-sm text-gray-400",
+                className: "text-sm text-slate-500",
                 children: "Loading map..."
             }, void 0, false, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
@@ -4120,7 +4120,7 @@ function MapView({ mode = "operations" }) {
     }
     if (error) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex h-full w-full items-center justify-center bg-[#0f172a] px-4 text-center",
+            className: "flex h-full w-full items-center justify-center bg-white px-4 text-center",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 className: "text-sm text-red-400",
                 children: error
@@ -4137,9 +4137,9 @@ function MapView({ mode = "operations" }) {
     }
     if (!mapConfig || !center) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex h-full w-full items-center justify-center bg-[#0f172a] px-4 text-center",
+            className: "flex h-full w-full items-center justify-center bg-white px-4 text-center",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "text-sm text-gray-400",
+                className: "text-sm text-slate-500",
                 children: [
                     "No active offline map configured. Go to",
                     " ",
@@ -4269,7 +4269,7 @@ function MapView({ mode = "operations" }) {
                                     }
                                 },
                                 placeholder: "Search sensor → Press Enter",
-                                className: "w-full rounded-md border border-[#1c2541] bg-black/80 px-3 py-2 text-xs text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 backdrop-blur"
+                                className: "w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
                                 lineNumber: 1239,
@@ -4278,12 +4278,12 @@ function MapView({ mode = "operations" }) {
                             mode === "sensor-health" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                 onClick: handleScanSensors,
                                 disabled: scanning,
-                                className: " h-10 px-4 bg-white-500/90 hover:bg-blue-300 text-black border border-green-400/30 shadow-lg shadow-green-500/20 text-white flex items-center gap-2 ",
+                                className: " h-9 px-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg shadow-sm flex items-center gap-2 text-xs shrink-0 hover:cursor-pointer ",
                                 children: scanning ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
                                     className: "h-5 w-5 animate-spin"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1277,
+                                    lineNumber: 1280,
                                     columnNumber: 11
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                                     children: [
@@ -4291,7 +4291,7 @@ function MapView({ mode = "operations" }) {
                                             className: "h-5 w-5"
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                            lineNumber: 1280,
+                                            lineNumber: 1283,
                                             columnNumber: 11
                                         }, this),
                                         "SCAN"
@@ -4309,7 +4309,7 @@ function MapView({ mode = "operations" }) {
                         columnNumber: 8
                     }, this),
                     sensorSearchResults.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-1 max-h-72 overflow-auto rounded-md border border-[#1c2541] bg-black/90 text-xs shadow-xl backdrop-blur",
+                        className: "mt-1 max-h-72 overflow-auto rounded-md border border-slate-200 bg-black/90 text-xs shadow-xl backdrop-blur",
                         children: sensorSearchResults.map((sensor)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 className: "flex w-full flex-col px-3 py-2 text-left hover:bg-[#1f2933]",
                                 onClick: ()=>{
@@ -4323,11 +4323,11 @@ function MapView({ mode = "operations" }) {
                                         children: sensor.name
                                     }, void 0, false, {
                                         fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                        lineNumber: 1303,
+                                        lineNumber: 1306,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-[10px] text-gray-400",
+                                        className: "text-[10px] text-slate-500",
                                         children: [
                                             sensor.sensorId,
                                             " · ",
@@ -4335,18 +4335,18 @@ function MapView({ mode = "operations" }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                        lineNumber: 1304,
+                                        lineNumber: 1307,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, sensor.id, true, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                lineNumber: 1294,
+                                lineNumber: 1297,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                        lineNumber: 1292,
+                        lineNumber: 1295,
                         columnNumber: 11
                     }, this)
                 ]
@@ -4364,25 +4364,25 @@ function MapView({ mode = "operations" }) {
                             className: "absolute h-40 w-full animate-[scan_2.5s_linear_infinite] bg-gradient-to-b from-green-500/0 via-green-500/20 to-green-500/0"
                         }, void 0, false, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                            lineNumber: 1317,
+                            lineNumber: 1320,
                             columnNumber: 7
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                        lineNumber: 1316,
+                        lineNumber: 1319,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 backdrop-blur-[2px] bg-green-500/10"
                     }, void 0, false, {
                         fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                        lineNumber: 1321,
+                        lineNumber: 1324,
                         columnNumber: 3
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                lineNumber: 1314,
+                lineNumber: 1317,
                 columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$map$2d$renderer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -4405,7 +4405,7 @@ function MapView({ mode = "operations" }) {
                 onSmartMeterClick: (smartMeter)=>router.push(`/smartmeter/${smartMeter.id}`)
             }, void 0, false, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                lineNumber: 1332,
+                lineNumber: 1335,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -4416,7 +4416,7 @@ function MapView({ mode = "operations" }) {
                     }
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogContent"], {
-                    className: "border-[#1c2541] bg-[#0f172a] text-white",
+                    className: "border-slate-200 bg-white text-white",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogHeader"], {
                             children: [
@@ -4426,14 +4426,14 @@ function MapView({ mode = "operations" }) {
                                     children: selectedSensor ? selectedSensor.name : "Sensor"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1365,
+                                    lineNumber: 1368,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-center space-x-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogDescription"], {
-                                            className: "text-xs text-gray-400",
+                                            className: "text-xs text-slate-500",
                                             children: [
                                                 selectedSensor?.sensorId,
                                                 " ·",
@@ -4442,7 +4442,7 @@ function MapView({ mode = "operations" }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                            lineNumber: 1372,
+                                            lineNumber: 1375,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
@@ -4450,19 +4450,19 @@ function MapView({ mode = "operations" }) {
                                             children: selectedSensor?.addedBy || "N/A"
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                            lineNumber: 1376,
+                                            lineNumber: 1379,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1371,
+                                    lineNumber: 1374,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                            lineNumber: 1364,
+                            lineNumber: 1367,
                             columnNumber: 11
                         }, this),
                         autoDispatchBlocked && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4473,7 +4473,7 @@ function MapView({ mode = "operations" }) {
                                     children: "🚫 Auto-dispatch blocked"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1390,
+                                    lineNumber: 1393,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4481,7 +4481,7 @@ function MapView({ mode = "operations" }) {
                                     children: autoDispatchBlocked.reason
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1394,
+                                    lineNumber: 1397,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4495,7 +4495,7 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1398,
+                                    lineNumber: 1401,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4506,13 +4506,13 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1403,
+                                    lineNumber: 1406,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                            lineNumber: 1389,
+                            lineNumber: 1392,
                             columnNumber: 13
                         }, this),
                         autoDispatchCountdown !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4528,7 +4528,7 @@ function MapView({ mode = "operations" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1412,
+                                    lineNumber: 1415,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4541,28 +4541,28 @@ function MapView({ mode = "operations" }) {
                                         children: "Cancel Auto Send"
                                     }, void 0, false, {
                                         fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                        lineNumber: 1414,
+                                        lineNumber: 1417,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1413,
+                                    lineNumber: 1416,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                            lineNumber: 1410,
+                            lineNumber: 1413,
                             columnNumber: 13
                         }, this),
                         selectedSensor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "space-y-4 py-2 text-sm",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "rounded-md border border-[#1c2541] bg-[#0b132b] p-3",
+                                    className: "rounded-md border border-slate-200 bg-slate-50 p-3",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex justify-between text-xs text-gray-300",
+                                            className: "flex justify-between text-xs text-slate-700",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: [
@@ -4574,7 +4574,7 @@ function MapView({ mode = "operations" }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                                    lineNumber: 1430,
+                                                    lineNumber: 1433,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4584,30 +4584,30 @@ function MapView({ mode = "operations" }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                                    lineNumber: 1434,
+                                                    lineNumber: 1437,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                            lineNumber: 1429,
+                                            lineNumber: 1432,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "mt-2 text-xs text-gray-400",
+                                            className: "mt-2 text-xs text-slate-500",
                                             children: [
                                                 "Area: ",
                                                 selectedSensor.area?.name || "Unassigned"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                            lineNumber: 1436,
+                                            lineNumber: 1439,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1428,
+                                    lineNumber: 1431,
                                     columnNumber: 15
                                 }, this),
                                 selectedAlert ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4618,7 +4618,7 @@ function MapView({ mode = "operations" }) {
                                             children: "Active Alert"
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                            lineNumber: 1443,
+                                            lineNumber: 1446,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4626,7 +4626,7 @@ function MapView({ mode = "operations" }) {
                                             children: selectedAlert.message
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                            lineNumber: 1446,
+                                            lineNumber: 1449,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4638,69 +4638,69 @@ function MapView({ mode = "operations" }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                            lineNumber: 1449,
+                                            lineNumber: 1452,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1442,
+                                    lineNumber: 1445,
                                     columnNumber: 17
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "rounded-md border border-[#1c2541] bg-[#0f172a] p-3 text-xs text-gray-300",
+                                    className: "rounded-md border border-slate-200 bg-[#18181b] p-3 text-xs text-slate-700",
                                     children: [
                                         "No active alert on this sensor.",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                            lineNumber: 1457,
+                                            lineNumber: 1460,
                                             columnNumber: 19
                                         }, this),
                                         "You can still manually dispatch a drone from here."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1455,
+                                    lineNumber: 1458,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "space-y-2",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-xs text-gray-300",
+                                            className: "text-xs text-slate-700",
                                             children: "Select Drone to Dispatch:"
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                            lineNumber: 1463,
+                                            lineNumber: 1466,
                                             columnNumber: 17
                                         }, this),
                                         loadingDrones ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-2 rounded-md border border-[#1c2541] bg-[#0f172a] p-2 text-xs text-gray-400",
+                                            className: "flex items-center gap-2 rounded-md border border-slate-200 bg-white p-2 text-xs text-slate-500",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
                                                     className: "h-3 w-3 animate-spin"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                                    lineNumber: 1469,
+                                                    lineNumber: 1472,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "Loading drones..."
                                                 }, void 0, false, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                                    lineNumber: 1470,
+                                                    lineNumber: 1473,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                            lineNumber: 1468,
+                                            lineNumber: 1471,
                                             columnNumber: 19
                                         }, this) : dronesInSameArea.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "rounded-md border border-amber-700 bg-amber-950/40 p-3 text-xs text-amber-200",
                                             children: "No drones available in this sensor's area."
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                            lineNumber: 1473,
+                                            lineNumber: 1476,
                                             columnNumber: 19
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "space-y-2",
@@ -4711,15 +4711,15 @@ function MapView({ mode = "operations" }) {
                                                         setSelectedDroneId(e.target.value);
                                                     },
                                                     disabled: actionLoading,
-                                                    className: "h-9 w-full rounded-md border border-[#1c2541] bg-[#0f172a] px-3 text-xs text-gray-100 focus:outline-none focus:ring-2 focus:ring-[#2563EB]",
+                                                    className: "h-9 w-full rounded-md border border-slate-200 bg-white px-3 text-xs text-gray-100 focus:outline-none focus:ring-2 focus:ring-[#2563EB]",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                             value: "",
-                                                            className: "bg-[#0f172a] text-gray-400",
+                                                            className: "bg-white text-slate-500",
                                                             children: "Select a drone"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                                            lineNumber: 1486,
+                                                            lineNumber: 1489,
                                                             columnNumber: 23
                                                         }, this),
                                                         dronesInSameArea.map((drone)=>{
@@ -4740,7 +4740,7 @@ function MapView({ mode = "operations" }) {
                                                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                 value: drone.id,
                                                                 disabled: isDroneBusy(drone.id),
-                                                                className: "bg-[#0f172a] text-gray-100",
+                                                                className: "bg-white text-gray-100",
                                                                 children: [
                                                                     drone.droneOSName,
                                                                     " · ",
@@ -4751,14 +4751,14 @@ function MapView({ mode = "operations" }) {
                                                                 ]
                                                             }, drone.id, true, {
                                                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                                                lineNumber: 1508,
+                                                                lineNumber: 1511,
                                                                 columnNumber: 27
                                                             }, this);
                                                         })
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                                    lineNumber: 1478,
+                                                    lineNumber: 1481,
                                                     columnNumber: 21
                                                 }, this),
                                                 selectedDroneId && isDroneBusy(selectedDroneId) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4768,38 +4768,38 @@ function MapView({ mode = "operations" }) {
                                                             children: "⚠️"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                                            lineNumber: 1523,
+                                                            lineNumber: 1526,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: droneTelemetryData[selectedDroneId]?.status === "on_air" ? "This drone is currently in the air. Please wait for it to land." : "This drone is executing another mission."
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                                            lineNumber: 1524,
+                                                            lineNumber: 1527,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                                    lineNumber: 1522,
+                                                    lineNumber: 1525,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                            lineNumber: 1477,
+                                            lineNumber: 1480,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1462,
+                                    lineNumber: 1465,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                            lineNumber: 1427,
+                            lineNumber: 1430,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -4814,13 +4814,13 @@ function MapView({ mode = "operations" }) {
                                     children: "Neutralise Alert"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1540,
+                                    lineNumber: 1543,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                     type: "button",
                                     variant: "ghost",
-                                    className: "border-[#1c2541] bg-[#0f172a] text-white hover:bg-[#1c2541]",
+                                    className: "border-slate-200 bg-white text-white hover:bg-slate-100",
                                     onClick: handleOpenVideoFeed,
                                     disabled: actionLoading || !selectedSensor || !("rtspUrl" in (selectedSensor || {})) || !selectedSensor?.rtspUrl,
                                     children: actionLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -4829,7 +4829,7 @@ function MapView({ mode = "operations" }) {
                                                 className: "mr-2 h-4 w-4 animate-spin"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                                lineNumber: 1565,
+                                                lineNumber: 1568,
                                                 columnNumber: 19
                                             }, this),
                                             "Launching..."
@@ -4837,7 +4837,7 @@ function MapView({ mode = "operations" }) {
                                     }, void 0, true) : "Video Feed"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1551,
+                                    lineNumber: 1554,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -4848,24 +4848,24 @@ function MapView({ mode = "operations" }) {
                                     children: selectedAlert ? "Send Drone (ड्रोन भेजिए)" : "Send Drone (ड्रोन भेजिए)"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                                    lineNumber: 1573,
+                                    lineNumber: 1576,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                            lineNumber: 1538,
+                            lineNumber: 1541,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                    lineNumber: 1363,
+                    lineNumber: 1366,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                lineNumber: 1355,
+                lineNumber: 1358,
                 columnNumber: 7
             }, this),
             telemetryWindowOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$telemetry$2d$window$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TelemetryWindow"], {
@@ -4876,7 +4876,7 @@ function MapView({ mode = "operations" }) {
                 onRecall: handleRecall
             }, void 0, false, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/map-view.tsx",
-                lineNumber: 1594,
+                lineNumber: 1597,
                 columnNumber: 9
             }, this)
         ]

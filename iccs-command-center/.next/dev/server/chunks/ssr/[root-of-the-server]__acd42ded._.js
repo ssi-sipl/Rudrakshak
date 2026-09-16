@@ -266,10 +266,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-ssr] (ecmascript) <export default as MapPin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cpu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Cpu$3e$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/lucide-react/dist/esm/icons/cpu.js [app-ssr] (ecmascript) <export default as Cpu>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Navigation$3e$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/lucide-react/dist/esm/icons/navigation.js [app-ssr] (ecmascript) <export default as Navigation>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chart$2d$column$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__BarChart3$3e$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/lucide-react/dist/esm/icons/chart-column.js [app-ssr] (ecmascript) <export default as BarChart3>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/lucide-react/dist/esm/icons/log-out.js [app-ssr] (ecmascript) <export default as LogOut>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/lucide-react/dist/esm/icons/menu.js [app-ssr] (ecmascript) <export default as Menu>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/lucide-react/dist/esm/icons/zap.js [app-ssr] (ecmascript) <export default as Zap>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-ssr] (ecmascript) <export default as ShieldCheck>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/components/ui/button.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$sheet$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/components/ui/sheet.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$lib$2f$api$2f$auth$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/lib/api/auth.ts [app-ssr] (ecmascript)");
@@ -307,16 +307,16 @@ const navItems = [
         href: "/drones"
     },
     {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chart$2d$column$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__BarChart3$3e$__["BarChart3"],
-        label: "REPORT",
-        href: "/report"
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"],
+        label: "MAP",
+        href: "/maps/manage"
     }
 ];
 function DashboardHeader() {
     const [mobileMenuOpen, setMobileMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
-    const { refreshUser } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAuth"])();
+    const { user, refreshUser } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAuth"])();
     const isActive = (href)=>{
         if (href === "/") {
             return pathname === "/";
@@ -328,100 +328,159 @@ function DashboardHeader() {
         await refreshUser();
         router.push("/login");
     }
+    const userName = user?.name || "Operator";
+    const userInitial = userName.charAt(0).toUpperCase();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-        className: "flex h-16 items-center justify-between border-b border-slate-800 bg-[#0f172a] px-4 md:px-6 shadow-md shadow-slate-950/40",
+        className: "flex h-14 items-center justify-between border-b border-slate-200 bg-white px-3 md:px-5 shadow-xs",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 href: "/",
-                className: "flex items-center gap-3 group py-1",
+                className: "flex items-center gap-2 group py-1",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center gap-2.5 py-1.5 px-3.5 rounded-xl bg-slate-800/90 border border-slate-700 shadow-sm shadow-slate-950/50 transition-all duration-200 group-hover:border-slate-600",
+                    className: "flex items-center gap-2 py-1 px-3 rounded-lg bg-slate-50 border border-slate-200 transition-all duration-200 group-hover:border-slate-300",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-xl md:text-2xl font-black tracking-widest text-white",
-                            children: "DMS"
+                            className: "text-lg md:text-xl font-extrabold tracking-wider text-slate-900",
+                            children: "SENSOR AND DRONE MANAGEMENT"
                         }, void 0, false, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                            lineNumber: 55,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "hidden sm:inline-block text-xs font-semibold tracking-wider text-slate-400 border-l border-slate-700 pl-2.5",
-                            children: "DRONE MANAGEMENT SYSTEM"
+                            className: "hidden sm:inline-block text-xs font-bold tracking-wider text-slate-500 border-l border-slate-200 pl-2",
+                            children: "SECURITY"
                         }, void 0, false, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                            lineNumber: 58,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                    lineNumber: 54,
+                    lineNumber: 60,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                lineNumber: 53,
+                lineNumber: 59,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                className: "hidden items-center gap-2 xl:flex",
-                children: navItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                className: "hidden items-center gap-1.5 xl:flex",
+                children: navItems.map((item)=>{
+                    if (item.label === "HEALTH") {
+                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            href: item.href,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: "ghost",
+                                size: "sm",
+                                className: `gap-1.5 px-3 py-1.5 text-xs transition-all duration-150 rounded-lg ${isActive(item.href) ? "bg-red-100 text-red-700 border border-red-300 font-bold shadow-2xs" : "bg-red-50 text-red-600 border border-red-200 hover:bg-red-100 font-semibold"}`,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
+                                        className: "h-4 w-4 text-red-600"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
+                                        lineNumber: 84,
+                                        columnNumber: 19
+                                    }, this),
+                                    "HEALTH"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
+                                lineNumber: 75,
+                                columnNumber: 17
+                            }, this)
+                        }, item.label, false, {
+                            fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
+                            lineNumber: 74,
+                            columnNumber: 15
+                        }, this);
+                    }
+                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         href: item.href,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                             variant: "ghost",
                             size: "sm",
-                            className: `gap-2.5 px-3.5 py-2 text-xs transition-all duration-150 rounded-lg ${isActive(item.href) ? "bg-slate-800 text-white border border-slate-700 shadow-sm font-semibold" : "text-slate-400 hover:bg-slate-800/60 hover:text-white border border-transparent"}`,
+                            className: `gap-2 px-3 py-1.5 text-xs transition-all duration-150 rounded-lg ${isActive(item.href) ? "bg-slate-100 text-slate-900 border border-slate-200 shadow-2xs font-bold" : "text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-transparent font-medium"}`,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(item.icon, {
-                                    className: `h-4 w-4 ${isActive(item.href) ? "text-blue-400" : "text-slate-400"}`
+                                    className: `h-4 w-4 ${isActive(item.href) ? "text-slate-900" : "text-slate-500"}`
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                    lineNumber: 76,
-                                    columnNumber: 15
+                                    lineNumber: 102,
+                                    columnNumber: 17
                                 }, this),
                                 item.label
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                            lineNumber: 67,
-                            columnNumber: 13
+                            lineNumber: 93,
+                            columnNumber: 15
                         }, this)
                     }, item.label, false, {
                         fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                        lineNumber: 66,
-                        columnNumber: 11
-                    }, this))
+                        lineNumber: 92,
+                        columnNumber: 13
+                    }, this);
+                })
             }, void 0, false, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                lineNumber: 64,
+                lineNumber: 70,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "hidden items-center gap-4 xl:flex",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                    variant: "ghost",
-                    size: "sm",
-                    className: "gap-2 text-xs text-slate-400 hover:bg-red-500/10 hover:text-red-400 hover:border-red-500/30 border border-transparent transition-all hover:cursor-pointer",
-                    onClick: handleLogout,
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
-                            className: "h-4 w-4"
-                        }, void 0, false, {
-                            fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                            lineNumber: 90,
-                            columnNumber: 11
-                        }, this),
-                        "LOGOUT"
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                    lineNumber: 84,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                className: "hidden items-center gap-3 xl:flex",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-2 px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "h-6 w-6 rounded-full bg-slate-800 text-white font-bold flex items-center justify-center text-xs",
+                                children: userInitial
+                            }, void 0, false, {
+                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
+                                lineNumber: 113,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-xs font-semibold text-slate-800 max-w-[100px] truncate",
+                                children: userName
+                            }, void 0, false, {
+                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
+                                lineNumber: 116,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
+                        lineNumber: 112,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                        variant: "ghost",
+                        size: "sm",
+                        className: "gap-1.5 text-xs text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all hover:cursor-pointer",
+                        onClick: handleLogout,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
+                                className: "h-4 w-4 text-slate-500"
+                            }, void 0, false, {
+                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
+                                lineNumber: 128,
+                                columnNumber: 11
+                            }, this),
+                            "LOGOUT"
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
+                        lineNumber: 122,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                lineNumber: 83,
+                lineNumber: 110,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$sheet$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Sheet"], {
@@ -433,41 +492,41 @@ function DashboardHeader() {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                             variant: "ghost",
                             size: "icon",
-                            className: "xl:hidden text-white hover:bg-slate-800",
+                            className: "xl:hidden text-slate-800 hover:bg-slate-100",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
                                 className: "h-6 w-6"
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                lineNumber: 102,
+                                lineNumber: 140,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                            lineNumber: 97,
+                            lineNumber: 135,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                        lineNumber: 96,
+                        lineNumber: 134,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$sheet$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SheetContent"], {
                         side: "right",
-                        className: "w-72 border-slate-800 bg-[#0f172a] p-0",
+                        className: "w-72 border-slate-200 bg-white p-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex h-16 items-center justify-between border-b border-slate-800 px-4",
+                                className: "flex h-14 items-center justify-between border-b border-slate-200 px-4",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-lg font-bold text-white tracking-wide",
+                                    className: "text-lg font-bold text-slate-900 tracking-wide",
                                     children: "Menu"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                    lineNumber: 110,
+                                    lineNumber: 148,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                lineNumber: 109,
+                                lineNumber: 147,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -477,102 +536,102 @@ function DashboardHeader() {
                                             href: item.href,
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                                 variant: "ghost",
-                                                className: `w-full justify-start gap-3 rounded-lg ${isActive(item.href) ? "bg-slate-800 text-white border border-slate-700 font-semibold" : "text-slate-400 hover:bg-slate-800/60 hover:text-white"}`,
+                                                className: `w-full justify-start gap-3 rounded-lg ${isActive(item.href) ? "bg-slate-100 text-slate-900 border border-slate-200 font-bold" : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"}`,
                                                 onClick: ()=>setMobileMenuOpen(false),
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(item.icon, {
-                                                        className: `h-5 w-5 ${isActive(item.href) ? "text-blue-400" : "text-slate-400"}`
+                                                        className: `h-5 w-5 ${isActive(item.href) ? "text-slate-900" : "text-slate-500"}`
                                                     }, void 0, false, {
                                                         fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                                        lineNumber: 124,
+                                                        lineNumber: 162,
                                                         columnNumber: 19
                                                     }, this),
                                                     item.label
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                                lineNumber: 115,
+                                                lineNumber: 153,
                                                 columnNumber: 17
                                             }, this)
                                         }, item.label, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                            lineNumber: 114,
+                                            lineNumber: 152,
                                             columnNumber: 15
                                         }, this)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/smartmeter",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                             variant: "ghost",
-                                            className: `w-full uppercase justify-start gap-3 rounded-lg ${pathname.startsWith("/smartmeter") ? "bg-slate-800 text-white border border-slate-700 font-semibold" : "text-slate-400 hover:bg-slate-800/60 hover:text-white"}`,
+                                            className: `w-full uppercase justify-start gap-3 rounded-lg ${pathname.startsWith("/smartmeter") ? "bg-slate-100 text-slate-900 border border-slate-200 font-bold" : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"}`,
                                             onClick: ()=>setMobileMenuOpen(false),
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"], {
-                                                    className: "h-5 w-5 text-slate-400"
+                                                    className: "h-5 w-5 text-slate-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                                    lineNumber: 140,
+                                                    lineNumber: 178,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Smart Meter"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                            lineNumber: 131,
+                                            lineNumber: 169,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                        lineNumber: 130,
+                                        lineNumber: 168,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "my-4 border-t border-slate-800"
+                                        className: "my-4 border-t border-slate-200"
                                     }, void 0, false, {
                                         fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                        lineNumber: 145,
+                                        lineNumber: 183,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                         variant: "ghost",
-                                        className: "justify-start gap-3 text-slate-400 hover:bg-red-500/10 hover:text-red-400",
+                                        className: "justify-start gap-3 text-slate-600 hover:bg-red-50 hover:text-red-600",
                                         onClick: handleLogout,
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
                                                 className: "h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                                lineNumber: 152,
+                                                lineNumber: 190,
                                                 columnNumber: 15
                                             }, this),
                                             "LOGOUT"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                        lineNumber: 147,
+                                        lineNumber: 185,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                                lineNumber: 112,
+                                lineNumber: 150,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                        lineNumber: 105,
+                        lineNumber: 143,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-                lineNumber: 95,
+                lineNumber: 133,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-header.tsx",
-        lineNumber: 51,
+        lineNumber: 57,
         columnNumber: 5
     }, this);
 }
@@ -887,7 +946,7 @@ __turbopack_context__.s([
     "sendDroneForAlert",
     ()=>sendDroneForAlert
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllAlerts(params) {
     try {
         // Build query string
@@ -1441,7 +1500,7 @@ __turbopack_context__.s([
     "updateDroneOS",
     ()=>updateDroneOS
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 async function getAllDroneOS(params) {
     try {
         const queryParams = new URLSearchParams();
@@ -1624,7 +1683,7 @@ __turbopack_context__.s([
     "stopRtsp",
     ()=>stopRtsp
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 /**
  * internal helper to fetch with timeout and safe json parsing
  */ async function fetchJsonWithTimeout(input, init, timeoutMs = 8000) {
@@ -1825,7 +1884,7 @@ __turbopack_context__.s([
     "sendDrone",
     ()=>sendDrone
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
 // ============================================
 // INTERNAL HELPER
 // ============================================
@@ -1969,7 +2028,6 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wifi$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Wifi$3e$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/lucide-react/dist/esm/icons/wifi.js [app-ssr] (ecmascript) <export default as Wifi>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/lucide-react/dist/esm/icons/chevron-left.js [app-ssr] (ecmascript) <export default as ChevronLeft>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-ssr] (ecmascript) <export default as ChevronRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__ = __turbopack_context__.i("[project]/Rayonix/iccs-command-center/node_modules/lucide-react/dist/esm/icons/triangle-alert.js [app-ssr] (ecmascript) <export default as AlertTriangle>");
@@ -2031,7 +2089,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
     const [patrolConfirmOpen, setPatrolConfirmOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [patrolLoading, setPatrolLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [videoLoading, setVideoLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5000";
+    const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000") || "http://localhost:5000";
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const fetchDrones = async ()=>{
             setDronesLoading(true);
@@ -2328,419 +2386,33 @@ function DashboardSidebar({ isOpen, onToggle }) {
                 lineNumber: 437,
                 columnNumber: 9
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
-                className: `fixed left-0 top-14 z-30 flex h-[calc(100vh-3.5rem)] flex-col border-r border-[#1c2541] bg-[#0b132b] p-4 transition-transform duration-300 lg:static lg:z-0 lg:translate-x-0 ${isOpen ? "translate-x-0" : "-translate-x-full"} w-72 md:w-80`,
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "mb-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "mb-3 text-sm font-semibold tracking-wide text-white",
-                                children: "PATROL"
-                            }, void 0, false, {
-                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                lineNumber: 491,
-                                columnNumber: 11
-                            }, this),
-                            dronesLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-2 text-xs text-gray-400",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
-                                        className: "h-3 w-3 animate-spin text-[#2563EB]"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                        lineNumber: 497,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: "Loading drones..."
-                                    }, void 0, false, {
-                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                        lineNumber: 498,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                lineNumber: 496,
-                                columnNumber: 13
-                            }, this),
-                            !dronesLoading && dronesError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-xs text-red-500",
-                                children: dronesError
-                            }, void 0, false, {
-                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                lineNumber: 503,
-                                columnNumber: 13
-                            }, this),
-                            !dronesLoading && !dronesError && dronesList.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-xs text-gray-500",
-                                children: "No drones configured"
-                            }, void 0, false, {
-                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                lineNumber: 507,
-                                columnNumber: 13
-                            }, this),
-                            !dronesLoading && !dronesError && dronesList.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "space-y-2 max-h-[200px] overflow-y-auto",
-                                children: dronesList.map((drone)=>// <div
-                                    //   key={drone.id}
-                                    //   className="rounded-lg border border-[#1c2541] bg-[#1c2541] p-3"
-                                    // >
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        onClick: ()=>setSelectedPatrolDroneId(drone.id),
-                                        className: `cursor-pointer rounded-lg border p-3 transition
-    ${selectedPatrolDroneId === drone.id ? "border-blue-500 bg-blue-950/40" : "border-[#1c2541] bg-[#1c2541] hover:border-[#2563EB]"}`,
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center justify-between gap-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center gap-3 min-w-0",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex h-10 w-10 shrink-0 items-center justify-center rounded bg-[#1c2541]",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wifi$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Wifi$3e$__["Wifi"], {
-                                                                className: "h-5 w-5 text-gray-400"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                                lineNumber: 530,
-                                                                columnNumber: 25
-                                                            }, this)
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                            lineNumber: 529,
-                                                            columnNumber: 23
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "min-w-0",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "font-medium text-white truncate",
-                                                                    children: drone.droneOSName
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                                    lineNumber: 533,
-                                                                    columnNumber: 25
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "flex space-x-2",
-                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        className: "text-xs text-gray-500 truncate ",
-                                                                        children: drone.droneType
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                                        lineNumber: 538,
-                                                                        columnNumber: 27
-                                                                    }, this)
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                                    lineNumber: 537,
-                                                                    columnNumber: 25
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                            lineNumber: 532,
-                                                            columnNumber: 23
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                    lineNumber: 528,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
-                                                    className: "shrink-0 bg-green-600 hover:bg-green-700 text-xs text-white",
-                                                    children: drone?.area?.name || "Unassigned"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                    lineNumber: 547,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                            lineNumber: 527,
-                                            columnNumber: 19
-                                        }, this)
-                                    }, drone.id, false, {
-                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                        lineNumber: 517,
-                                        columnNumber: 17
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                lineNumber: 511,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                className: "mt-4 w-full border border-[#28385e] bg-transparent text-white hover:bg-[#1c2541] hover:cursor-pointer",
-                                variant: "outline",
-                                disabled: !selectedPatrolDroneId,
-                                onClick: ()=>setPatrolConfirmOpen(true),
-                                children: "Send on Patrol (पेट्रोलिंग पर भेजो)"
-                            }, void 0, false, {
-                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                lineNumber: 556,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mt-4 border-b border-[#1c2541]"
-                            }, void 0, false, {
-                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                lineNumber: 565,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                        lineNumber: 490,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "flex-1 flex flex-col min-h-0",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "sticky top-0 z-10 mb-2 flex items-center justify-between gap-2 bg-[#0b132b] pb-2",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-sm font-semibold tracking-wide text-white",
-                                        children: "ALERT"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                        lineNumber: 571,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-2",
-                                        children: alerts.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                            size: "sm",
-                                            variant: "outline",
-                                            disabled: actionLoading,
-                                            onClick: ()=>setNeutraliseAllConfirmOpen(true),
-                                            className: "h-6 px-2 text-[10px] border-red-500 text-red-400 hover:bg-red-500/10",
-                                            children: "Neutralise All"
-                                        }, void 0, false, {
-                                            fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                            lineNumber: 577,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                        lineNumber: 575,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                lineNumber: 570,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex-1 overflow-y-auto pr-1",
-                                children: [
-                                    alertsLoading2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-2 text-sm text-gray-400",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
-                                                className: "h-4 w-4 animate-spin text-[#2563EB]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                lineNumber: 601,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                children: "Loading active alerts..."
-                                            }, void 0, false, {
-                                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                lineNumber: 602,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                        lineNumber: 600,
-                                        columnNumber: 15
-                                    }, this),
-                                    !alertsLoading2 && alertsError2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-sm text-red-500",
-                                        children: [
-                                            "Failed to load alerts: ",
-                                            alertsError2
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                        lineNumber: 607,
-                                        columnNumber: 15
-                                    }, this),
-                                    !alertsLoading2 && !alertsError2 && alerts.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-sm text-gray-500",
-                                        children: "No Active Alerts Found..."
-                                    }, void 0, false, {
-                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                        lineNumber: 613,
-                                        columnNumber: 15
-                                    }, this),
-                                    !alertsLoading2 && !alertsError2 && alerts.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "space-y-3",
-                                        children: alerts.map((alert)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "relative w-full rounded-lg border border-[#1c2541] bg-[#1c2541] p-3 text-left text-sm hover:border-[#2563EB] hover:bg-[#1e293b]",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                        onClick: async (e)=>{
-                                                            e.stopPropagation();
-                                                            try {
-                                                                const res = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$lib$2f$api$2f$alerts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["neutraliseAlert"])(alert.id, "manual_clear");
-                                                                if (!res.success) {
-                                                                    throw new Error(res.error || "Failed to neutralise alert");
-                                                                }
-                                                                toast({
-                                                                    title: "Alert neutralised",
-                                                                    description: "Alert cleared successfully"
-                                                                });
-                                                                setAlerts((prev)=>prev.filter((a)=>a.id !== alert.id));
-                                                            } catch (err) {
-                                                                toast({
-                                                                    title: "Error",
-                                                                    description: err instanceof Error ? err.message : "Failed to neutralise alert",
-                                                                    variant: "destructive"
-                                                                });
-                                                            }
-                                                        },
-                                                        className: "absolute right-2 top-2 text-gray-400 hover:text-red-500 text-xs",
-                                                        title: "Neutralise alert",
-                                                        children: "✕"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                        lineNumber: 624,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                        onClick: ()=>openAlertModal(alert),
-                                                        className: "w-full text-left",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "mb-2 flex items-start gap-2",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__["AlertTriangle"], {
-                                                                        className: "mt-0.5 h-4 w-4 text-orange-500"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                                        lineNumber: 671,
-                                                                        columnNumber: 25
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "flex-1",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                                className: "font-medium text-white line-clamp-2",
-                                                                                children: alert.message || "Alert"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                                                lineNumber: 673,
-                                                                                columnNumber: 27
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                                className: "text-xs text-gray-400",
-                                                                                children: [
-                                                                                    "Sensor:",
-                                                                                    " ",
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "font-mono text-[#2563EB]",
-                                                                                        children: alert.sensor?.name || alert.sensorId || "Unknown Sensor"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                                                        lineNumber: 678,
-                                                                                        columnNumber: 29
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                                                lineNumber: 676,
-                                                                                columnNumber: 27
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                                        lineNumber: 672,
-                                                                        columnNumber: 25
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                                lineNumber: 670,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-[11px] text-gray-500",
-                                                                children: alert.time
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                                lineNumber: 686,
-                                                                columnNumber: 23
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                        lineNumber: 666,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                ]
-                                            }, alert.id, true, {
-                                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                lineNumber: 619,
-                                                columnNumber: 19
-                                            }, this))
-                                    }, void 0, false, {
-                                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                        lineNumber: 617,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                lineNumber: 598,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                        lineNumber: 569,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                lineNumber: 443,
-                columnNumber: 7
-            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                 variant: "secondary",
                 size: "icon",
-                className: `fixed z-40 h-10 w-10 bg-[#1c2541] text-white hover:bg-[#28385e] lg:hidden transition-all duration-300 ${isOpen ? "left-[17rem] md:left-[19rem]" : "left-2"} top-[4.5rem]`,
+                className: `fixed z-40 h-10 w-10 bg-[#333] text-white hover:bg-[#444] lg:hidden transition-all duration-300 ${isOpen ? "left-[17rem] md:left-[19rem]" : "left-2"} top-[4.5rem]`,
                 onClick: onToggle,
                 children: isOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"], {
                     className: "h-5 w-5"
                 }, void 0, false, {
                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                    lineNumber: 709,
+                    lineNumber: 698,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                     className: "h-5 w-5"
                 }, void 0, false, {
                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                    lineNumber: 711,
+                    lineNumber: 700,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                lineNumber: 700,
+                lineNumber: 689,
                 columnNumber: 7
             }, this),
             isModalOpen && selectedAlert && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full max-w-lg rounded-lg border border-[#1c2541] bg-[#0f172a] p-5 shadow-xl",
+                    className: "w-full max-w-lg rounded-lg border border-[#333] bg-[#111] p-5 shadow-xl",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "mb-4 flex items-start justify-between gap-3",
@@ -2754,7 +2426,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                     className: "h-5 w-5 text-orange-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                    lineNumber: 722,
+                                                    lineNumber: 711,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2762,13 +2434,13 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                     children: "Active Alert"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                    lineNumber: 723,
+                                                    lineNumber: 712,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                            lineNumber: 721,
+                                            lineNumber: 710,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2776,13 +2448,13 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                             children: new Date(selectedAlert.createdAt).toLocaleString()
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                            lineNumber: 727,
+                                            lineNumber: 716,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 720,
+                                    lineNumber: 709,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
@@ -2790,13 +2462,13 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     children: selectedAlert.status
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 731,
+                                    lineNumber: 720,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                            lineNumber: 719,
+                            lineNumber: 708,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2807,11 +2479,11 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     children: selectedAlert.message
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 737,
+                                    lineNumber: 726,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mt-3 rounded-md border border-[#1c2541] bg-[#0f172a] p-3",
+                                    className: "mt-3 rounded-md border border-[#333] bg-[#181818] p-3",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-gray-400",
@@ -2820,14 +2492,14 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                     className: "h-3 w-3"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                    lineNumber: 741,
+                                                    lineNumber: 730,
                                                     columnNumber: 19
                                                 }, this),
                                                 "Sensor Details"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                            lineNumber: 740,
+                                            lineNumber: 729,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2840,7 +2512,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                             children: "Name:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                            lineNumber: 746,
+                                                            lineNumber: 735,
                                                             columnNumber: 21
                                                         }, this),
                                                         " ",
@@ -2849,13 +2521,13 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                             children: selectedAlert.sensor?.name || "Unknown"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                            lineNumber: 747,
+                                                            lineNumber: 736,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                    lineNumber: 745,
+                                                    lineNumber: 734,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2865,22 +2537,22 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                             children: "Sensor ID:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                            lineNumber: 752,
+                                                            lineNumber: 741,
                                                             columnNumber: 21
                                                         }, this),
                                                         " ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-mono text-[#2563EB]",
+                                                            className: "font-mono text-[#4A9FD4]",
                                                             children: selectedAlert.sensorId
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                            lineNumber: 753,
+                                                            lineNumber: 742,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                    lineNumber: 751,
+                                                    lineNumber: 740,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2890,7 +2562,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                             children: "Area:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                            lineNumber: 758,
+                                                            lineNumber: 747,
                                                             columnNumber: 21
                                                         }, this),
                                                         " ",
@@ -2899,13 +2571,13 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                             children: selectedAlert.sensor?.area?.name || "Unassigned"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                            lineNumber: 759,
+                                                            lineNumber: 748,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                    lineNumber: 757,
+                                                    lineNumber: 746,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2915,7 +2587,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                             className: "h-3 w-3 text-gray-500"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                            lineNumber: 764,
+                                                            lineNumber: 753,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2923,31 +2595,31 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                             children: typeof selectedAlert.sensor?.latitude === "number" && typeof selectedAlert.sensor?.longitude === "number" ? `${selectedAlert.sensor.latitude.toFixed(5)}, ${selectedAlert.sensor.longitude.toFixed(5)}` : "N/A"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                            lineNumber: 765,
+                                                            lineNumber: 754,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                    lineNumber: 763,
+                                                    lineNumber: 752,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                            lineNumber: 744,
+                                            lineNumber: 733,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 739,
+                                    lineNumber: 728,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                            lineNumber: 736,
+                            lineNumber: 725,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2958,30 +2630,30 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     children: "Select Drone"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 780,
+                                    lineNumber: 769,
                                     columnNumber: 15
                                 }, this),
                                 dronesLoading2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-center gap-2 text-xs text-gray-400",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
-                                            className: "h-3 w-3 animate-spin text-[#2563EB]"
+                                            className: "h-3 w-3 animate-spin text-[#4A9FD4]"
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                            lineNumber: 786,
+                                            lineNumber: 775,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "Loading drones..."
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                            lineNumber: 787,
+                                            lineNumber: 776,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 785,
+                                    lineNumber: 774,
                                     columnNumber: 17
                                 }, this),
                                 !dronesLoading2 && dronesError2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2989,7 +2661,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     children: dronesError2
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 792,
+                                    lineNumber: 781,
                                     columnNumber: 17
                                 }, this),
                                 !dronesLoading2 && !dronesError2 && drones.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2997,7 +2669,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     children: "No drones configured yet."
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 796,
+                                    lineNumber: 785,
                                     columnNumber: 17
                                 }, this),
                                 !dronesLoading2 && !dronesError2 && drones.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Select"], {
@@ -3005,24 +2677,24 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     onValueChange: setSelectedDroneId,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectTrigger"], {
-                                            className: "h-9 border-[#28385e] bg-[#0f172a] text-xs text-white focus:ring-[#2563EB]",
+                                            className: "h-9 border-[#444] bg-[#181818] text-xs text-white focus:ring-[#4A9FD4]",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectValue"], {
                                                 placeholder: "Select a drone to send"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                lineNumber: 807,
+                                                lineNumber: 796,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                            lineNumber: 806,
+                                            lineNumber: 795,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectContent"], {
-                                            className: "border-[#1c2541] bg-[#0f172a] text-xs text-white",
+                                            className: "border-[#333] bg-[#181818] text-xs text-white",
                                             children: drones.map((drone)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
                                                     value: drone.id,
-                                                    className: "text-xs text-white focus:bg-[#1c2541] focus:text-white",
+                                                    className: "text-xs text-white focus:bg-[#333] focus:text-white",
                                                     children: [
                                                         drone.droneOSName,
                                                         " (",
@@ -3031,24 +2703,24 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                     ]
                                                 }, drone.id, true, {
                                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                    lineNumber: 811,
+                                                    lineNumber: 800,
                                                     columnNumber: 23
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                            lineNumber: 809,
+                                            lineNumber: 798,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 802,
+                                    lineNumber: 791,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                            lineNumber: 779,
+                            lineNumber: 768,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3059,11 +2731,11 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     variant: "outline",
                                     disabled: actionLoading,
                                     onClick: handleNeutralise,
-                                    className: "border-[#28385e] bg-transparent text-xs text-gray-200 hover:bg-[#1c2541]",
+                                    className: "border-[#444] bg-transparent text-xs text-gray-200 hover:bg-[#333]",
                                     children: actionLoading ? "Processing..." : "Neutralise"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 826,
+                                    lineNumber: 815,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3077,7 +2749,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                                 className: "mr-1 h-3 w-3 animate-spin"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                lineNumber: 845,
+                                                lineNumber: 834,
                                                 columnNumber: 21
                                             }, this),
                                             "Sending..."
@@ -3085,7 +2757,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     }, void 0, true) : "Send Drone (ड्रोन भेजिए)"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 835,
+                                    lineNumber: 824,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3093,14 +2765,14 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     variant: "outline",
                                     disabled: videoLoading,
                                     onClick: handleOpenVideoFeed,
-                                    className: "border-[#28385e] bg-transparent text-xs text-gray-200 hover:bg-[#1c2541] active:scale-95 transition-transform duration-150 disabled:opacity-50",
+                                    className: "border-[#444] bg-transparent text-xs text-gray-200 hover:bg-[#333] active:scale-95 transition-transform duration-150 disabled:opacity-50",
                                     children: videoLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
                                                 className: "mr-1 h-3 w-3 animate-spin text-blue-400"
                                             }, void 0, false, {
                                                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                                lineNumber: 861,
+                                                lineNumber: 850,
                                                 columnNumber: 21
                                             }, this),
                                             "Launching..."
@@ -3108,7 +2780,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     }, void 0, true) : "Video Feed"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 852,
+                                    lineNumber: 841,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3116,41 +2788,41 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     variant: "outline",
                                     disabled: actionLoading,
                                     onClick: closeAlertModal,
-                                    className: "border-[#28385e] bg-transparent text-xs text-gray-300 hover:bg-[#1c2541]",
+                                    className: "border-[#444] bg-transparent text-xs text-gray-300 hover:bg-[#333]",
                                     children: "Close"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 868,
+                                    lineNumber: 857,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                            lineNumber: 825,
+                            lineNumber: 814,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                    lineNumber: 718,
+                    lineNumber: 707,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                lineNumber: 717,
+                lineNumber: 706,
                 columnNumber: 9
             }, this),
             patrolConfirmOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed inset-0 z-50 flex items-center justify-center bg-black/60",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full max-w-sm rounded-lg border border-[#1c2541] bg-[#0f172a] p-5",
+                    className: "w-full max-w-sm rounded-lg border border-[#333] bg-[#111] p-5",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             className: "text-sm font-semibold text-white mb-2",
                             children: "Confirm Patrol"
                         }, void 0, false, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                            lineNumber: 884,
+                            lineNumber: 873,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3163,7 +2835,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     children: dronesList.find((d)=>d.id === selectedPatrolDroneId)?.droneOSName
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 890,
+                                    lineNumber: 879,
                                     columnNumber: 15
                                 }, this),
                                 " ",
@@ -3171,7 +2843,7 @@ function DashboardSidebar({ isOpen, onToggle }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                            lineNumber: 888,
+                            lineNumber: 877,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3181,11 +2853,11 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     size: "sm",
                                     variant: "outline",
                                     onClick: ()=>setPatrolConfirmOpen(false),
-                                    className: "border-[#28385e] bg-transparent text-gray-300",
+                                    className: "border-[#444] bg-transparent text-gray-300",
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 900,
+                                    lineNumber: 889,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3219,37 +2891,37 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     children: patrolLoading ? "Sending..." : "Confirm"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 909,
+                                    lineNumber: 898,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                            lineNumber: 899,
+                            lineNumber: 888,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                    lineNumber: 883,
+                    lineNumber: 872,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                lineNumber: 882,
+                lineNumber: 871,
                 columnNumber: 9
             }, this),
             neutraliseAllConfirmOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed inset-0 z-50 flex items-center justify-center bg-black/60",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full max-w-sm rounded-lg border border-[#1c2541] bg-[#0f172a] p-5",
+                    className: "w-full max-w-sm rounded-lg border border-[#333] bg-[#111] p-5",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             className: "mb-2 text-sm font-semibold text-white",
                             children: "Confirm Neutralise All"
                         }, void 0, false, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                            lineNumber: 952,
+                            lineNumber: 941,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3266,13 +2938,13 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 958,
+                                    lineNumber: 947,
                                     columnNumber: 15
                                 }, this),
                                 "?",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 962,
+                                    lineNumber: 951,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3280,13 +2952,13 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     children: "This action cannot be undone."
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 963,
+                                    lineNumber: 952,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                            lineNumber: 956,
+                            lineNumber: 945,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3296,11 +2968,11 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     size: "sm",
                                     variant: "outline",
                                     onClick: ()=>setNeutraliseAllConfirmOpen(false),
-                                    className: "border-[#28385e] bg-transparent text-gray-300",
+                                    className: "border-[#444] bg-transparent text-gray-300",
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 969,
+                                    lineNumber: 958,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3319,24 +2991,24 @@ function DashboardSidebar({ isOpen, onToggle }) {
                                     children: actionLoading ? "Processing..." : "Confirm"
                                 }, void 0, false, {
                                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                                    lineNumber: 978,
+                                    lineNumber: 967,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                            lineNumber: 968,
+                            lineNumber: 957,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                    lineNumber: 951,
+                    lineNumber: 940,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Rayonix/iccs-command-center/components/dashboard-sidebar.tsx",
-                lineNumber: 950,
+                lineNumber: 939,
                 columnNumber: 9
             }, this)
         ]
@@ -3362,11 +3034,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2
 function DashboardLayout({ children }) {
     const [sidebarOpen, setSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex h-screen flex-col bg-[#0b132b]",
+        className: "flex h-screen flex-col bg-[#f8fafc] text-slate-900",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$components$2f$dashboard$2d$header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DashboardHeader"], {}, void 0, false, {
                 fileName: "[project]/Rayonix/iccs-command-center/app/(protected)/layout.tsx",
-                lineNumber: 17,
+                lineNumber: 16,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3377,27 +3049,27 @@ function DashboardLayout({ children }) {
                         onToggle: ()=>setSidebarOpen(!sidebarOpen)
                     }, void 0, false, {
                         fileName: "[project]/Rayonix/iccs-command-center/app/(protected)/layout.tsx",
-                        lineNumber: 20,
+                        lineNumber: 19,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Rayonix$2f$iccs$2d$command$2d$center$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                        className: "relative flex-1 overflow-auto",
+                        className: "relative flex-1 overflow-auto bg-[#f8fafc]",
                         children: children
                     }, void 0, false, {
                         fileName: "[project]/Rayonix/iccs-command-center/app/(protected)/layout.tsx",
-                        lineNumber: 25,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Rayonix/iccs-command-center/app/(protected)/layout.tsx",
-                lineNumber: 19,
+                lineNumber: 18,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Rayonix/iccs-command-center/app/(protected)/layout.tsx",
-        lineNumber: 16,
+        lineNumber: 15,
         columnNumber: 5
     }, this);
 }

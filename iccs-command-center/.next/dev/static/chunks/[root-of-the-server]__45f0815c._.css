@@ -1661,10 +1661,6 @@
     max-width: 120px;
   }
 
-  .max-w-\[140px\] {
-    max-width: 140px;
-  }
-
   .max-w-\[250px\] {
     max-width: 250px;
   }
@@ -2991,16 +2987,6 @@
     }
   }
 
-  .bg-red-500\/20 {
-    background-color: #fb2c3633;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-red-500\/20 {
-      background-color: color-mix(in oklab, var(--color-red-500) 20%, transparent);
-    }
-  }
-
   .bg-red-600 {
     background-color: var(--color-red-600);
   }
@@ -3717,10 +3703,6 @@
 
   .break-words {
     overflow-wrap: break-word;
-  }
-
-  .break-all {
-    word-break: break-all;
   }
 
   .whitespace-nowrap {
@@ -5298,12 +5280,6 @@
   @media (hover: hover) {
     .hover\:text-red-400:hover {
       color: var(--color-red-400);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:text-red-500:hover {
-      color: var(--color-red-500);
     }
   }
 
